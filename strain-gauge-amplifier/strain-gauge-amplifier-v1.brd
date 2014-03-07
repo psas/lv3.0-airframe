@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1802,8 +1802,7 @@ Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</descrip
 <vertex x="34.544" y="16.256"/>
 <vertex x="37.846" y="16.256"/>
 <vertex x="37.846" y="20.574"/>
-<vertex x="36.068" y="19.812"/>
-<vertex x="34.544" y="19.812"/>
+<vertex x="34.544" y="20.574"/>
 </polygon>
 <wire x1="35.2552" y1="16.891" x2="36.995" y2="16.891" width="0.254" layer="1"/>
 <wire x1="36.995" y1="16.891" x2="37.846" y2="16.548" width="0.254" layer="1"/>
