@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8262,6 +8262,136 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 </devicesets>
 </library>
+<library name="mount">
+<packages>
+<package name="#4/.225-BARE+HEAD_OR_SMALL_NUT">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.225" outline for screw head.
+The 0.225" outline will also accomodate a 3/16" (small) #4 nut.
+For standard #4 nuts + tool clearance use the 0.4" outline.&lt;br&gt;
+Note, this outline does not include nut-tool clearance, for that use at least the 0.3" outline. However, this outline is acceptable for screw heads, which require no additional tool clearance, or for nuts accessible from the side, etc.</description>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="2.8575" width="0" layer="39"/>
+<circle x="0" y="0" radius="2.8575" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+</package>
+<package name="#4/.250-BARE+STD_WASHER">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.250" outline for standard #4 washer.
+For #4 star lock washers or standard size #4 nuts use use the 0.3" outline. 1/4" is a good choice for a screw head + standard washer, but will not provide enough room for a standard nut to turn.</description>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.175" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<text x="2.8575" y="-2.8575" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+</package>
+<package name="#4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.300" outline for standard #4 nut or star lock washer.
+For standard tool clearance, use the 0.400" outline.&lt;br&gt;
+Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="3.81" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="42"/>
+</package>
+<package name="#4/.325-BARE+SMALL_TOOL_CLEARANCE">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.325" outline for 3/16" (small) #4 nut-tool. If nut driving is not required, the 0.250" outline may be used.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="4.1275" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="4.1275" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="42"/>
+<circle x="0" y="0" radius="4.1275" width="0" layer="40"/>
+<text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.175" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+</package>
+<package name="#4/.400-BARE+STD_TOOL_CLEARANCE">
+<description>1/8" hole without plating for #4 screw&lt;br&gt;
+Includes 0.400" outline for 1/4" (standard) #4 nut-tool. If nut driving is not required, the 0.300" outline may be used.</description>
+<wire x1="-1.8331" y1="3.175" x2="1.8331" y2="3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="3.175" x2="3.6662" y2="0" width="0.127" layer="51"/>
+<wire x1="3.6662" y1="0" x2="1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="1.8331" y1="-3.175" x2="-1.8331" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-1.8331" y1="-3.175" x2="-3.6661" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.6661" y1="0" x2="-1.8331" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.8575" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="5.08" width="0" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="41"/>
+<text x="4.1275" y="3.4925" size="1.27" layer="25">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.175"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HOLE+SCREWHEAD">
+<wire x1="-1.6256" y1="1.8542" x2="1.8796" y2="-1.6002" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.6256" x2="1.6256" y2="-1.8796" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<text x="1.27" y="2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="2.54" y="-2.54" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="#4-BARE_MOUNTING_HOLE">
+<description>1/8" drill hole for #4 screw mount</description>
+<gates>
+<gate name="MT" symbol="HOLE+SCREWHEAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="/.225" package="#4/.225-BARE+HEAD_OR_SMALL_NUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.250" package="#4/.250-BARE+STD_WASHER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.300" package="#4/.300-BARE+STD_NUT_OR_STAR_WASHER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.325" package="#4/.325-BARE+SMALL_TOOL_CLEARANCE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/.400" package="#4/.400-BARE+STD_TOOL_CLEARANCE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8308,26 +8438,31 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C5" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="100n"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="M1" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="M2" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="M3" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
+<part name="M4" library="mount" deviceset="#4-BARE_MOUNTING_HOLE" device="/.300"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="94.361" y="107.6452" size="1.524" layer="97">OPTIONAL FET BYPASS</text>
-<text x="215.9" y="99.06" size="1.778" layer="97">To DAQ</text>
+<text x="213.36" y="96.52" size="1.778" layer="97">To DAQ</text>
+<text x="213.36" y="114.3" size="1.778" layer="97">To DAQ</text>
 </plain>
 <instances>
-<instance part="R4" gate="R" x="170.18" y="162.56" rot="R90"/>
+<instance part="R4" gate="R" x="170.18" y="165.1" rot="R90"/>
 <instance part="C3" gate="CE" x="121.92" y="160.02"/>
 <instance part="U$3" gate="G$1" x="119.38" y="167.64"/>
 <instance part="JP1" gate="G$1" x="48.26" y="111.76" smashed="yes">
 <attribute name="VALUE" x="34.29" y="111.76" size="1.778" layer="96"/>
 <attribute name="NAME" x="45.72" y="117.602" size="1.778" layer="95"/>
 </instance>
-<instance part="JP2" gate="G$1" x="210.82" y="104.14" smashed="yes" rot="R180">
-<attribute name="VALUE" x="213.36" y="109.22" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="210.82" y="109.728" size="1.778" layer="95" rot="R180"/>
+<instance part="JP2" gate="G$1" x="205.74" y="116.84" smashed="yes" rot="R180">
+<attribute name="VALUE" x="208.28" y="121.92" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="205.74" y="122.428" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="JP3" gate="G$1" x="210.82" y="96.52" rot="R180"/>
+<instance part="JP3" gate="G$1" x="205.74" y="99.06" rot="R180"/>
 <instance part="R3" gate="R" x="55.88" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="49.53" y="88.9" size="1.778" layer="95"/>
 <attribute name="VALUE" x="49.53" y="86.36" size="1.778" layer="96"/>
@@ -8342,8 +8477,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="VALUE" x="73.66" y="95.25" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="119.38" y="147.32"/>
-<instance part="U$1" gate="G$1" x="170.18" y="167.64"/>
-<instance part="GND1" gate="1" x="200.66" y="88.9"/>
+<instance part="U$1" gate="G$1" x="170.18" y="172.72"/>
+<instance part="GND1" gate="1" x="198.12" y="109.22"/>
 <instance part="R7" gate="R" x="177.8" y="106.68" rot="R90"/>
 <instance part="Q1" gate="G$1" x="104.14" y="127" rot="R180"/>
 <instance part="U$2" gate="G$1" x="104.14" y="134.62"/>
@@ -8356,14 +8491,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="LED1" gate="G$1" x="208.28" y="154.94"/>
 <instance part="R10" gate="R" x="208.28" y="142.24" rot="R90"/>
 <instance part="GND3" gate="1" x="208.28" y="134.62"/>
-<instance part="C1" gate="CE" x="116.84" y="160.02"/>
+<instance part="C1" gate="CE" x="114.3" y="160.02"/>
 <instance part="JP5" gate="G$1" x="132.08" y="114.3" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="127" y="111.76" size="1.778" layer="96" rot="MR90"/>
 <attribute name="NAME" x="129.54" y="108.458" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
-<instance part="U$4" gate="G$1" x="203.2" y="106.68"/>
+<instance part="U$4" gate="G$1" x="198.12" y="121.92"/>
 <instance part="GND4" gate="1" x="170.18" y="83.82"/>
 <instance part="U$5" gate="G$1" x="208.28" y="157.48"/>
 <instance part="GND5" gate="1" x="134.62" y="147.32"/>
@@ -8377,6 +8512,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="GND8" gate="1" x="63.5" y="109.22"/>
 <instance part="C5" gate="CE" x="177.8" y="73.66"/>
 <instance part="GND9" gate="1" x="177.8" y="66.04"/>
+<instance part="M1" gate="MT" x="35.56" y="162.56"/>
+<instance part="M2" gate="MT" x="35.56" y="154.94"/>
+<instance part="M3" gate="MT" x="35.56" y="147.32"/>
+<instance part="M4" gate="MT" x="35.56" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -8420,8 +8559,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="C3" gate="CE" pin="2"/>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C1" gate="CE" pin="2"/>
-<wire x1="116.84" y1="154.94" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="152.4" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="154.94" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="152.4" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
 <junction x="119.38" y="152.4"/>
@@ -8430,12 +8569,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="IC2" gate="G$1" pin="V-"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="170.18" y1="86.36" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="93.98" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R10" gate="R" pin="1"/>
@@ -8463,6 +8596,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="C5" gate="CE" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="198.12" y1="111.76" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -8486,13 +8624,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="IC2" gate="G$1" pin="SENSE"/>
 <wire x1="177.8" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
 <junction x="177.8" y="116.84"/>
-<wire x1="177.8" y1="116.84" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="116.84" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
-<label x="187.96" y="102.87" size="1.524" layer="95"/>
+<wire x1="177.8" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="116.84" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
+<label x="190.5" y="100.33" size="1.524" layer="95"/>
 <pinref part="R7" gate="R" pin="2"/>
 <wire x1="177.8" y1="116.84" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -8507,19 +8645,20 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="121.92" y="165.1"/>
 <wire x1="121.92" y1="165.1" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C1" gate="CE" pin="1"/>
-<wire x1="119.38" y1="165.1" x2="116.84" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="165.1" x2="116.84" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="165.1" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="165.1" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="167.64" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
 <junction x="119.38" y="165.1"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="104.14" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="116.84" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="R" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="5V"/>
+<wire x1="170.18" y1="172.72" x2="170.18" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
@@ -8535,6 +8674,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="IC2" gate="G$1" pin="!SLEEP"/>
 <pinref part="R4" gate="R" pin="1"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="2.5VREF" class="0">
@@ -8560,11 +8700,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="170.18" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <junction x="177.8" y="96.52"/>
 <wire x1="177.8" y1="96.52" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
-<label x="187.96" y="93.98" size="1.524" layer="95"/>
+<label x="190.5" y="93.98" size="1.524" layer="95"/>
 <wire x1="88.9" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="76.2" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
 <junction x="88.9" y="114.3"/>
 <label x="127.3556" y="142.367" size="1.524" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -8580,6 +8718,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="C4" gate="CE" pin="1"/>
 <pinref part="C5" gate="CE" pin="1"/>
 <junction x="177.8" y="76.2"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREFOUT" class="0">
@@ -8622,9 +8762,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <errors>
 <approved hash="104,1,139.7,157.48,IC2,V+,5V,,,"/>
 <approved hash="104,1,170.18,88.9,IC2,V-,GND,,,"/>
-<approved hash="113,1,206.223,104.589,JP2,,,,,"/>
-<approved hash="113,1,206.417,93.7853,JP3,,,,,"/>
-<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
