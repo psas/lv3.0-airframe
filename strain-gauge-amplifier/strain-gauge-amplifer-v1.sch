@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8273,7 +8273,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </classes>
 <parts>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0805-C-NOSILK" value="1k"/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="0.1uF"/>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="100n"/>
 <part name="U$3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="5MM" value="STRAIN"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
@@ -8306,7 +8306,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="100n"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="1n"/>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0805-C-NOSILK" value="100n"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -8619,6 +8619,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,139.7,157.48,IC2,V+,5V,,,"/>
+<approved hash="104,1,170.18,88.9,IC2,V-,GND,,,"/>
+<approved hash="113,1,206.223,104.589,JP2,,,,,"/>
+<approved hash="113,1,206.417,93.7853,JP3,,,,,"/>
+<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
