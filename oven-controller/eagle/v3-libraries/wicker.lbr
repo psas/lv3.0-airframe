@@ -122,15 +122,24 @@
 </layers>
 <library>
 <packages>
-<package name="LED-0603">
-<wire x1="0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
-<wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.17" x2="0.2338" y2="-0.14" width="0.2032" layer="21"/>
-<wire x1="-0.0254" y1="0.1546" x2="-0.2184" y2="-0.14" width="0.2032" layer="21"/>
-<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
-<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
-<text x="-0.6985" y="-0.889" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.0795" y="-1.016" size="0.4064" layer="27" rot="R90">&gt;VALUE</text>
+<package name="DO-214AC-SMA">
+<wire x1="-3.789" y1="-1.394" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="-1.146" x2="-3.789" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="1.6" x2="3.816" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.6" x2="3.816" y2="1.394" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="1.3365" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.816" y1="-1.6" x2="-3.789" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="-1.6" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
+<wire x1="0.1905" y1="-0.4445" x2="0.1905" y2="0.4445" width="0.127" layer="21"/>
+<wire x1="0.1905" y1="0.4445" x2="-0.4445" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="0" x2="0.1905" y2="-0.4445" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="-0.4445" x2="-0.4445" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="0" x2="-0.4445" y2="0.4445" width="0.127" layer="21"/>
+<smd name="A" x="1.905" y="0" dx="2.794" dy="1.6002" layer="1" rot="R270"/>
+<smd name="C" x="-1.905" y="0" dx="2.794" dy="1.6002" layer="1" rot="R90"/>
+<text x="-2.54" y="1.905" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.286" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
