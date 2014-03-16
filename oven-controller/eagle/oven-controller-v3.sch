@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="11" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8997,7 +8997,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD" value="FDV305N"/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_SHIELD" device="LONGPADS"/>
@@ -9008,7 +9008,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$13" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
@@ -9039,23 +9039,23 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="P+5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="P+6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD" value="FDV305N"/>
-<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
 <part name="HEAT1" library="SparkFun-Connectors" deviceset="M02" device="3.5MM_LOCK" value="HDR2"/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="VIN" device="" value="12V"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD" value="FDV305N"/>
-<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="HEAT2" library="SparkFun-Connectors" deviceset="M02" device="3.5MM_LOCK" value="HDR3"/>
 <part name="U$2" library="SparkFun-Aesthetics" deviceset="VIN" device="" value="12V"/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="SMD" value="FDV305N"/>
-<part name="R11" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="10k"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="FAN" library="SparkFun-Connectors" deviceset="M02" device="3.5MM_LOCK" value="HDR4"/>
 <part name="U$3" library="SparkFun-Aesthetics" deviceset="VIN" device="" value="12V"/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="R12" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
 <part name="LED5" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="R13" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="330"/>
 <part name="D1" library="adafruit" deviceset="DIODE" device="SMA" value="20V 1A"/>
 <part name="D2" library="adafruit" deviceset="DIODE" device="SMA" value="20V 1A"/>
 <part name="D3" library="adafruit" deviceset="DIODE" device="SMA" value="20V 1A"/>
@@ -9075,7 +9075,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="Q4" gate="G$1" x="7.62" y="38.1" rot="MR0"/>
 <instance part="R2" gate="R" x="20.32" y="30.48" rot="MR90"/>
 <instance part="GND2" gate="1" x="7.62" y="9.906" rot="MR0"/>
-<instance part="R4" gate="R" x="63.5" y="114.3" rot="R90"/>
+<instance part="R6" gate="R" x="63.5" y="114.3" rot="R90"/>
 <instance part="LED1" gate="G$1" x="63.5" y="91.44"/>
 <instance part="GND10" gate="1" x="63.5" y="78.74"/>
 <instance part="U1" gate="G$1" x="81.28" y="43.18"/>
@@ -9086,7 +9086,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="U$13" gate="G$1" x="58.42" y="40.64"/>
 <instance part="GND11" gate="1" x="63.754" y="19.812"/>
 <instance part="LED2" gate="G$1" x="134.62" y="88.9"/>
-<instance part="R3" gate="R" x="134.62" y="99.06" rot="R90"/>
+<instance part="R5" gate="R" x="134.62" y="99.06" rot="R90"/>
 <instance part="GND9" gate="1" x="167.64" y="76.2" rot="MR0"/>
 <instance part="LED4" gate="G$1" x="33.02" y="88.9" rot="MR0"/>
 <instance part="R7" gate="R" x="33.02" y="96.52" rot="MR90"/>
@@ -9117,23 +9117,23 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="P+5" gate="G$1" x="246.38" y="48.26"/>
 <instance part="P+6" gate="G$1" x="246.38" y="17.78"/>
 <instance part="Q1" gate="G$1" x="167.64" y="106.68"/>
-<instance part="R6" gate="R" x="154.94" y="99.06" rot="R90"/>
+<instance part="R1" gate="R" x="154.94" y="99.06" rot="R90"/>
 <instance part="HEAT1" gate="G$1" x="160.02" y="119.38" rot="MR180"/>
 <instance part="U$1" gate="G$1" x="167.64" y="129.54" rot="MR0"/>
 <instance part="Q2" gate="G$1" x="167.64" y="40.64"/>
-<instance part="R9" gate="R" x="157.48" y="33.02" rot="R90"/>
+<instance part="R4" gate="R" x="157.48" y="33.02" rot="R90"/>
 <instance part="GND14" gate="1" x="167.64" y="10.16"/>
 <instance part="HEAT2" gate="G$1" x="160.02" y="53.34" rot="MR180"/>
 <instance part="U$2" gate="G$1" x="167.64" y="63.5" rot="MR0"/>
 <instance part="Q3" gate="G$1" x="7.62" y="104.14" rot="MR0"/>
-<instance part="R11" gate="R" x="17.78" y="96.52" rot="MR90"/>
+<instance part="R3" gate="R" x="17.78" y="96.52" rot="MR90"/>
 <instance part="GND17" gate="1" x="7.62" y="76.2" rot="MR0"/>
 <instance part="FAN" gate="G$1" x="15.24" y="116.84" rot="R180"/>
 <instance part="U$3" gate="G$1" x="7.62" y="129.54"/>
 <instance part="LED3" gate="G$1" x="139.7" y="22.86"/>
-<instance part="R12" gate="R" x="139.7" y="33.02" rot="R90"/>
+<instance part="R9" gate="R" x="139.7" y="33.02" rot="R90"/>
 <instance part="LED5" gate="G$1" x="40.64" y="22.86" rot="MR0"/>
-<instance part="R13" gate="R" x="40.64" y="30.48" rot="MR90"/>
+<instance part="R8" gate="R" x="40.64" y="30.48" rot="MR90"/>
 <instance part="D1" gate="G$1" x="-2.54" y="119.38" rot="R90"/>
 <instance part="D2" gate="G$1" x="-2.54" y="50.8" rot="R90"/>
 <instance part="D3" gate="G$1" x="175.26" y="119.38" rot="R90"/>
@@ -9188,7 +9188,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="167.64" y1="91.44" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R6" gate="R" pin="1"/>
+<pinref part="R1" gate="R" pin="1"/>
 <wire x1="167.64" y1="91.44" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="91.44" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="91.44" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
@@ -9263,7 +9263,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="Q2" gate="G$1" pin="S"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="167.64" y1="12.7" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R9" gate="R" pin="1"/>
+<pinref part="R4" gate="R" pin="1"/>
 <wire x1="167.64" y1="15.24" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="25.4" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="27.94" x2="157.48" y2="25.4" width="0.1524" layer="91"/>
@@ -9279,7 +9279,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="Q3" gate="G$1" pin="S"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="7.62" y1="78.74" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R11" gate="R" pin="1"/>
+<pinref part="R3" gate="R" pin="1"/>
 <wire x1="7.62" y1="81.28" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="88.9" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="91.44" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
@@ -9323,14 +9323,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="68.58" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="60.96" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R4" gate="R" pin="1"/>
+<pinref part="R6" gate="R" pin="1"/>
 <wire x1="63.5" y1="109.22" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
 <junction x="63.5" y="104.14"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="R4" gate="R" pin="2"/>
+<pinref part="R6" gate="R" pin="2"/>
 <pinref part="U$11" gate="G$1" pin="5V"/>
 <wire x1="63.5" y1="119.38" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C7" gate="CE" pin="1"/>
@@ -9413,7 +9413,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$7" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R3" gate="R" pin="1"/>
+<pinref part="R5" gate="R" pin="1"/>
 <wire x1="134.62" y1="91.44" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9694,7 +9694,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="40.64" y1="40.64" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="40.64" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 <junction x="40.64" y="38.1"/>
-<pinref part="R13" gate="R" pin="2"/>
+<pinref part="R8" gate="R" pin="2"/>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="55.88" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
@@ -9733,12 +9733,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="129.54" y1="104.14" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R3" gate="R" pin="2"/>
+<pinref part="R5" gate="R" pin="2"/>
 <wire x1="134.62" y1="104.14" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <junction x="134.62" y="106.68"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="160.02" y1="106.68" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R6" gate="R" pin="2"/>
+<pinref part="R1" gate="R" pin="2"/>
 <wire x1="154.94" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="104.14" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
 <junction x="154.94" y="106.68"/>
@@ -9753,11 +9753,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="121.92" y1="43.18" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="43.18" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R12" gate="R" pin="2"/>
+<pinref part="R9" gate="R" pin="2"/>
 <wire x1="139.7" y1="40.64" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
 <junction x="139.7" y="40.64"/>
-<pinref part="R9" gate="R" pin="2"/>
+<pinref part="R4" gate="R" pin="2"/>
 <wire x1="152.4" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="40.64" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
@@ -9794,7 +9794,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="40.64" y1="58.42" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
 <junction x="33.02" y="104.14"/>
-<pinref part="R11" gate="R" pin="2"/>
+<pinref part="R3" gate="R" pin="2"/>
 <wire x1="17.78" y1="101.6" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="15.24" y1="104.14" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
@@ -9806,14 +9806,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <net name="N$18" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R12" gate="R" pin="1"/>
+<pinref part="R9" gate="R" pin="1"/>
 <wire x1="139.7" y1="25.4" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
-<pinref part="R13" gate="R" pin="1"/>
+<pinref part="R8" gate="R" pin="1"/>
 </segment>
 </net>
 <net name="N$21" class="0">
