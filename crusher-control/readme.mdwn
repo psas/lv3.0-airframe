@@ -1,0 +1,47 @@
+# 'crusher-control'
+
+Written by Gavin Gallino who ROCKS thank you Gavin. Uses a labjack to help control the CEE crushing machine.
+
+You need:
+
+  - Python 2.7.3
+  - Labjack drivers (e.g., exo driver)
+  - LabJackPython
+  - python-tk
+
+## Running the Program
+
+- Open a terminal
+- `cd crusher-control`
+- `python crusher-control`
+
+## User Interface
+
+### File logging
+
+- "CSV Output File" is the filename that the data will be written to. 
+   - It's a CSV file, in the form of "timestamp,voltage-out,voltage-in"
+   - timestamp is Linux epoch in seconds.
+   - voltage is in floating point volts.
+- "Record File" opens the file and writes. If the file exists, then data is appended.
+- "Close File" stops the streaming writes.
+
+### Manual Control
+
+- "+/-.005" increment/decrement the output voltage by 5 mV (this is the finest resolution of the DAC: it's a 10 bit DAC running at 5V so that's 5V/2^10 = ~0.00488 V).
+- "+/-.01" increment/decrement the output voltage by 10 mV.
+- "+/-.1" increment/decrement the output voltage by 100 mV.
+- "Zero Output" zeros the output. Duh.
+
+### Auto Magic Ramping
+
+The auto magic ramping will ramp the output voltage. Don't forget to hit record before you start ramping!
+
+- **IF** the Ramp step is positive, the auto magic ramping functionality will ramp from MIN to MAX with a step of STEP every DELAY seconds.
+- **IF** the Ramp step is negative, the auto magic ramping functionality will ramp from MAX to MIN with a step of STEP every DELAY seconds.
+
+Once your ramp numbers are set, then:
+
+- "Run" checks the input values and runs the ramp.
+- "Stop" stops the ramp. 
+
