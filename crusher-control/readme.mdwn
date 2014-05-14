@@ -11,7 +11,8 @@ You need:
 
 ## Running the Program
 
-- Open a terminal
+- Open a terminal.
+- `cd mme-capstone`
 - `cd crusher-control`
 - `python crusher-control`
 
