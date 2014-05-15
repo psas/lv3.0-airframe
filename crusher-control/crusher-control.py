@@ -13,7 +13,7 @@ class CrusherApp(tk.Frame):
     self.output_file = None
 
     self.output_voltage = 0.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.input_voltage = labjack.readRegister(REG_AIN0)
     self.max_voltage = 5.0
     self.min_voltage = 0.0
@@ -53,7 +53,8 @@ class CrusherApp(tk.Frame):
     self.delay_entry = tk.Entry(self, textvariable=self.delay_var)
     self.run_button = tk.Button(self,text="Run", command=self.run_ramp)
     self.stop_button = tk.Button(self,text="Stop", command=self.stop_ramp)
-    self.zero_button = tk.Button(self,text="Zero Output", command=self.zero_output)
+    self.zero_button = tk.Button(self,text="Zero Output Voltage", command=self.zero_output)
+    self.full_button = tk.Button(self,text="Max Output Voltage", command=self.max_output)
 
     row = 0
     tk.Label(self,text="CSV Output File").grid(row=row,column=0,columnspan=2,sticky=tk.E+tk.W)
@@ -74,6 +75,8 @@ class CrusherApp(tk.Frame):
     self.inc_2_button.grid(row=row,column=1,sticky=tk.E+tk.W)
     row+=1
     self.zero_button.grid(row=row,column=0,columnspan=2,sticky=tk.E+tk.W)
+    row+=1
+    self.full_button.grid(row=row,column=0,columnspan=2,sticky=tk.E+tk.W)
 
     row+=1
     tk.Label(self,text="Output Voltage").grid(row=row,column=0)
@@ -98,6 +101,15 @@ class CrusherApp(tk.Frame):
     self.run_button.grid(row=row,column=0, sticky=tk.E+tk.W)
     self.stop_button.grid(row=row,column=1, sticky=tk.E+tk.W)
 
+  def set_output_voltage(self, volts):
+    if volts > 5.0:
+      volts = 5.0
+    elif volts < 0.0:
+      volts = 0.0
+    output_value = int(0xffff * volts / 5.0)
+    print output_value
+    labjack.getFeedback(u3.DAC16(Dac=0, Value = output_value))
+
   def record_file(self):
     if self.output_file is None:
       self.output_file = open(self.file_var.get(),"a")
@@ -118,7 +130,7 @@ class CrusherApp(tk.Frame):
       self.output_voltage += 0.005
     else:
       self.output_voltage = 5.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def dec_0(self):
@@ -126,7 +138,7 @@ class CrusherApp(tk.Frame):
       self.output_voltage -= 0.005
     else:
       self.output_voltage = 0.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def inc_1(self):
@@ -134,7 +146,7 @@ class CrusherApp(tk.Frame):
       self.output_voltage += 0.01
     else:
       self.output_voltage = 5.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def dec_1(self):
@@ -142,7 +154,7 @@ class CrusherApp(tk.Frame):
       self.output_voltage -= 0.01
     else:
       self.output_voltage = 0.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def inc_2(self):
@@ -150,7 +162,7 @@ class CrusherApp(tk.Frame):
       self.output_voltage += 0.1
     else:
       self.output_voltage = 5.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def dec_2(self):
@@ -158,12 +170,17 @@ class CrusherApp(tk.Frame):
       self.output_voltage -= 0.1
     else:
       self.output_voltage = 0.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def zero_output(self):
     self.output_voltage = 0.0
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
+    self.output_var.set(str(self.output_voltage))
+
+  def max_output(self):
+    self.output_voltage = 5.0
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
   def run_ramp(self):
@@ -202,7 +219,7 @@ class CrusherApp(tk.Frame):
     else:
       self.output_voltage = self.min_voltage
 
-    labjack.writeRegister(REG_DAC0, self.output_voltage)
+    self.set_output_voltage(self.output_voltage)
     self.output_var.set(str(self.output_voltage))
 
     self.after_cancel(self.ramp_timer_id)
@@ -216,7 +233,7 @@ class CrusherApp(tk.Frame):
   def ramp_timer_tick(self):
     if self.ramp_enable:
       self.output_voltage += self.step_voltage
-      labjack.writeRegister(REG_DAC0, self.output_voltage)
+      self.set_output_voltage(self.output_voltage)
       self.output_var.set(str(self.output_voltage))
 
       if self.output_voltage <= self.min_voltage or self.output_voltage >= self.max_voltage:
@@ -236,6 +253,9 @@ class CrusherApp(tk.Frame):
 if __name__ == "__main__":
   labjack = u3.U3()
   labjack.configU3(FIOAnalog = 0xff)
+
+  print labjack.configU3()
+  print labjack.configAnalog()
 
   app = CrusherApp()
   app.mainloop()
