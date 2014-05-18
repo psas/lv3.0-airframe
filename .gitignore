@@ -1,2 +1,8 @@
 # Eagle backup files 
 *#*
+
+# Jekyll cruft
+_site
+
+# Dev cruft
+sources
