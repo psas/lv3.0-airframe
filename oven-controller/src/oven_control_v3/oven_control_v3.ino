@@ -76,6 +76,7 @@ double tempThreshold   =  3;          // Temperature limit to turn on both heate
 int ADCThreshold       =  900;
 int timeDelay          =  5000;
 float timeMax          =  12780;      // (sec) timeMax=time_ramping+time_at_350; (set at 2 hours), initial temp: 70*F
+bool statusFlag        = 0;
 
 // calibration 
 double sensor1  =  0;
@@ -145,12 +146,12 @@ void read_joystick() {
 // Possibly better to rename this update_state_machine().
 void handle_start_button() {
 
-  uint8_t ADCReading < ADCThreshold);
+  uint8_t ADCReading;
 
   // if the input is HIGH, handle it as a START
   if (ADCReading > ADCThreshold) {
-    if (status == START) {
-      status = RUNNING;
+    if (statusFlag == START) {
+      statusFlag = RUNNING;
       // set start time
       startTime = millis(); 
       currTime = millis()-startTime;
@@ -158,40 +159,40 @@ void handle_start_button() {
       check_temp_sensors();
       tempInitial = tempAverage;
     }
-    else if (status == RUNNING) {
+    else if (statusFlag == RUNNING) {
       // check if timer has reached end of profile time
       if (currTime/1000 >= timeMax)
-        status = STOP;
+        statusFlag = STOP;
       else
-        status = RUNNING;
+        statusFlag = RUNNING;
       currTime = millis()-startTime;
     }
-    else if (status == STOP) {
-      status = STOPPED;
+    else if (statusFlag == STOP) {
+      statusFlag = STOPPED;
       currTime = 0;
     }
     else { 
-      status = START;
+      statusFlag = START;
       currTime = 0;
     }
   }
 
   // otherwise the input is LOW, handle it as a STOP
   else {
-    if (status == START) {
-      status = STOP;
+    if (statusFlag == START) {
+      statusFlag = STOP;
       currTime = millis()-startTime;
     }
-    else if (status == RUNNING) {
-      status = STOP;
+    else if (statusFlag == RUNNING) {
+      statusFlag = STOP;
       currTime = millis()-startTime;
     }
-    else if (status == STOP) {
-      status = STOPPED;
+    else if (statusFlag == STOP) {
+      statusFlag = STOPPED;
       currTime = 0;
     }
     else { 
-      status = STOPPED;
+      statusFlag = STOPPED;
       currTime = 0;
     }
   }
@@ -275,9 +276,10 @@ void update_display() {
   Serial.print("Average temperature F = ");
   Serial.println(tempAverage);
 
-  uint8_t b = readButton();
+  read_joystick();
+  uint8_t b = joystickVal;
   tft.setTextSize(3);
-  if (b == BUTTON_DOWN) {
+  if (b == BUTTON_DOWN) {  
     tft.setTextColor(ST7735_RED);
     tft.setCursor(0, 10);
     tft.print("Down ");
@@ -352,7 +354,7 @@ void loop() {
 
   // update state machine based on those inputs
   handle_start_button();
-  update_heaters(status);
+  update_heaters(statusFlag);
 
   // update display
   update_display();
