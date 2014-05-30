@@ -8590,7 +8590,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="C0603K" value="100n 100V"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="U$4" library="SparkFun-Aesthetics" deviceset="VIN" device="" value="12V"/>
-<part name="R10" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="1k"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0603-C-NOSILK" value="150"/>
 <part name="C7" library="rcl_custom" deviceset="C-EU" device="C0603K" value="10n"/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="C0603K" value="10n"/>
 <part name="C12" library="rcl_custom" deviceset="C-EU" device="C0603K" value="10n"/>
@@ -8606,8 +8606,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="THERM3" library="con-phoenix-254" deviceset="MPT2" device=""/>
 <part name="THERM4" library="con-phoenix-254" deviceset="MPT2" device=""/>
 <part name="THERM5" library="con-phoenix-254" deviceset="MPT2" device=""/>
-<part name="U7" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device=""/>
-<part name="U8" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device=""/>
+<part name="U7" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="" value="TXB0104"/>
+<part name="U8" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="" value="TXB0104"/>
 <part name="U$5" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$6" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="P+7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -8623,8 +8623,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="81.28" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="97" style="longdash"/>
 <wire x1="119.38" y1="71.12" x2="119.38" y2="91.44" width="0.1524" layer="97" style="longdash"/>
 <wire x1="119.38" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="97" style="longdash"/>
-<text x="271.78" y="198.12" size="1.778" layer="97" align="center-left">NC</text>
-<text x="271.78" y="248.92" size="1.778" layer="97" align="center-left">NC</text>
 </plain>
 <instances>
 <instance part="Q4" gate="G$1" x="38.1" y="53.34" rot="MR0"/>
@@ -8724,10 +8722,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="242.57" y="208.788" size="1.27" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="266.7" y="175.26" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$5" gate="G$1" x="251.46" y="261.62"/>
-<instance part="U$6" gate="G$1" x="251.46" y="210.82"/>
-<instance part="P+7" gate="G$1" x="256.54" y="261.62"/>
-<instance part="P+8" gate="G$1" x="256.54" y="210.82"/>
+<instance part="U$5" gate="G$1" x="251.46" y="264.16"/>
+<instance part="U$6" gate="G$1" x="251.46" y="213.36"/>
+<instance part="P+7" gate="G$1" x="256.54" y="264.16"/>
+<instance part="P+8" gate="G$1" x="256.54" y="213.36"/>
 <instance part="GND1" gate="1" x="254" y="172.72"/>
 <instance part="GND8" gate="1" x="254" y="223.52"/>
 </instances>
@@ -8949,12 +8947,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U7" gate="G$1" pin="VCCB"/>
 <pinref part="U$5" gate="G$1" pin="5V"/>
-<wire x1="251.46" y1="261.62" x2="251.46" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="264.16" x2="251.46" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="VCCB"/>
 <pinref part="U$6" gate="G$1" pin="5V"/>
-<wire x1="251.46" y1="210.82" x2="251.46" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="213.36" x2="251.46" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -9120,12 +9118,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U7" gate="G$1" pin="VCCA"/>
 <pinref part="P+7" gate="G$1" pin="3.3V"/>
+<wire x1="256.54" y1="264.16" x2="256.54" y2="261.62" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="OE"/>
 <wire x1="256.54" y1="261.62" x2="256.54" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="248.92" x2="276.86" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="248.92" x2="276.86" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="261.62" x2="256.54" y2="261.62" width="0.1524" layer="91"/>
+<junction x="256.54" y="261.62"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="VCCA"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
+<wire x1="256.54" y1="213.36" x2="256.54" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="U8" gate="G$1" pin="OE"/>
 <wire x1="256.54" y1="210.82" x2="256.54" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="198.12" x2="276.86" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="198.12" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="210.82" x2="256.54" y2="210.82" width="0.1524" layer="91"/>
+<junction x="256.54" y="210.82"/>
 </segment>
 </net>
 <net name="VENT_EN" class="0">
