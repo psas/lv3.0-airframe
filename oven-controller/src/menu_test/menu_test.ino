@@ -1,20 +1,33 @@
-/***************************************************
-  This is a sketch to test just the menu for the Portland State
-  MME Rocket Manufacturing Capstone curing oven controller. 
+/*******************************************************************
+  This is a sketch to control the custom hardware for the Portland
+  State MME Rocket Manufacturing Capstone curing oven controller. 
 
   It is heavily based on the example sketch for the Adafruit 1.8" 
   SPI display. The modifications are by 
   Jenner Hanni  <jeh.wicker@gmail.com>
   http://github.com/psas/mme-capstone/
+  Released under MIT license.
+  
+  This sketch supports reading thermocouples, navigating a menu
+  using the joystick, controlling relays to maintain temperature,
+  and displaying relevant information about the oven on screen.
+
+  It does not support the SD card!
   
   It includes Michael Margolis' Time library that provides a handy
   API for all the time-tracking. Super useful.
   http://www.pjrc.com/teensy/td_libs_Time.html
-****************************************************/
-
-/**************************************************
+  
+  TODO: 
+  1. display the ramp or hold by looking at a temperature threshold
+  2. stop the time if the switch is stopped
+  3. add a ramp rate
+  4. turn on particular heaters based on particular thermocouples
+  
+  *******************************************************************
   Original Adafruit notice:
-
+  *******************************************************************
+  
   This is an example sketch for the Adafruit 1.8" SPI display.
   This library works with the Adafruit 1.8" TFT Breakout w/SD card
   ---* http://www.adafruit.com/products/358
@@ -30,17 +43,11 @@
 
   Written by Limor Fried/Ladyada for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
- ****************************************************/
+*********************************************************************/
 
-// These are the pins for the shield
-#define sclk 13
-#define mosi 11
-#define cs   10
-#define dc   8
-#define rst  0  
-
-#include <Adafruit_GFX.h>    // Core graphics library
-#include <Adafruit_ST7735.h> // Hardware-specific library
+#include <Adafruit_MAX31855.h> // Thermocouple library
+#include <Adafruit_GFX.h>      // Core graphics library
+#include <Adafruit_ST7735.h>   // Hardware-specific library
 #include <SPI.h>
 #include <Time.h>
 
@@ -49,10 +56,28 @@
     #define F(string_literal) string_literal
 #endif
 
-// Option 1: use any pins but a little slower
-Adafruit_ST7735 tft = Adafruit_ST7735(cs, dc, mosi, sclk, rst);
+// Pins connection
+int swReset       = 0;
+int thermoCS1     = 1;
+int thermoCS2     = 2;
+int thermoCS3     = 3;
+int sdCS          = 4;
+int heater1       = 5;
+int heater2       = 6;
+int thermoCS4     = 7;
+int lcdDC         = 8;
+int thermoCS5     = 9;
+int lcdCS         = 10;
+int spiMOSI       = 11;
+int spiMISO       = 12;
+int spiCLK        = 13;
+int swStart       = A0;
+int fan           = A1;
+int vent          = A2;
+int joyRead       = A3;
 
-float p = 3.1415926;
+#define OFF 0
+#define ON 1
 
 #define Neutral 0
 #define Press 1
@@ -61,15 +86,8 @@ float p = 3.1415926;
 #define Right 4
 #define Left 5
 
-// this needs to be put into an array of step structs
-struct stepInfo {
-  int rate = 0;
-  int temp = 0;
-  int secs = 0;
-  int elapsed = 0;
-  int starttime = 0;
-};
-
+// this struct holds state information for use
+// in the display menu's state machine 
 struct aState {
   int cur;
   int nL;
@@ -79,43 +97,70 @@ struct aState {
   int nS;
 };
 
-stepInfo steplist[9];
-int maxStep = 1;
-int curSetStep = 1;
-int curRunStep = 0;
+// this struct contains info for a given step
+// so the program can use an array of steps
+struct stepInfo {
+  int rate = 0;
+  int temp = 0;
+  int secs = 0;
+  int elapsed = 0;
+  int starttime = 0;
+  int phase = 0; // 0 ramp, 1 hold
+};
 
-// flags for running the profile
+stepInfo steplist[9];
+int maxStep = 1;    // total number of steps in a program
+int curSetStep = 1; // set steps used by the menu display
+int curRunStep = 0; // running steps used in oven control
+
+// flags for knowing when to redraw when running the profile
 int updateStepFlag = 0;
 int reDisplayFlag = 0;
 int doneFlag = 0;
 
+// menu display is a finite state machine
+// transitions come from joystick input
+// see the documentation for the state diagram
 aState states[18];
 int curState;
 int prevState;
 
+// oven relay control status is enabled or disabled by start switch
+int curstatus = OFF;
+
+// current temperature in Fahrenheit
 int curtemp = 32;
 int prevtemp = 32;
+int curtempflag = 0;
+int tempThreshold = 3; // determines whether one or two heaters on/off
+int thermStatus[5] = {0}; 
+int numActiveThermocouples = 0;
+int ADCThreshold = 100;
 
+// tracking time using Margolis' time tracking library
 time_t reftime = 0;
 time_t nowtime = 0;
 time_t prevmin = 0;
   
-int x = 5;
-int y = 5;
-int num = 1;
-int joy = 0;
-
-int ramprate = 0;
-
+// settings
+int ramprate = 1;
 int holdtemp1 = 0;
 int holdtemp2 = 0;
 int holdtemp3 = 0;
-
 int holdtimehour = 0;
 int holdtimemins = 0;
 int holdtimesecs = 0;
- 
+
+// global init of the LCD display and thermocouple
+Adafruit_ST7735 tft = Adafruit_ST7735(lcdCS, lcdDC, spiMOSI, spiCLK, swReset);
+Adafruit_MAX31855 thermocouple1(spiCLK, thermoCS1, spiMISO);
+Adafruit_MAX31855 thermocouple2(spiCLK, thermoCS2, spiMISO);
+Adafruit_MAX31855 thermocouple3(spiCLK, thermoCS3, spiMISO);
+Adafruit_MAX31855 thermocouple4(spiCLK, thermoCS4, spiMISO);
+Adafruit_MAX31855 thermocouple5(spiCLK, thermoCS5, spiMISO);
+
 void setup(void) {
+
   Serial.begin(9600);
   
   // Our supplier changed the 1.8" display slightly after Jan 10, 2012
@@ -126,15 +171,6 @@ void setup(void) {
   // other option!
   // If you are seeing red and green color inversion, use Black Tab
 
-  // Our TFT display had a Blue Tab so we use blacktab, don't ask 
-  // silly questions like "why?", just do it, blacktab is correct:
-  tft.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
-
-  tft.fillScreen(ST7735_WHITE);
-  tft.setTextColor(ST7735_BLACK);
-  tft.setRotation(135);
-  tft.setTextWrap(false);
-
   // set the reference for tracking time in seconds
   reftime = now();
   nowtime = now() - reftime;
@@ -142,14 +178,27 @@ void setup(void) {
   Serial.println(reftime);
   Serial.println("run: ");
   
-  delay(500);
   int i = 0;
+  
+  // wait for MAX chips to stabilize
+  delay(1500);
+  setHeaters(OFF,OFF);
+
+  // set heater, fan, and vent relay pins as outputs
+  pinMode(heater1, OUTPUT);
+  pinMode(heater2, OUTPUT);
+  pinMode(fan, OUTPUT);
+  pinMode(vent, OUTPUT);
+  digitalWrite(heater1, LOW);
+  digitalWrite(heater2, LOW);
+  digitalWrite(fan, LOW);
+  digitalWrite(vent, LOW);
   
   // init states array with state structs
   // {cur,L,U,R,D,S}
   states[0] = {0,0,0,1,2,0};
   states[1] = {1,0,1,1,1,1};
-  states[2] = {2,2,0,6,3,2};
+  states[2] = {2,2,0,6,3,6};
   states[3] = {3,3,2,4,5,4};
   states[4] = {4,4,4,4,4,3};
   states[5] = {5,5,3,5,5,0};
@@ -165,17 +214,49 @@ void setup(void) {
   states[15] = {15,14,15,16,15,15};
   states[16] = {16,15,16,16,16,16};
   states[17] = {17,17,14,17,17,2};
+  
+  // Our TFT display had a Green Tab so we use blacktab, it seems to work.
+  tft.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
+
+  tft.setRotation(135);
+  tft.fillScreen(ST7735_WHITE);
+  tft.setTextColor(ST7735_BLACK);
+  tft.setTextWrap(false);
+
+  curstatus = CheckStartButton();
 
   curState = 0;
   redrawMenu(0);
   displayMenu(curState);
+  
+  hackySPIfix();
+
+  // get active thermocouples
+  // disregard values from therm X if therm[X] = 1
+  if ((int)thermocouple1.readFarenheit() == 32) thermStatus[1] = 1;
+  if ((int)thermocouple2.readFarenheit() == 0) thermStatus[2] = 1;
+  if ((int)thermocouple3.readFarenheit() == 0) thermStatus[3] = 1;
+  if ((int)thermocouple4.readFarenheit() == 32) thermStatus[4] = 1;
+  if ((int)thermocouple5.readFarenheit() == 32) thermStatus[5] = 1;
+    
+  // get number of active thermocouples for the averaging
+  int j;
+  for (j = 1; j <= 5; j++) {
+    if (thermStatus[j] == 0) {
+      numActiveThermocouples++;
+    }
+  }
+  
 }
 
 void loop() {
+
+  // check start button
+  curstatus = CheckStartButton();
   
   // check joystick
   int joy = CheckJoystick();
-
+  
   // handle joystick movement 
   if (joy != 0) {
     prevState = curState;
@@ -186,11 +267,89 @@ void loop() {
   }
 
   if (curState == 4) {
+    // handle relays
+    // if temp is below step temp, turn on heaters
+    // if temp is above step temp, turn off heaters
+    if (curstatus == ON)  
+      updateHeaters();
+      
+    // update run screen
     displayMenu(curState);
+    
+  }
+
+  // check thermocouples and get average value
+  // TODO: turn on particular heaters based on particular thermocouples
+  curtemp = 0;
+  if (thermStatus[1] == 0)
+    curtemp += thermocouple1.readFarenheit();
+  Serial.print(curtemp);
+  Serial.print(" ");
+  if (thermStatus[2] == 0)
+    curtemp += thermocouple2.readFarenheit();
+  Serial.print(curtemp);
+  Serial.print(" ");
+  if (thermStatus[3] == 0)
+    curtemp += thermocouple3.readFarenheit();
+  Serial.print(curtemp);
+  Serial.print(" ");
+  if (thermStatus[4] == 0)
+    curtemp += thermocouple4.readFarenheit();
+  Serial.print(curtemp);
+  Serial.print(" ");
+  if (thermStatus[5] == 0)
+    curtemp += thermocouple5.readFarenheit();
+  Serial.print(curtemp);
+  Serial.print(" ");
+  curtemp = curtemp / numActiveThermocouples;
+  Serial.println(curtemp);
+  
+  // if the temp has incremented, update temp
+  // only do this in main screen or in run screen
+  if (curtemp != prevtemp) { 
+    prevtemp = curtemp; 
+    curtempflag = 1;
+    updateNum(70,98,20,10,curtemp);
   }
 
 }
 
+// Set the first and second heaters to ON or OFF.
+void setHeaters(int val1, int val2) {
+  digitalWrite(heater1, val1);  
+  delay(100);
+  digitalWrite(heater2, val2);  
+  delay(100);
+}
+
+void updateHeaters() {
+  if (curtemp < steplist[curRunStep].temp - tempThreshold) 
+    setHeaters(ON,ON);
+  else if (curtemp > steplist[curRunStep].temp + tempThreshold)
+    setHeaters(OFF,OFF);
+  else
+    setHeaters(ON,OFF);
+}
+
+void hackySPIfix() {
+  tft.fillRect(0,0,1,1,ST7735_WHITE);
+}
+
+int CheckStartButton() {
+  
+  int prevstatus = curstatus;
+  uint8_t startButton = analogRead(swStart);
+  if (startButton < ADCThreshold) 
+    curstatus = ON;
+  else curstatus = OFF;
+  
+  if (prevstatus != curstatus) {
+    redrawMenu(0);
+    displayMenu(curState);
+  }
+  return curstatus;
+  
+}
 // Check the joystick position
 int CheckJoystick()
 {
@@ -208,6 +367,7 @@ int CheckJoystick()
 // so we can display the data for that step on the screen
 void getStep(int i) {
   ramprate = steplist[i].rate;
+  if (ramprate == 0) ramprate = 1;
   holdtemp1 = (steplist[i].temp/100) % 100;
   holdtemp2 = (steplist[i].temp/10) % 10;
   holdtemp3 = steplist[i].temp % 10;
@@ -355,6 +515,7 @@ int handleJoystick(int joy) {
 
 // combined menu that updates previous states for highlighting
 void displayMenu(int i){
+  hackySPIfix();
   tft.setTextColor(ST7735_RED);
   switch(i) {
     case 0: // main menu: maxStep
@@ -368,10 +529,20 @@ void displayMenu(int i){
         tft.setTextColor(ST7735_BLACK);
         tft.print("*Define Temp Profile");
       }
+      // coming from a "reset profile" step, reset everything
       else if (prevState == 5) {
+        int j;
+        for (j = 0; j <= maxStep; j++) {
+          steplist[j].rate = 0;
+          steplist[j].temp = 0;
+          steplist[j].secs = 0;
+          steplist[j].starttime = 0;
+          steplist[j].elapsed = 0;
+          steplist[j].phase = 0;
+        }
         maxStep = 1;
         curRunStep = 0;
-        redrawMenu(0);        
+        redrawMenu(0);
       }
       tft.setTextColor(ST7735_RED);
       tft.setCursor(5,20);
@@ -442,7 +613,7 @@ void displayMenu(int i){
         reDisplayFlag = 1;
         curRunStep = 1;
       }
-      Serial.println("hello.");
+
       if (doneFlag == 1) {
         doneFlag = 1;
       }
@@ -458,6 +629,7 @@ void displayMenu(int i){
           tft.setCursor(5, 20);
           tft.println("*Press button to go back."); 
           doneFlag = 1;
+          displayOvenStatus();
         }
       }
       prevState = curState;
@@ -649,11 +821,11 @@ void displayMenu(int i){
       tft.print("*Back to Main Menu");
       break;
   }
-  
 }
 
 // redraw the entire main or temp profile menus
 void redrawMenu(char which) {
+  hackySPIfix();
   if (which == 0) { // main menu
     tft.fillScreen(ST7735_WHITE);    
     tft.setTextColor(ST7735_BLACK);
@@ -670,6 +842,7 @@ void redrawMenu(char which) {
     tft.print("*Run Temp Profile");
     tft.setCursor(5,65);
     tft.print("*Reset Profile");    
+    displayOvenStatus();
   }
   else if (which == 1) { // temp profile menu
     tft.fillScreen(ST7735_WHITE);
@@ -699,6 +872,7 @@ void redrawMenu(char which) {
     tft.print("m");
     tft.setCursor(5,80);
     tft.print("*Back to Main Menu");
+    displayOvenStatus();
   }
   else return;
 }
@@ -706,8 +880,8 @@ void redrawMenu(char which) {
 // display run screen with status info
 int displayRunScreen() {
 
-  // update temp; don't handle, just update
-  
+  hackySPIfix();
+
   // update number of seconds since startup
   // don't handle, just update
   nowtime = now() - reftime;
@@ -723,7 +897,16 @@ int displayRunScreen() {
   
   // in any case, update the step's elapsed time
   steplist[curRunStep].elapsed = nowtime - steplist[curRunStep].starttime;
-
+  // calculate total remaining time
+  int totaltime = 0;
+  int i;
+  for (i = 0; i <= maxStep; i++) {
+    totaltime += steplist[i].secs;
+  }
+  
+  // TODO: update status: ramp or hold
+  // display the ramp or hold in a step by looking at a temperature threshold
+  
   // explicitly tell the function to redraw the screen
   if (reDisplayFlag == 1) {
     reDisplayFlag = 0;
@@ -735,31 +918,37 @@ int displayRunScreen() {
     tft.println("Temp Profile Running");
     tft.drawFastHLine(0,16,tft.width(),ST7735_BLACK);
     tft.setCursor(5,20);
-    tft.print("Status: ");
-    tft.print("ramp or hold");
+    tft.print("Status: Running");
+    // TODO: stop the time if the relay enable switch is disabled
+    //if (steplist[curRunStep].phase == 0)
+    //  tft.print("Ramp");
+    //else
+    //  tft.print("Hold");
     tft.setCursor(5,35);
     tft.print("Current Step: "); 
     tft.print(curRunStep);
     tft.print(" of ");
     tft.print(maxStep);
     tft.setCursor(5,50);
-    tft.print("Current Temp: ");
-    tft.print(curtemp);
-    tft.setCursor(5,65);
-    tft.print("Step Time: ");
+    tft.print("Step Elapsed:");
     tft.print(hour(steplist[curRunStep].elapsed));
-    tft.print("h ");
+    tft.print("h");
     tft.print(minute(steplist[curRunStep].elapsed));
-    tft.print("m elapsed of ");
+    tft.print("m of ");
     tft.print(hour(steplist[curRunStep].secs));
-    tft.print("h ");
+    tft.print("h");
     tft.print(minute(steplist[curRunStep].secs));
     tft.print("m");
+    tft.setCursor(5,65);
+    tft.print("Total Oven Time: ");
+    tft.print(hour(totaltime));
+    tft.print("h");
+    tft.print(minute(totaltime));
+    tft.print("m");
     tft.setCursor(5,80);
-    tft.print("Total Time Left: 4h 35m");
-    tft.setCursor(5,95);
     tft.setTextColor(ST7735_RED);
     tft.print("*Press Button to Cancel");
+    displayOvenStatus();
   }
   
   // handle the temperature
@@ -775,7 +964,6 @@ int displayRunScreen() {
      prevtemp = curtemp; 
      Serial.println("End of a step for temp change.");
   }
-
   
   // handle the time
   // see if we've reached the end of a step
@@ -799,14 +987,39 @@ int displayRunScreen() {
 }
 
 void updateNum(int x, int y, int w, int h, int num) {
+  hackySPIfix();
   tft.fillRect(x,y,w,h,ST7735_WHITE);
   tft.setCursor(x,y);
-  tft.setTextColor(ST7735_RED);
-  tft.print(num);
-  if (curState == 16) {
+  
+  if (curtempflag == 1) {
+    tft.setTextColor(ST7735_BLACK);
+    tft.print(num);
+    tft.print("F");
+    curtempflag = 0;
+  }
+  else if (curState == 16) {
+    tft.setTextColor(ST7735_RED);
+    tft.print(num);
     tft.setTextColor(ST7735_BLACK);
     tft.print("m");
   }
+  else {
+    tft.setTextColor(ST7735_RED);
+    tft.print(num);
+  }
+  
 }
 
-
+void displayOvenStatus() {
+  tft.drawFastHLine(0,93,tft.width(),ST7735_BLACK);
+  tft.setTextColor(ST7735_BLACK);
+  tft.setCursor(5,98);
+  tft.print("Oven Temp: ");
+  tft.print(curtemp);
+  tft.setCursor(5,113);
+  tft.print("Relay Status: ");
+  if (curstatus == ON)
+    tft.print("Enabled");
+  else
+    tft.print("Disabled");
+}
