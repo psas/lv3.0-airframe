@@ -1,0 +1,6767 @@
+  OFF
+MAX31855 test
+  OFF
+Current temperature F = 343.40 0.00 474.80 0.00 334.40 0.00
+Average temperature F = 343.40
+RAMPING
+Set temperature     F = 343.40
+  1 OFF
+Current temperature F = 342.95 0.00 476.60 0.00 320.90 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 343.67
+  1 ON
+Current temperature F = 0.00 0.00 468.50 0.00 320.90 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 343.94
+  1 ON
+Current temperature F = 342.50 0.00 464.90 0.00 320.90 0.00
+Average temperature F = 342.50
+RAMPING
+Set temperature     F = 344.21
+  1 ON
+Current temperature F = 342.95 0.00 464.00 0.00 327.65 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 344.49
+  1 ON
+Current temperature F = 0.00 0.00 464.00 0.00 327.65 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 344.76
+  1 ON
+Current temperature F = 342.05 0.00 464.90 0.00 327.20 0.00
+Average temperature F = 342.05
+RAMPING
+Set temperature     F = 345.03
+  1 ON
+Current temperature F = 342.50 0.00 469.40 0.00 327.20 0.00
+Average temperature F = 342.50
+RAMPING
+Set temperature     F = 345.30
+  1 ON
+Current temperature F = 342.95 0.00 471.20 0.00 327.20 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 345.57
+  1 ON
+Current temperature F = 343.40 0.00 471.20 0.00 320.00 0.00
+Average temperature F = 343.40
+RAMPING
+Set temperature     F = 345.84
+  1 ON
+Current temperature F = 342.95 0.00 467.60 0.00 320.90 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 346.12
+  ON
+Current temperature F = 342.50 0.00 469.40 0.00 320.00 0.00
+Average temperature F = 342.50
+RAMPING
+Set temperature     F = 346.39
+  ON
+Current temperature F = 342.95 0.00 363.20 0.00 320.90 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 346.67
+  ON
+Current temperature F = 342.95 0.00 469.40 0.00 334.40 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 346.95
+  ON
+Current temperature F = 0.00 0.00 471.20 0.00 334.40 0.00
+Average temperature F = 342.95
+RAMPING
+Set temperature     F = 347.22
+  ON
+Current temperature F = 343.40 0.00 471.20 0.00 335.30 0.00
+Average temperature F = 343.40
+RAMPING
+Set temperature     F = 347.50
+  ON
+Current temperature F = 343.85 0.00 474.80 0.00 334.40 0.00
+Average temperature F = 343.85
+RAMPING
+Set temperature     F = 347.78
+  ON
+Current temperature F = 0.00 0.00 476.60 0.00 334.85 0.00
+Average temperature F = 343.85
+RAMPING
+Set temperature     F = 348.05
+  ON
+Current temperature F = 0.00 0.00 474.80 0.00 334.85 0.00
+Average temperature F = 343.85
+RAMPING
+Set temperature     F = 348.33
+  ON
+Current temperature F = 345.20 0.00 370.40 0.00 334.40 0.00
+Average temperature F = 345.20
+RAMPING
+Set temperature     F = 348.61
+  ON
+Current temperature F = 345.20 0.00 485.60 0.00 334.85 0.00
+Average temperature F = 345.20
+RAMPING
+Set temperature     F = 348.88
+  ON
+Current temperature F = 345.65 0.00 485.60 0.00 341.60 0.00
+Average temperature F = 345.65
+RAMPING
+Set temperature     F = 349.16
+  ON
+Current temperature F = 346.10 0.00 482.00 0.00 348.80 0.00
+Average temperature F = 346.10
+RAMPING
+Set temperature     F = 349.44
+  ON
+Current temperature F = 346.10 0.00 487.40 0.00 348.80 0.00
+Average temperature F = 346.10
+RAMPING
+Set temperature     F = 349.71
+  ON
+Current temperature F = 0.00 0.00 485.60 0.00 348.80 0.00
+Average temperature F = 346.10
+RAMPING
+Set temperature     F = 349.99
+  ON
+Current temperature F = 346.10 0.00 489.20 0.00 348.80 0.00
+Average temperature F = 346.10
+RAMPING
+Set temperature     F = 350.00
+  ON
+Current temperature F = 346.10 0.00 375.80 0.00 348.80 0.00
+Average temperature F = 346.10
+HOLDING
+Set temperature     F = 350.00
+  ON
+Current temperature F = 347.00 0.00 482.00 0.00 349.70 0.00
+Average temperature F = 347.00
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 482.00 0.00 356.45 0.00
+Average temperature F = 347.00
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 346.55 0.00 482.00 0.00 356.45 0.00
+Average temperature F = 346.55
+HOLDING
+Set temperature     F = 350.00
+  ON
+Current temperature F = 347.00 0.00 478.40 0.00 356.00 0.00
+Average temperature F = 347.00
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 347.00 0.00 483.80 0.00 363.20 0.00
+Average temperature F = 347.00
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 347.45 0.00 482.00 0.00 363.20 0.00
+Average temperature F = 347.45
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 347.45 0.00 489.20 0.00 363.20 0.00
+Average temperature F = 347.45
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 370.40 0.00
+Average temperature F = 347.45
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 347.90 0.00 489.20 0.00 370.40 0.00
+Average temperature F = 347.90
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 347.90 0.00 485.60 0.00 363.20 0.00
+Average temperature F = 347.90
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 486.50 0.00 370.40 0.00
+Average temperature F = 347.90
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.35 0.00 491.00 0.00 374.00 0.00
+Average temperature F = 348.35
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 377.15 0.00 374.00 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.45 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 379.40 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 435.65 0.00 379.40 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 376.70 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 379.40 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 147.65 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 348.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 489.20 0.00 374.00 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 490.10 0.00 374.00 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 490.10 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 436.10 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 490.10 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 490.10 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 489.20 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 276.35 0.00 379.40 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 352.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.25 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 490.10 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 348.80 0.00 489.20 0.00 147.20 0.00
+Average temperature F = 348.80
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.90 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.90 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 379.40 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 150.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 379.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 349.70 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 379.40 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.65 0.00 379.40 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.90 0.00 147.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.35 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 443.30 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 434.30 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 375.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 491.90 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 385.25 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.65 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 491.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 376.70 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.90 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.90 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 435.65 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 379.40 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 436.10 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.45 0.00 385.25 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 154.85 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.90 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 0.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 351.05 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.90 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.90 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.90 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.65 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.90 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.90 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 447.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 350.15 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 147.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 439.70 0.00 378.05 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 450.50 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 385.25 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 448.70 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.90 0.00 378.05 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 448.70 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 351.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 351.05 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 443.30 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 441.50 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 439.70 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 349.70 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 0.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.90 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.90 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.90 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 448.70 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 448.70 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 449.60 0.00 385.25 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 450.50 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 444.20 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.90 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 350.15 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.90 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 348.80 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 447.80 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.90 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 443.30 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 443.30 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 351.05 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 441.50 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.05 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 385.25 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.65 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 348.80 0.00 378.05 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 348.80 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 383.00 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 0.00 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 385.25 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 350.15 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 350.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 435.65 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 378.05 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 147.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 439.70 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 437.00 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.25 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 441.50 0.00 378.05 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 0.00 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 439.70 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 443.30 0.00 378.05 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 435.65 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 491.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.90 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 491.45 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 439.70 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 443.30 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 385.25 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 491.00 0.00 381.20 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 0.00 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 437.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 388.40 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 349.70 0.00 437.00 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 438.80 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 437.00 0.00 381.20 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.25 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.25
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 377.60 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 435.20 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 349.70 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 349.70
+HOLDING
+Set temperature     F = 350.00
+  1 ON
+Current temperature F = 350.15 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.15 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 350.15
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 449.60 0.00 392.00 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 446.00 0.00 392.00 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 449.60 0.00 392.00 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 399.20 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.85 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 352.85
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 447.80 0.00 392.00 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 392.00 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 352.40 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 352.40
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.95 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.95
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 378.05 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 447.80 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 446.00 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 388.40 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 388.40 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 442.40 0.00 377.60 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.50 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 351.50
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 351.05 0.00 442.40 0.00 384.80 0.00
+Average temperature F = 351.05
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 438.80 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Set temperature     F = 350.00
+  1 OFF
+Current temperature F = 350.60 0.00 440.60 0.00 384.80 0.00
+Average temperature F = 350.60
+HOLDING
+Mission complete, please wait until the oven cold down
