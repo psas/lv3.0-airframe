@@ -1,0 +1,16 @@
+#!/usr/bin/Rscript
+cat("\nCompiling all reductions...\n")
+fileNames <- paste("reductions/", list.files("reductions", pattern= "*.csv"), sep="")
+redList <- lapply(fileNames, read.csv)
+fullRed <- data.frame()
+for (i in 1:length(redList))
+	fullRed <- rbind(fullRed, redList[[i]])
+fullRed.sorted <- fullRed[order(fullRed$h.max, decreasing = T),]
+source("ORanalysisFunctions.R")
+portableLoad("gridExtra")
+pdf("plots/compiledReductions.pdf")
+plot.new()
+grid.table(fullRed.sorted[c("simName", "h.max")])
+invisible(dev.off())
+write.csv(x = fullRed.sorted, file = "compiledReductions.csv")
+cat("\nDone!\n")
