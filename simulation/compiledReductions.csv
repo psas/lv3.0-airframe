@@ -1,0 +1,8 @@
+"","X","simName","csvName","E.drag","E.engine","E.grav","h.max"
+"5",1,"O_minimal_70degSweptTruncTrap","simData/O_minimal_70degSweptTruncTrap.csv",6053000,8580000,1300000,8962.8
+"4",1,"O_minimal_70degSweptTrap","simData/O_minimal_70degSweptTrap.csv",6054000,8577000,1298000,8938.4
+"2",1,"minimal_basicTrap","simData/minimal_basicTrap.csv",6069000,8527000,1249000,8589.3
+"6",1,"O_minimal_basicElliptical","simData/O_minimal_basicElliptical.csv",6054000,8422000,1194000,8132
+"3",1,"newN_minimal_70degSweptTrap","simData/newN_minimal_70degSweptTrap.csv",3280000,4785000,980400,6524.6
+"1",1,"Launch-12","simData/Launch-12.csv",1497000,3055000,1333000,5046.4
+"7",1,"O_minimal_basicTube","simData/O_minimal_basicTube.csv",5782000,7419000,765600,4953.5
