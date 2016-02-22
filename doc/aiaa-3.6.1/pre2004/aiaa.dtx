@@ -1,0 +1,2995 @@
+%
+% \iffalse
+%% Description: a bundle of LaTeX and BibTeX files to produce
+%%              AIAA papers and simulated journal articles/notes
+%% Keywords: LaTeX, class, AIAA, BibTeX, bibliographic-style, 9pt-option
+%% Author: Bil Kleb <w.l.kleb@larc.nasa.gov>
+%% Maintainer: same
+%% Version: 2.4 <22 feb 1999>
+%%
+%% Please see the information in file `aiaa.ins' on how you
+%% may use and (re-)distribute this file.  Run LaTeX on the file 
+%% `aiaa.ins' to get the main aiaa class and other auxilary packages.
+%% Also run LaTeX on `aiaa.dtx' (this file) to obtain a users manual
+%% and code documentation.
+%%
+%% NOTE: This file may NOT be distributed if not accompanied
+%%       by 'aiaa.ins' and `aiaalgo.eps'.
+% \fi
+%
+% \def\filename{aiaa.dtx}
+% \def\fileversion{2.4}
+% \def\filedate{1999/02/22}
+% \def\docdate{\filedate}
+% \date{\docdate}
+%
+% \newcommand*{\cls}[1]{\textsl{#1}}
+% \newcommand*{\pkg}[1]{\textsf{#1}}
+% \newcommand*{\file}[1]{\texttt{#1}}
+% \newcommand*{\kbd}[1]{\texttt{#1}}
+% \setcounter{errorcontextlines}{10}
+%
+% \MakeShortVerb{\|}
+%
+%  \CheckSum{1685}
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+%
+% \title{%
+% \textsf{aiaa} -- a \LaTeX{} Class and \BibTeX{}
+% Style\\ for AIAA\thanks{The American Institute of Aeronautics
+% and Astronautics.}\ \ Conference Papers\\ and Journal
+% Submission/Simulation\thanks{This document describes \textsf{aiaa} version 
+% \fileversion which was born on \docdate .}}
+%
+% \author{bil kleb\thanks{Research Scientist, NASA Langley
+% Research Center, Hampton, Virginia.}}
+%
+% \maketitle
+%
+% \begin{abstract}
+% This document describes the \textsf{aiaa} distribution which 
+% is centered around a modification of the standard \LaTeX{}
+% article class, \cls{article.cls}.  The new class produces
+% AIAA-conformant\footnote{Note this distribution is not a
+% product of, nor endorsed by, the AIAA.}
+% conference papers and journal submittals---it
+% will even simulate the typesetting of journal articles and notes
+% for length-determination purposes.  This distribution also contains
+% a (mostly) AIAA-compliant bibliographic style sheet,
+% sample documents, a sample presentation, and other test equipment.
+% \end{abstract}
+%
+% \tableofcontents
+%
+% \section{Introduction}
+%
+% The \textsf{aiaa} distribution consists of a \LaTeX{} class
+% and various other files which are supposed to simplify
+% the task of producing an AIAA conference paper
+% and the subsequent journal submission
+% For instance, with a simple,
+% one-word option in the beginning of the document, a manuscript can
+% take the form of a two-column conference paper replete with
+% cover-page or a double-spaced journal submission manuscript
+% with figures and tables at the end, including the required
+% caption lists.
+%
+% \section{Userguide}
+%
+% I apologize for the sparseness of this documentation; but, hey,
+% this is not in my job description.\ |;)|\ \ Hopefully the sample
+% documents \file{smpaiaa.tex}, \file{smpsubf.tex}, and \file{smptalk.tex}
+% provide suitable documentation through example.
+%
+% \subsection{Requirements}
+%
+% The \kbd{aiaa} distribution was developed using
+% \LaTeXe{} of 1995/12/01, patch level 1,
+% running \TeX{} 3.14159 and
+% \texttt{dvips} 5.58f---the te\TeX{} distribution 0.3.3.\footnote{
+% The \kbd{aiaa} distribution has also been demonstrated on
+% a Mac running the {\scshape Oz}\TeX{} \TeX{} distribution and a
+% PC running the Mik\TeX{} \TeX{} distribution.}
+% So anything more recent should work, but anything older: no guarantees.
+% In particular, your \kbd{graphicx} package needs
+% to be newer than September 1995 so that the |keepaspectratio|
+% command is available.
+%
+% The \cls{aiaa} class depends
+% on having access to a number of packages.\footnote{When you process
+% a file with \LaTeX{}, it will let you which packages it is
+% missing.  The less common ones are \pkg{dropping} and \pkg{caption2} while
+% the other required packages:
+% \pkg{lastpage}, \pkg{setspace}, \pkg{endfloat}, \pkg{overcite},
+% \pkg{graphicx}, and \pkg{fancyhdr} are usually bundled with
+% most \LaTeX{} distributions.}
+% If your local site does not have all the packages necessary, they
+% can be obtained from your nearest Comprehensive TeX Archive
+% Network (CTAN) site.  In fact, chances are that this is where you found
+% this distribution.  Details on how to obtain packages from a
+% CTAN site are available at |http://www.tug.org/|
+% or various \LaTeX{} reference books~\cite{companion,guide}.
+% Especially helpful in locating various \LaTeX{} packages is
+% the \kbd{Catalogue.html} web page found in the \kbd{help/Catalogue}
+% directory of CTAN.
+%
+% \subsection{Setup}
+%
+% If you have not already run \file{aiaa.ins} through \LaTeX{},
+% do so.  The \pkg{docscript} utility (part of \LaTeX{})
+% will rip the code segments out of \file{aiaa.dtx}
+% and save them in several files. If you encounter an error
+% on installation like:
+% \begin{verbatim}
+% ! Undefined control sequence
+% \batchLine -> generate
+%          {\file {aiaa.cls}{\from{aiaa.dtx}{class}}}
+%  1.728 \processbatchFile
+% \end{verbatim}
+% this means that your \pkg{docstrip} is very old and that you
+% will need to update your entire \LaTeX{} distribution to
+% take advantage of the \pkg{aiaa} package.
+%
+% Move the files \file{aiaa.cls},
+% \file{aiaa9pt.sty}, \file{aiaaenf.cfg}, and \file{aiaalgo.eps}
+% to a directory searched by \TeX{}\footnote{For a Unix te\TeX{} installation,
+% a privileged user could put these files in a directory named
+% something like \kbd{/usr/local/teTeX/texmf/tex/latex/aiaa}\ for
+% the entire site to use, remembering to run \kbd{texhash} to
+% re-configure te\TeX{} to search the new directory;
+% or, a lowly user could make their own directory, {\it e.g.},
+% \kbd{$\sim$/tex/inputs}, put the files in there, and set
+% the environment variable \kbd{TEXINPUTS} via `\kbd{setenv
+% TEXINPUTS $\sim$/tex/inputs:}'. The colon represents the system search
+% path so, in this case, the user files take precedence.
+% On a Mac or PC installation put these files in
+% a folder named something like \file{TeX-inputs}.}
+% and the file \file{aiaa.bst} to
+% a directory searched by \BibTeX{}.\footnote{%
+% Similar to preceding footnote, only on Unix use
+% the environment variable \kbd{BSTINPUTS}
+% for the bibliographic style file and
+% \kbd{BIBINPUTS} for the bibliographic database; for Mac's,
+% use the \file{BibTeX-inputs} folder, failing that try
+% using the \file{TeX-inputs} folder.}
+% Once things are installed, try to \LaTeX{} the sample AIAA
+% paper in the \file{demo/paper} directory, |smpaiaa.tex|.  It should
+% produce something similar to |smpaiaa.ps|.
+% 
+% \subsection{Usage}
+% The \cls{aiaa} class is envoked by including\\
+% |  \documentclass[|{\itshape options}|]{aiaa}|\\
+% at the beginning of your document.  The package
+% recognizes the following options: |submit|, |paper|,
+% |article|, |note|, and |cover|.
+% The |paper| option is the default and the |submit| option
+% overrides any other option.  The |cover| option produces
+% a cover-page for conference papers or simulated journal
+% reprints.
+% In addition, any options that the standard \LaTeX{} article
+% class accepts can be also inserted, {\it e.g.},
+% \kbd{draft}.\footnote{The \kbd{draft}
+% option replaces figures with a labeled box of the appropriate size.}
+% Note, when using the |note|
+% option, your title and author information may need to be
+% modified with extra line breaks (|\\|)
+% since this information is no longer allowed to span both
+% columns and may overfill the short tex twidth available.
+% Other than this, the document is written just like one were
+% using the standard \LaTeX{} article document class; and thus, I
+% don't have to write much more on usage since it has already
+% been documented by others in various \LaTeX{}
+% books~\cite{companion,guide,latex}. However,
+% some of the old commands have slightly different behaviors and there are
+% a few new commands designed to make life a little brighter;
+% these are discussed in the following sections.
+%
+% \subsection{General Commands}
+%
+% Several standard \LaTeX{} commands have been modified
+% to behave differently under the new class. In addition,
+% several new commands have been introduced to ease
+% document preparation. Both types are discussed in the
+% following subsections.
+%
+% \subsubsection{New Behavior from Old Commands}
+%
+% \DescribeMacro{\abstract}
+% The |\abstract| command has been redefined within the \cls{aiaa}
+% class to behave as part of the |\maketitle| sequence.  Simply
+% load |\abstract| as you would |\title| or |\author|, and
+% as long as you have not selected the options |submit| or |note|
+% (which do not allow for abstracts), the text loaded into
+% the |\abstract| command will be typeset, indented and centered,
+% underneath the title/author section. Remember |\abstract| must
+% be loaded {\bfseries before} |\maketitle| is invoked.  This is
+% typically done in the preamble\footnote{%
+% The preamble is defined as anywhere between the
+% \cs{documentclass}\texttt{\string{\string}}
+% and \cs{begin}\texttt{\string{document\string}} commands.}
+% of your \LaTeX{} document.
+%
+% \DescribeMacro{\date}
+% The \cls{aiaa} class automatically nulls the |\date| command used
+% by |\maketitle|.  Standard \LaTeX{} behavior of |\maketitle|
+% is to typeset the current date as part of the title section
+% if one is not given. So, normal one has to issue the command:
+% |\date{}| when producing AIAA papers.  When using the
+% \cls{aiaa} class, this is no longer necessary; this command
+% has already been issued.
+%
+% \DescribeMacro{\and}
+% \DescribeMacro{\maketitle}
+% Suffice it to say that |\maketitle| and |\and| have also been
+% hacked, the ramifications of which I have yet to determine.
+%
+% \DescribeMacro{\section}
+% \DescribeMacro{\subsection}
+% \DescribeMacro{\subsubsection}
+% \DescribeMacro{\paragraph}
+% \DescribeMacro{\subparagraph}
+% One no longer has to use the starred versions of these
+% commands to defeat the numbering of sections.  The counter
+% \kbd{secnumdepth} has been set to $-2$ via,
+% |\setcounter{secnumdepth}{-2}|
+% so that even the unstarred versions of the sectioning commands
+% never produce a number.\footnote{The \kbd{secnumdepth} counter
+% controls how many
+% nesting levels of section numbers should be produced.
+% Of course you can defeat this by changing the counter back to its
+% \LaTeX{} \cls{article} class default value of $3$ which
+% will number sections down to subsections.}
+% In addition, the fonts, sizes, and positions normally produced by
+% these commands have been modified to make the output similar
+% to a typeset journal article.  In other words,
+% we take advantage of the fact that you are not using a
+% typewriter, {\it e.g.}, AIAA-suggested underlining for section
+% names, etc.{} is replaced by the typesetting-capable equivalent.
+%
+% \subsubsection{New Commands}
+%
+% \DescribeMacro{\thanksibid}
+% The command |\thanksibid| is very similar to the standard
+% |\thanks| command which is used when footnoting
+% the author affliations within the |\author| field.
+% The distinction is that the |\thanksibid| command allows one
+% to repeat a given footnote symbol without repeating the associated
+% footnote text.  Example of use:
+% \begin{verbatim}
+%   \author{%
+%  Peter Gnoffo\thanks{Some thanks for a peter.},
+%  Bil Kleb\thanks{Some thanks for a bill.},
+%  Bill Wood\thanksibid{2}, and % use same footnote as for second author.
+%  Marge Mithus\thanks{Some thanks for a marge.}
+%  }
+% \end{verbatim}
+% Thus, |\thanksibid{2}| would only produce a footnote symbol
+% at the end of Bill Wood's name and it would not generate
+% another footnote.  Note that using the |\thanksibid| command
+% does not increment the footnote counter, so for the case given
+% above, an argument of `4' would not be a valid choice.
+% This command was developed so that when you have \cls{aiaa}
+% make a cover sheet, extraneous footnote symbols will not be
+% present.
+%
+% \DescribeMacro{\dropword}
+% The command |\dropword| is used for the first word of the
+% introduction, and for any option other than |submit|, will
+% produce a `dropped' capital for the beginning of the paragraph.
+% Its use is simply:\\
+% |  \dropword First words of the introduction, etc.|\\
+% Note: this command also capitalizes the remaining
+% portion of the first word.
+% This macro relies on the presence of the |dropping| package
+% by Mats Dahlgren~\cite{dropping}.
+%
+% \DescribeMacro{\incfig}
+% The |\incfig| command is used for including figures via David Carlisle's
+% \pkg{graphicx} package~\cite{graphicx}.  The
+% command |\incfig| command is merely a shorter version of
+% the original |\includegraphics| command along with a centering
+% command, {\it i.e.}:\\
+% |   \newcommand{\incfig}{\centering\includegraphics}|\\
+% It is typically used for including Encapsulated Postscript files
+% (|*.eps|) within a |figure| environment.
+% For example, to include
+% a figure named |figa.eps| residing in a |figs| subdirectory, one
+% would use:
+% \begin{verbatim}
+%    and \Figure{f:figurea} shows that things are purple.
+%    \begin{figure}
+%       \incfig{figs/figa}
+%       \caption{This is the caption for figure a.}
+%       \label{f:figurea}
+%    \end{figure}
+%    \Figure{f:figurea} also shows that people are green.
+% \end{verbatim}
+% For more information regarding the inclusion of external
+% graphic files, see the file \file{epslatex.ps} in the \kbd{info}
+% directory of the CTAN.  Also, read the Graphics Guide that
+% is part of the \pkg{graphicx} package.
+%
+% \DescribeEnv{subfigmatrix}
+% Via the \pkg{subfigure} package and a new environment, |subfigmatrix|,
+% one can easily create a ``matrix'' of subfigures. The
+% environment takes one argument: the number of columns across
+% the matrix will be.
+% For instance, to produce a matrix of four subfigures, two by two:
+% \begin{verbatim}
+%   \begin{figure}
+%     \begin{subfigmatrix}{2}
+%        \subfigure[Subfigure one.  ]{\incfig{one}\label{f:matrix_1}}
+%        \subfigure[Subfigure two.  ]{\incfig{two}}
+%        \subfigure[Subfigure three.]{\incfig{three}}
+%        \subfigure[Subfigure four. ]{\incfig{four}\label{f:matrix_4}}
+%     \end{subfigmatrix}
+%     \caption{A `matrix' of four subfigures.}
+%     \label{f:matrix}
+%   \end{figure}
+%   and with imbedded \label commands we can refer to
+%   Figure~\ref{f:matrix} in entirety or specific subfigures like
+%   subfigure~\ref{f:matrix_1} or subfigure~\ref{f:matrix_4}.
+% \end{verbatim}
+% See the  demonstration file \file{smpsubf.tex} which comes with
+% this distribtuion for more extensive examples.
+%
+% \subsection{Layout-specific Commands}
+%
+% The following commands are used to load information for other
+% commands that produce appropriate headers, footers, cover-page
+% items, and document notices---{\it e.g.}, copyright conditions. All
+% of these commands are normally set in the preamble
+% of your document (similar to |\author| and |\title|).
+% For a more modular, and perhaps cleaner approach, you could
+% place all of it in a file, \file{preamble.tex}, and use
+% |\input{preamble}| to include it in your main document.
+%
+% \subsubsection{Header and Footer Information}
+%
+% \DescribeMacro{\SubmitName}
+% \DescribeMacro{\PaperNumber}
+% \DescribeMacro{\ArticleIssue}
+% \DescribeMacro{\ArticleHeader}
+% \DescribeMacro{\NoteHeader}
+% The commands |\SubmitName|, |\PaperNumber|, 
+% |\ArticleIssue|, |\ArticleHeader|, and
+% |\NoteHeader| are used to put appropriate items in the header
+% and footer of each page, {\it e.g.},
+% \begin{verbatim}
+%   \SubmitName{Kleb}
+%   \PaperNumber{96--0825}
+%   \ArticleIssue{Vol.~32, No.~6, November--December 1995}% first page
+%   \ArticleHeader{Kleb et al: Pitch-Over Maneuver}% subsequent pages
+%   \NoteHeader{J.Spacecraft, Vol.~32, No.~6: Engineering Notes}
+% \end{verbatim}
+% The command |\SubmitName| is used to mark the main author's
+% name on all pages for the
+% journal manuscript submission option: |submit|.  The
+% |\PaperNumber| is used to include the paper number
+% for AIAA conference papers.
+% The commands |\ArticleIssue|,
+% |\ArticleHeader|, and |\NoteHeader| are used to create
+% the appropriate headers when simulating a journal article or
+% note.  The contents of |\ArticleIssue| appear on the first page
+% and the contents of |\ArticleHeader| appear on subsequent pages while for
+% journal note simulations the contents of |\NoteHeader| is used for all pages.
+%
+% \subsubsection{Cover-page Information}
+%
+% \DescribeMacro{\CoverFigure}
+% \DescribeMacro{\Conference}
+% \DescribeMacro{\JournalName}
+% \DescribeMacro{\JournalIssue}
+% \DescribeMacro{\JournalPage}
+% The commands |\CoverFigure|,
+% |\Conference|, |\JournalIssue|, |\JournalPage|, and |\JournalName| provide
+% information for producing cover-pages.
+% \begin{verbatim}
+%   \CoverFigure{tstfig.eps}
+%   \Conference{31st AIAA Aerospace Sciences \\
+%                  Meeting and Exhibit \\
+%            {\mfseries January 6--9, 1997/Reno, NV}}% note: non-bold date/loc.
+%   \JournalName{Journal of Spacecraft and Rockets}
+%   \JournalPage{715}
+%   \JournalIssue{Volume 32, Number 6}
+% \end{verbatim}
+% The commands |\CoverFigure| and
+% |\Conference| define a representative figure (optional)
+% and conference name/date/location to be used on the cover-page
+% of a conference paper, while
+% the commands |\JournalName| and |\JournalIssue| are for the
+% cover-page produced for journal article or note reprint simulations.
+%
+% \subsubsection{Copyright and Other Document Notices}
+%
+% \DescribeMacro{\PaperNotice}
+% \DescribeMacro{\JournalNotice}
+% A footnote describing the copyright conditions
+% and other information about the document are incorporated via the
+% |\PaperNotice| and |\JournalNotice| commands.  These normally include
+% one of the the copyright series
+% of commands: |\CopyrightA|, |\CopyrightB|, |\CopyrightC|, or
+% |\CopyrightD|, described below.
+% To use, simply include something like the following in
+% the your document's preamble:
+% \begin{verbatim}
+%   \PaperNotice{\CopyrightA{1996}}
+%   \JournalNotice{Presented as Paper 96--0825 at the AIAA 34th
+%                  Aerospace Sciences Meeting, Reno,~NV,
+%                  Jan.~15--18,~1996; received Feb.~15,~1996;
+%                  revision received Nov.~25,~1996. \CopyrightC}
+% \end{verbatim}
+%
+% \DescribeMacro{\CopyrightA}
+% \DescribeMacro{\CopyrightB}
+% \DescribeMacro{\CopyrightC}
+% \DescribeMacro{\CopyrightD}
+% The copyright commands will expand to one of the standard AIAA
+% forms: A, B, C, or D.
+% Note: they each have different arguments---or no
+% arguments---depending on the requirements:\\
+% |  \CopyrightA{|\textit{year}|}|\\
+% |  \CopyrightB{|\textit{year}|}{|\textit{full name or company}|}|\\
+% |  \CopyrightC|\\
+% |  \CopyrightD{|\textit{year}|}|\\
+% See your AIAA copyright instructions for which form to use.
+%
+% \section{Known Problems}  
+% 
+% \begin{itemize}
+%
+%   \item The bibliographic style sheet |aiaa.bst| isn't fully
+%         tested; and thus, you may need to fiddle with your
+%         |.bbl| file for your final copy, {\it i.e.}, edit |file.bbl|
+%         after running a \LaTeX{}, \BibTeX{}, \LaTeX{} sequence,
+%         but before running \LaTeX{} the final time.  Note, if
+%         you run \BibTeX{} after modifying |file.bbl|, you will
+%         lose your modifications when \LaTeX{} is run
+%         again. Therefore, it is best to turn off write-permission
+%         on \file{file.bbl} after you have it correct.
+%
+%   \item When using the |submit| option for a document which
+%         contains subfigures,\footnote{See
+%         sample documents \file{smpaiaa.tex} and
+%         \file{smpsubf.tex} for examples of subfigure use.}
+%         some of the subfigures my be clipped.
+%         In fact, the way the |submit| option deals with subfigures
+%         needs work---to put it mildly.  The current work-around
+%         is to add \kbd{width} or \kbd{height} options to your |\incfig|
+%         commands until the figures fit properly.  These options
+%         are explained in the documentation which comes with
+%         the \pkg{graphics} package~\cite{graphicx}.
+%
+%   \item Currently you have to make subfigure captions appear
+%         in bold font explicitly, {\it e.g.},\\
+%         |  \subfigure[\bf Subfigure caption.]{\incfig{fig.eps}}|\\
+%         The next version of \pkg{subfigure} is supposed to remedy this.
+%
+%   \item The notices come after the author footnotes.  To
+%         produce the correct behavior requires significant
+%         changes to the |\maketitle| command.
+%
+%   \item The simulated journal article modes use the standard, free,
+%         Computer Modern Fonts.  The AIAA journals most likely
+%         use licensed (\$) fonts.
+%
+%   \item The simulated journal cover-pages do not have anywhre near
+%         the correct font for the journal name---does anyone know
+%         where to get such a {\em free}, tall, bold, squashed
+%         helvetic-style font?  It looks like Bitstream's Aurora
+%         condensed\ldots
+%
+%   \item (Not actually an \pkg{aiaa} problem.)
+%         Using the starred versions of |figure| and |table|
+%         environments (floats which span both columns)
+%         inter-mixed with the unstarred versions (single-column
+%         wide floats) often creates a situation where the
+%         figures or tables appear out of order. For the final
+%         copy, this can normally be corrected with judicious
+%         use of float position specifiers.\footnote{Recall, {\bf
+%         never} use just \kbd{[h]}, always give other options or
+%         that float might get `stuck' and force it and all the
+%         following floats to the end of the document.}
+%         Unfortunately, this is
+%         stock, documented behavior for \LaTeX{}.
+%         However, recently a package \pkg{fix2col} has become available
+%         which appears to rectify this behavior.  It can be
+%         found on CTAN in the
+%         \kbd{macros/latex/contrib/supported/carlisle} directory.
+%
+% \end{itemize}
+%
+% \section{Acknowledgements}
+%
+% Bundling and documenting this |aiaa| distribution in docstrip
+% format was done by using other packages as a model,
+% particularly, Mats Dahlgren's \pkg{dropping}~\cite{dropping}
+% and Jeff Goldberg {\em et al}'s \pkg{endfloat}~\cite{endfloat}.
+%
+% I want to thank the people of the |comp.text.tex| newsgroup,
+% the \TeX{}/\LaTeX{} Frequently Asked Questions maintainers,
+% and various package authors for patiently answering my inane
+% questions, in particular, but in no particular order:
+% \begin{list}
+%       {$\triangleright$}
+%       {\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}}
+%   \item Donald Arsenau (|asnd@reg.triumf.ca|)
+%   \item Robin Fairbairns (|Robin.Fairbairns@cl.cam.ac.uk|)
+%   \item Piet van Oostrum (|piet@cs.ruu.nl|)
+%   \item Jeroen Nijhof (|nijhof@th.rug.nl|)
+%   \item Steven Douglas Cochran (|sdc+@cs.cmu.edu|)
+%   \item Jeffrey Goldberg (|J.Goldberg@cranfield.ac.uk|)
+%   \item Mark Wooding (|mdw@excessus.demon.co.uk|)
+%   \item Paul Foley (|mycroft@actrix.gen.nz|)
+%   \item David Kastrup (|dak@fsnif.neuroinformatik.ruhr-uni-bochum.de|)
+%   \item Jerry Leichter (|leichter@smarts.com|)
+%   \item P.~W.~Daly (|daly@linpwd.mpae.gwdg.de|)
+%   \item David Carlisle (|carlisle@goofy.zdv.Uni-Mainz.de|)
+%   \item Edward Sznyter (|sznyter@babel.com|)
+% \end{list}
+% 
+% \section{Sending a Bug Report}
+% The \textsf{aiaa} distribution is highly likely to contain
+% bugs.  Reports of bugs in the package are most welcome.
+% However, I consider this to be a minimally ``supported'' package.
+% I will do what I can, when I can---promising nothing.
+% Before filing a bug report, please take the following actions:
+% \begin{enumerate}
+%   \item Ensure your problem is not due to your own input file(s)
+%         styles sheet(s), or package(s);
+%   \item Ensure your problem is not covered in the section 
+%        ``Known Problems'' above;
+%   \item Try to isolate the problem by writing a {\it minimal}
+%         \LaTeX{} input file which reproduces the unexpected behavior.
+%         Include the command\\ 
+%         |  \setcounter{errorcontextlines}{50}|\\ 
+%         in your input to provide extra context when things go awry;
+%   \item Run your file through \LaTeX{};
+%   \item Send a description of your problem, the input file 
+%         and the log file via e-mail to: \texttt{w.l.kleb@larc.nasa.gov}.
+% \end{enumerate}
+% I am not in the business of answering generic \TeX{}/\LaTeX{}
+% questions; so if your problem appears to be such, I will
+% let you know.\bigskip
+% 
+% \noindent{\itshape Enjoy(?) the everpresent deadline and enjoy your
+% \LaTeX!\raisebox{-\baselineskip}{---bil}}
+%
+% \begin{thebibliography}{1}
+%
+% \bibitem{companion}
+% Michel Goossens, Frank Mittelbach, and Alexander Samarin.
+% \newblock{\em The {\LaTeX} Companion}.
+% \newblock Addison-Wesley, Reading, Massachusetts, 1994.
+%
+% \bibitem{guide}
+% Helmut Kopka and Patrick W. Daly.
+% \newblock{\em A Guide to {\LaTeXe}: Document Prepartion for
+%               Beginners and Advanced Users}.
+% \newblock 2nd ed.
+% \newblock Addison-Wesley, Reading, Massachusetts, 1994.
+%
+% \bibitem{latex}
+% Leslie Lamport.
+% \newblock{\em {\LaTeX}: A Document Preparation System}.
+% \newblock 2nd ed.
+% \newblock Addison-Wesley, Reading, Massachusetts, 1994.
+%
+% \bibitem{dropping}
+% Mats Dahlgren.
+% \newblock \pkg{dropping}---A \LaTeX{} Macro for Dropping
+%           the First Character(s) of a Paragraph.
+% \newblock June 1996. (version~0.1)
+% \newblock Electronic Documentation.
+%
+% \bibitem{graphicx}
+% David Carlisle.
+% \newblock Packages in the `graphics' bundle.
+% \newblock December 1995.
+% \newblock Electronic Documentation.
+%
+% \bibitem{endfloat}
+% James Darrell McCauley and Jeff Goldberg.
+% \newblock The \texttt{endfloat} Package.
+% \newblock October 1995. (version~2.4i)
+% \newblock Electronic Documentation.
+%
+% \end{thebibliography}
+%
+% \StopEventually{\PrintChanges}
+%
+% \newpage
+% 
+% \section{The Documentation}
+%
+% The following contains the documentation driver for this user manual.
+%    \begin{macrocode}
+%<*driver>
+\documentclass{ltxdoc}
+\setlength\hfuzz{2pt}% reduce overfull warnings
+\OnlyDescription   % stop at \StopEventually comment to get everything
+%\RecordChanges    % display change information
+\begin{document}
+  \DocInput{aiaa.dtx}
+\end{document}
+%</driver>
+%    \end{macrocode}
+% 
+% \section{The Code}
+%
+% For the interested reader(s), following is a semi-documented
+% of the class code, the 9pt style, bibliographic style file, and
+% the endfloat configuration.  These detailed coding bits
+% are not included in the Users' Manual by default, if you really
+% want to see these in typeset form, you need to comment out the
+% |\OnlyDescription| line in the |<driver>| section of this file
+% \file{aiaa.dtx}.
+% If you feel the need to
+% modify things, simply cut the section you want to change
+% and save it to a file named \file{mymods.sty}.  Then modify
+% the code in \file{mymods.sty} to suit your needs and include
+% it in your document via |\usepackage{mymods}| in the
+% preamble.
+%
+% \subsection{The class code}
+%
+% The underlying logic is supposed to look like:\footnote{Picture
+% environment flowchart generated by flow 0.99b.}\\[1pt]
+%
+% \setlength\unitlength{1.8em}
+% \thicklines
+% \begin{picture}(16.000000,20.000000)(-1.000000,-20.000000)
+% \put(1.0000,-0.5000){\oval(2.0000,1.0000)}
+% \put(0.0000,-1.0000){\makebox(2.0000,1.0000)[c]{\shortstack[c]{
+% begin
+% }}}
+% \put(1.0000,-1.0000){\vector(0,-1){1.0000}}
+% \put(-1.0000,-4.0000){\framebox(4.0000,2.0000)[c]{\shortstack[c]{
+% code common\\
+% to all options
+% }}}
+% \put(1.0000,-4.0000){\vector(0,-1){1.0000}}
+% \put(-0.5000,-6.5000){\line(1,1){1.5000}}
+% \put(-0.5000,-6.5000){\line(1,-1){1.5000}}
+% \put(2.5000,-6.5000){\line(-1,-1){1.5000}}
+% \put(2.5000,-6.5000){\line(-1,1){1.5000}}
+% \put(-0.5000,-8.0000){\makebox(3.0000,3.0000)[c]{\shortstack[c]{
+% \texttt{submit}?
+% }}}
+% \put(2.5000,-6.0500){\makebox(0,0)[lt]{No}}
+% \put(1.4500,-8.0000){\makebox(0,0)[lb]{Yes}}
+% \put(1.0000,-8.0000){\vector(0,-1){1.0000}}
+% \put(0.0000,-11.0000){\framebox(2.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{submit}\\
+% code
+% }}}
+% \put(1.0000,-11.0000){\vector(0,-1){1.0000}}
+% \put(1.0000,-12.5000){\oval(2.0000,1.0000)}
+% \put(0.0000,-13.0000){\makebox(2.0000,1.0000)[c]{\shortstack[c]{
+% done
+% }}}
+% \put(2.5000,-6.5000){\vector(1,0){1.0000}}
+% \put(3.5000,-7.5000){\framebox(5.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{paper}/\texttt{article}\\
+% /\texttt{note} code
+% }}}
+% \put(6.0000,-7.5000){\vector(0,-1){1.0000}}
+% \put(4.5000,-10.0000){\line(1,1){1.5000}}
+% \put(4.5000,-10.0000){\line(1,-1){1.5000}}
+% \put(7.5000,-10.0000){\line(-1,-1){1.5000}}
+% \put(7.5000,-10.0000){\line(-1,1){1.5000}}
+% \put(4.5000,-11.5000){\makebox(3.0000,3.0000)[c]{\shortstack[c]{
+% \texttt{paper}?
+% }}}
+% \put(7.5000,-9.5500){\makebox(0,0)[lt]{No}}
+% \put(6.4500,-11.5000){\makebox(0,0)[lb]{Yes}}
+% \put(7.5000,-10.0000){\vector(1,0){1.0000}}
+% \put(8.5000,-11.0000){\framebox(4.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{article} or\\
+% \texttt{note} code
+% }}}
+% \put(10.5000,-11.0000){\vector(0,-1){1.0000}}
+% \put(9.0000,-13.5000){\line(1,1){1.5000}}
+% \put(9.0000,-13.5000){\line(1,-1){1.5000}}
+% \put(12.0000,-13.5000){\line(-1,-1){1.5000}}
+% \put(12.0000,-13.5000){\line(-1,1){1.5000}}
+% \put(9.0000,-15.0000){\makebox(3.0000,3.0000)[c]{\shortstack[c]{
+% \texttt{article}?
+% }}}
+% \put(12.0000,-13.0500){\makebox(0,0)[lt]{No}}
+% \put(10.9500,-15.0000){\makebox(0,0)[lb]{Yes}}
+% \put(12.0000,-13.5000){\vector(1,0){1.0000}}
+% \put(13.0000,-14.5000){\framebox(2.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{note}\\
+% code
+% }}}
+% \put(14.0000,-14.5000){\vector(0,-1){1.0000}}
+% \put(14.0000,-16.0000){\oval(2.0000,1.0000)}
+% \put(13.0000,-16.5000){\makebox(2.0000,1.0000)[c]{\shortstack[c]{
+% done
+% }}}
+% \put(10.5000,-15.0000){\vector(0,-1){1.0000}}
+% \put(9.0000,-18.0000){\framebox(3.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{article}\\
+% code
+% }}}
+% \put(10.5000,-18.0000){\vector(0,-1){1.0000}}
+% \put(10.5000,-19.5000){\oval(2.0000,1.0000)}
+% \put(9.5000,-20.0000){\makebox(2.0000,1.0000)[c]{\shortstack[c]{
+% done
+% }}}
+% \put(6.0000,-11.5000){\vector(0,-1){1.0000}}
+% \put(5.0000,-14.5000){\framebox(2.0000,2.0000)[c]{\shortstack[c]{
+% \texttt{paper}\\
+% code
+% }}}
+% \put(6.0000,-14.5000){\vector(0,-1){1.0000}}
+% \put(6.0000,-16.0000){\oval(2.0000,1.0000)}
+% \put(5.0000,-16.5000){\makebox(2.0000,1.0000)[c]{\shortstack[c]{
+% done
+% }}}
+% \end{picture}\\
+% This does not mean the code as a whole is organized according
+% to this; but, rather this is the case for each
+% macro/environment defined.
+%
+% First, the package is to identify itself:
+%    \begin{macrocode}
+%
+%<*class>
+%
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesClass{aiaa}[1999/02/22 v2.4 AIAA document class]
+%    \end{macrocode}
+% Flags
+%    \begin{macrocode}
+\newif\if@submit
+\newif\if@paper
+\newif\if@article
+\newif\if@note
+\newif\if@cover
+%    \end{macrocode}
+% Default settings
+%    \begin{macrocode}
+\@submitfalse
+\@papertrue
+\@articlefalse
+\@notefalse
+\@coverfalse
+%    \end{macrocode}
+% declaration of options
+% Note that options will be processed in order of the |\DeclareOption|
+% commands in this file, so since we want submit to take precedence
+% over all the other options, we process it last. Note also that
+% all flags are reset with each option, so that they are
+% independent of the defaults.
+%    \begin{macrocode}
+\DeclareOption{note}{\@notetrue\@articlefalse\@submitfalse\@paperfalse}
+\DeclareOption{article}{\@articletrue\@notefalse\@paperfalse\@submitfalse}
+\DeclareOption{paper}{\@papertrue\@articlefalse\@notefalse\@submitfalse}
+\DeclareOption{submit}{\@submittrue\@paperfalse\@articlefalse}
+\DeclareOption{cover}{\@covertrue}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}%
+                \typeout{NOTE: Passing ``\CurrentOption" option on to the
+                         standard LaTeX article class}}
+%    \end{macrocode}
+% actually process the options
+%    \begin{macrocode}
+\ProcessOptions
+\typeout{}
+\if@submit%
+  \typeout{NOTE: aiaa journal submission mode
+          - all other aiaa options ignored}
+\else% paper, article, or note
+  \if@paper%
+    \typeout{TYPESETTING in AIAA conference PAPER format ...}
+  \else% article or note
+    \if@article%
+      \typeout{TYPESETTING in AIAA journal ARTICLE simulation format ...}
+    \else% note
+      \typeout{TYPESETTING in AIAA journal NOTE simulation ...}
+    \fi
+  \fi
+\fi
+\typeout{}
+%    \end{macrocode}
+% load the \LaTeX{} standard article class with |twoside| and
+% |twocolumn| for all but the submit option.  For a journal article
+% or note, also load the aiaa9pt package.
+%    \begin{macrocode}
+\if@submit%
+  \LoadClass[12pt]{article}%
+  \RequirePackage[noheads,tablesfirst,nomarkers]{endfloat}%
+  \RequirePackage{setspace}%
+  \RequirePackage{lastpage}%
+\else% paper, article or note
+  \LoadClass[twoside,twocolumn]{article}%
+  \RequirePackage[dvips]{dropping}% dvips set to make compatible with pdflatex
+  \RequirePackage{lastpage}%
+  \if@paper%
+    \relax%
+  \else% article or note
+    \RequirePackage{aiaa9pt}%
+  \fi%
+\fi
+%    \end{macrocode}
+% packages used by this class for all options
+%    \begin{macrocode}
+\RequirePackage{graphicx}
+\RequirePackage{overcite}
+\RequirePackage{caption2}
+\RequirePackage{fancyhdr}
+\RequirePackage{subfigure}[1995/03/06]
+%\RequirePackage[bf]{subfigure}[199!/??/??] % when new version comes out
+%    \end{macrocode}
+%
+% main code
+%
+% page sizes:
+%    \begin{macrocode}
+\if@submit
+  \setlength{\topmargin}{-0.25in}
+  \setlength{\headsep}{9.5pt}
+  \setlength{\textheight}{9in}
+  \setlength{\textwidth}{6.5in}
+  \setlength{\oddsidemargin}{0.0in}
+  \AtBeginDocument{\onehalfspacing}% turn on `doublespacing'
+\else% paper, article, or note
+  \setlength{\topmargin}{-0.75in}
+  \if@paper
+    \setlength{\headsep}{9.5pt} 
+    \setlength{\textheight}{9.5in}
+    \setlength{\textwidth}{6.75in}
+    \setlength{\columnsep}{0.25in}
+    \setlength{\footskip}{0.25in}
+  \else% article or note
+    \setlength{\topmargin}{-0.75in}
+    \setlength{\headsep}{10pt}
+    \setlength{\footskip}{16pt}
+    \setlength{\textheight}{10in}
+    \setlength{\textwidth}{7in}
+    \setlength{\columnsep}{0.375in}
+    \setlength{\oddsidemargin}{-0.25in}
+    \renewcommand{\baselinestretch}{0.9}
+  \fi
+  \setlength{\evensidemargin}{\oddsidemargin}
+\fi
+%    \end{macrocode}
+%
+% \begin{macro}{\SubmitName}
+% \begin{macro}{\PaperNumber}
+% \begin{macro}{\ArticleHeader}
+% \begin{macro}{\ArticleIssue}
+% \begin{macro}{\JournalName}
+% \begin{macro}{\JournalIssue}
+% \begin{macro}{\JournalPage}
+% \begin{macro}{\NoteHeader}
+% various macros
+%    \begin{macrocode}
+\newcommand*{\SubmitName}[1]%
+            {\def\AA@submitname{#1}}
+\newcommand*{\PaperNumber}[1]%
+            {\def\AA@papernumber{#1}}
+\newcommand*{\ArticleHeader}[1]%
+            {\def\AA@articleheader{#1}}
+\newcommand*{\ArticleIssue}[1]%
+            {\def\AA@articleissue{#1}}
+\newcommand*{\JournalName}[1]%
+            {\def\AA@journalname{#1}}
+\newcommand*{\JournalIssue}[1]%
+            {\def\AA@journalissue{#1}}
+\newcounter{AA@journalpage}
+\newcommand*{\JournalPage}[1]%
+            {\setcounter{AA@journalpage}{#1}}
+\newcommand*{\NoteHeader}[1]%
+            {\def\AA@noteheader{#1}}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% initialize them
+%    \begin{macrocode}
+\SubmitName{}
+\PaperNumber{}
+\ArticleHeader{}
+\ArticleIssue{}
+\JournalName{}
+\JournalIssue{}
+\NoteHeader{}
+\setcounter{AA@journalpage}{1}
+%    \end{macrocode}
+% fancy headers/footers:
+%    \begin{macrocode}
+\pagestyle{fancy}% note: must be issued after any \textwidth command
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhf{} % clear all footers and headers
+\if@submit
+  \rfoot{\footnotesize\scshape\thepage\ of \pageref{LastPage}}
+  \lfoot{\footnotesize\scshape\AA@submitname}
+\else% paper, article, or note
+  \if@paper
+    \cfoot{\footnotesize\scshape\thepage\ of \pageref{LastPage}
+           \ifx\AA@papernumber\@empty\relax\else\\
+           \rule[.2\baselineskip]{0.5in}{0.2pt}\\
+           American Institute of Aeronautics
+           and Astronautics Paper \AA@papernumber\fi}
+  \else% article or note
+    \if@article
+      \chead{\footnotesize\scshape\MakeUppercase{\AA@articleheader}}
+      \fancyhead[RO,LE]{\footnotesize\thepage}
+      \fancypagestyle{plain}{%
+        \fancyhf{}
+        \lhead{\ifx\AA@journalname\@empty\relax\else
+               \footnotesize{\scshape\AA@journalname}\\
+               \AA@articleissue\fi}
+        \cfoot{\footnotesize\thepage}}
+    \else% note
+      \chead[\footnotesize\scshape\AA@noteheader]%
+            {\footnotesize\scshape\AA@noteheader}
+      \rhead[]{\footnotesize \thepage}
+      \lhead[\footnotesize \thepage]{}
+    \fi
+  \fi
+\fi
+%    \end{macrocode}
+% \begin{macro}{\abstract}
+% Redefine the |\abstract| command and load the date with nothing
+%    \begin{macrocode}
+\renewcommand{\abstract}[1]%
+             {\def\@abstract{#1}}
+\abstract{}
+\let\@date\@empty
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\dropword}
+% macro to drop first letter of word and capitalize the remaining
+% portion, thanks to jeroen nijhof |<nijhof@th.rug.nl>|
+%
+% use:\\
+% |  \dropword| word with rest of sentence or newline or whatever...
+%    \begin{macrocode}
+\if@submit%
+  \def\dropword{}
+\else
+  \def\dropword#1#2 {\dropping{2}{\bfseries{} #1}\MakeUppercase{#2} }% spaces important!
+\fi
+%    \end{macrocode}
+% \end{macro}
+%
+% increase penalty (x10) for consecutive lines ending in hyphens:
+%    \begin{macrocode}
+\doublehyphendemerits=100000
+%    \end{macrocode}
+% ignore small line overfull errors:
+%    \begin{macrocode}
+\setlength\hfuzz{3pt}% reduce the quantity of overfull warnings
+%    \end{macrocode}
+%
+% \begin{macro}{\makecover}
+% \begin{macro}{\Conference}
+% The command |\makecover| is used  to make a cover for a
+% AIAA conference paper or a simulated journal reprint.
+% It is only active when the |submit| option is not in effect
+% The |\makenotice| command is used to create the footnote
+% containing copyright and other information about the document.
+% The commands |\makecover| and |\makenotice| are internally
+% called by the |\maketitle| command and are constructed
+% similarly to the |\maketitle| command, in that |\makecover| uses
+% information supplied by the commands described in the previous
+% section, and |\makenotice| incorporates one of the appropriate
+% |\_____Notice| commands.
+%    \begin{macrocode}
+\newcommand{\Conference}[1]{\def\AA@conference{#1}}
+\Conference{}
+\newcommand{\CoverFigure}[1]{\def\AA@coverfigure{#1}}
+\CoverFigure{}
+\if@submit%
+  \newcommand{\makecover}{}
+\else% paper, article, or note
+  \newcommand{\makecover}{%
+  \begin{titlepage}
+  \let\AA@sfdefault\sfdefault% save normal fonts
+  \let\AA@rmdefault\rmdefault
+  \let\AA@ttdefault\ttdefault
+  \renewcommand{\sfdefault}{phv}% change to new fonts
+  \renewcommand{\rmdefault}{ptm}
+  \renewcommand{\ttdefault}{pcr}
+  \enlargethispage{1in}
+  \setcounter{page}{0}
+  \renewcommand\thanks[1]{}% locally kill the \thanks{} command
+  \renewcommand\thanksibid[1]{}% kill the ibid version too
+  \setlength{\unitlength}{1in}% unit of measure for the picture
+  \begin{picture}(7.5,9)(0.45,0.495)%  start a 7-1/2'' x 9'' picture:
+  \if@paper%
+    \linethickness{4pt}
+    \put(0,0){\framebox(7.45,8.95){}}% make a framed box accounting
+                                     % for line thickness
+    \linethickness{0.5pt}
+    \renewcommand{\and}{\relax}
+    \put(-0.07,8.7){\incfig[width=3in]{aiaalgo}}% aiaa logo at top left
+    \put(1.2,8.0)% paper number, title, author/location
+        {\makebox(0,0)[tl]{\parbox{5in}
+            {\raggedright\sffamily\bfseries
+          \Huge AIAA \AA@papernumber% paper number
+          \\[5pt]
+          \huge\@title%                title
+          \\[5pt]
+          \Large\mdseries\@author}}}%   author/location
+    \ifx\AA@coverfigure\@empty% optional figure
+      \relax
+    \else
+      \put(3.725,1.7){\makebox(0,0)[b]{%
+          \includegraphics[width=5in,height=4in]%
+          {\AA@coverfigure}}}%
+    \fi
+    \put(3.725,0.05){\makebox(0,0)[b]{\parbox{7.45in}%  meeting, location, and date
+        {\centering\Huge\bfseries\sffamily%
+        \AA@conference}}}
+    \put(-0.055,-0.36){\parbox[t]{7.5in}% notice
+      {\normalsize\sffamily\bfseries
+      For permission to copy or republish, contact the
+      American Institute of Aeronautics and Astronautics\\
+      1801 Alexander Bell Drive, Suite 500, Reston, VA 20191--4344}}
+  \else% article, or note
+    \put(0.7,7.75)% title and authors
+        {\makebox(0,0)[tl]{\parbox{6.5in}
+         {\raggedright\sffamily\bfseries
+          \huge\@title%
+          \\[5pt]
+          \Large\mdseries\@author}}}
+    \ifx\AA@journalname\@empty\relax\else
+      \put(0.7,1.9){\makebox(0,0)[tl]{\parbox{7.5in}%  journal/issue
+        {\raggedright\bfseries\sffamily
+         Simulated Reprint for\\
+        \Huge%
+        \AA@journalname\\
+        \small\mdseries
+	\ifx\AA@journalissue\@empty%
+           \relax
+        \else%
+           \AA@journalissue,
+        \fi
+        Pages \theAA@journalpage--\pageref{LastPage}}}}\fi
+    \put(0.5,0.45){\incfig[width=1in]{aiaalgo}}% aiaa logo at bottom left
+    \put(0.7,0.3)% notice
+        {\makebox(0,0)[tl]{\parbox{6.5in}
+         {\sffamily
+          \slshape A publication of the\\
+          \upshape American Institute of Aeronautics and Astronautics, Inc.\\
+         1801 Alexander Bell Drive, Suite 500\\
+         Reston, VA 20191--4344}}}
+  \fi
+  \end{picture}
+  \renewcommand\sfdefault{\AA@sfdefault}
+  \renewcommand\rmdefault{\AA@rmdefault}
+  \renewcommand\ttdefault{\AA@ttdefault}
+  \end{titlepage}}
+\fi
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\PaperNotice}
+% \begin{macro}{\JournalNotice}
+% \begin{macro}{\makenotice}
+% the footnote notice maker
+%    \begin{macrocode}
+\newcommand{\PaperNotice}[1]{\def\AA@papernotice{\scriptsize #1}}
+\PaperNotice{}
+\newcommand{\JournalNotice}[1]{\def\AA@journalnotice{\scriptsize #1}}
+\JournalNotice{}
+\if@submit%
+  \newcommand\makenotice{}%
+\else% paper, article, or note
+  \newcommand\makenotice{%
+    \begingroup
+    \renewcommand\thefootnote{}
+      \if@paper%
+        \ifx\AA@papernotice\@empty\else\footnotetext{\AA@papernotice}\fi
+      \else% article or note
+        \ifx\AA@journalnotice\@empty\else\footnotetext{\AA@journalnotice}\fi
+      \fi%
+    \endgroup
+%   \renewcommand{\thefootnote}{\arabic{footnote}}%
+  }
+\fi
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \begin{macro}{\CopyrightA}
+% \begin{macro}{\CopyrightB}
+% \begin{macro}{\CopyrightC}
+% \begin{macro}{\CopyrightD}
+% load copyright commands
+%    \begin{macrocode}
+\newcommand{\CopyrightA}[1]{Copyright \copyright\ #1 by the
+  American Institute of Aeronautics and Astronautics, Inc. All
+  rights reserved.}
+\newcommand{\CopyrightB}[2]{Copyright \copyright\ #1 by
+  #2. Published by the American Institute of Aeronautics
+  and Astronautics, Inc.\ with permission.}
+\newcommand{\CopyrightC}{This paper is a work of the U.S.
+  Government and is not subject to copyright protection in the
+  United States.}
+\newcommand{\CopyrightD}[1]{Copyright \copyright\ #1 by the
+  American Institute of Aeronautics and Astronautics, Inc. No
+  copyright is asserted in the United States under Title 17,
+  U.S. Code.  The U.S. Government has a royalty-free license to
+  exercise all rights under the copyright claimed herein for
+  Governmental Purposes.  All other rights are reserved by the
+  copyright owner.}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% modify float captions
+%    \begin{macrocode}
+\if@submit
+  \renewcommand\figurename{Figure}
+  \renewcommand\captionlabeldelim{:\hspace{1em}}
+\else% paper, article, or note
+  \renewcommand\figurename{Fig.}% change to the ugly, silly
+                                % abbreviatation as per aiaa---saves
+                                % all of two characters !?
+  \renewcommand\captionlabeldelim{~~}
+\fi
+\renewcommand\captionfont{\small\bfseries}
+\renewcommand\p@subfigure{\thefigure(}
+\renewcommand\thesubfigure{\alph{subfigure})}
+\renewcommand\subcaplabelfont{\captionfont}
+\renewcommand{\subfigcapmargin}{2pt}
+\if@submit
+  \relax
+\else
+  \setlength{\abovecaptionskip}{ 6pt plus 2pt minus 2pt}
+  \setlength{\belowcaptionskip}{ 3pt plus 1pt minus 1pt}% note good for tables!
+  \renewcommand{\subfigcapskip}{.2\abovecaptionskip}%    seem to
+  \renewcommand{\subfigbottomskip}{.7\belowcaptionskip}% have no effect?
+\fi
+%    \end{macrocode}
+% modify float spacing or, if we're submitting something,
+% the behavior of the |endfloat| package.
+%    \begin{macrocode}
+\if@submit% modify endfloat behaviour
+  \InputIfFileExists{aiaaenf.cfg}{\typeout{loading aiaaenf.cfg}}%
+                    {\typeout{WARNING: endfloat behavior will not
+                              be as advertised since aiaaenf.cfg
+                                                   was not found.}}
+\else% modify float spacing
+  \renewcommand{\topfraction}{0.9}
+  \renewcommand{\bottomfraction}{0.9}
+  \renewcommand{\textfraction}{0.1}
+  \renewcommand{\floatpagefraction}{0.8}% 0.5 is the default
+  \renewcommand{\dbltopfraction}{\floatpagefraction}
+  \renewcommand{\dblfloatpagefraction}{\floatpagefraction}
+  \setcounter{topnumber}{10}
+  \setcounter{dbltopnumber}{\value{topnumber}}
+  \setcounter{bottomnumber}{\value{topnumber}}
+  \setcounter{totalnumber}{\value{topnumber}}
+  \addtocounter{totalnumber}{\value{bottomnumber}}
+  \setlength{\floatsep}        { 5pt plus 2pt minus 2pt}
+  \setlength{\textfloatsep}    { 5pt plus 2pt minus 3pt}
+  \setlength{\intextsep}       { 5pt plus 2pt minus 2pt}
+  \setlength{\dblfloatsep}     {\floatsep}
+  \setlength{\dbltextfloatsep} {\textfloatsep}
+\fi
+%    \end{macrocode}
+% modifying bibliography output
+%    \begin{macrocode}
+\renewcommand{\@biblabel}[1]{$^{#1}$}
+\renewenvironment{thebibliography}[1]%
+     {\section*{\refname\@mkboth{\MakeUppercase\refname}%
+                                 {\MakeUppercase\refname}}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\setlength{\leftmargin}{0pt}%
+            \settowidth{\labelwidth}{\@biblabel{#1}}%
+            \setlength{\itemindent}{\parindent}%
+            \advance\itemindent by \labelwidth%
+            \setlength{\labelsep}{0.0em}%
+            \setlength{\itemsep}{-\smallskipamount}%
+            \@openbib@code%
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty%
+            \renewcommand\theenumiv{\@arabic\c@enumiv}%
+            \if@submit%
+              \normalsize%
+            \else%
+              \footnotesize%
+            \fi}
+      \sloppy\clubpenalty4000\widowpenalty4000%
+      \sfcode`\.\@m}
+      {\def\@noitemerr
+        {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+%    \end{macrocode}
+%
+%  \begin{macro}{\thanksibid}
+%  Define a command that is used in conjunction with the
+%  |\thanks| command.  It is used for the special case
+%  where the argument of the |\thanks| for one author is
+%  the same as another.\footnote{Hence, the use of the latin {\it ibid},
+%  short for {\it ibidem}, meaning the same as.}
+%    \begin{macrocode}
+\newcounter{ibid}
+\newcounter{tempcnt}
+\newcommand{\thanksibid}[1]{%
+    \begingroup
+    \setcounter{tempcnt}{\value{footnote}}%
+    \setcounter{ibid}{#1}%
+    \def\thefootnote{\fnsymbol{ibid}}%
+    \footnotemark%
+    \setcounter{footnote}{\value{tempcnt}}%
+    \endgroup
+}
+%    \end{macrocode}
+% \end{macro}
+%
+%  \begin{macro}{\incfig}
+%  define command that picks-up the current line width
+%  for automatic figure sizing
+%    \begin{macrocode}
+\newcommand{\incfig}{\centering\includegraphics}
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+\if@submit%
+   \setkeys{Gin}{totalheight=0.35\textheight}
+\else% paper, article, or note
+   \relax
+\fi
+%    \end{macrocode}
+% \end{macro}
+%
+%  \begin{environment}{subfigmatrix}
+%  Define command that makes subfigure `tables'.
+%
+%    \begin{macrocode}
+% 27 Feb 1997  Steven Douglas Cochran - Created.
+% 28 Feb 1997  Bil Kleb - modified to not use minipages
+% Define and initialize the internal variables.
+%
+\newlength{\sfm@width}%               Subfigure width
+\newlength{\sfm@colsep}%              Subfigure column separation
+\setlength{\sfm@colsep}{2\tabcolsep}% Use twice tabular column separation
+\newcounter{sfm@count}%               Item count
+\newenvironment{subfigmatrix}[1]{%
+  \begingroup%
+  \centering%
+  \vspace*{-\subfigtopskip}% remove the vertical spacing inserted
+                           % by the subfigure package
+    % 
+    % Save the "real" subfigure macro and start the item counter off
+    % at -1 to detect the first item.
+    % Set the \sfm@width to the single element size.
+    % 
+    \let\sfm@subfigure\subfigure%
+    \setcounter{sfm@count}{-1}%
+    \setlength{\sfm@width}{\linewidth}%
+    \addtolength{\sfm@width}{\sfm@colsep}%
+    \addtolength{\sfm@width}{-#1\sfm@colsep}%
+    \divide\sfm@width by#1
+    \setkeys{Gin}{width=\sfm@width,keepaspectratio}%
+    % 
+    % Redefine the \subfigure and \subtable macros locally to this
+    % environment so that we can wrap them with minipages.
+    % 
+    \def\subfigure{% try the transpose
+      \ifnum \value{sfm@count} = -1
+      % very first item
+        \setcounter{sfm@count}{1}%
+      \else% Not very first item
+        \addtocounter{sfm@count}{1}%
+        \ifnum \value{sfm@count} = 1
+          % Beginning of next column, finish the last column.
+          \\%
+        \else%
+          % middle or last item
+          \hfill%
+          \ifnum #1 = \value{sfm@count}%
+            % Reset the counter of at the end of the row.
+            \setcounter{sfm@count}{0}%
+          \fi%
+        \fi%
+      \fi%
+      \sfm@subfigure}%
+    \let\subtable\subfigure%
+  }{%
+    \\%
+  \endgroup}%
+%    \end{macrocode}
+% \end{environment}
+%
+%  \begin{macro}{\maketitle}
+%  change maketitle behavior to preserve twocolumn mode for
+%  journal note, to create a cover page if appropriate, and make
+%  the copyright-style notices about the document.
+%    \begin{macrocode}
+\if@paper
+  \renewcommand{\and}{\\[-.9\baselineskip]}
+\else
+  \renewcommand{\and}{\\*[-8pt]}
+\fi
+\renewcommand{\maketitle}{%
+  \if@cover
+    \makecover
+  \else
+    \relax
+  \fi
+  \par
+  \begingroup
+    \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
+    \def\@makefnmark{\rlap{\@textsuperscript{\normalfont\@thefnmark}}}%
+    \long\def\@makefntext##1{\parindent 1em\noindent
+            \hb@xt@1.8em{%
+                \hss\@textsuperscript{\normalfont\@thefnmark}}##1}%
+  \global\@topnum\z@   % Prevents figures from going at top of page.
+  \if@submit%
+    \@maketitle%
+  \else% paper, article, or note
+    \if@note%
+      \@maketitle%
+    \else% paper article -- should already be in twocolumn mode
+      \ifnum \col@number=\@ne% if in column one, good:
+         \@maketitle
+      \else% not in column one, so start new page:
+        \twocolumn[\@maketitle]
+      \fi
+      \if@article%
+        \thispagestyle{plain}
+      \fi
+    \fi
+  \fi
+  \@thanks
+  \endgroup
+  \suppressfloats
+  \setcounter{footnote}{0}%
+  \if@submit% submission
+    \relax
+  \else% paper, article, or note:
+    \if@paper
+      \relax
+    \else% article or note:
+       \setcounter{page}{\theAA@journalpage}
+    \fi
+  \fi
+  \makenotice
+  \global\let\maketitle\relax
+  \global\let\@maketitle\relax
+  \global\let\@abstract\@empty
+  \global\let\@thanks\@empty
+  \global\let\thanks\relax
+  \global\let\@author\@empty
+  \global\let\author\relax
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\@date\@empty
+  \global\let\abstract\relax
+  \global\let\date\relax
+}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@maketitle}
+% modify the fonts used for the title, etc
+%    \begin{macrocode}
+\def\@maketitle{%
+  \newpage
+  \begin{center}%
+  \let \footnote \thanks
+    {\huge\bf \@title \par}%
+    \vskip 1.5em%
+    {\lineskip .5em%
+      \large%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    \if@submit
+      \relax
+    \else% paper, article, or note
+      \if@note
+        \relax
+      \else% paper or article
+        \newenvironment{AA@abstract}
+        {\list{}{\listparindent 1.5em%
+                \itemindent \listparindent
+                \leftmargin 0.75in%
+                \rightmargin \leftmargin
+                \parsep \z@ \@plus \p@}%
+                \item\relax}
+         {\endlist}
+         \ifx\@abstract\@empty
+           \relax
+         \else
+           \begin{AA@abstract}
+              \footnotesize\textbf\@abstract
+           \end{AA@abstract}
+         \fi
+      \fi
+    \fi
+  \end{center}%
+  \if@submit%
+    \ifx\@abstract\@empty
+      \relax
+    \else%
+      \section{Abstract} \@abstract%
+    \fi
+  \else% paper, article, or note
+    \par%
+    \if@note%
+      \vskip -\medskipamount%
+    \else%
+      \vskip 1em%
+    \fi%
+  \fi%
+}
+%    \end{macrocode}
+% \end{macro}
+% modify the section headers
+%    \begin{macrocode}
+\setcounter{secnumdepth}{-2}% instead of having to use the *'d
+                            % section commands
+%    \end{macrocode}
+% \begin{macro}{\section}
+%    \begin{macrocode}
+\renewcommand\section{\@startsection
+  {section}%                    % section name
+  {1}%                          % level
+  {\z@}%                        % indentation of heading
+  {1.8ex}%                      % before skip (neg, no parindent)
+  {0.5ex}%                      % after skip (neg, run-on heading space)
+  {\normalfont\center\large\bfseries}}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\subsection}
+%    \begin{macrocode}
+\renewcommand\subsection{\@startsection{subsection}{2}%
+  {\z@}%
+  {1.5ex}%
+  {0.5ex}%
+  {\normalfont\small\bfseries\raggedright}}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\subsubsection}
+%    \begin{macrocode}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}%
+  {\z@}%
+  {1.5ex}%
+  {0.5ex}%
+  {\normalfont\normalsize\itshape\raggedright}}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\paragraph}
+%    \begin{macrocode}
+\renewcommand\paragraph{\@startsection{paragraph}{4}%
+  {\parindent}%
+  {0.3ex}%
+  {-1em}%
+  {\normalfont\normalsize\sffamily}}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\subparagraph}
+%    \begin{macrocode}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}%
+  {\parindent}%
+  {0.3ex}%
+  {-1em}%
+  {\normalfont\normalsize\itshape}}
+%    \end{macrocode}
+% \end{macro}
+% list files used during job:
+%    \begin{macrocode}
+\listfiles
+%
+%</class>
+%
+%    \end{macrocode}
+%
+% This brings us to the end of \cls{aiaa.cls}.
+%
+% \subsection{The 9pt style file}
+% 
+% This is the package \pkg{aiaa9pt.sty}, it provides 9pt font settings
+% for simulation of journal articles/notes.  It is essentially
+% a hack of size10.clo (a the standard \LaTeX{} class option).
+%
+%    \begin{macrocode}
+%
+%<*style>
+%
+\ProvidesFile{aiaa9pt.sty}
+              [1999/02/22 v2.4 AIAA style file (9pt option)]
+\renewcommand\normalsize{%
+   \@setfontsize\normalsize\@ixpt\@xipt
+   \abovedisplayskip 9\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+\renewcommand\small{%
+   \@setfontsize\small\@viiipt\@xpt%
+   \abovedisplayskip 7\p@ \@plus2\p@ \@minus3\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 3\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 3\p@ \@plus2\p@ \@minus2\p@
+               \parsep \p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\renewcommand\footnotesize{%
+   \@setfontsize\footnotesize\@viipt{8.3}%
+   \abovedisplayskip 4\p@ \@plus2\p@ \@minus3\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 2\p@ \@plus\p@ \@minus\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 2\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\renewcommand\scriptsize{\@setfontsize\scriptsize\@vipt\@viipt}
+\renewcommand\tiny{\@setfontsize\tiny\@vpt\@vpt}
+\renewcommand\large{\@setfontsize\large\@xipt{13.6}}
+\renewcommand\Large{\@setfontsize\Large\@xivpt{18}}
+\renewcommand\LARGE{\@setfontsize\LARGE\@xviipt{22}}
+\renewcommand\huge{\@setfontsize\huge\@xxpt{25}}
+\renewcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
+\if@twocolumn
+  \setlength\parindent{1em}
+\else
+  \setlength\parindent{13\p@}
+\fi
+\setlength\smallskipamount{3\p@ \@plus 1\p@ \@minus 1\p@}
+\setlength\medskipamount{6\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\bigskipamount{12\p@ \@plus 4\p@ \@minus 4\p@}
+\setlength\headheight{12\p@}
+\setlength\headsep   {25\p@}
+\setlength\topskip   {9\p@}
+\setlength\footskip{30\p@}
+\setlength\maxdepth{.5\topskip}
+  \setlength\@tempdima{\paperwidth}
+  \addtolength\@tempdima{-2in}
+  \setlength\@tempdimb{345\p@}
+  \if@twocolumn
+    \ifdim\@tempdima>2\@tempdimb\relax
+      \setlength\textwidth{2\@tempdimb}
+    \else
+      \setlength\textwidth{\@tempdima}
+    \fi
+  \else
+    \ifdim\@tempdima>\@tempdimb\relax
+      \setlength\textwidth{\@tempdimb}
+    \else
+      \setlength\textwidth{\@tempdima}
+    \fi
+  \fi
+  \@settopoint\textwidth
+  \setlength\@tempdima{\paperheight}
+  \addtolength\@tempdima{-2in}
+  \addtolength\@tempdima{-1.5in}
+  \divide\@tempdima\baselineskip
+  \@tempcnta=\@tempdima
+  \setlength\textheight{\@tempcnta\baselineskip}
+\addtolength\textheight{\topskip}
+\if@twocolumn
+ \setlength\marginparsep {10\p@}
+\else
+  \setlength\marginparsep{11\p@}
+\fi
+\setlength\marginparpush{5\p@}
+  \if@twoside
+    \setlength\@tempdima        {\paperwidth}
+    \addtolength\@tempdima      {-\textwidth}
+    \setlength\oddsidemargin    {.4\@tempdima}
+    \addtolength\oddsidemargin  {-1in}
+    \setlength\marginparwidth   {.6\@tempdima}
+    \addtolength\marginparwidth {-\marginparsep}
+    \addtolength\marginparwidth {-0.4in}
+  \else
+    \setlength\@tempdima        {\paperwidth}
+    \addtolength\@tempdima      {-\textwidth}
+    \setlength\oddsidemargin    {.5\@tempdima}
+    \addtolength\oddsidemargin  {-1in}
+    \setlength\marginparwidth   {.5\@tempdima}
+    \addtolength\marginparwidth {-\marginparsep}
+    \addtolength\marginparwidth {-0.4in}
+    \addtolength\marginparwidth {-.4in}
+  \fi
+  \ifdim \marginparwidth >2in
+     \setlength\marginparwidth{2in}
+  \fi
+  \@settopoint\oddsidemargin
+  \@settopoint\marginparwidth
+  \setlength\evensidemargin  {\paperwidth}
+  \addtolength\evensidemargin{-2in}
+  \addtolength\evensidemargin{-\textwidth}
+  \addtolength\evensidemargin{-\oddsidemargin}
+  \@settopoint\evensidemargin
+  \setlength\topmargin{\paperheight}
+  \addtolength\topmargin{-2in}
+  \addtolength\topmargin{-\headheight}
+  \addtolength\topmargin{-\headsep}
+  \addtolength\topmargin{-\textheight}
+  \addtolength\topmargin{-\footskip}     % this might be wrong!
+  \addtolength\topmargin{-.5\topmargin}
+  \@settopoint\topmargin
+\setlength\footnotesep{5.755\p@}
+\setlength{\skip\footins}{9.5\p@ \@plus 4\p@ \@minus 2\p@}
+\setlength\floatsep    {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\textfloatsep{20\p@ \@plus 2\p@ \@minus 4\p@}
+\setlength\intextsep   {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\dblfloatsep    {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\dbltextfloatsep{20\p@ \@plus 2\p@ \@minus 4\p@}
+\setlength\@fptop{0\p@ \@plus 1fil}
+\setlength\@fpsep{8\p@ \@plus 2fil}
+\setlength\@fpbot{0\p@ \@plus 1fil}
+\setlength\@dblfptop{0\p@ \@plus 1fil}
+\setlength\@dblfpsep{8\p@ \@plus 2fil}
+\setlength\@dblfpbot{0\p@ \@plus 1fil}
+\setlength\partopsep{2\p@ \@plus 1\p@ \@minus 1\p@}
+\def\@listi{\leftmargin\leftmargini
+            \parsep 4\p@ \@plus2\p@ \@minus\p@
+            \topsep 8\p@ \@plus2\p@ \@minus4\p@
+            \itemsep4\p@ \@plus2\p@ \@minus\p@}
+\let\@listI\@listi
+\@listi
+\def\@listii {\leftmargin\leftmarginii
+              \labelwidth\leftmarginii
+              \advance\labelwidth-\labelsep
+              \topsep    4\p@ \@plus2\p@ \@minus\p@
+              \parsep    2\p@ \@plus\p@  \@minus\p@
+              \itemsep   \parsep}
+\def\@listiii{\leftmargin\leftmarginiii
+              \labelwidth\leftmarginiii
+              \advance\labelwidth-\labelsep
+              \topsep    2\p@ \@plus\p@\@minus\p@
+              \parsep    \z@
+              \partopsep \p@ \@plus\z@ \@minus\p@
+              \itemsep   \topsep}
+\def\@listiv {\leftmargin\leftmarginiv
+              \labelwidth\leftmarginiv
+              \advance\labelwidth-\labelsep}
+\def\@listv  {\leftmargin\leftmarginv
+              \labelwidth\leftmarginv
+              \advance\labelwidth-\labelsep}
+\def\@listvi {\leftmargin\leftmarginvi
+              \labelwidth\leftmarginvi
+              \advance\labelwidth-\labelsep}
+%</style>
+%
+%    \end{macrocode}
+%
+% This brings us to the end of \pkg{aiaa9pt.sty}.
+%
+% \subsection{AIAA Bibliographic Style File}
+%
+%    \begin{macrocode}
+%
+%<*bibstyle>
+%
+% note: this file generated by p. daly's custom-bib software
+%
+ENTRY
+  { address
+    author
+    booktitle
+    chapter
+    edition
+    editor
+    howpublished
+    institution
+    journal
+    key
+    month
+    note
+    number
+    organization
+    pages
+    publisher
+    school
+    series
+    title
+    type
+    volume
+    year
+  }
+  {}
+  { label }
+
+INTEGERS { output.state before.all mid.sentence after.sentence after.block }
+
+FUNCTION {init.state.consts}
+{ #0 'before.all :=
+  #1 'mid.sentence :=
+  #2 'after.sentence :=
+  #3 'after.block :=
+}
+
+STRINGS { s t }
+
+FUNCTION {output.nonnull}
+{ 's :=
+  output.state mid.sentence =
+    { ", " * write$ }
+    { output.state after.block =
+        { add.period$ write$
+          newline$
+          "\newblock " write$
+        }
+        { output.state before.all =
+            'write$
+            { add.period$ " " * write$ }
+          if$
+        }
+      if$
+      mid.sentence 'output.state :=
+    }
+  if$
+  s
+}
+
+FUNCTION {output}
+{ duplicate$ empty$
+    'pop$
+    'output.nonnull
+  if$
+}
+
+FUNCTION {output.check}
+{ 't :=
+  duplicate$ empty$
+    { pop$ "empty " t * " in " * cite$ * warning$ }
+    'output.nonnull
+  if$
+}
+
+FUNCTION {fin.entry}
+{ add.period$
+  write$
+  newline$
+}
+
+FUNCTION {new.block}
+{ output.state before.all =
+    'skip$
+    { after.block 'output.state := }
+  if$
+}
+
+FUNCTION {new.sentence}
+{ output.state after.block =
+    'skip$
+    { output.state before.all =
+        'skip$
+        { after.sentence 'output.state := }
+      if$
+    }
+  if$
+}
+
+FUNCTION {add.blank}
+{  " " * before.all 'output.state :=
+}
+
+FUNCTION {date.block}
+{
+  skip$
+}
+
+FUNCTION {not}
+{   { #0 }
+    { #1 }
+  if$
+}
+
+FUNCTION {and}
+{   'skip$
+    { pop$ #0 }
+  if$
+}
+
+FUNCTION {or}
+{   { pop$ #1 }
+    'skip$
+  if$
+}
+
+FUNCTION {non.stop}
+{ duplicate$
+   "}" * add.period$
+   #-1 #1 substring$ "." =
+}
+
+FUNCTION {new.block.checka}
+{ empty$
+    'skip$
+    'new.block
+  if$
+}
+
+FUNCTION {new.block.checkb}
+{ empty$
+  swap$ empty$
+  and
+    'skip$
+    'new.block
+  if$
+}
+
+FUNCTION {new.sentence.checka}
+{ empty$
+    'skip$
+    'new.sentence
+  if$
+}
+
+FUNCTION {new.sentence.checkb}
+{ empty$
+  swap$ empty$
+  and
+    'skip$
+    'new.sentence
+  if$
+}
+
+FUNCTION {field.or.null}
+{ duplicate$ empty$
+    { pop$ "" }
+    'skip$
+  if$
+}
+
+FUNCTION {emphasize}
+{ duplicate$ empty$
+    { pop$ "" }
+    { "{\em " swap$ * "\/}" * }
+  if$
+}
+
+FUNCTION {capitalize}
+{ "u" change.case$ "t" change.case$ }
+
+FUNCTION {space.word}
+{ " " swap$ * " " * }
+
+ % Here are the language-specific definitions for explicit words.
+ % Each function has a name bbl.xxx where xxx is the English word.
+ % The language selected here is ENGLISH
+FUNCTION {bbl.and}
+{ "and"}
+
+FUNCTION {bbl.editors}
+{ "editors" }
+
+FUNCTION {bbl.editor}
+{ "editor" }
+
+FUNCTION {bbl.edby}
+{ "edited by" }
+
+FUNCTION {bbl.edition}
+{ "ed." }
+
+FUNCTION {bbl.volume}
+{ "Vol." }
+
+FUNCTION {bbl.of}
+{ "of" }
+
+FUNCTION {bbl.number}
+{ "No." }
+
+FUNCTION {bbl.nr}
+{ "No." }
+
+FUNCTION {bbl.in}
+{ "in" }
+
+FUNCTION {bbl.pages}
+{ "pp." }
+
+FUNCTION {bbl.page}
+{ "p." }
+
+FUNCTION {bbl.chapter}
+{ "chap." }
+
+FUNCTION {bbl.techrep}
+{ "Tech. Rep." }
+
+FUNCTION {bbl.mthesis}
+{ "Master's thesis" }
+
+FUNCTION {bbl.phdthesis}
+{ "Ph.D. thesis" }
+
+FUNCTION {bbl.first}
+{ "1st" }
+
+FUNCTION {bbl.second}
+{ "2nd" }
+
+FUNCTION {bbl.third}
+{ "3rd" }
+
+FUNCTION {bbl.fourth}
+{ "4th" }
+
+FUNCTION {bbl.fifth}
+{ "5th" }
+
+FUNCTION {bbl.st}
+{ "st" }
+
+FUNCTION {bbl.nd}
+{ "nd" }
+
+FUNCTION {bbl.rd}
+{ "rd" }
+
+FUNCTION {bbl.th}
+{ "th" }
+
+MACRO {jan} {"Jan."}
+
+MACRO {feb} {"Feb."}
+
+MACRO {mar} {"March"}
+
+MACRO {apr} {"April"}
+
+MACRO {may} {"May"}
+
+MACRO {jun} {"June"}
+
+MACRO {jul} {"July"}
+
+MACRO {aug} {"Aug."}
+
+MACRO {sep} {"Sept."}
+
+MACRO {oct} {"Oct."}
+
+MACRO {nov} {"Nov."}
+
+MACRO {dec} {"Dec."}
+
+MACRO {jan-feb} {"Jan.-Feb."}
+
+MACRO {mar-apr} {"Mar.-Apr."}
+
+MACRO {may-jun} {"May-Jun."}
+
+MACRO {jul-aug} {"Jul.-Aug."}
+
+MACRO {sep-oct} {"Sep.-Oct."}
+
+MACRO {nov-dec} {"Nov.-Dec."}
+
+FUNCTION {eng.ord}
+{ duplicate$ "1" swap$ *
+  #-2 #1 substring$ "1" =
+     { bbl.th * }
+     { duplicate$ #-1 #1 substring$
+       duplicate$ "1" =
+         { pop$ bbl.st * }
+         { duplicate$ "2" =
+             { pop$ bbl.nd * }
+             { "3" =
+                 { bbl.rd * }
+                 { bbl.th * }
+               if$
+             }
+           if$
+          }
+       if$
+     }
+   if$
+}
+
+MACRO {jsr} {"Journal of Spacecraft and Rockets"}
+
+MACRO {aa} {"Aerospace America"}
+
+MACRO {sn} {"Space News"}
+
+MACRO {awst} {"Aviation Week \& Space Technology"}
+
+MACRO {jcp} {"Journal of Computational Physics"}
+
+MACRO {ijcfd} {"International Journal of Computational Fluid Dynamics"}
+
+MACRO {ijnme} {"International Journal for Numerical Methods in Engineering"}
+
+MACRO {acmcs} {"ACM Computing Surveys"}
+
+MACRO {acta} {"Acta Informatica"}
+
+MACRO {cacm} {"Communications of the ACM"}
+
+MACRO {ibmjrd} {"IBM Journal of Research and Development"}
+
+MACRO {ibmsj} {"IBM Systems Journal"}
+
+MACRO {ieeese} {"IEEE Transactions on Software Engineering"}
+
+MACRO {ieeetc} {"IEEE Transactions on Computers"}
+
+MACRO {ieeetcad}
+ {"IEEE Transactions on Computer-Aided Design of Integrated Circuits"}
+
+MACRO {ipl} {"Information Processing Letters"}
+
+MACRO {jacm} {"Journal of the ACM"}
+
+MACRO {jcss} {"Journal of Computer and System Sciences"}
+
+MACRO {scp} {"Science of Computer Programming"}
+
+MACRO {sicomp} {"SIAM Journal on Computing"}
+
+MACRO {tocs} {"ACM Transactions on Computer Systems"}
+
+MACRO {tods} {"ACM Transactions on Database Systems"}
+
+MACRO {tog} {"ACM Transactions on Graphics"}
+
+MACRO {toms} {"ACM Transactions on Mathematical Software"}
+
+MACRO {toois} {"ACM Transactions on Office Information Systems"}
+
+MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
+
+MACRO {tcs} {"Theoretical Computer Science"}
+
+INTEGERS { nameptr namesleft numnames }
+
+FUNCTION {format.names}
+{ 's :=
+  #1 'nameptr :=
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { s nameptr
+      "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=
+      nameptr #1 >
+        {
+          namesleft #1 >
+            { ", " * t * }
+            {
+              numnames #2 >
+                { "," * }
+                'skip$
+              if$
+              t "others" =
+                { " et~al." * }
+                { bbl.and space.word * t * }
+              if$
+            }
+          if$
+        }
+        't
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {format.names.ed}
+{ 's :=
+  #1 'nameptr :=
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { s nameptr
+      "{f.~}{vv~}{ll}{, jj}"
+      format.name$ 't :=
+      nameptr #1 >
+        {
+          namesleft #1 >
+            { ", " * t * }
+            {
+              numnames #2 >
+                { "," * }
+                'skip$
+              if$
+              t "others" =
+                { " et~al." * }
+                { bbl.and space.word * t * }
+              if$
+            }
+          if$
+        }
+        't
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {format.authors}
+{ author empty$
+    { "" }
+    {
+      author format.names
+    }
+  if$
+}
+
+FUNCTION {format.editors}
+{ editor empty$
+    { "" }
+    {
+      editor format.names
+      editor num.names$ #1 >
+        { ", " * bbl.editors * }
+        { ", " * bbl.editor * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.in.editors}
+{ editor empty$
+    { "" }
+    { editor format.names.ed
+    }
+  if$
+}
+
+FUNCTION {format.title}
+{ title empty$
+    { "" }
+    { title
+      "\enquote{" swap$ *
+      non.stop
+        { ",} " * }
+        { "} " * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {end.quote.title}
+{ title empty$
+    'skip$
+    { before.all 'output.state := }
+  if$
+}
+
+FUNCTION {output.bibitem}
+{ newline$
+  "\bibitem{" write$
+  cite$ write$
+  "}" write$
+  newline$
+  ""
+  before.all 'output.state :=
+}
+
+FUNCTION {n.dashify}
+{ 't :=
+  ""
+    { t empty$ not }
+    { t #1 #1 substring$ "-" =
+        { t #1 #2 substring$ "--" = not
+            { "--" *
+              t #2 global.max$ substring$ 't :=
+            }
+            {   { t #1 #1 substring$ "-" = }
+                { "-" *
+                  t #2 global.max$ substring$ 't :=
+                }
+              while$
+            }
+          if$
+        }
+        { t #1 #1 substring$ *
+          t #2 global.max$ substring$ 't :=
+        }
+      if$
+    }
+  while$
+}
+
+FUNCTION {word.in}
+{ "" }
+
+FUNCTION {format.date}
+{ year empty$
+    { month empty$
+        { "" }
+        { "there's a month but no year in " cite$ * warning$
+          month
+        }
+      if$
+    }
+    { month empty$
+        'year
+        { month " " * year * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.btitle}
+{ title emphasize
+}
+
+FUNCTION {tie.or.space.connect}
+{ duplicate$ text.length$ #3 <
+    { "~" }
+    { " " }
+  if$
+  swap$ * *
+}
+
+FUNCTION {either.or.check}
+{ empty$
+    'pop$
+    { "can't use both " swap$ * " fields in " * cite$ * warning$ }
+  if$
+}
+
+FUNCTION {format.bvolume}
+{ volume empty$
+    { "" }
+    { bbl.volume volume tie.or.space.connect
+      series empty$
+        'skip$
+        { bbl.of space.word * series emphasize * }
+      if$
+      "volume and number" number either.or.check
+    }
+  if$
+}
+
+FUNCTION {format.number.series}
+{ volume empty$
+    { number empty$
+        { series field.or.null }
+        { output.state mid.sentence =
+            { bbl.number }
+            { bbl.number capitalize }
+          if$
+          number tie.or.space.connect
+          series empty$
+            { "there's a number but no series in " cite$ * warning$ }
+            { bbl.in space.word * series * }
+          if$
+        }
+      if$
+    }
+    { "" }
+  if$
+}
+
+FUNCTION {is.num}
+{ chr.to.int$
+  duplicate$ "0" chr.to.int$ < not
+  swap$ "9" chr.to.int$ > not and
+}
+
+FUNCTION {extract.num}
+{ duplicate$ 't :=
+  "" 's :=
+  { t empty$ not }
+  { t #1 #1 substring$
+    t #2 global.max$ substring$ 't :=
+    duplicate$ is.num
+      { s swap$ * 's := }
+      { pop$ "" 't := }
+    if$
+  }
+  while$
+  s empty$
+    'skip$
+    { pop$ s }
+  if$
+}
+
+FUNCTION {convert.edition}
+{ edition extract.num "l" change.case$ 's :=
+  s "first" = s "1" = or
+    { bbl.first 't := }
+    { s "second" = s "2" = or
+        { bbl.second 't := }
+        { s "third" = s "3" = or
+            { bbl.third 't := }
+            { s "fourth" = s "4" = or
+                { bbl.fourth 't := }
+                { s "fifth" = s "5" = or
+                    { bbl.fifth 't := }
+                    { s #1 #1 substring$ is.num
+                        { s eng.ord 't := }
+                        { edition 't := }
+                      if$
+                    }
+                  if$
+                }
+              if$
+            }
+          if$
+        }
+      if$
+    }
+  if$
+  t
+}
+
+FUNCTION {format.edition}
+{ edition empty$
+    { "" }
+    { output.state mid.sentence =
+        { convert.edition "l" change.case$ " " * bbl.edition * }
+        { convert.edition "t" change.case$ " " * bbl.edition * }
+      if$
+    }
+  if$
+}
+
+INTEGERS { multiresult }
+
+FUNCTION {multi.page.check}
+{ 't :=
+  #0 'multiresult :=
+    { multiresult not
+      t empty$ not
+      and
+    }
+    { t #1 #1 substring$
+      duplicate$ "-" =
+      swap$ duplicate$ "," =
+      swap$ "+" =
+      or or
+        { #1 'multiresult := }
+        { t #2 global.max$ substring$ 't := }
+      if$
+    }
+  while$
+  multiresult
+}
+
+FUNCTION {format.pages}
+{ pages empty$
+    { "" }
+    { pages multi.page.check
+        { bbl.pages pages n.dashify tie.or.space.connect }
+        { bbl.page pages tie.or.space.connect }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.journal.pages}
+{
+  pages empty$
+    'skip$
+    { duplicate$ empty$
+        { pop$ format.pages }
+        { ", " * bbl.pages "~" * * pages n.dashify * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.vol.num.pages}
+{ volume field.or.null
+  volume empty$
+    'skip$
+    { bbl.volume "~" * swap$ * }
+  if$
+  number empty$
+    'skip$
+    {
+      ", " bbl.nr * number tie.or.space.connect *
+      volume empty$
+        { "there's a number but no volume in " cite$ * warning$ }
+        'skip$
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.chapter.pages}
+{ chapter empty$
+    { "" }
+    { type empty$
+        { bbl.chapter }
+        { type "l" change.case$ }
+      if$
+      chapter tie.or.space.connect
+    }
+  if$
+}
+
+FUNCTION {format.in.ed.booktitle}
+{ booktitle empty$
+    { "" }
+    { editor empty$
+        { word.in booktitle emphasize * }
+        { word.in booktitle emphasize *
+          ", " *
+          bbl.edby
+          *
+          " " *
+          format.in.editors *
+        }
+      if$
+    }
+  if$
+}
+
+FUNCTION {empty.misc.check}
+{ author empty$ title empty$ howpublished empty$
+  month empty$ year empty$ note empty$
+  and and and and and
+    { "all relevant fields are empty in " cite$ * warning$ }
+    'skip$
+  if$
+}
+
+FUNCTION {format.thesis.type}
+{ type empty$
+    'skip$
+    { pop$
+      type "t" change.case$
+    }
+  if$
+}
+
+FUNCTION {format.tr.number}
+{ type empty$
+    { bbl.techrep }
+    'type
+  if$
+  number empty$
+    { "t" change.case$ }
+    { number tie.or.space.connect }
+  if$
+}
+
+FUNCTION {format.article.crossref}
+{
+  key empty$
+    { journal empty$
+        { "need key or journal for " cite$ * " to crossref " * crossref *
+          warning$
+          ""
+        }
+        { word.in journal emphasize * }
+      if$
+    }
+    { word.in key * " " *}
+  if$
+  " \cite{" * crossref * "}" *
+}
+
+FUNCTION {format.crossref.editor}
+{ editor #1 "{vv~}{ll}" format.name$
+  editor num.names$ duplicate$
+  #2 >
+    { pop$ " et~al." * }
+    { #2 <
+        'skip$
+        { editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
+            { " et~al." * }
+            { bbl.and space.word * editor #2 "{vv~}{ll}" format.name$ * }
+          if$
+        }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.book.crossref}
+{ volume empty$
+    { "empty volume in " cite$ * "'s crossref of " * crossref * warning$
+      word.in
+    }
+    { bbl.volume volume tie.or.space.connect
+      bbl.of space.word *
+    }
+  if$
+  editor empty$
+  editor field.or.null author field.or.null =
+  or
+    { key empty$
+        { series empty$
+            { "need editor, key, or series for " cite$ * " to crossref " *
+              crossref * warning$
+              "" *
+            }
+            { series emphasize * }
+          if$
+        }
+        { key * }
+      if$
+    }
+    { format.crossref.editor * }
+  if$
+  " \cite{" * crossref * "}" *
+}
+
+FUNCTION {format.incoll.inproc.crossref}
+{
+  editor empty$
+  editor field.or.null author field.or.null =
+  or
+    { key empty$
+        { booktitle empty$
+            { "need editor, key, or booktitle for " cite$ * " to crossref " *
+              crossref * warning$
+              ""
+            }
+            { word.in booktitle emphasize * }
+          if$
+        }
+        { word.in key * " " *}
+      if$
+    }
+    { word.in format.crossref.editor * " " *}
+  if$
+  " \cite{" * crossref * "}" *
+}
+
+FUNCTION {format.publisher}
+{ publisher empty$
+    { "empty publisher in " cite$ * warning$ }
+    'skip$
+  if$
+  ""
+  address empty$ publisher empty$ and
+    'skip$
+    {
+      publisher empty$
+        { address empty$
+          'skip$
+          { address * }
+          if$
+        }
+        { publisher *
+          address empty$
+            'skip$
+            { ", " * address * }
+          if$
+        }
+      if$
+    }
+  if$
+  output
+}
+
+FUNCTION {article}
+{ output.bibitem
+  format.authors "author" output.check
+  format.title "title" output.check
+  end.quote.title
+  crossref missing$
+    { journal
+      emphasize
+      "journal" output.check
+      format.vol.num.pages output
+      format.date "year" output.check
+    }
+    { format.article.crossref output.nonnull
+      format.pages output
+    }
+  if$
+  format.journal.pages
+  note output
+  fin.entry
+}
+
+FUNCTION {book}
+{ output.bibitem
+  author empty$
+    { format.editors "author and editor" output.check
+    }
+    { format.authors output.nonnull
+      crossref missing$
+        { "author and editor" editor either.or.check }
+        'skip$
+      if$
+    }
+  if$
+  format.btitle "title" output.check
+  crossref missing$
+    { format.bvolume output
+      format.number.series output
+      format.publisher
+    }
+    {
+      format.book.crossref output.nonnull
+    }
+  if$
+  format.edition output
+  format.date "year" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {booklet}
+{ output.bibitem
+  format.authors output
+  format.title "title" output.check
+  end.quote.title
+  howpublished output
+  address output
+  format.date output
+  note output
+  fin.entry
+}
+
+FUNCTION {inbook}
+{ output.bibitem
+  author empty$
+    { format.editors "author and editor" output.check
+    }
+    { format.authors output.nonnull
+      crossref missing$
+        { "author and editor" editor either.or.check }
+        'skip$
+      if$
+    }
+  if$
+  format.btitle "title" output.check
+  crossref missing$
+    {
+      format.bvolume output
+      format.chapter.pages "chapter and pages" output.check
+      format.number.series output
+      format.publisher
+    }
+    {
+      format.chapter.pages "chapter and pages" output.check
+      format.book.crossref output.nonnull
+    }
+  if$
+  format.edition output
+  format.date "year" output.check
+  format.pages "pages" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {incollection}
+{ output.bibitem
+  format.authors "author" output.check
+  format.title "title" output.check
+  end.quote.title
+  crossref missing$
+    { format.in.ed.booktitle "booktitle" output.check
+      format.bvolume output
+      format.number.series output
+      format.chapter.pages output
+      format.publisher
+      format.edition output
+      format.date "year" output.check
+    }
+    { format.incoll.inproc.crossref output.nonnull
+      format.chapter.pages output
+    }
+  if$
+  format.pages "pages" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {inproceedings}
+{ output.bibitem
+  format.authors "author" output.check
+  format.title "title" output.check
+  end.quote.title
+  crossref missing$
+    { format.in.ed.booktitle "booktitle" output.check
+      format.bvolume output
+      format.number.series output
+      publisher empty$
+        { organization output
+          address output
+        }
+        { organization output
+          format.publisher
+        }
+      if$
+      format.date "year" output.check
+    }
+    { format.incoll.inproc.crossref output.nonnull
+      format.pages output
+    }
+  if$
+  format.pages "pages" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {conference} { inproceedings }
+
+FUNCTION {manual}
+{ output.bibitem
+  author empty$
+    { organization empty$
+        'skip$
+        { organization output.nonnull
+          address output
+        }
+      if$
+    }
+    { format.authors output.nonnull }
+  if$
+  format.btitle "title" output.check
+  author empty$
+    { organization empty$
+    {
+          address output
+        }
+        'skip$
+      if$
+    }
+    {
+      organization output
+      address output
+    }
+  if$
+  format.edition output
+  format.date output
+  note output
+  fin.entry
+}
+
+FUNCTION {mastersthesis}
+{ output.bibitem
+  format.authors "author" output.check
+  format.btitle "title" output.check
+  bbl.mthesis format.thesis.type output.nonnull
+  school "school" output.check
+  address output
+  format.date "year" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {misc}
+{ output.bibitem
+  format.authors output
+  format.title output
+  end.quote.title
+  howpublished output
+  format.date output
+  note output
+  fin.entry
+  empty.misc.check
+}
+
+FUNCTION {phdthesis}
+{ output.bibitem
+  format.authors "author" output.check
+  format.btitle "title" output.check
+  bbl.phdthesis format.thesis.type output.nonnull
+  school "school" output.check
+  address output
+  format.date "year" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {proceedings}
+{ output.bibitem
+  editor empty$
+    { organization output }
+    { format.editors output.nonnull }
+  if$
+  format.btitle "title" output.check
+  format.bvolume output
+  format.number.series output
+  address empty$
+    { editor empty$
+        { publisher new.sentence.checka }
+        { organization publisher new.sentence.checkb
+          organization output
+        }
+      if$
+      publisher output
+      format.date "year" output.check
+    }
+    { address output.nonnull
+      format.date "year" output.check
+      editor empty$
+        'skip$
+        { organization output }
+      if$
+      publisher output
+    }
+  if$
+  note output
+  fin.entry
+}
+
+FUNCTION {techreport}
+{ output.bibitem
+  format.authors "author" output.check
+  format.title "title" output.check
+  end.quote.title
+  format.tr.number output.nonnull
+  institution "institution" output.check
+  address output
+  format.date "year" output.check
+  note output
+  fin.entry
+}
+
+FUNCTION {unpublished}
+{ output.bibitem
+  format.authors "author" output.check
+  format.title "title" output.check
+  end.quote.title
+  note "note" output.check
+  fin.entry
+}
+
+FUNCTION {default.type} { misc }
+
+READ
+
+STRINGS { longest.label }
+
+INTEGERS { number.label longest.label.width }
+
+FUNCTION {initialize.longest.label}
+{ "" 'longest.label :=
+  #1 'number.label :=
+  #0 'longest.label.width :=
+}
+
+FUNCTION {longest.label.pass}
+{ number.label int.to.str$ 'label :=
+  number.label #1 + 'number.label :=
+  label width$ longest.label.width >
+    { label 'longest.label :=
+      label width$ 'longest.label.width :=
+    }
+    'skip$
+  if$
+}
+
+EXECUTE {initialize.longest.label}
+
+ITERATE {longest.label.pass}
+
+FUNCTION {begin.bib}
+{ preamble$ empty$
+    'skip$
+    { preamble$ write$ newline$ }
+  if$
+  "\begin{thebibliography}{"  longest.label  * "}" *
+  write$ newline$
+  "\newcommand{\enquote}[1]{``#1''}"
+  write$ newline$
+}
+
+EXECUTE {begin.bib}
+
+EXECUTE {init.state.consts}
+
+ITERATE {call.type$}
+
+FUNCTION {end.bib}
+{ newline$
+  "\end{thebibliography}" write$ newline$
+}
+
+EXECUTE {end.bib}
+%</bibstyle>
+%    \end{macrocode}
+%
+% This brings us to the end of \file{aiaa.bst}.
+%
+% \subsection{AIAA Endfloat Configuration File}
+%
+%    \begin{macrocode}
+%
+%<*enfconfig>
+  \renewcommand{\listfigurename}{List of Figure Captions}
+  \renewcommand{\listtablename}{List of Table Captions}
+  \setcounter{lofdepth}{2}% puts subfigure captions in lof
+  \def\numberline#1{\setlength{\@tempdima}{0.3in}%
+    \hb@xt@\@tempdima{#1:}}% make bold numbers
+  \renewcommand*{\l@figure}[2]{\vskip\abovedisplayskip%
+   \setlength\@tempdima{1.5em}%
+   \noindent{\bfseries \figurename\ #1}\par}
+  \renewcommand*{\l@table}[2]{%
+   \setlength\@tempdima{1.5em}%
+   \noindent{\bfseries \tablename}\
+  #1\hfil\vskip\belowdisplayskip }
+% change lof behavior for subfigures:
+  \renewcommand{\@dottedxxxline}[6]{%
+    \ifnum #2>\@nameuse{c@#1depth}\else
+      \vskip 3pt\hspace{0em}{\bfseries #5}\par\vskip 1pt
+      \fi}
+  \newcommand{\lox@subfigure}{\thesubfigure}
+  \newcommand{\lox@subtable}{\thesubtable}
+  \renewcommand{\@subcaption}[2]{%
+    \begingroup
+    \let\label\@gobble
+    \let\protect\string
+    \edef\@currentlabel{\csname lox@#1\endcsname}%
+    \xdef\@subfigcaptionlist{%
+        \@subfigcaptionlist,%
+        {\numberline{\@currentlabel}\noexpand{\ignorespaces #2}}}%
+   \endgroup
+   \@nameuse{@make#1caption}{\@nameuse{@the#1}}{#2}}
+  \renewcommand{\@makecaption}[2]{}
+  \renewcommand{\@makesubfigurecaption}[2]{}
+  \renewcommand{\@makesubtablecaption}[2]{}
+  \let\OrigCaption\caption
+  \renewcommand{\caption}[2][X]{\OrigCaption[#2]{}}
+  \newcommand{\processfigures@hooka}{\@empty}
+  \def\AtEndFigures{\g@addto@macro\processfigures@hooka}
+  \newcommand{\processtables@hooka}{\@empty}
+  \def\AtEndTables{\g@addto@macro\processtables@hooka}
+  \AtBeginTables{\cfoot{\footnotesize\scshape\tablename\ \thetable\captionlabeldelim}}
+  \AtEndTables{\cfoot{}}
+  \AtBeginFigures{\cfoot{\footnotesize\scshape\figurename\ \thefigure\captionlabeldelim}}
+  \AtEndFigures{\cfoot{}}
+  \def\processfigures{%
+   \expandafter\ifnum \csname @ef@fffopen\endcsname>0
+    \immediate\closeout\efloat@postfff \ef@setct{fff}{0}
+    \clearpage                                                        % bj
+    \if@figlist                                                       % bj
+      {\normalsize\listoffigures} % bj
+      \clearpage                                                   % bj
+    \fi
+    \if@fighead
+       \section*{\figuresection}                                   % bj
+       \suppressfloats[t]                                          % jpg
+    \fi
+    \markboth{\uppercase{\figuresection}}{\uppercase{\figuresection}}% bj
+    \processfigures@hook \@input{\jobname.fff} \processfigures@hooka
+   \fi}
+  \def\processtables{%
+    \expandafter\ifnum \csname @ef@tttopen\endcsname>0
+    \immediate\closeout\efloat@postttt \ef@setct{ttt}{0}
+    \clearpage                                                      % bj
+    \if@tablist                                                     % bj
+      {\normalsize\listoftables}                                    % bj
+      \clearpage % bj
+    \fi
+    \if@tabhead
+        \section*{\tablesection}                                  % bj
+        \suppressfloats[t]                                        % jpg
+    \fi
+    \markboth{\uppercase{\tablesection}}{\uppercase{\tablesection}}% bj
+    \processtables@hook \@input{\jobname.ttt} \processtables@hooka
+   \fi}
+%</enfconfig>
+%    \end{macrocode}
+%
+% This brings us to the end of \file{aiaaenf.cfg}.
+%
+% \Finale
+%

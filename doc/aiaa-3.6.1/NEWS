@@ -1,0 +1,65 @@
+This is the file `NEWS', which is part of the `aiaa' distribution.
+
+v3.7 (07-jun-2004)
+
+     to provide a more readable version to use for handouts during
+     the oral presentation, added `handcarry' option to the technical
+     conference paper class.
+
+     to make it more apparent that the advanced LaTeX sample is not
+     for beginners, `template_basic' was renamed `template' and
+     `template_advanced' was renamed `advanced_example'.
+
+     added files: NEWS, MANIFEST, COPYING
+
+
+v3.6 (23-may-2004)
+
+     documentation polishing based on customer feedback
+
+     [note: aiaa-tc.cls still indicated v3.5]
+
+
+v3.5 (05-apr-2004)  
+
+     packaged class and bibliography style with docstrip
+
+     added `submit' option to technical conference paper class
+
+     renamed a number of files
+
+     officially blessed by AIAA
+
+
+v3.4 (28-mar-2004) [never released to CTAN]
+
+     minor consistency-related edits to AIAA author guide
+
+     
+v3.3 (26-mar-2004)
+
+     created template
+
+     documentation additions
+
+
+v3.2 (25-mar-2004) [never released to CTAN]
+
+     documentation changes
+
+
+v3.1 (23-mar-2004)
+
+     layout changed to conform with AIAA's current guidelines
+
+
+v3.0 (22-mar-2004) [released to CTAN, but v3.1 overtook its distribution]
+
+     initial revamp of unofficial aiaa LaTeX bundle per single-column
+     layout employed Edward Tufte
+
+
+For earlier versions, see pre2004/CHANGES.
+
+
+- Release $Name:  $ -

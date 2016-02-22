@@ -1,2 +1,6 @@
-# Ignore Solidworks Temp Files
-~$*
+~$* # Ignore Solidworks Temp Files
+*.bak # live backup files for TexMaker
+*.swp # swap files for vim
+*.Rhistory # RStudio command history
+*.Rapp.history # some other RStudio history file
+

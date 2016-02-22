@@ -1,0 +1,391 @@
+%
+% latex2e adocument: smpaiaa.tex
+%
+%  sample AIAA conference paper, journal article,
+%  journal note, and journal submission
+%
+%  -- bil kleb <10 jan 97>
+%
+
+\documentclass[cover]{aiaa}% options: paper, article, note,
+                           %          cover, and/or submit
+
+% note: until we reach \begin{document}, we're in the `preamble'
+
+% load items used by the aiaa class:
+
+% for a conference paper (`paper' option [default]):
+\PaperNumber{98--0879}
+\PaperNotice{\CopyrightD{1999}}
+\CoverFigure{smpfig}% [optional cover figure]
+\Conference{{\bfseries 36th AIAA Aerospace Sciences \\
+            Meeting and Exhibit} \\
+            January~12--15,~1998/Reno,~NV}
+
+% for journal submission (`submit' option):
+\SubmitName{Kleb ET AL.\ (A10659)}
+
+% for journal simulation (`article' or `note' options):
+\JournalName{Journal of Spacecraft and Rockets}
+\JournalPage{39}
+\JournalIssue{Volume~36, Number~2}
+\JournalNotice{Presented as Paper~98--0879 at the AIAA
+               36th Aerospace Sciences Meeting, Reno,~NV,
+               Jan.~12--15,~1998; received Feb.~13,~1998;
+               revision received Sept.~18,~1998;
+               accepted for publication Oct.~1,~1998.
+               \CopyrightD{1999}}
+
+% specific to journal article:
+\ArticleIssue{Vol.~36, No.~2, March--April 1999}% first page
+\ArticleHeader{Kleb ET AL.}%                      subsequent pages
+
+% specific to journal note:
+\NoteHeader{J.Spacecraft, Vol.~36, No.~2: Engineering Notes}
+
+% load the title, author, and abstract for use with the \maketitle command
+
+\title{Simulation of an Aerospace Vehicle \\
+       Pitch-Over Maneuver}
+                                
+\author{
+%
+William L.~Kleb%
+%
+  \thanks{Research Engineer, Aerothermodynamics Branch,
+          Aero- and Gas-Dynamics Division,
+          Research and Technology Group.} \\
+%
+         {\itshape NASA Langley Research Center,
+                   Hampton,~VA~23681}\\[5pt]
+%
+A.~N.~Author%
+%
+  \thanks{Deligent worker,
+          AIAA member.}
+%
+\ and Y.~F.~Anotherlongername%
+%
+  \thanksibid{2} \\ % use same footnote as second author
+%
+         {\itshape Someother Affliation,
+         Atown,~ST~98293}
+}
+
+\abstract{{\em Note: this abstract does not appear when a
+journal note simulation is the chosen option.}  The objective of
+the present work is to summarize the application of unsteady
+computational fluid dynamic methods to the problem of predicting
+verticle take-off/vertical landing vehicle aerodynamics during an
+un-powered pitch-over maneuver.  In addition to the
+time-dependent simulation of a pitch-over maneuver, a series of
+steady solutions at discrete points are also computed for
+comparison with wind-tunnel measurements and as a means of
+quantifying unsteady effects.  As this application represents a
+new challenge to unsteady computational fluid dynamics,
+observations concerning grid resolution, far-field boundary
+placement, temporal resolution, and the suitability of assuming
+flow-field symmetry are discussed.}
+
+
+\begin{document}
+
+\maketitle%  create the cover page, title block, and notices
+
+\section{Nomenclature}% you could have this generated
+                      % automatically via the nomenclature package
+
+\begin{tabbing}
+12345678 \= Reynolds number based on length $s$ \kill
+$c$      \> Sound speed, m/s \\
+$M$      \> Mach number \\
+$P$      \> Pressure, Pa \\
+$Re_s$   \> Reynolds number based on length $s$ \\
+$T$      \> Temperature, K \\
+$V$      \> Velocity, m/s \\
+$x,y,z$  \> Cartesian body axes, m \\
+$\alpha$ \> Angle of attack, deg \\
+$\eta$   \> Wall-normal distance, m \\
+$\rho$   \> Density, kg/m$^3$
+\end{tabbing}
+
+\subsection{Subscripts}
+\begin{tabbing}
+12345678 \= \kill
+$tran$   \> Transition \\
+$w$      \> Wall \\
+$\infty$ \> Freestream
+\end{tabbing}
+
+\subsection{Superscripts}
+\begin{tabbing}
+12345678  \= \kill
+$0$       \> Fiduciary point \\
+$n\!+\!1$ \> Time level
+\end{tabbing}
+
+\section{Introduction}
+
+\dropword NASA's Access to Space Study\cite{bekey:94ja}
+recommends the development of a {\em fully}\ reusable launch
+vehicle\cite{dornheim:94awst} to replace the aged Space
+Shuttle. {\em The \verb+\dropword+ command created the hanging
+capital letter and automatically capitalizes the rest of the
+word.}  A method of reaching this goal is to develop a vehicle
+which does not rely on expendable boosters to reach orbit, a
+single-stage-to-orbit vehicle\cite{austin:94ja}.  One such
+configuration being investigated is a Vertical Take-off and
+Vertical Landing (VTVL) concept\cite{austin:94ja}.  In one
+scenario, the VTVL vehicle, upon completion of its mission in
+low-Earth orbit, reenters nose first, decelerates to subsonic
+speeds, and then performs a rotation
+maneuver\cite{dornheim:95awst,david:95sn,dornheim:95awst2} to
+land vertically.
+
+
+Figure~\ref{f:trn2lndg} presents a schematic of the last portion
+of a typical VTVL entry.
+\begin{figure}
+  \incfig{smpfig}
+  \caption{Transition to landing for a VTVL vehicle.}
+  \label{f:trn2lndg}
+\end{figure}
+The pitch-over maneuver, which occurs near Mach 0.2, is
+characterized by high angle of attack, unsteady, vortical flow.
+Accurately predicting vehicle performance during this aerodynamic
+pitch-over maneuver is quite challenging. While ground-based
+facilities can readily predict the vehicle's aerodynamics at
+discrete points during the maneuver, simulating the transient
+motion in a wind tunnel is difficult.\cite{oleary:94cp}
+Time-dependent Computational Fluid Dynamics (CFD) offers another
+means of analyzing the pitch-over maneuver. The majority of work
+in unsteady CFD has, however, been restricted to small amplitude,
+harmonic variations in angle of attack in support of aeroelastic
+flutter predictions.\cite{edwards:92cp}
+
+The objective of the present work is to summarize the application
+of unsteady CFD methods to the problem of predicting VTVL vehicle
+aerodynamics during an un-powered pitch-over maneuver (further
+details are available in the companion conference
+paper\cite{kleb:96cp}).  In addition to the time-dependent
+simulation of a pitch-over maneuver, a series of steady solutions
+at discrete points are also computed for comparison with
+wind-tunnel measurements and as a means of quantifying unsteady
+effects.  As this application represents a new challenge to
+unsteady CFD, observations concerning grid resolution, far-field
+boundary placement, temporal resolution, and the suitability of
+assuming flow-field symmetry are documented in
+Ref.~\citen{kleb:96cp}.
+
+\section{Geometry}
+
+The vehicle's fore body is an 8 deg half-angle sphere cone with
+nose radius equal to 0.3 of the base radius.  The aft body,
+beginning at the 85 percent fuselage station, is a cylinder with
+a partially squared-off cross-section producing flat ``slices''
+extending from the base of the vehicle to approximately the 60
+percent fuselage station.  The vehicle has a fineness ratio of
+6.4.  A complete description of the vehicle geometry modeled has
+been given by Woods in Ref.~\citen{woods:95cp}.
+
+{\em Through the generosity of Karen Bibb, we have a
+demonstration of a subfigure situation.  Note that with imbedded
+labels you can refer to Fig.~\ref{fig:both} as a whole or
+specifically, things in Fig.~\ref{fig:first} or
+Fig.~\ref{fig:second}.}  An early Lockheed-Martin X-33
+configuration was used in the remainder of the examples.  The
+full vehicle is shown in Fig.~\ref{fig:both}.
+\begin{figure}
+  \begin{subfigmatrix}{1}
+    \subfigure[\bf First pretty picture.]
+              {\incfig{smpfig}\label{fig:first}}
+    \subfigure[\bf Second pretty picture.]
+              {\incfig{smpfig}\label{fig:second}}
+  \end{subfigmatrix}
+  \caption{Temperature distribution comparisons at various wing
+           semi-span stations as a function of chord.  Whuh?}
+  \label{fig:both}
+\end{figure}
+This configuration (B1001A) was evaluated during
+Phase I of the X-33 program.  It has twin vertical tails, fins,
+and outboard body flaps.  The engines are modeled by the box-shaped
+structure on the base.  {\em We can also have a ``table'' of two,
+or four, or more figures as in Fig.~\ref{fig:four}.}
+\begin{figure}
+  \begin{subfigmatrix}{2}
+    \subfigure[\bf First pretty picture.]
+      {\incfig{smpfig}}
+    \subfigure[\bf Second pretty picture.]
+      {\incfig{smpfig}}
+    \subfigure[\bf Second pretty picture, again.]
+      {\incfig{smpfig}}
+    \subfigure[\bf First pretty picture, again.]
+      {\incfig{smpfig}}
+ \end{subfigmatrix}
+  \caption{Four small figures in a table-like setting.}
+  \label{fig:four}
+\end{figure}
+
+\section{Computational Mesh}
+
+The underlying surface definition database was generated from
+structured surface patches obtained using
+GRIDGEN\cite{GRIDGEN3D_release}, GridTool\cite{GridTool}, and
+simple analytical methods.  The unstructured surface and
+flow-field grids were then generated using
+FELISA\cite{peraire:90cp} and TETMESH.\cite{kennon:92cp} The
+coarsest mesh has 32,374 tetrahedra with 6,634 nodes.  Additional
+meshes are described in Ref.~\citen{kleb:96cp}; however, all the
+results shown here are the result of the coarsest meshes.
+
+Since the flow about symmetric configurations at high angles of attack,
+even with zero side-slip, often involve asymmetric, vortex-dominated,
+features,\cite{yoshinaga:94cp,cobleigh:94cp,dusing:93cp,fisher:94cp}
+two different options for the computational domain were employed:
+one modeling the complete vehicle and another modeling only half
+of the vehicle, assuming symmetry across the pitch-plane.  This
+aspect of the study is covered in Ref.~\citen{kleb:96cp}.
+
+\section{Numerical Method}
+
+The 3D3U code of Batina\cite{batina:93aij} was used exclusively in this
+study. The 3D3U code was originally developed to study harmonically
+pitching wings and wing-bodies in transonic flow.  The code can
+incorporate aeroelastic effects through assumed mode shapes, coupled
+with a deforming mesh via the linear spring analogy.
+
+The following defaults were used for the computed results in this
+study: Roe's flux-difference splitting, an eigenvalue limiter
+threshold value of 0.3, second-order flux reconstruction using a
+$\kappa$ of 0.5, and Gauss-Seidel implicit time integration with
+a CFL number of one million.
+
+\section{Maneuver Definition}
+
+The pitch schedule chosen for this study is the first half of a
+sine function.  Initially, the vehicle is in steady flight at
+17.5 degrees angle of attack, Mach 0.2.  At time zero, the
+vehicle begins the pitch-over maneuver, reaching a maximum pitch
+rate exactly half-way through the maneuver and finishing at a 180
+deg angle of attack.  For this study, the time to complete the
+maneuver was chosen as 90 seconds, giving a maximum rotation rate
+of 3.1 deg per second halfway through the maneuver.  For
+simplicity, it is assumed that the free-stream Mach number
+remains constant throughout the maneuver.
+
+{\em Sticking in a table for guidance (see Table~\ref{tab:sample}).}
+\begin{table}[htbp]
+  \begin{center}
+    \caption{A sample table}
+    \begin{tabular}{ccc} \hline\hline
+      \multicolumn{2}{c}{Header 1} & Header 2 \\ \hline
+      a & b & c \\
+      d & e & f \\ \hline\hline
+    \end{tabular}
+    \label{tab:sample}
+  \end{center}
+\end{table}
+Normally there would be text following the table, so that it
+is not left ``hanging'' into the next section.
+
+\section{Results}
+
+The main results are presented in two stages which are followed
+by comments on flow asymmetries for both steady and unsteady
+flows.  The first stage is computed steady data as it compares to
+experimental results.  while the second is a comparison of steady
+to unsteady data.
+
+\subsection{Steady Flow}
+
+As a baseline to examine the unsteady effects of the pitch-over
+maneuver itself, steady flow at selected angles of attack were
+computed.  Figure~\ref{f:expcomp} shows a comparison of the
+normal force coefficient with the experimental data of
+Woods\cite{woods:95cp} for angles of attack from 0 to 60 deg.
+\begin{figure}
+   \incfig{smpfig}
+   \caption{Comparison of steady normal force coefficient as a
+     function of angle of attack with experimental data of
+     Woods\protect{\cite{woods:95cp}}}
+   \label{f:expcomp}
+\end{figure}
+The computed results agree well (within 20 percent) at small angles of attack,
+and diverge from the experimental results as the angle
+of attack increases largely due to the position of the lee-side
+separation line---a viscous phenomenon.
+Since the computed results are modeling inviscid
+flow, the only mechanism for flow separation is the numerical
+dissipation in the scheme.  Thus, the exact location of the computed
+separation line is highly grid and scheme dependent. Compounding
+this is the fact that the lee-side separation line nearly
+encompasses the length of the vehicle; and thus, a slight
+deviation can make a large difference in the integrated coefficients.
+
+\subsection{Unsteady Flow}
+
+Figure~\ref{f:aerocomp} compares the normal force coefficient of
+both the steady and unsteady calculations.
+\begin{figure*}
+  \incfig{smpfig}
+  \caption{Comparison of steady and unsteady normal force
+    coefficients as a function of angle of attack.  {\em Example
+    of a figure that spans both columns.  The danger is that the
+    figure numbering may be out of order since the single-column
+    float and double-column float counters are not connected when
+    it comes to determining placement order.  You can correct this
+    known ``feature'' of \LaTeX{} by using the \texttt{fix2col} package.}}
+ \label{f:aerocomp}
+\end{figure*}
+The solid line represents the unsteady results and the symbols
+are the steady-flow results.  Readily discernible is the fact
+that the steady and unsteady results are significantly different.
+The time-dependent results have the time lag behavior expected
+for moderately unsteady flow: showing the same general
+qualitative trend throughout the angle-of-attack range, but with
+the unsteady results lagging behind the steady results. Other
+aerodynamic coefficients show similar
+differences.\cite{kleb:96cp}
+
+\subsection{Flow Asymmetry}
+
+As documented in Ref.~\citen{kleb:96cp}, no appreciable
+asymmetries were found for the steady flow cases computed
+although they were present in the experimental data of
+Woods\cite{woods:95cp}.  However, for the unsteady case,
+asymmetric flow is apparent as shown in Figure{f:uasym}.
+\begin{figure}[t]
+  \incfig{smpfig}
+  \caption{Unsteady flow asymmetry: side force coefficient as a
+    function of angle of attack.}
+  \label{f:uasym}
+\end{figure}
+This figure shows the appearance of a non-zero side-force similar
+to that reported for {\em steady} flow by Woods\cite{woods:95cp}.
+The most significant manifestations of the asymmetries occur in
+the 90 to 135 deg angle-of-attack range.
+
+\section{Concluding Remarks}
+
+The objective of the present work was to focus an unsteady CFD
+method on the prediction of VTVL vehicle aerodynamics during a
+pitch-over maneuver.  This was accomplished through the use of
+the inviscid 3D3U code\cite{batina:93aij} A series of steady
+solutions at discrete points in the maneuver were computed and it
+was shown that, even for the unrealistically slow pitch-over rate
+studied, unsteady effects were large.  More importantly, the
+rotation maneuver creates flow asymmetries which lead to side
+forces not apparent for the steady cases.
+
+As this is an exploratory study, there is certainly room for
+future work. The following is just a handful of extensions which
+would be necessary to create an effective design tool:
+incorporating viscous effects, allowing movable control surfaces,
+coupling a six-degree-of-freedom rigid body dynamics solver,
+adding control law, and incorporating an adaptive grid
+capability.
+
+\bibliography{smpbtx}
+\bibliographystyle{aiaa}
+
+\end{document}

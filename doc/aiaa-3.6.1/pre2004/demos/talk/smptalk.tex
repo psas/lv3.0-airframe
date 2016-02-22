@@ -1,0 +1,296 @@
+%
+%  'smptalk.tex' sample slide presentation - courtesy of karen bibb
+%
+%  typical (unix) processing sequence for postscript printer:
+%
+%    latex smptalk                         - create dvi file
+%    xdvi -paper usr smptalk               - preview dvi file
+%    dvips -t landscape smptalk            - transform dvi file to postscript
+%    ghostview -landscape -swap smptalk.ps - check postscript output
+%    lpr smptalk.ps                        - print postscript file
+
+\documentclass[landscape]{slides}
+
+% load custom command definitions and other default settings:
+\usepackage{smptalk}
+
+% un-comment for ``page'' numbers:
+%\pagestyle{plain}
+
+% un-comment for processing only a select few slides or notes:
+%\onlyslides{1-2,5,10-999}
+%\onlynotes{1-2,12}
+% or, for interactive prompting, un-comment the following:
+%\typein[\slides]{Which slides to do?}
+%\onlyslides{\slides}
+%\onlynotes{\slides}
+
+\begin{document}
+
+\begin{slide}\typeout{Title:}
+  \begin{center}
+    {\Large\bf Hypersonic Flow Computations On Unstructured Meshes}
+
+    {\large\bf AIAA 97--0625}
+
+    \begin{tabular}{cc}
+      K. L. Bibb                & J. Peraire               \\[.1in]
+      \it NASA Langley Research & \it Massachusetts Institute  \\
+      \it Center                & \it of Technology           \\
+      \it Hampton, Virginia     & \it Cambridge, Massachusetts
+    \end{tabular}
+
+    C. J. Riley \\[.1in]
+    \it NASA Langley Research Center \\
+        Hampton, Virginia
+  \end{center}
+\end{slide}
+
+\begin{note}
+  \begin{describe}[1.5in]
+    \item [Session] Applied Computational Aero
+    \item [Time] wed afternoon
+    \item [Mention] colleagues
+          \begin{items} 
+             \item Ram Prabhu for running codes
+             \item Bill Scallion \& Matt Rhode for UPWT data
+          \end{items}
+  \end{describe}
+\end{note}
+
+\begin{slide}\typeout{Background:}
+  \title{Background}
+  \begin{items}
+    \item Rapid, accurate aerodynamic screening capability is
+          needed:
+          \begin{items}
+            \item aerodynamic performance coefficients
+            \item pressure loads for preliminary structural analysis
+            \item general flow features, for example, shock location
+          \end{items}
+    \item Unstructured grids offer flexible and rapid grid generation
+    \item Historically, unstructured Euler schemes
+          are not robust hypersonically
+  \end{items}
+\end{slide}
+
+\begin{slide}\typeout{Outline:}
+  \title{Outline}
+  \leftmargin 3in
+  \begin{items}
+    \item Computational algorithm
+    \item Comparisons to other codes\\
+          and experiment
+    \item Use as a screening tool
+    \item Concluding remarks
+  \end{items}
+\end{slide}
+
+\begin{note}
+  \begin{items}
+     \item details are in the paper for the algorithm
+     \item screening tools are talked about throughout
+  \end{items}
+\end{note}
+
+\begin{slide}\typeout{Flow solver (overview):}
+  \title{FELISA System}
+  \begin{items} 
+    \item Unstructured mesh generation
+    \item `Standard' Euler flow solver, 
+          for subsonic $\Rightarrow$ low supersonic
+    \item Hypersonic Euler flow solver, FELISA\_HYP
+          \begin{items}
+            \item perfect gas
+            \item equilibrium air
+            \item CF$_4$
+          \end{items}
+    \item Parallel versions of flow solvers
+  \end{items}
+\end{slide}
+
+\begin{note}
+  \begin{items}
+    \item for parallel:  work on IBM sP2, J90, workstation clusters.
+    \item not used for the calculations in the paper
+  \end{items}
+\end{note}
+
+\begin{slide}\typeout{Flow solver (FELISA):}
+
+  \title{Unstructured Inviscid\\ Hypersonic Flow Solver\\ (FELISA\_HYP)}
+  \leftmargin 3in
+  \begin{items}
+    \item Euler equations
+    \item Finite volume formulation
+    \item Edge data structure
+    \item H\"{a}nel flux vector splitting
+    \item MUSCL reconstruction
+    \item Explicit time stepping
+  \end{items}
+\end{slide}
+
+\begin{note}
+  \title{Time Stepping}
+  \leftmargin 2.5in
+  \begin{items}
+    \item check to ensure monotonicity
+    \item eliminate limit cycle behavior
+  \end{items}
+\end{note}
+
+\begin{slide}\typeout{Edge Data Structure:}
+  \title{Edge Data Structure}
+  \begin{center}
+    \begin{minipage}{.45\linewidth}
+      \incfig[\linewidth]{smpfig}
+    \end{minipage}
+    \hspace{0.05\linewidth}
+    \begin{minipage}{.45\linewidth}
+      \begin{items}
+        \item control volumes are tetrahedra surrounding each node
+        \item fluxes computed across outer faces of control volume
+        \item flux computations grouped by edge
+      \end{items}
+    \end{minipage}
+  \end{center}
+\end{slide}
+
+\begin{note}
+  \title{Old Edge Data Structure notes\ldots}
+  \leftmargin 2in
+  \begin{items}
+    \item edge il is used in all of the figures\ldots\
+  \end{items}
+  \leftmargin 0in
+  \begin{tabular}{p{.45\linewidth}p{.45\linewidth}}
+    \begin{items}
+      \item fluxes computed across faces of tetrahedra 
+      \item control volume is tetrahedra 
+      \item nodal info for cells is stored
+    \end{items}&
+    \begin{items}
+      \item fluxes computed across $S^e$ for all edges of node~$i$
+      \item control volume surrounds node
+      \item weights for $S^e$ stored
+    \end{items}
+  \end{tabular}
+\end{note}
+
+\begin{slide}
+  \typeout{Flux vector splitting:}
+  \title{H\"anel Flux Vector Splitting}
+  \begin{items}
+    \item Upwind formulation; allows for stable computations
+          across strong shocks
+    \item No 'free' parameters are required
+    \item Allows for constant enthalpy solution where solution is
+          fully converged 
+  \end{items}
+\end{slide}
+
+\begin{slide}\typeout{Reconstruction:}
+  \title{Gradient Reconstruction}
+  \incfig[.8\linewidth]{smpfig}
+\end{slide}
+
+\begin{note}
+  \title{Gradient Reconstruction notes}
+  \begin{items}
+    \item compare to structured grid gradient calculation\\ 
+    \item edge il is used in all of the figures...\\
+    \item MUSCL reconstruction
+          (Monotone Upwind Scheme Conservation Law)
+  \end{items}
+\end{note}
+
+\begin{slide}\typeout{NASA's use of FELISA:}
+  \title{Recent Applications of the FELISA System}
+  \leftmargin 1in
+  \begin{items}
+    \item Lockheed-Martin RLV/X-33 Phase I; aerodynamics
+    \item Lockheed-Martin RLV/X-33 Phase II; 
+          Ascent shock interaction study; transonic aerodynamic screening
+    \item McDonnell Douglas Phase I RLV/X-33;
+          control surface loading (NASA CR 201606)
+          and aerodynamics\\
+          (subsonic $\Rightarrow$ hypersonic)  
+    \item OSC X-34, transonic screening, control surface loading
+  \end{items}
+\end{slide}
+
+\begin{slide}\typeout{X-33 body:}
+  \title{Code to Code Comparisons for\\
+         Preliminary Lockheed--Martin X-33 Vehicle}
+  \begin{items}
+    \item Codes:\\
+      -- FELISA\_HYP:  inviscid, unstructured mesh\\
+      -- LAURA:  viscous, structured grid\\
+      -- DPLUR:  inviscid, structured grid, parallel
+    \item Flow feature, surface pressure comparisons:\\
+      -- $M_\infty = 9.8$, $\alpha = 40^{\circ}$
+    \item Aerodynamic force and moment comparisons:\\
+      -- $M_\infty = 4.5$, experimental data from LaRC UPWT
+  \end{items}
+\end{slide}
+
+\begin{slide}
+  \title{X33 Configuration}
+  \begin{center}
+    \begin{tabular}{cc}
+      \incfig[.45\linewidth]{smpfig}&
+      \incfig[.45\linewidth]{smpfig}
+    \end{tabular}
+  \end{center}
+\end{slide}
+
+\begin{note}
+  \title{Code to Code Comparisons for
+         Preliminary Lockheed--Martin X-33 Vehicle}
+  \leftmargin 3in
+  \begin{items}
+    \item mention code authors
+  \end{items}
+\end{note}
+
+\begin{slide}\typeout{How has FELISAHYP been used?}
+  \title{Grid Generation Time Comparisons}
+  \begin{items}
+    \item Initial geometry definition, surface and volume mesh generation
+          for an X-33 configuration, first~time~$\|$ most~recent:
+          \begin{items}
+            \item FELISA:  1.5 weeks $\|$ 4 days
+            \item structured: 6 weeks $\|$ 3.5 weeks
+          \end{items}
+    \item Case-specific grid generation:
+          bow shock spacing: time consuming for FELISA, 1-2 days
+          control surface deflections:
+          \begin{items}
+            \item $1/2$ day for unstructured
+            \item $1/2$ week for LAURA 
+          \end{items}
+  \end{items}
+\end{slide}
+
+\begin{note}
+  \title{Grid Generation Time Comparisons}
+  \begin{describe}[.9in]
+    \item[felisa] put together surfaces, intersection curves, topology
+    \item[laura] build surface on cad
+  \end{describe}
+\end{note}
+
+\begin{slide}\typeout{Concluding Remarks:}
+  \title{Concluding Remarks}
+  \begin{items}
+    \item FELISA\_HYP flow solver  developed\\
+    \item Applied FELISA System with FELISA\_HYP to complex \\configurations
+          \begin{items}
+            \item Comparable accuracy to structured grid solvers
+            \item Faster turn--around time than structured grid methods
+          \end{items}
+    \item Significant impact on major NASA programs
+  \end{items}
+\end{slide}
+
+\end{document}

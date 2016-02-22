@@ -1,0 +1,34 @@
+This is the file `MANIFEST', which is part of the `aiaa' distribution.
+
+The `aiaa' distribution consists of several files.  The first two
+are the core, and the rest provide documentation and examples.
+
+              aiaa.dtx - Bundled in `docstrip' format: the users manual,
+                         the aiaa-tc.cls code, and a bibliographic style.
+              aiaa.ins - The installation driver for aiaa.dtx.
+
+              aiaa.pdf - The Users Manual (obtained by running aiaa.dtx
+                         through LaTeX).
+
+      author_guide.pdf - AIAA submission instructions.
+
+          template.tex - A template from which a paper could be started.
+          template.pdf - Sample PDF output for template.tex
+
+  advanced_example.tex - An example that employs advanced, third-party
+                         LaTeX packages (for adventurous soles).
+  advanced_example.pdf - Sample PDF output of advanced_example.pdf
+
+     figure_magnet.eps - An EPS-format figure used by the examples.
+     figure_magnet.pdf - An PDF-format figure used by the examples.
+
+               COPYING - License and copyright information.
+
+              MANIFEST - This file.
+
+                  NEWS - Summary of user-visible changes worth mentioning.
+
+               pre2004 - Directory containing the obsolete, unofficial aiaa
+                         distribution.
+
+- Release $Name:  $ -

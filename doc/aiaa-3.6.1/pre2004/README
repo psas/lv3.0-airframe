@@ -1,0 +1,57 @@
+This is the file `README', which accompanies the `aiaa' distribution,
+version 2.4, dated 1999/02/22 by bil kleb <w.l.kleb@larc.nasa.gov>
+
+INTRODUCTION:
+
+This distribution is centered around a modification to the standard article
+document class to produce (nearly) aiaa-conformant conference papers
+and journal submittals---it will even simulate the typesetting
+of journal articles and notes for length-determination
+purposes.  The distribution also contains a (mostly) aiaa-compliant
+bibliographic style sheet for use with BibTeX, a 9pt style sheet,
+a sample document, a sample presentation, and other miscellaneous
+examples and test equipment.
+
+USER'S MANUAL:
+
+To produce a users' manual, run LaTeX on `aiaa.dtx'.
+
+INSTALLATION:
+
+To obtain the individual files which are part of the aiaa package,
+run LaTeX on the installation file, `aiaa.ins'.  LaTeX's docstrip
+utility will extract the files from `aiaa.dtx'.
+
+DISTRIBUTING:
+
+You are free to re-distribute these files provided the restrictions
+mentioned in 'aiaa.ins' are obeyed.  These are mainly that the
+three core files always must be distributed as a whole and that
+no one is allowed to distribute the files for profit.
+
+REQUIREMENTS:
+
+This package relies on the presence of a number of other packages:
+
+   caption2     dropping     endfloat     fancyhdr
+   graphicx     lastpage     setspace     subfigure
+
+Most come bundled with the various (La)TeX distributions, others
+are available from any CTAN site or its mirrors---see the users'
+manual for more information on CTAN.  Typically you'll need
+to get `dropping' and `caption2'.
+
+DISCLAIMER:
+
+This distribution is not connected with the AIAA in any way, it
+simply represents the product of several people's efforts to
+create a usable AIAA LaTeX2e template for conference papers
+and journal submissions.
+
+WEBSITE:
+
+http://abweb.larc.nasa.gov:8080/~kleb/aiaa/
+
+INQUIRIES:
+
+Inquiries can be sent to:  <w.l.kleb@larc.nasa.gov>

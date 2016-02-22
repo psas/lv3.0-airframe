@@ -1,0 +1,366 @@
+% `smpsubf.tex' - a sample of subfigure usage 
+%
+% see epslatex.{ps,pdf} in the info directory of the CTAN for
+% more discussion on figure placement, usage, etc.
+%
+\documentclass{aiaa}% use draft mode to check for
+                    % over-full boxes (big black lines).
+
+% declare new lengths that are used for computing subfigure
+% layouts when doing up-down, left-right ordered tables of subfigures.
+
+\newlength{\subfigwidth}% subfigure width
+\newlength{\subfigcolsep}% separation between subfigures
+\setlength{\subfigcolsep}{2\tabcolsep}% tie to that used for tabular
+
+% define a command that creates meaningless blocks of text.
+% use is, for example, \replicate{4}{text} where `4' is the
+% number of times to repeat the filler `text'.
+
+\makeatletter
+\newcounter{numrepeat}
+\newcommand{\replicate}[2]{\par
+ \setcounter{numrepeat}{#1}\relax
+ \@whilenum \value{numrepeat} > 0 \do
+  {{#2}\addtocounter{numrepeat}{-1}}\par}
+\makeatother
+
+% make a command to be the filler text
+% for the replicate command above: 
+
+\newcommand{\filler}%
+  {\em More text and even more text and even more text.
+   Followed by some other stuff.
+   Then adding yet additional material.
+   Lets now change gears and talk about some other stuff for a while.
+   I am sick-to-death of this other bit of rambling,
+   and besides I need more material.}
+
+\title{Some Subfigure Layout Choices}
+\author{Bil Kleb\\
+       {\it NASA Langley Research Center, Hampton,~Virginia,~23681}}
+
+\begin{document}
+
+\maketitle
+
+The purpose of this document is to present a number
+of different subfigure layout options.  The methods are currently
+rather {\em ad hoc}, but future versions should make this sort
+of thing more automatic and remove the requirement for
+fiddling on a case-by-case basis.
+
+
+\section{Two stacked figures}
+
+Let's start off with a simple one: two figures stacked one atop the
+other as shown in Fig.~\ref{fig:3f}.
+\begin{figure}
+  \begin{subfigmatrix}{1}
+    \subfigure[The first one. ]{\incfig{smpfig}}
+    \subfigure[The second one.]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Two, stacked subfigures.}
+  \label{fig:3f}
+\end{figure}
+\replicate{3}{\filler}
+
+
+\section{Six Figures}
+
+\subsection{Up-down, Left-right Ordering}
+
+This is some text, referencing Fig.~\ref{fig:udlr}. Note that
+the order of the sub figures is up-down, then left-right.
+Beware that alignment will be thrown off if the subcaptions are
+typeset with differing numbers of lines, i.e., a long subcaption
+and a short subcaption and the \texttt{[b]} alignment option for the
+minipages are not used.
+\begin{figure}
+  \setlength{\subfigwidth}{.5\linewidth}
+  \addtolength{\subfigwidth}{-.5\subfigcolsep}
+  \vspace*{-\subfigtopskip}
+  \begin{minipage}[b]{\subfigwidth}
+    \subfigure[The first one. ]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{3}
+    \subfigure[The fourth one.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{1}
+    \subfigure[The second one.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{4}
+    \subfigure[The fifth one. ]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{2}
+    \subfigure[The third one. ]{\incfig{smpfig}}
+  \end{minipage}\hfill
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{5}
+    \subfigure[The sixth one. ]{\incfig{smpfig}}
+  \end{minipage}
+  \caption{Up-down ordering of the subfigures
+           using the minipage environment.}
+  \label{fig:udlr}
+\end{figure}
+\replicate{4}{\filler}
+
+\subsection{Left-Right, Up-Down Ordering}
+
+Now, if we wanted the ordering to be left-right, then
+up-down, we could use the tabular environment. This
+is how Fig.~\ref{fig:lrud} was generated.
+\begin{figure}
+  \begin{subfigmatrix}{2}
+    \subfigure[The first one. ]{\incfig{smpfig}}
+    \subfigure[The second one.]{\incfig{smpfig}}
+    \subfigure[The third one. ]{\incfig{smpfig}}
+    \subfigure[The fourth one.]{\incfig{smpfig}}
+    \subfigure[The fifth one. ]{\incfig{smpfig}}
+    \subfigure[The sixth one. ]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Ordering the subfigures from left-to-right, then
+    up-down using the tabular environment.}
+  \label{fig:lrud}
+\end{figure}
+\replicate{4}{\filler}
+
+\section{Eight Figures Spanning Both Columns}
+
+This Fig.~\ref{fig:long} shows the method of `continuing'
+the figure onto another page.
+\begin{figure*}
+  \begin{subfigmatrix}{2}
+    \subfigure[The first one. ]{\incfig{smpfig}}
+    \subfigure[The second one.]{\incfig{smpfig}}
+    \subfigure[The third one. ]{\incfig{smpfig}}
+    \subfigure[The fourth one.]{\incfig{smpfig}}
+    \subfigure[The fifth one. ]{\incfig{smpfig}}
+    \subfigure[The sixth one. ]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Ordering the subfigures from left-to-right, then
+    up-down using the tabular environment.}
+  \label{fig:long}
+\end{figure*}
+\addtocounter{figure}{-1}
+\setcounter{subfigure}{6}
+\begin{figure*}
+  \begin{subfigmatrix}{2}
+    \subfigure[The seventh one.]{\incfig{smpfig}}
+    \subfigure[The eighth one. ]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Concluded.}
+\end{figure*}
+\replicate{4}{\filler}
+
+
+\section{Nine Subfigures}
+
+\subsection{Up-down, Left-right Ordering}
+
+This is some text, referencing Fig.~\ref{fig:3ud3lr}. Note that
+the order of the sub figures is up-down, then left-right.
+\begin{figure}[htb!]
+  \setlength{\subfigwidth}{.333\linewidth}
+  \addtolength{\subfigwidth}{-.667\subfigcolsep}
+  \vspace*{-\subfigtopskip}
+  \begin{minipage}[b]{\subfigwidth}
+    \subfigure[The first.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{3}
+    \subfigure[The fourth.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{6}
+    \subfigure[The seventh.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{1}
+    \subfigure[The second.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{4}
+    \subfigure[The fifth.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{7}
+    \subfigure[The eighth.]{\incfig{smpfig}}
+  \end{minipage}
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{2}
+    \subfigure[The third.]{\incfig{smpfig}}
+  \end{minipage}\hfill
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{5}
+    \subfigure[The sixth.]{\incfig{smpfig}}
+  \end{minipage}\hfill
+  \begin{minipage}[b]{\subfigwidth}
+    \setcounter{subfigure}{8}
+    \subfigure[The ninth.]{\incfig{smpfig}}
+  \end{minipage}
+  \caption{Up-down ordering of the subfigures
+           using the minipage environment.}
+  \label{fig:3ud3lr}
+\end{figure}
+\replicate{4}{\filler}
+
+\subsection{Left-Right, Up-Down Ordering}
+
+Now, if we wanted the ordering to be left-right, then
+up-down, we could use the tabular environment. This
+is how Fig.~\ref{fig:3lr3ud} was generated.  This figure spans both
+columns, so it is most likely out of order (and appears near or
+at the end of this document).
+\begin{figure*}
+  \begin{subfigmatrix}{3}
+    \subfigure[The first.  ]{\incfig{smpfig}}
+    \subfigure[The second. ]{\incfig{smpfig}}
+    \subfigure[The third.  ]{\incfig{smpfig}}
+    \subfigure[The fourth. ]{\incfig{smpfig}}
+    \subfigure[The fifth.  ]{\incfig{smpfig}}
+    \subfigure[The sixth.  ]{\incfig{smpfig}}
+    \subfigure[The seventh.]{\incfig{smpfig}}
+    \subfigure[The eighth. ]{\incfig{smpfig}}
+    \subfigure[The ninth.  ]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Ordering the subfigures from
+           left-to-right, then up-down
+           using the tabular environment.}
+  \label{fig:3lr3ud}
+\end{figure*}
+\replicate{4}{\filler}
+
+
+\section{Two Small Subfigures and One Large One}
+
+\subsection{A}
+
+Next, we try two small figures with one large one.  This attempt
+is shown in Fig.~\ref{fig:2s1l}.
+\begin{figure}[htb!]
+  \setlength{\subfigwidth}{.284\linewidth}% have to FIDDLE with this
+  \addtolength{\subfigwidth}{-.5\subfigcolsep}
+  \begin{minipage}[b]{\subfigwidth}
+    \begin{subfigmatrix}{1}
+      \subfigure[One.]{\incfig{smpfig}}
+      \subfigure[Two.]{\incfig{smpfig}}
+    \end{subfigmatrix}
+  \end{minipage}
+  \addtolength{\subfigwidth}{.5\subfigcolsep}
+  \addtolength{\subfigwidth}{-\linewidth}
+  \setlength{\subfigwidth}{-\subfigwidth}
+  \addtolength{\subfigwidth}{-.5\subfigcolsep}
+  \begin{minipage}[b]{\subfigwidth}
+    \subfigure[The large one.]{\incfig{smpfig}}
+  \end{minipage}
+  \caption{Two small subfigures and a large one.}
+  \label{fig:2s1l}
+\end{figure}
+\replicate{3}{\filler}
+
+\subsection{B}
+
+Figure~\ref{fig:1l2s} is the same, only with the large/small
+positions swapped about the vertical axis.
+\begin{figure}[htb!]
+  \setlength{\subfigwidth}{.716\linewidth}% have to FIDDLE with this
+  \addtolength{\subfigwidth}{-.5\subfigcolsep}
+  \begin{minipage}[b]{\subfigwidth}
+    \subfigure[The large one.]{\incfig{smpfig}}
+  \end{minipage}
+  \addtolength{\subfigwidth}{.5\subfigcolsep}
+  \addtolength{\subfigwidth}{-\linewidth}
+  \setlength{\subfigwidth}{-\subfigwidth}
+  \addtolength{\subfigwidth}{-.5\subfigcolsep}
+  \begin{minipage}[b]{\subfigwidth}
+    \begin{subfigmatrix}{1}
+        \subfigure[One.]{\incfig{smpfig}}
+        \subfigure[Two.]{\incfig{smpfig}}
+    \end{subfigmatrix}
+  \end{minipage}
+  \caption{One large subfigure beside two small ones.}
+  \label{fig:1l2s}
+\end{figure}
+\replicate{1}{\filler}
+
+\subsection{C}
+
+Now, for a slightly different effect, two subfigures on top with
+a large one on the bottom, see Fig.~\ref{fig:2st1l}.
+\begin{figure}[htb!]
+  \begin{subfigmatrix}{2}
+    \subfigure[One.]{\incfig{smpfig}}
+    \subfigure[Two.]{\incfig{smpfig}}
+  \end{subfigmatrix}%
+  \begin{subfigmatrix}{1}
+    \centering\subfigure[The large one.]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{Two smaller subfigures over a larger one.}
+  \label{fig:2st1l}
+\end{figure}
+\replicate{1}{\filler}
+
+\subsection{D}
+
+And, of coarse the old large subfigure on top with
+two subfigures beneath. Fig.~\ref{fig:1lt2sb} demonstrates
+this one.
+\begin{figure*}[htb!]
+  \begin{subfigmatrix}{1}
+    \subfigure[The large one.]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \begin{subfigmatrix}{2}
+    \subfigure[One.]{\incfig{smpfig}}
+    \subfigure[Two.]{\incfig{smpfig}}
+  \end{subfigmatrix}
+  \caption{One large subfigure above two smaller ones.}
+  \label{fig:1lt2sb}
+\end{figure*}
+\replicate{2}{\filler}
+
+\subsection{E}
+
+Steve Alter prompted Figure~\ref{f:twobytwo}: two with two on the side.
+\begin{figure*}
+%
+  \newlength{\firstfigwidth}
+  \newlength{\secondfigwidth}
+  \newlength{\thirdfigwidth}
+%
+  \setlength{\firstfigwidth}{0.39745\linewidth}%  FIDDLE with these
+  \setlength{\secondfigwidth}{0.39745\linewidth}% two numbers
+%
+  \setlength{\thirdfigwidth}{\linewidth}
+  \addtolength{\thirdfigwidth}{-4\tabcolsep}
+  \addtolength{\thirdfigwidth}{-\firstfigwidth}
+  \addtolength{\thirdfigwidth}{-\secondfigwidth}
+%
+  \begin{minipage}[t]{\firstfigwidth}
+    \subfigure[Representative planes of X34 viscous grid.]
+              {\incfig{smpfig}}
+  \end{minipage}% note: `%'s are important in this region
+  \hspace{2\tabcolsep}%
+  \begin{minipage}[t]{\secondfigwidth}
+     \subfigure[Meridnal plane.]
+               {\incfig{smpfig}}
+  \end{minipage}% note: `%'s are important in this region
+  \hspace{2\tabcolsep}%
+  \begin{minipage}[b]{\thirdfigwidth}
+    \begin{subfigmatrix}{1}
+     \subfigure[Wing root.]{\incfig{smpfig}}
+     \subfigure[Wing tip.]{\incfig{smpfig}}
+    \end{subfigmatrix}
+  \end{minipage}
+%
+  \caption{X34 volume grid used for viscous computations.}
+  \label{f:twobytwo}
+%
+\end{figure*}
+\replicate{3}{\filler}
+
+\end{document}

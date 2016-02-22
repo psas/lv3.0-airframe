@@ -1,0 +1,76 @@
+%
+%  This is file `aiaa.ins', the installation file for the `aiaa'
+%  distribution, version 2.4, dated 1999/02/22 by bil kleb
+%  <w.l.kleb@larc.nasa.gov>
+%
+%  To obtain the individual components of the aiaa bundle necessary
+%  to produce a document, RUN THIS FILE THROUGH LATEX.  The files
+%  will be extracted from the file `aiaa.dtx' via the docstrip utility
+%  that is part of latex.  To produce a users' manual, run the
+%  bundle itself, 'aiaa.dtx', through LaTeX.
+%
+%  You may use the `aiaa' distribution freely, but at your own
+%  risk.  The author can not be held responsible for any consequence
+%  of your using any of these files, or files created from these,
+%  including hardware, software, and data damage.  You may not make
+%  any changes to the files aiaa.dtx or aiaa.ins.  You may incorporate
+%  the code from these files in other files under different names,
+%  provided the original author are given at least some token
+%  amount of credit for his work and that you yourself take
+%  the complaints from the user(s) of your file(s).  You may freely
+%  distribute the files aiaa.dtx, aiaa.ins, and aiaalgo.eps provided:
+%
+%    1) You do not take money for the distribution or use
+%       of these files except for a nominal charge for data medium
+%       and postage
+%    2) You always distribute `aiaa.dtx', `aiaa.ins', and `aiaalgo.eps'
+%       at the same time, i.e., as a package.
+%
+%  `aiaa' is based on the standard LaTeX article class and used
+%  patrick daly's custom-bib package to generate the aiaa
+%  bibliographic style file.  These files were created with
+%  copious help from those in the comp.text.tex newsgroup, the
+%  standard LaTeX books, and various package maintainers.
+%  
+\def\batchfile{aiaa.ins}
+\input docstrip.tex
+
+\keepsilent
+\preamble
+
+The "aiaa" distribution by bil kleb <w.l.kleb@larc.nasa.gov>.
+Please see the file `aiaa.ins' for information on how you may
+(re-)distribute the `aiaa' bundle of files.
+
+\endpreamble
+
+\declarepostamble\bstpostamble
+\endpostamble
+
+\generate{\file{aiaa.cls}   {\from{aiaa.dtx}{class}}}
+\generate{\file{aiaa9pt.sty}{\from{aiaa.dtx}{style}}}
+\generate{\usepostamble\bstpostamble%
+          \file{aiaa.bst}   {\from{aiaa.dtx}{bibstyle}}}
+\generate{\file{aiaaenf.cfg}{\from{aiaa.dtx}{enfconfig}}}
+
+\Msg{::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::}
+\Msg{ }
+\Msg{  Now you should have the following files:}
+\Msg{ }
+\Msg{      aiaa.cls  aiaa9pt.sty  aiaaenf.cfg  aiaalgo.eps}
+\Msg{ }
+\Msg{  They need to be moved into a directory searched by (La)TeX.}
+\Msg{  Furthermore, the  bibliographic style file:}
+\Msg{ }
+\Msg{    aiaa.bst}
+\Msg{ }
+\Msg{  needs to be moved into a directory searched by BibTeX.}
+\Msg{ }
+\Msg{  The aiaa users manual, which is created by running}
+\Msg{  the file `aiaa.dtx' through LaTeX, has more detailed}
+\Msg{  installation instructions.}
+\Msg{ }
+\Msg{::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::}
+%%
+%%  end of file aiaa.ins
+%%

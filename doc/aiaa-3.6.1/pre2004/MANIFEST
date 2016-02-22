@@ -1,0 +1,39 @@
+This is the file `MANIFEST', which accompanies the `aiaa' distribution,
+version 2.4, dated 1999/02/22 by bil kleb <w.l.kleb@larc.nasa.gov>
+
+The `aiaa' distribution consists of several files.  the first three
+are the core, and the rest are examples and test equipment:
+
+  main directory:
+
+    aiaa.ins      - the installation driver for aiaa.dtx
+    aiaa.dtx      - instructions on how to use the new class,
+                    the code itself, the 9pt style, and the
+                    bibliographic style sheet, all in
+                    `docstrip'-able format
+    aiaalgo.eps   - the aiaa logo in encapsulated postscript format
+    demos         - directory of samples and test equipment
+
+  demos/paper subdirectory:
+  
+    smpaiaa.tex   - a sample document
+    smpfig.eps    - a sample figure
+    smpbtx.bib    - a sample BibTeX database for use with smpaiaa.tex
+
+  demos/subfigs directory:
+
+    smpsubf.tex   - a sample document devoted entirely to various
+                    subfigure layouts
+    smpfig.eps    - a sample figure
+
+  demos/talk subdirectory:
+
+    smptalk.tex   - a sample presentation using `slides' class
+    smptalk.sty   - a sample package for use with smptalk.tex
+    smpfig.eps    - a sample figure
+
+  demos/refs subdirectory:
+
+    tstref.tex    - an additional document made for specifically
+                    testing the aiaa bibliographic style
+    tstbtx.bib    - the BibTeX database that goes with aiaaref.tex

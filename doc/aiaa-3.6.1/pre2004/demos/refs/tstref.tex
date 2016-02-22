@@ -1,0 +1,150 @@
+%
+% aiaaref.tex
+%
+% contents: specifications for AIAA journal reference format,
+%           including examples
+%
+% use: to test bibliographic style sheets generated with makebst
+%
+% bil kleb <w.l.kleb@larc.nasa.gov> (96 nov 13)
+%
+\documentclass{article}
+\usepackage{overcite}
+%
+\pagestyle{empty}
+%
+\setcounter{secnumdepth}{-1}
+\setlength\topmargin{-.5in}
+\setlength\textheight{9.0in}
+\setlength\textwidth{6.0in}
+\setlength\oddsidemargin{0.25in}
+\setlength\parindent{0em}
+%
+% modify section headers:
+%
+\makeatletter\renewcommand\section{\@startsection{section}{1}{0pt}
+{1.2ex}{0.2ex}{\normalfont\bfseries}}\makeatother
+%
+% modify bibliography output to do superscripted reference list
+% with required indentation
+%
+\makeatletter
+\renewcommand{\@biblabel}[1]{$^{#1}$}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname\@mkboth{\MakeUppercase\refname}%
+                                 {\MakeUppercase\refname}}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\setlength{\leftmargin}{0pt}%
+            \settowidth{\labelwidth}{\@biblabel{#1}}%
+            \setlength{\itemindent}{\parindent}%
+            \advance\itemindent by \labelwidth%
+            \setlength{\labelsep}{0.0em}%
+            \setlength{\itemsep}{-\smallskipamount}%
+            \@openbib@code%
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty%
+            \renewcommand\theenumiv{\@arabic\c@enumiv}%
+            \normalsize}
+      \sloppy\clubpenalty4000\widowpenalty4000%
+      \sfcode`\.\@m}
+      {\def\@noitemerr
+        {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+\begin{document}
+
+\begin{center}
+  {\bfseries\LARGE Reference Format for AIAA Journals}
+\end{center}
+
+{\bfseries All references must be complete prior to acceptance of a
+  manuscript.} The following list gives examples of commonly lacking
+information:
+\begin{itemize}\setlength{\itemsep}{0.0ex}
+  \item Name of publishers (for books and {\bfseries proceedings})
+    and their locations.
+  \item Inclusive page numbers or (for books) chapters.
+  \item Complete journal names ({\bfseries no abbreviations}
+    unless part of actual title.
+  \item Journal volume and issue numbers (or months).
+  \item Locations of companies, universities, and societies in
+    reports and papers.
+\end{itemize}
+
+Note for {\bfseries all} references: Spell out {\bfseries
+everything}. AIAA, NASA, NACA, AGARD, NATO are exceptions;
+months may be abbreviated.  All references must be numbered and
+cited in numerical order in the text.  Classified or
+export-restricted references are not permitted.  List
+{\bfseries all} authors.  Follow these examples for format:
+
+\setlength\parindent{2em}
+
+\section{Article in a Book:}
+  \cite{turner:64a}Turner, M.~J., Martin, H.~C., and
+  Leible, R.~C., ``Further Development and Applications of
+  Stiffness Methods,'' {\itshape Matrix Methods of Structural
+  Analysis}, 1st ed., Vol.~1, Macmillan, New York, 1964,
+  pp.~203--266.
+
+\section{Journal Article:}
+  \cite{bhutta:90jsr}Bhutta, B.~A., and Lewis, C.~H.,
+  ``Large-Angle-of-Attack Viscous Hypersonic Flows over Complex
+  Lifting Configurations,'' {\itshape Journal of Spacecraft and
+  Rockets}, Vol.~27, No.~2, 1990, pp.~194--204; also AIAA Paper
+  89--0269, Jan.~1989. [{\itshape Note:} Month acceptable if
+  number is not available.]
+
+\section{Proceedings/Transactions Articles:}
+  \cite{blottner:70cp}Blottner, B.~A.,
+  ``Prediction of Electron Density in the Boundary Layer of Entry
+  Vehicles with Ablation,'' {\itshape The Entry Plasma Sheath and
+  Its Effects on Space Vehicle Electromagnetic Systems}, NASA
+  SP--252, Vol.~1, Oct.~1970, pp.~219--240.
+
+  \cite{wirin:90cp}Wirin, W.~B., ``Space Debris 1989,'' {\itshape Proceedings
+  of the Thirty-Second Colloquium on the Law of Outer Space},
+  AIAA, Washington, DC, 1990, pp.~184--196.
+
+\section{Company Report:}
+  \cite{bhutta:90vra}Bhutta, B.~A., and Lewis, C.~H.,
+  ``PNS Predictions of External/Internal Hypersonic Flows
+  for NASP Propulsion Applications,'' VRA, Inc., VRA--TR--90--01,
+  Blacksburg, VA, June, 1990.
+
+\section{NACA Report:}
+  \cite{miner:75ncr}Miner, E.~W., and Lewis, C.~H.,
+  ``Hypersonic Ionizing Air Viscous Shock-Layer Flows over
+  Nonanalytic Blunt Bodies,'' NASA CR--2550, May 1975.
+
+\section{Meeting Paper:}
+  \cite{bhutta:90cp}Bhutta, B.~A., and Lewis, C.~H.,
+  ``Aerothermodynamic Performance of 3-D and Bent-Nose RVs under
+  Hypersonic Conditions,'' AIAA Paper 90--3068, Aug. 1990.
+
+\section{AIAA Book Series:}
+  \cite{sutton:85ar}Sutton, K., ``Air Radiation
+  Revisted,'' {\itshape Thermal Design of Aeroassisted Orbital
+  Transfer Vehicles}, edited by H.~F.~Nelson, Vol.~96, Progress
+  in Astronautics and Aeronautics, AIAA, New York, 1985,
+  pp.~419--441.
+
+\section{Anonymous Report:}
+  \cite{anon:53}Anon., ``Equations, Tables, and
+  Charts for Compressible Flow,'' NACA Rept.~1135,
+  1953. [{\itshape Note:} Month preferred but not available for
+  this report.]
+
+\section{Private Communication:}
+  \cite{moss:90pc}Moss, J.~N., private
+  communication, NASA Langley Research Center, Hampton, VA, June
+  1990. [{\itshape Note:} Use of private communication is
+  {\bfseries strongly} discouraged.]
+
+\newpage% try the citations contained in testrefs.bib
+
+\bibliography{tstbtx}
+\bibliographystyle{aiaa}
+
+\end{document}

@@ -1,0 +1,84 @@
+This is the file `CHANGES', which accompanies the `aiaa' distribution,
+version 2.4, dated 1999/02/22 by bil kleb <w.l.kleb@larc.nasa.gov>
+
+v2.4 (1999/02/22)
+
+     fixed \\ errors if some fields were left undefined for article
+     or note options
+
+     changed reprint copy on cover
+
+     moved manifest to its own file
+
+v2.3 (1999/02/22) [never released to CTAN]
+
+     web address
+
+     caption label delimeter for submit class
+
+     played with table of content listings for subfigures under
+     submit class
+
+v2.2 (1998/09/09) [never released to CTAN]
+
+     title/author set to raggedright in makecover for articles/notes
+
+     the field of journalissue to exclude page range, plus...
+     
+     added \JournalPage command to indicate starting page of journal
+     article/note.  now the page range on the cover and page numbers
+     of the document are accounted for automatically
+
+v2.1 (1998/08/04)
+
+     added note about web site home
+
+     zip code for aiaa
+
+     belowcaptionskip for tables
+
+v2.0 (1998/02/28)
+
+  patch level 1: (1998/03/02)
+
+     version numbers
+
+     updated typeouts
+
+  patch level 0:
+
+     font sizes and positions of various elements on the
+     cover page for conference papers.
+
+     eliminated extraneous \endinput from the end of aiaa.bst
+
+     new zip code for AIAA
+
+     updated AIAA logo
+
+     added a space between copyright symbol and year in copyright
+     notices a, b, and d
+
+     added more journal abbreviations to bibliographic style
+
+     added \thanksibid command
+
+     units used in creating the cover pages to inches
+
+
+v1.0 (1997/03/03)
+
+     added subfigmatrix environment to make "tables" of figures
+
+     \Figure and \Reference commands eliminated
+
+     \incfig command modified to be simplier, less intrusive.
+     in fact, now it is really just a shorter version of the
+     antecedent \includegraphics
+
+     subfigure caption skips
+
+
+v0.9 (1997/02/20)
+
+     initial release
