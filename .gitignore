@@ -3,4 +3,4 @@
 *.swp # swap files for vim
 *.Rhistory # RStudio command history
 *.Rapp.history # some other RStudio history file
-
+*synctex.gz # sync info for TexMaker
