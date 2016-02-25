@@ -48,9 +48,9 @@ This will enable low-budget groups like the Portland State Aerospace Society to 
 %REMEMBER TO SPECIFY ALL ACRONYMS/INITIALISMS!
 The Portland State Aerospace Society (PSAS) is an interdisciplinary group of engineering students and alumni of Portland State University (PSU) with the long term goal of putting a cubesat into orbit with their own rocket. 
 % info about cubesat market growth: http://www.spaceref.com/news/viewpr.html?pid=44940 
-Their current airframe, named Launch Vehicle 2 (LV2), has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS navigation and a cold gas reaction control system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts having been fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
+Their current airframe, named Launch Vehicle 2 (LV2), has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS navigation and a cold gas reaction controll system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts having been fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
 
-The new airframe being designed, named Launch Vehicle 3 (LV3), aims to address these issues. The LV3 platform uses a 6 inch inner diameter, modules composed of carbon fiber and thin aluminum coupling rings, a carbon fiber nose cone, and a carbon fiber fin section. All of the airframe components connect via standardized rings, to accommodate future experimental modules and flight configurations.
+The new airframe being designed, named Launch Vehicle 3 (LV3), aims to address these issues. The LV3 platform uses a 6 inch inner diameter, modules composed of carbon fiber and thin aluminum coupling rings, a carbon fiber nose cone, and a carbon fiber fin section. All of the airframe components connect via standardized rings, to accomodate future experimental modules and flight configurations.
 
 The cylindrical LV3 airframe modules already outperform the old design with an \weightReduction{} reduction in weight and \strengthIncrease{} increase in yield strength. 
 % Do we know what the increase in strength is? Also, can we confirm the weight reduction?
@@ -59,7 +59,7 @@ The cylindrical LV3 airframe modules already outperform the old design with an \
 \begin{wrapfigure}{L}{\linewidth/3}
 \centering
 \includegraphics[width=\linewidth]{img/layers.png}
-\caption{A cut away view of the layered LV3 design. From bottom to top: preimpregnated carbon fiber (black), adhesive film (eggshell), honeycomb core (brown), adhesive film (eggshell), preimpregnated carbon fiber (black).}
+\caption{A cut away view of the layered LV3 design. From bottom to top: preimpregnated carbon fiber (black), adhesive film (eggshell), honeycomb core (brwon), adhesive film (eggshell), preimpregnated carbon fiber (black).}
 \label{fig:layers}
 \end{wrapfigure}
 
@@ -69,10 +69,10 @@ PSAS is a strong supporter of open source and open hardware development, hosting
 
 Few rocket designs take advantage of the capabilities of composite materials. Existing designs fall into two categories. The first uses a single thick layer of the composite for both load bearing and as the skin of the rocket. The second features a thin composite layer for the rocket's skin, and relies on a metal frame for structural support. 
 Neither of these designs realize the full potential of composites. The LV3 design relies on a three layer method: two layers of carbon fiber fabric sandwiching a honeycomb core (figure \ref{fig:layers}). This design maintains the high specific strength of single sheets of carbon fiber, while also increasing overall rigidity by preventing buckling and bending. 
-The result is an airframe whose structure and skin comes from just two sheets of carbon fiber. The only metal necessary in this design is the aluminum used in the miscellaneous parts like the tip of the nose and the coupling rings which connect the carbon fiber modules. 
+The result is an airframe whose structure and skin comes from just two sheets of carbon fiber. The only metal necessary in this design is the aluminum used in the miscelaneous parts like the tip of the nose and the coupling rings which connect the carbon fiber modules. 
 
-Much of the existing knowledge on composite manufacturing is in the form of institutional knowledge within the firms using these materials. The important details of how to consistently produce high quality composite parts are inaccessible to amateur and university groups. 
-Additionally, most composite fabrics are used in either large, non-load-bearing parts of low curvature, such as radomes or car hoods, or small load-bearing tubes, such as bike frames. Little is known about designing and manufacturing medium-sized load-bearing parts like those used in the LV3 airframe. This work will not only grow the pool of knowledge surrounding medium-sized composite structures, but also make that knowledge accessible to noncommercial groups. 
+Much of the existing knowledge on composite manufacturing is in the form of institutional knowledge within the firms using these materials. The important details of how to consistently produce high quality composite parts are inaccessable to amateur and university groups. 
+Additionally, most composite fabrices are used in either large, non-load-bearing parts of low curvature, such as radomes or car hoods, or small load-bearing tubes, such as bike frames. Little is known about designing and manufacturing medium-sized load-bearing parts like those used in the LV3 airframe. This work will not only grow the pool of knowledge surrounding medium-sized composite structures, but also make that knowledge accessible to noncommercial groups. 
 
 %\lipsum
 
@@ -86,7 +86,7 @@ Additionally, most composite fabrics are used in either large, non-load-bearing 
 
 The design of the cylindrical modules has already been completed, with promising results. These new modules achieved an 80\% weight reduction over the previous LV2 modules, and exceeded the design strength. 
 The present method of manufacturing these new LV3 modules is effective, but needs refinement. There are many steps that rely on the skill of the people assembling the modules. These steps need to be modified so that future PSAS groups and outside university teams will be able to replicate the LV3 design.
-Several templates have already been made to facilitate more consistent cuts of the materials. Further designs will be tried to create tools to assist the composite layup process. 
+Sevral templates have already been made to facilitate more consistent cuts of the materials. Further designs will be tried to create tools to assist the composite layup process. 
 
 Future replication of the LV3 modules and design process is central to the project. Being composed mostly of undergraduates, PSAS has a high turnover rate for its members. Without clear and precise documentation, some past knowledge has been lost when whole teams graduate together. 
 To preserve the lessons learned while designing and building LV3 and to facilitate a base of institutional knowledge within PSAS, the LV3 team is writing a how-to guide for designing and building light-weight rocket airframes using carbon fiber.
@@ -95,7 +95,7 @@ Due to the material needs of the LV3 design, the team has secured donations of b
 Commercial aerospace firms demand very high quality materials. Composite fabrics that have been preimpregnated with epoxy have a short shelf life, even when stored in cold, dry conditions. As such, the companies that use these materials and their suppliers frequently have  preimpregnated fabrics which, for the high standards of commercial aerospace manufacturing, are expired. 
 For use in amateur and university rocketry, however, they are still quite usable. Many university groups, including PSAS, would be unable to purchase these materials outright, so developing a protocol for acquiring unused composites from aerospace firms is central to the LV3 project. 
 
-Design has just begun on the fin and nose sections of the new LV3 airframe, with the aluminum frames for the fins being machined (figure \ref{fig:finFrame}). The surface of the fins will essentially be a flat version of the layered design used for the cylindrical modules (figure \ref{fig:layers}), while the edge of the fins will be a thin rim of machined aluminum. The fins will attach to the rocket via a flange on the aluminum frames, and a final layer of preimpregnated carbon fiber will be laid from fin to fin, to secure them in place. 
+Design has just begun on the fin and nose sections of the new LV3 airframe, with the aluminum frames for the fins being machined (figure \ref{fig:finFrame}). The surface of the fins will essentialy be a flat version of the layered design used for the cylindrical modules (figure \ref{fig:layers}), while the edge of the fins will be a thin rim of machined aluminum. The fins will attach to the rocket via a flange on the aluminum frames, and a final layer of preimpregnated carbon fiber will be layed from fin to fin, to secure them in place. 
 
 Similarly, the nose cone will feature an aluminum tip to deal with the heat generated during the transonic and supersonic portions of the rocket's flight. This is a concern for the LV3 team, since any heat damage to the epoxy will be invisible. 
 Presently, research is being done to estimate the temperature profile over the skin of the nose cone and determine what size of metal tip would be necessary to keep the epoxy well below its glass transition temperature.  
