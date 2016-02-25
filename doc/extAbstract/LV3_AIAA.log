@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.1)  25 FEB 2016 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.1)  25 FEB 2016 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,10 +319,10 @@ Package pdftex.def Info: img/L12-cropped.png used on input line 42.
 <img/layers.png, id=2, 322.20375pt x 445.665pt>
 File: img/layers.png Graphic file (type png)
  <use img/layers.png>
-Package pdftex.def Info: img/layers.png used on input line 61.
+Package pdftex.def Info: img/layers.png used on input line 60.
 (pdftex.def)             Requested size: 156.5882pt x 216.58928pt.
 
-Underfull \hbox (badness 3838) in paragraph at lines 62--62
+Underfull \hbox (badness 3838) in paragraph at lines 61--61
 \OT1/cmr/bx/n/8 (black), ad-he-sive film (eggshell),
  []
 
@@ -333,7 +333,7 @@ Underfull \hbox (badness 3838) in paragraph at lines 62--62
 <img/finFrame.png, id=18, 172.39406pt x 475.02469pt>
 File: img/finFrame.png Graphic file (type png)
  <use img/finFrame.png>
-Package pdftex.def Info: img/finFrame.png used on input line 81.
+Package pdftex.def Info: img/finFrame.png used on input line 80.
 (pdftex.def)             Requested size: 156.58684pt x 431.46857pt.
 
 [2 <./img/layers.png>] 
@@ -346,7 +346,7 @@ Here is how much of TeX's memory you used:
  6390 multiletter control sequences out of 15000+600000
  9727 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,13n,45p,613b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,45p,613b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2014/texmf-dist/fon
@@ -357,7 +357,7 @@ e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb>
-Output written on LV3_AIAA.pdf (3 pages, 1095225 bytes).
+Output written on LV3_AIAA.pdf (3 pages, 1095003 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
