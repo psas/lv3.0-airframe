@@ -10,7 +10,7 @@
 # curves. This script compares different placements 
 # of an extra sample point, to minimize that error.
 
-OD <- 6.5*25.4e-3#m, outer diameter
+OD <- 6.6*25.4e-3#m, outer diameter
 R <- OD/2#m, outer radius
 # L <- 30*25.4e-3#m, length of nose cone
 L <- 5*OD
@@ -83,3 +83,33 @@ plot(ysp(popt), col="red", add=T)
 xset <- c(0, seq(from=popt, to=L, length.out = spline.points-1))
 points(xset, y(xset))
 cat("\noptimum x placements:\n", xset, "\noptimum y placements:\n", y(xset))
+
+wedgeHalf <- 2*2*pi/360
+cat("\nvertices:\nfront nose surface:\n")
+for (i in 1:length(xset)){
+	cat("(", 
+	    xset[i], " ", 
+	    y(xset)[i]*cos(wedgeHalf), " ", 
+	    y(xset)[i]*sin(wedgeHalf),
+	    ")\n", sep="")
+}
+cat("\nfront bounds\n",
+	"(",  L, " ", 2*OD*cos(wedgeHalf), " ", 2*OD*sin(wedgeHalf), ")\n", 
+	"(", -OD, " ", 2*OD*cos(wedgeHalf), " ", 2*OD*sin(wedgeHalf), ")\n", 
+	"(", -OD, " ", 0, ", ", 0, ")\n",
+	sep=""
+	)
+cat("\nback nose surface:\n")
+for (i in 1:length(xset)){
+	cat("(", 
+	    xset[i], " ", 
+	    y(xset)[i]*cos(-wedgeHalf), " ", 
+	    y(xset)[i]*sin(-wedgeHalf),
+	    ")\n", sep="")
+}
+cat("\nback bounds\n",
+    "(",  L, " ", 2*OD*cos(-wedgeHalf), " ", 2*OD*sin(-wedgeHalf), ")\n", 
+    "(", -OD, " ", 2*OD*cos(-wedgeHalf), " ", 2*OD*sin(-wedgeHalf), ")\n", 
+    "(", -OD, " ", 0, ", ", 0, ")\n",
+    sep=""
+)

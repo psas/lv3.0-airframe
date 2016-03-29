@@ -1,7 +1,16 @@
-~$* # Ignore Solidworks Temp Files
-*.bak # live backup files for TexMaker
-*.swp # swap files for vim
-*.Rhistory # RStudio command history
-*.Rapp.history # some other RStudio history file
-*synctex.gz # sync info for TexMaker
+# Ignore Solidworks Temp Files:
+~$*
+# live backup files for TexMaker:
+*.bak
+# swap files for vim:
+*.swp
+# RStudio command history:
+*.Rhistory
+# some other RStudio history file:
+*.Rapp.history
+# sync info for TexMaker:
+*synctex.gz
+# GIMP files (large):
 *.xcf
+# backup files from Gedit:
+*~
