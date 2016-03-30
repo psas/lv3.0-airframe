@@ -1,0 +1,27 @@
+CASEID LV3
+ $FLTCON
+   NMACH=10.0,MACH(1)=0.05,0.1,0.15,0.5,1.0,1.3,1.5,2.0,2.1,2.2,
+   NALPHA=5.0,ALSCHD(1)=0.0,1.0,-1.0,2.0,-2.0,
+   NALT=1.0,ALT(1)=0.0,
+   WT=56.25,
+   LOOP=1.0$
+ $SYNTHS
+   XCG=74.374,
+   ZCG=0.0,
+   XW=91.,
+   ZW=,
+   ALIW=0.,
+   XV=91.,
+   ZV=0.,
+   ALIV=0.$
+ $BODY
+   BLN=33.,
+   BNOSE=2.0,
+   BLA=75.,
+   DS=0.$
+
+ $WGPLNF
+   
+DIM IN !inch-pound-seconds
+BUILD
+NEXT CASE
