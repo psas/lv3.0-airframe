@@ -19,8 +19,11 @@ CASEID LV3
    BNOSE=2.0,
    BLA=75.,
    DS=0.$
-
+! PUT AIRFOIL TYPE HERE
  $WGPLNF
+   CHRDTP=3.25,
+   CHRDR=17.75,
+   
    
 DIM IN !inch-pound-seconds
 BUILD
