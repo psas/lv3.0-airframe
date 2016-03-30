@@ -1,4 +1,4 @@
-﻿Materials:
+#Materials:
 * orca skin
 * orca seal
 * 320 grit sandpaper
@@ -12,7 +12,7 @@
 * paper towels
 * Utility knife
 * Scissors
-Mandrel preparation:
+#Mandrel preparation:
 * use a piece of acrylic or a popsicle stick to scrape away any chunks of epoxy or adhesive from the previous layup
 * wet sand with 320 grit paper, to remove the remaining epoxy and adhesive from the previous layup
 * wet sand with 600 grit paper, removing the marks from the previous sanding
@@ -22,15 +22,16 @@ Mandrel preparation:
 * apply 2 coats of orca seal
 * apply 7 coats of orca skin, 10 minutes between coats
 * wait 1 hour
-  1.jpg 
+  
+1.jpg 
 
 
-Dummy ring preparation:
+#Dummy ring preparation:
 * wet sand with 600 grit paper to remove any stray spray adhesive from the previous layup
 * clean with acetone or water
 
 
-Coupling ring preparation:
+#Coupling ring preparation:
 * place the mandrel on the mandrel-holder
 * put on powderless nitrile gloves
 * wet sand the adhering surfaces with 600 grit paper 
@@ -41,11 +42,12 @@ Coupling ring preparation:
 * apply 1 coat of orca seal to the innermost surface
 * apply 3 coats of orca skin to the innermost surface, waiting 10 minutes between coats
 * wait 1 hour
- 2.jpg 
+ 
+2.jpg 
 
 
 
-Cutting films and fabrics:
+#Cutting films and fabrics:
 * select the appropriate cutting template for the desired film or fabric
 * lay the film or fabric over the plastic surface of the work bench
 * place the template over the film or fabric
@@ -53,18 +55,20 @@ Cutting films and fabrics:
 When cutting the overexpanded nomex honeycomb core material, make sure the template is oriented correctly. You should only be cutting single rows of cells (don't cross from one row to another). The overexpanded cells only bend in one direction. Make sure the template is oriented so that the nome will be able to bend around the cylinder. 
 
 
-Layup Assembly:
+#Layup Assembly:
 * put on powderless nitrile gloves
 * screw the coupling rings into the dummy rings
 * without touching the molding surface of the mandrel, slide the ring assemblies on to the mandrel
 * screw the dummy rings to the mandrel
 * place the mandrel back on the mandrel holder
 * lay a layer of blue, perforated release film on the mandrel. It should span the entire molding surface of the mandrel and not overlap with itself or the coupling rings.
- IMAG2012.jpg 
+ 
+IMAG2012.jpg 
 
 * lay the adhesive strips onto the lower adhering surface of each coupling ring. It may be necessary to use spray adhesive to get it to stay on the rings.
 * lay the inner layer of carbon fiber onto the mandrel. It should overlap the adhesive strips completely, butting up flush against the step of the rings. It should overlap itself by about an inch.
- IMAG2013.jpg 
+ 
+IMAG2013.jpg 
 
 * lay the inner adhesive layer over the carbon fiber. Rotating the mandrel while someone holds down the adhesive (wear powderless nitrile gloves) works well here.
 * once the adhesive is well aligned, peel a section of it back. Someone should still be holding it down. 
@@ -80,7 +84,7 @@ Layup Assembly:
 * use the roll-and-spray technique to apply the outer layer of carbon fiber to the outer layer of adhesive film. There should be about an inch of overlap between the carbon fiber and itself. Take care not to tug on the carbon fiber. When it’s in the oven any deformation to the carbon fiber cloth will relax, forming wrinkles.
 
 
-Vacuum bagging:
+#Vacuum bagging:
 * lay the outer layer of blue, perforated release film onto the mandrel. It should have about an inch of self-overlap.
 * secure the release film with either kapton tape or flash tape
 * lay the breather material (“diaper”) over the mandrel
@@ -103,11 +107,12 @@ Vacuum bagging:
 * carefully apply a ring of goop tape to the inner surface of the outer tube
 * seal the inner and outer tubes to each other
 * gently pinch any air channels out of the goop tape, taking special care to make sure the hose and tubes form a complete seal. Make sure there is no air channel formed by the overlap of the outer tube with itself.
- 20160303_205715.jpg 
+
+20160303_205715.jpg 
 
 
 
-Curing:
+#Curing:
 * set up the aluminum (not plastic) mandrel holders in the oven
 * thread the vacuum hose through the hole in the oven wall
 * gently place the mandrel on the aluminum mandrel holders in the oven, while someone holds them in place
@@ -124,7 +129,7 @@ Curing:
 * ramp down the oven temperature by 5 deg F per hour. Use the oven door to control this cooldown, opening it slightly for faster cooling.
 
 
-Removal from mandrel:
+#Removal from mandrel:
 * once the oven has reached 100 deg F, open the door and slide vacuum hose into the oven, through the hole in the oven wall, using insulated gloves
 * remove the mandrel from the oven using insulated gloves and place it on the mandrel holders on the workbench
 * cut open and dispose of the vacuum bag
@@ -142,9 +147,9 @@ Removal from mandrel:
 
 
 
-Results:
+#Results:
 We developed veins during the curing process. It is believed that this is the result of either the loose vacuum bagging material or the 3M AF30 scotch-weld adhesive. 
 
 
-Hypothesis:
+#Hypothesis:
 Aluminum caul plating will be precisely measured and wrapped around the layup, between the release film and the breather material. Ideally this will distribute the pressure and effects of slack bagging material.
