@@ -22,7 +22,7 @@ CASEID LV3
 ! PUT AIRFOIL TYPE HERE
  $WGPLNF
    CHRDTP=3.25,
-   CHRDR=17.75,
+   CHRDRE=17.75,
    
    
 DIM IN !inch-pound-seconds
