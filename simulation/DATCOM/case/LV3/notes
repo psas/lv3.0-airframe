@@ -12,4 +12,4 @@ interpolated chord as a function of x in the span direction:
 	24.642-2.24*x
 	so, the theoretical root chord is 24.642"
 
-
+(2016-3-31) with the body and nose specified by radii at different stations, it gives NaN for the drag on the body (and thereby for the complete aircraft aswell). 
