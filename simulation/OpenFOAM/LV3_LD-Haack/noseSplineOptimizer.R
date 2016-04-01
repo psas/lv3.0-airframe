@@ -82,7 +82,8 @@ lines( lty=2,
 plot(ysp(popt), col="red", add=T)
 xset <- c(0, seq(from=popt, to=L, length.out = spline.points-1))
 points(xset, y(xset))
-cat("\noptimum x placements:\n", xset, "\noptimum y placements:\n", y(xset))
+cat("\noptimum x placements (m):\n", xset, "\noptimum y placements (m):\n", y(xset))
+cat("\noptimum x placements (in):\n", formatC(xset/25.3e-3), "\noptimum y placements (in):\n", formatC(y(xset)/25.4e-3), sep=",")
 
 wedgeHalf <- 2*2*pi/360
 cat("\nvertices:\nfront nose surface:\n")

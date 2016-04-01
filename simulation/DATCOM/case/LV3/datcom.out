@@ -1,0 +1,231 @@
+ THIS SOFTWARE AND ANY ACCOMPANYING DOCUMENTATION
+ IS RELEASED "AS IS".  THE U.S. GOVERNMENT MAKES NO
+ WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, CONCERNING
+ THIS SOFTWARE AND ANY ACCOMPANYING DOCUMENTATION,
+ INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF
+ MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+ IN NO EVENT WILL THE U.S. GOVERNMENT BE LIABLE FOR ANY
+ DAMAGES, INCLUDING LOST PROFITS, LOST SAVINGS OR OTHER
+ INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE 
+ USE, OR INABILITY TO USE, THIS SOFTWARE OR ANY
+ ACCOMPANYING DOCUMENTATION, EVEN IF INFORMED IN ADVANCE
+ OF THE POSSIBILITY OF SUCH DAMAGES.
+  ****************************************************
+  *    USAF STABILITY AND CONTROL  DIGITAL DATCOM    *
+  *    PROGRAM REV. JAN 96   DIRECT INQUIRIES TO:    *
+  *    WRIGHT LABORATORY  (WL/FIGC)  ATTN: W. BLAKE  *
+  *      WRIGHT PATTERSON AFB, OHIO  45433           *
+  *    PHONE (513) 255-6764,   FAX (513) 258-4054    *
+  ****************************************************
+ Preparing to start the big loop
+ At 1000
+1                         CONERR - INPUT ERROR CHECKING
+0 ERROR CODES - N* DENOTES THE NUMBER OF OCCURENCES OF EACH ERROR
+0 A - UNKNOWN VARIABLE NAME
+0 B - MISSING EQUAL SIGN FOLLOWING VARIABLE NAME
+0 C - NON-ARRAY VARIABLE HAS AN ARRAY ELEMENT DESIGNATION - (N)
+0 D - NON-ARRAY VARIABLE HAS MULTIPLE VALUES ASSIGNED
+0 E - ASSIGNED VALUES EXCEED ARRAY DIMENSION
+0 F - SYNTAX ERROR
+
+0******************************  INPUT DATA CARDS  ******************************
+
+ CASEID LV3-L13a                                                                 
+  $FLTCON                                                                        
+    NMACH=10.0,MACH(1)=0.05,0.1,0.15,0.5,1.0,1.3,1.5,2.0,2.1,2.2,                
+    NALPHA=1.0,ALSCHD(1)=0.0,                                                    
+    NALT=1.0,ALT(1)=0.0,                                                         
+    WT=56.25,                                                                    
+    LOOP=1.0$                                                                    
+  $SYNTHS                                                                        
+    XCG=74.374,                                                                  
+    ZCG=0.0,                                                                     
+    XW=91.,                                                                      
+    ZW=0.,                                                                       
+    XV=91.,                                                                      
+    ZV=0.$                                                                       
+  $BODY                                                                          
+    NX=12.,                                                                      
+    X(1)=0.0,1.094,4.654,8.214,11.77,15.33,18.89,22.45,26.01,29.57,33.13,108.0,  
+    R(1)=0.0,0.3315,0.965,1.451,1.862,2.22,2.533,2.803,3.029,3.203,3.3,3.3$      
+ NACA-W-S-3-6.2-3.1-87.4                                                         
+  $WGPLNF                                                                        
+    CHRDTP=3.25,                                                                 
+    SSPNE=6.25,                                                                  
+    SSPN=9.55,                                                                   
+    CHRDR=24.642,                                                                
+    SAVSI=28.,                                                                   
+    DHDADI=-30.,                                                                 
+    TYPE=1.$                                                                     
+ NACA-W-S-3-6.2-3.1-87.4                                                         
+  $VTPLNF                                                                        
+    CHRDTP=3.25,                                                                 
+    SSPNE=6.25,                                                                  
+    SSPN=9.55,                                                                   
+    CHRDR=24.642,                                                                
+    SAVSI=28.,                                                                   
+    TYPE=1.$                                                                     
+ DIM IN !inch-pound-seconds                                                      
+ BUILD                                                                           
+ NEXT CASE                                                                       
+1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
+0
+ CASEID LV3-L13a                                                                 
+  $FLTCON                                                                        
+    NMACH=10.0,MACH(1)=0.05,0.1,0.15,0.5,1.0,1.3,1.5,2.0,2.1,2.2,                
+    NALPHA=1.0,ALSCHD(1)=0.0,                                                    
+    NALT=1.0,ALT(1)=0.0,                                                         
+    WT=56.25,                                                                    
+    LOOP=1.0$                                                                    
+  $SYNTHS                                                                        
+    XCG=74.374,                                                                  
+    ZCG=0.0,                                                                     
+    XW=91.,                                                                      
+    ZW=0.,                                                                       
+    XV=91.,                                                                      
+    ZV=0.$                                                                       
+  $BODY                                                                          
+    NX=12.,                                                                      
+    X(1)=0.0,1.094,4.654,8.214,11.77,15.33,18.89,22.45,26.01,29.57,33.13,108.0,  
+    R(1)=0.0,0.3315,0.965,1.451,1.862,2.22,2.533,2.803,3.029,3.203,3.3,3.3$      
+ NACA-W-S-3-6.2-3.1-87.4                                                         
+  $WGPLNF                                                                        
+    CHRDTP=3.25,                                                                 
+    SSPNE=6.25,                                                                  
+    SSPN=9.55,                                                                   
+    CHRDR=24.642,                                                                
+    SAVSI=28.,                                                                   
+    DHDADI=-30.,                                                                 
+    TYPE=1.$                                                                     
+ NACA-W-S-3-6.2-3.1-87.4                                                         
+  $VTPLNF                                                                        
+    CHRDTP=3.25,                                                                 
+    SSPNE=6.25,                                                                  
+    SSPN=9.55,                                                                   
+    CHRDR=24.642,                                                                
+    SAVSI=28.,                                                                   
+    TYPE=1.$                                                                     
+ DIM IN !inch-pound-seconds                                                      
+ BUILD                                                                           
+ NEXT CASE                                                                       
+0 INPUT DIMENSIONS ARE IN IN, SCALE FACTOR IS 1.0000
+
+0*** ERROR *** LOOP = 1 AND NALT IS NOT EQUAL TO NMACH (NALT = 10, NMACH =  1)
+               NMACH AND NALT ARE BOTH SET TO  1
+
+ Return to main program from M01O01
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
+                                                        WING SECTION DEFINITION
+0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
+
+                              ZERO LIFT ANGLE OF ATTACK =   0.00000 DEG.
+
+                                 IDEAL LIFT COEFFICIENT =   0.00000
+
+                  ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
+
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.08757 /DEG.
+
+                                    LEADING EDGE RADIUS =   0.00000 FRACTION CHORD
+
+                              MAXIMUM AIRFOIL THICKNESS =   0.03100 FRACTION CHORD
+
+                                                DELTA-Y =   1.46250 PERCENT CHORD
+
+
+0                         MACH= 0.0500 LIFT-CURVE-SLOPE =   0.08769 /DEG.      XAC =   0.26661
+ Return to main program from M50O62
+ Return to main program from M02O02
+ Return to main program from M51O63
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                   DATCOM BODY ALONE CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.036    0.000    0.0000   0.000    0.036   ******    4.351E-03    1.508E-02   -4.351E-03   -1.317E-02    0.000E+00
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                      WING ALONE CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.006    0.000    0.0000   0.000    0.006   ******    1.377E-02   -1.815E-02    0.000E+00    0.000E+00    1.919E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                     VERTICAL TAIL CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.003    0.000    0.0000   0.000    NDM     ******    0.000E+00    0.000E+00   -0.000E+00    0.000E+00   -0.000E+00
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                       WING-BODY CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.047    0.000    0.0000   0.000    0.047   ******    0.000E+00    0.000E+00   -8.582E-03   -1.867E-02    4.015E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                  BODY-VERTICAL TAIL CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.039    0.000    0.0000   0.000    0.039   ******    4.351E-03    1.508E-02   -4.351E-03   -1.317E-02      NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                             LV3-L13a
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.050       0.00     669.80   1.4696E+01     518.670     3.5341E+05           266.369     16.680    19.100    74.374     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+    0.0    0.050    0.000    0.0000   0.000    0.050   ******    0.000E+00    0.000E+00   -8.582E-03   -1.867E-02    4.015E-03
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 8.21109
+ Return to main program from M57O71
+1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
+0
+1 END OF JOB.

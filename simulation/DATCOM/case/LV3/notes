@@ -7,3 +7,9 @@ I-154	supersonic airfoil designations
 I-116	example problem showing fins similar to those on LV3
 
 I-63	sharp leading edges
+
+interpolated chord as a function of x in the span direction:
+	24.642-2.24*x
+	so, the theoretical root chord is 24.642"
+
+
