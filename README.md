@@ -2,7 +2,8 @@
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
 
 * PSAS-LV3.0/ holds CAD stuff 
-* simulation/ holds OpenRocket stuff. Eventually, CFD stuff will go there too. 
+* simulation/ holds OpenRocket stuff. That includes OpenRocket, OpenFOAM, and DATCOM.
+* doc/ holds all of the documentation that doesn't fall into those categories.
 
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 * Joe Shields
