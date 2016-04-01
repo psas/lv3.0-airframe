@@ -19,12 +19,25 @@ CASEID LV3
    BNOSE=2.0,
    BLA=75.,
    DS=0.$
-! PUT AIRFOIL TYPE HERE
+S-3-6.2-3.1-87.43
  $WGPLNF
    CHRDTP=3.25,
+   SSPNE=6.25,
+   SSPN=9.55,
    CHRDRE=17.75,
-   
-   
+   SAVSI=28.,
+   DHDAHI=-30.
+   TYPE=1.$
+S-3-6.2-3.1-87.43
+ $VTPLNF
+   CHRDTP=3.25,
+   SSPNE=6.25,
+   SSPN=9.55,
+   CHRDRE=17.75,
+   SAVSI=28.
+   TYPE=1.$
+ $OPTINS
+   ROUGFC=6.e-3$
 DIM IN !inch-pound-seconds
 BUILD
 NEXT CASE

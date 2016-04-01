@@ -1,2 +1,9 @@
 I-154	supersonic airfoil designations
 	S-3-edgePercentChord-thicknessPercentChord-flatPercentChord
+	mean chord = 10.5"
+	so, averaged airfoil is:
+	S-3-6.2-3.1-87.43
+
+I-116	example problem showing fins similar to those on LV3
+
+I-63	sharp leading edges
