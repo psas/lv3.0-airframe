@@ -14,3 +14,5 @@
 *.xcf
 # backup files from Gedit:
 *~
+#extraneous .dat files from DATCOM
+*.dat
