@@ -1,3 +1,8 @@
+# This is a fast/hideous analysis (read: scratch paper)
+# of the heating on the nose cone. If you try to just source it,
+# I don't think it will work. Long story short, the OpenRocket drag
+# and theoretical wave drag don't agree. 
+
 OD <- 6.5*25.4e-3#m, outer diameter
 R <- OD/2#m, outer radius
 L <- 30*25.4e-3#m, length of nose cone
