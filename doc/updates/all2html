@@ -1,0 +1,11 @@
+#!/bin/bash
+# This was mainly to put everything into a format that Prof. Etesami would be able to open.
+# I was getting some weird error when trying to convert to PDF, via pandoc.
+# If someone reads this and is familar with pandoc and LaTeX, ask me about it, I guess. ~Joe
+for f in *.md
+do
+	pandoc -r markdown -w html -o $f".html" $f
+#pandoc -s $f -o $f".pdf"
+#echo $f
+#echo $f".pdf"
+done

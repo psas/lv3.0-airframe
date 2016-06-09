@@ -2,3 +2,5 @@
 *0.*
 # changes to the mesh
 *polyMesh/
+# ignore the files I pipe the status to
+*.log

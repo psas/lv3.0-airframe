@@ -3,7 +3,7 @@
 #Joe Shields
 #2016-5-1
 
-setwd("~/PSAS/sw-cad-airframe-lv3.0/testing")
+#setwd("~/PSAS/sw-cad-airframe-lv3.0/testing")
 # op <- options(digits.secs=3)
 # dat <- read.csv(commandArgs(T))
 
