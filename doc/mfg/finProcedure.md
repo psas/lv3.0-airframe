@@ -11,8 +11,9 @@ Currently, there are "only" enough aluminum slabs to manufacture two fins at a t
 1. Wait 10 minutes.
 1. Continuously apply part D of the anti-galvanic treatment to the CF-bonding surfaces for 4 minutes.
 1. Wait 1 hour.
-1.while you wait: 
+1. While you wait... 
 	1. Cut out the appropriate nomex sections from tamplates (use the male templates). You will end up cutting some sections that don't snugly fit into the frames. Cut some redundant sections and use the ones that fit. They should stay in the frame when it is picked up and turned around. You may need to cut them slightly larger than the templates to accomplish this.
+	![A fin frame with the nomex sections inserted between the supports.](../img/finNomex.jpg)
 	1. Cut out the sections of CF and adhesive. Note that they use slightly different templates. Take care to cut the CF so that the fibers are alligned to the root and tip edges of the fin. It's helpful to place a weight on one half of the template, make your cut, place a weight on the half you just cut, remove the first weight, and then finish the cut. The sharp angles of these peices may slide around underneath the template otherwise.
 	1. While the adhesive is cold (put it in the freezer for a half minute, if you need to), partially separate the paper and plastic backings from the adhesive sheets you just cut. An awl works *very* well for this. Fold the partially removed backing, for easy removal later.
 1. Arrange the nomex sections in a fin frame. If there are any gaps between the nomex and the frame much larger than a nomex cell, you will need to replace that nomex section.
@@ -27,6 +28,7 @@ Currently, there are "only" enough aluminum slabs to manufacture two fins at a t
 1. Carefully place and allign the CF sheet on the frame. There will be no gap between the CF and the lip. Take care not to force the CF down into the frame at the root.
 1. Use hand heat to tac down the CF to the adhesive. 
 1. Remove the remaining plastic backing from the CF sheet. 
+![A single fin with nomex, adhesive, and CF in place.](../img/finCF.jpg)
 1. Lay a sheet of nonperforated release film over the CF. 
 1. Gently smooth out the release film to eliminate creases and folds. 
 1. Carefully place an aluminum slab down on the fin, just ahead of the flange.
@@ -74,5 +76,6 @@ Once the fis are cooked, they will need to be attached to a module.
 1. Wait 10 minutes.
 1. Continuously apply part D of the anti-galvanic treatment to the inner surface of the flanges for 4 minutes.
 1. Wait 1 hour.
-1.while you wait: 
+1. While you wait: 
 	1. 
+![A fin can being vacuum bagged to attach the fins to the module.](../img/finVacBag.jpg)
