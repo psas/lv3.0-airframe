@@ -6,6 +6,7 @@ Currently, there are "only" enough aluminum slabs to manufacture two fins at a t
 ## Preparation
 1. Put on powderless nitrile gloves. If you gloves get dirty, greasy, etc., replace them. Even if you don't care about your health, you still need to keep your skin oil off of the layup!
 1. Lightly sand the CF-bonding surfaces of the fins frames (the slight depression on the edge of the ) using 600 grit sand paper.
+1. Clean the fins by wiping them with an acetone soaked shop towel until no residue comes off on the towel. 
 1. Continuously apply part A of the anti-galvanic treatment to the CF-bonding surfaces for 4 minutes.
 1. Wait 10 minutes.
 1. Continuously apply part D of the anti-galvanic treatment to the CF-bonding surfaces for 4 minutes.
@@ -63,3 +64,15 @@ Currently, there are "only" enough aluminum slabs to manufacture two fins at a t
 
 Since the temperature of the fins lags behind the air temperature of the oven, you'll want to set the oven about 40 degrees F above the prescribed temperature and then set it back to the prescribed temperature when the temperature of the fins is 10 degrees below what's described. (The point of this is to try and pre-empt the heat propagation through the slabs.) 
 If you are impatient and take the fins out of the slabs too early, they will experience large differential thermal expansion, and can develop warping. 
+
+## Fin Attachment
+Once the fis are cooked, they will need to be attached to a module. 
+
+1. Sand the inside surface of the fin flanges with 600 grit sandpaper.
+1. Clean the inside surface of the flanges with an acetone soaked shop towel until no residue comes off on the towel.
+1. Continuously apply part A of the anti-galvanic treatment to the inner surface of the flanges for 4 minutes.
+1. Wait 10 minutes.
+1. Continuously apply part D of the anti-galvanic treatment to the inner surface of the flanges for 4 minutes.
+1. Wait 1 hour.
+1.while you wait: 
+	1. 

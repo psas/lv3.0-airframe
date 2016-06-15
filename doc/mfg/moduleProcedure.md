@@ -38,7 +38,7 @@ In figure A1 below is shown the waxed mandrel along with a container of Orca Ski
 1. apply 7 coats of orca skin, 10 minutes between coats
 1. wait 1 hour
 
- ![the waxed mandrel on the preparation table, along with a container of Orca Skin, and Orca Seal.](images/image09.jpg)
+ ![the waxed mandrel on the preparation table, along with a container of Orca Skin, and Orca Seal.](../img/image09.jpg)
 
 ### Dummy ring preparation
 
@@ -79,12 +79,12 @@ Shown below are two stages in the layup process. figure 2 shows the mandrel has 
 1. place the mandrel back on the mandrel holder
 1. lay a layer of blue release film on the mandrel. It should span the entire molding surface of the mandrel and not overlap with the coupling rings (figure 2).
 
-![mandrel wrapped in release tape](images/image05.jpg)
+![mandrel wrapped in release tape](../img/image05.jpg)
 
 1. lay the adhesive strips onto the lower adhering surface of each coupling ring. Make sure that the adhesive strips are slightly skinnier than the adhering surface of the coupling rings to prevent adhesive from flowing onto the mandrel.
 1. lay the inner layer of carbon fiber onto the mandrel. It should overlap the adhesive strips completely, butting up flush against the step of the rings (figure 3). It should overlap itself by about an inch. Don’t worry too much about small wrinkles, they will be automatically smoothed during the cure cycle. Do not tug or pull on the CF in an attempt to remove wrinkles. If you need to remove large wrinkles, re-lay the CF instead.
 
-![The first layer of carbon fiber added to the layup](images/image00.jpg)
+![The first layer of carbon fiber added to the layup](../img/image00.jpg)
 
 1. lay the inner adhesive layer over the carbon fiber. Rotating the mandrel while someone holds down the adhesive (wear powderless nitrile gloves) works well here.
 1. once the adhesive is well aligned, peel a section of it back. Someone should still be holding it down.
@@ -140,7 +140,7 @@ After adding the final layer of release film, the layup is ready to be vacuum ba
 1. seal the inner and outer tubes to each other
 1. gently pinch any air channels out of the goop tape, taking special care to make sure the hose and tubes form a complete seal. Make sure there is no air channel formed by the overlap of the outer tube with itself.
 
-![layup wrapped in final layer of release tapeand ready to be vacuum bagged.](images/image06.jpg)
+![layup wrapped in final layer of release tapeand ready to be vacuum bagged.](../img/image06.jpg)
 
 ## Curing
 
@@ -187,4 +187,4 @@ After adding the final layer of release film, the layup is ready to be vacuum ba
 
 If done properly, this should result in a module with maybe a few thin creases from flaws in the shrink tape. Adhesive-surfaced modules should be finished with 600 and 1500 grit wet sanding. (do not submerge!)
 
-![Final carbon fiber rocket module](images/image11.jpg)
+![Final carbon fiber rocket module](../img/image11.jpg)
