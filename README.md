@@ -10,11 +10,11 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
 ##To do 
 - [ ] Move all deliverable-related things from the Google Drive into this repo. 
  	(Which SW models are the final versions?)
-- [~] Bring the procedures for all the manufacturing up to date. 
+- [ ] Bring the procedures for all the manufacturing up to date. 
  	(fin procedures done; need pictures)
-- [~] Fix the machinable foam blocks. 
+- [ ] Fix the machinable foam blocks. 
  	(Maybe Esco can help with this?)
-- [~] Try a FG layup. 
+- [ ] Try a FG layup. 
  	(happening Sat. 6-18 at 8 am)
 - [ ] Figure out how much surface roughness matters.
 - [ ] Write first draft of AIAA paper.
