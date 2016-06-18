@@ -27,7 +27,7 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 
 * Joe Shields
-* Leslie Elwood 
+* :dog:Leslie Elwood:horse: 
 * 
 * 
 * \*crickets chirping\*
