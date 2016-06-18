@@ -28,7 +28,7 @@ LV3 team members, please add your name to this list, so we know who is able to p
 
 * Joe Shields
 * :dog:Leslie Elwood:horse: 
-* 
+* :rocket: "stars:
 * 
 * \*crickets chirping\*
 
