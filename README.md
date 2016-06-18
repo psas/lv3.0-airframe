@@ -13,9 +13,9 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
 - [ ] Bring the procedures for all the manufacturing up to date. 
  	(fin procedures done; need pictures)
 - [ ] Prepare machinable foam for CNC milling @ ESCO
-- --1. Cut block into thirds 
-- --2. Re-apply resin with **vacuum bagging** & **room temp for 24 hr**
-- --3. Run through whole cure cycle with **vacuum bagging**
+- -1. Cut block into thirds 
+- -2. Re-apply resin with **vacuum bagging** & **room temp for 24 hr**
+- -3. Run through whole cure cycle with **vacuum bagging**
 - [ ] Try a FG layup. 
  	(happening Sat. 6-18 at 8 am)
 - [ ] Figure out how much surface roughness matters.
