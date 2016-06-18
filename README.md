@@ -12,18 +12,19 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
  	(Which SW models are the final versions?)
 - [ ] Bring the procedures for all the manufacturing up to date. 
  	(fin procedures done; need pictures)
-- [ ] Fix the machinable foam blocks. 
- 	(Maybe Esco can help with this?)
+- [ ] Cut block into thirds and re-apply resin with **vacuum bagging** & **room temp for 24 hr** 
 - [ ] Try a FG layup. 
  	(happening Sat. 6-18 at 8 am)
 - [ ] Figure out how much surface roughness matters.
 - [ ] Write first draft of AIAA paper.
+- [ ] Layup another set of fins and apply to 24" module.
+- [ ] Write up suggestions for future ME PSAS groups to consider during thier project. 
 
 ## Capstone Members
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 
 * Joe Shields
-* 
+* Leslie Elwood 
 * 
 * 
 * \*crickets chirping\*
