@@ -29,7 +29,7 @@ LV3 team members, please add your name to this list, so we know who is able to p
 * Joe Shields
 * :dog:Leslie Elwood:horse: 
 * :rocket: :stars:
-* /play butts
+* 
 * \*crickets chirping\*
 
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
