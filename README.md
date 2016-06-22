@@ -2,26 +2,40 @@
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
 
 ## What and where
-* solidWorks/ holds CAD stuff 
-* simulation/ holds calculation stuff. That includes OpenRocket, OpenFOAM, DATCOM, and the R analysis of that stuff.
+* cad/ holds CAD stuff (Solidworks files for all of the airframe machined parts)
+* sim/ holds calculation stuff. That includes OpenRocket, OpenFOAM, DATCOM, and the R analysis of that stuff.
 * doc/ holds all of the documentation (updtes, manufacturing procedures, AIAA paper).
-* testing/ holds the data and analyses from the various tests done on LV3 componenets
+* test/ holds the data and analyses from the various tests done on LV3 componenets
 
 ##To do 
 - [ ] Move all deliverable-related things from the Google Drive into this repo. 
- 	(Which SW models are the final versions?)
+ 	- [ ] Find out which SW models are the final versions.
+	- [X] Clean up existing CAD files.
 - [ ] Bring the procedures for all the manufacturing up to date. 
- 	(fin procedures done; need pictures)
-- [ ] Prepare machinable foam for CNC milling @ ESCO
-- Cut block into thirds 
-- Re-apply resin with **vacuum bagging** & **room temp for 24 hr**
-- Run through whole cure cycle with **vacuum bagging**
-- [ ] Try a FG layup. 
- 	(happening Sat. 6-18 at 8 am)
+	- [X] Write all the necessary steps
+	- [ ] Add pictures to the MFG procedures.
+- [ ] Prepare machinable foam for CNC milling at ESCO
+	- [X] Cut block into thirds 
+	- [X] Re-apply resin with **vacuum bagging** & **room temp for 24 hr**
+	- [ ] Run through whole cure cycle with **vacuum bagging**
+	- [ ] Deliver foam blocks to Esco.
+- [ ] Make a radome
+	- [X] Make a FG layup. 
+	- [ ] Perform EM testing
+	- [ ] Crush the FG layup
 - [ ] Figure out how much surface roughness matters.
-- [ ] Write first draft of AIAA paper.
-- [ ] Layup another set of fins and apply to 24" module.
+- [ ] AIAA paper
+	- [ ] Write first draft of AIAA paper.
+- [ ] Finish the fin cans.
+	- [ ] Do the tip-to-tip on the existing fin can.
+	- [ ] Layup 3 more fins.
+	- [ ] Attach new fins to the remaining 24" module.
+	- [ ] Do tip-to-tip on the new fin can.
 - [ ] Write up suggestions for future ME PSAS groups to consider during thier project. 
+
+## Relavant Deadlines
+* AIAA paper: August. 18 8pm EST (hard deadline; submit before this)
+* Rocket launch: August 19 ([with OROC](http://www.oregonrocketry.com/?page_id=54))
 
 ## Capstone Members
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
