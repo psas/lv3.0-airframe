@@ -1,7 +1,9 @@
-# sw-cad-airframe-lv3.0
+# PSAS Launch Vehicle 3 "LV3" CAD Files
+
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
 
-##To do 
+## Todo:
+
 - [ ] Move all deliverable-related things from the Google Drive into this repo. 
  	- [ ] Find out which SW models are the final versions.
 	- [X] Clean up existing CAD files.
@@ -27,11 +29,14 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
 	- [ ] Do tip-to-tip on the new fin can.
 - [ ] Write up suggestions for future ME PSAS groups to consider during thier project. 
 
+
 ## Relavant Deadlines
+
 * AIAA paper: August. 18 8pm EST (hard deadline; submit before this)
 * Rocket launch: August 19 ([with OROC](http://www.oregonrocketry.com/?page_id=54))
 
 ## Capstone Members
+
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 
 * Joe Shields
@@ -42,41 +47,43 @@ LV3 team members, please add your name to this list, so we know who is able to p
 
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
 
+
 ## What and where
-|-- cad				holds the Solidworks files for all the machined parts
-|   |-- finCan
-|   |-- module
-|   |-- nose
-|   |-- radome
-|   `-- railSled
-|       `-- CAM			G code for the rail sled
-|           |-- Base
-|           |-- Neck
-|           `-- Trunk
-|-- doc				all pure documentation
-|   |-- aiaa-3.6.1		LaTeX template for AIAA
-|   |-- extAbstract		extened abstract for the AIAA paper
-|   |-- img			image resources for documentation
-|   |-- mfg			step-by-step instructions for manufacturing
-|   |-- paper			the conference paper we're submitting to AIAA Space
-|   `-- updates			bi-monthlyish status updates on the project
-|-- sim				simulations and calculations
-|   |-- DATCOM
-|   |   |-- case
-|   |   |   |-- LV3		case for the LV3 airframe (not complete)
-|   |   |   `-- exMiG
-|   |   |-- doc			DATCOM documentation
-|   |   `-- exlinux		example DATCOM cases
-|   |-- ORK			open rocket models
-|   |   `-- prev
-|   |-- OpenFOAM		CFD models
-|   |   `-- LV3\_LD-Haack	model of the 1:5 nose cone
-|   |       `-- rcf_100		100-node-long mesh
-|   |           |-- 0		initial conditions
-|   |           |-- constant	fluid properites
-|   |           `-- system	simulation parameters
-|   |-- plots			plots of the open rocket data
-|   |-- reductions		reductions of the openrocket simulations
-|   `-- simData			output of the openrocket simulations
-`-- test			data from physical tests on modules
-    `-- profilometer		surface roughness data
+
+	|-- cad				holds the Solidworks files for all the machined parts
+	|   |-- finCan
+	|   |-- module
+	|   |-- nose
+	|   |-- radome
+	|   `-- railSled
+	|       `-- CAM			G code for the rail sled
+	|           |-- Base
+	|           |-- Neck
+	|           `-- Trunk
+	|-- doc				all pure documentation
+	|   |-- aiaa-3.6.1		LaTeX template for AIAA
+	|   |-- extAbstract		extened abstract for the AIAA paper
+	|   |-- img			image resources for documentation
+	|   |-- mfg			step-by-step instructions for manufacturing
+	|   |-- paper			the conference paper we're submitting to AIAA Space
+	|   `-- updates			bi-monthlyish status updates on the project
+	|-- sim				simulations and calculations
+	|   |-- DATCOM
+	|   |   |-- case
+	|   |   |   |-- LV3		case for the LV3 airframe (not complete)
+	|   |   |   `-- exMiG
+	|   |   |-- doc			DATCOM documentation
+	|   |   `-- exlinux		example DATCOM cases
+	|   |-- ORK			open rocket models
+	|   |   `-- prev
+	|   |-- OpenFOAM		CFD models
+	|   |   `-- LV3\_LD-Haack	model of the 1:5 nose cone
+	|   |       `-- rcf_100		100-node-long mesh
+	|   |           |-- 0		initial conditions
+	|   |           |-- constant	fluid properites
+	|   |           `-- system	simulation parameters
+	|   |-- plots			plots of the open rocket data
+	|   |-- reductions		reductions of the openrocket simulations
+	|   `-- simData			output of the openrocket simulations
+	`-- test			data from physical tests on modules
+	    `-- profilometer		surface roughness data
