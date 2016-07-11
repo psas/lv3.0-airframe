@@ -3,19 +3,21 @@
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
 
 ## Todo:
+[This to-do list is probably more informative.](https://drive.google.com/open?id=1f-Etqf3f5pUfQ_Xc_3bBB01bxaG66x3LiqV5aW0Z5N8)
 
 - Fin can
 	- [ ] Do the tip-to-tip on the existing fin can.
 	- [ ] Finalize new fin frames
-	- [ ] Ask MSI to make new fin frames
-	- Alternate fin MFG?
+	- [ ] Ask MSI to make new fin frames (Andrew is handling it)
+	- Alternate fin MFG
+	    - Discussed with Erin and Ian. We think it would be reasonable to do something where the frame is a 2D part made of FG or Al. The leading/trailing edge would be something like phenolic resin or Al. The fins would be tacked to the module with a jig and epoxy. Then, there would be a fillet operation with epoxy and a filler and a tip-to-tip layup. 
+	    - [ ] Do an experiment to determine if the epoxy will keep the fins dimensionally stable. (Joe is doing this.)
 - Nose
-	- [ ] Seal the new mold
-		- remember to pour some epoxy in the delaminated section and clamp it
-		- remember to let it rest upright to avoid pooling of the epoxy on the molding surface
+	- [X] Seal the new mold
 	- [ ] Make templates for CF sections
+	    - [ ] Someone needs to figure out how to unfold the molding surface to make the template. (use math or Solidworks)
 	- [ ] Attempt a layup
-	    - [ ] redo the tip CAD for the redesigned mold
+	    - [ ] redo the tip CAD for the redesigned mold (Alex F.)
 	    - [ ] machine the new tip
 - MFG procedures
 	- [ ] Add pictures to the MFG procedures.
@@ -24,9 +26,9 @@ This is the repo for the 2016 LV3 capstone. This [will eventually hold] everythi
 	- [X] Make a FG layup. 
 	- [ ] Perform EM testing
 	- [ ] Crush the FG layup
-	    - [ ] Order strain gauges
+	    - [ ] Order strain gauges (not strictly necessary)
 - Surface roughness
-    - [ ] Read AIAA paper
+    - [ ] Read AIAA paper (not gonna post it. You can email Joe if you want it.)
     - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
     - [ ] Make decision
 	- Convert black modules? Abandon blue modules?
@@ -47,15 +49,15 @@ LV3 team members, please add your name to this list, so we know who is able to p
 
 Person		|	Role
 ----------------|-----------
-Joe Shields	|	everything?
-Leslie Elwood	|	everything?
+Joe Shields	|	generalissimo
+Leslie Elwood	|	nose; materials
 Alex Farias	|	manufacturing
-Ian Zabel	|	Fins
-Calvin Young	|	Oven
-David Edwards	|	
-Alex Kollen	|	
-Jorden Rolland	|	
-Katia 		|	
+Ian Zabel	|	fin design and FEA
+Calvin Young	|	Oven controller
+David Edwards	|	layup strategies; manufacturing
+Alex Kollen	|	???
+Jorden Rolland	|	???
+Katia 		|	machining
 Marie House	|	thermal sensing
 
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
