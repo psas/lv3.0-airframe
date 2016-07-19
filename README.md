@@ -6,50 +6,64 @@
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
 
 ## Todo:
+[This to-do list is probably more informative.](https://drive.google.com/open?id=1f-Etqf3f5pUfQ_Xc_3bBB01bxaG66x3LiqV5aW0Z5N8)
 
-- [ ] Move all deliverable-related things from the Google Drive into this repo. 
- 	- [ ] Find out which SW models are the final versions.
-	- [X] Clean up existing CAD files.
-- [ ] Bring the procedures for all the manufacturing up to date. 
-	- [X] Write all the necessary steps
+- Fin can
+	- [ ] Do the tip-to-tip on the existing fin can.
+	- [ ] Finalize new fin frames
+	- [ ] Ask MSI to make new fin frames (Andrew is handling it)
+	- Alternate fin MFG
+	    - Discussed with Erin and Ian. We think it would be reasonable to do something where the frame is a 2D part made of FG or Al. The leading/trailing edge would be something like phenolic resin or Al. The fins would be tacked to the module with a jig and epoxy. Then, there would be a fillet operation with epoxy and a filler and a tip-to-tip layup. 
+	    - [ ] Do an experiment to determine if the epoxy will keep the fins dimensionally stable. (Joe is doing this.)
+- Nose
+	- [X] Seal the new mold
+	- [ ] Make templates for CF sections
+	    - [ ] Someone needs to figure out how to unfold the molding surface to make the template. (use math or Solidworks)
+	- [ ] Attempt a layup
+	    - [ ] redo the tip CAD for the redesigned mold (Alex F.)
+	    - [ ] machine the new tip
+- MFG procedures
 	- [ ] Add pictures to the MFG procedures.
-- [ ] Prepare machinable foam for CNC milling at ESCO
-	- [X] Cut block into thirds 
-	- [X] Re-apply resin with **vacuum bagging** & **room temp for 24 hr**
-	- [X] Run through whole cure cycle with **vacuum bagging**
-	- [ ] Deliver foam blocks to Esco.
-- [ ] Make a radome
+	- [ ] Review procedures (not Joe)
+- Radome
 	- [X] Make a FG layup. 
 	- [ ] Perform EM testing
 	- [ ] Crush the FG layup
-- [ ] Figure out how much surface roughness matters.
+	    - [ ] Order strain gauges (not strictly necessary)
+- Surface roughness
+    - [ ] Read AIAA paper (not gonna post it. You can email Joe if you want it.)
+    - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
+    - [ ] Make decision
+	- Convert black modules? Abandon blue modules?
 - [ ] AIAA paper
 	- [ ] Write first draft of AIAA paper.
-- [ ] Finish the fin cans.
-	- [ ] Do the tip-to-tip on the existing fin can.
-	- [ ] Layup 3 more fins.
-	- [ ] Attach new fins to the remaining 24" module.
-	- [ ] Do tip-to-tip on the new fin can.
-- [ ] Write up suggestions for future ME PSAS groups to consider during thier project. 
-
+- Miscellaneous
+- [X] Write up suggestions for future ME PSAS groups to consider during thier project. 
+- [ ] Move all deliverable-related things from the Google Drive into this repo. 
+    - [ ] Order more heat-shrink tape (non-perforated) (Dunstone hi-shrink tape)
 
 ## Relavant Deadlines
 
 * AIAA paper: August. 18 8pm EST (hard deadline; submit before this)
 * Rocket launch: August 19 ([with OROC](http://www.oregonrocketry.com/?page_id=54))
 
-## Capstone Members
-
+## Team Members
 LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 
-* Joe Shields
-* Leslie Elwood:dog:
-* 
-* 
-* \*crickets chirping\*
+Person		|	Role
+----------------|-----------
+Joe Shields	|	generalissimo
+Leslie Elwood	|	nose; materials
+Alex Farias	|	manufacturing
+Ian Zabel	|	fin design and FEA
+Calvin Young	|	Oven controller
+David Edwards	|	layup strategies; manufacturing
+Alex Kollen	|	???
+Jorden Rolland	|	???
+Katia 		|	machining
+Marie House	|	thermal sensing
 
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
-
 
 ## What and where
 
