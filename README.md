@@ -1,3 +1,6 @@
+[//]: # " vim: set nonumber tabstop=4: "
+12345678901234567
+	x	x
 # PSAS Launch Vehicle 3 "LV3" CAD Files
 
 This is the repo for the 2016 LV3 capstone. This [will eventually hold] everything you need to know about making a rocket out of carbon fiber.
@@ -50,40 +53,40 @@ If you aren't allowed to push, send Andrew your Github username and ask him to g
 
 ## What and where
 
-	|-- cad				holds the Solidworks files for all the machined parts
+	|-- cad							holds the Solidworks files for all the machined parts
 	|   |-- finCan
 	|   |-- module
 	|   |-- nose
 	|   |-- radome
 	|   `-- railSled
-	|       `-- CAM			G code for the rail sled
+	|       `-- CAM					G code for the rail sled
 	|           |-- Base
 	|           |-- Neck
 	|           `-- Trunk
-	|-- doc				all pure documentation
-	|   |-- aiaa-3.6.1		LaTeX template for AIAA
-	|   |-- extAbstract		extened abstract for the AIAA paper
-	|   |-- img			image resources for documentation
-	|   |-- mfg			step-by-step instructions for manufacturing
-	|   |-- paper			the conference paper we're submitting to AIAA Space
-	|   `-- updates			bi-monthlyish status updates on the project
-	|-- sim				simulations and calculations
+	|-- doc							all pure documentation
+	|   |-- aiaa-3.6.1				LaTeX template for AIAA
+	|   |-- extAbstract				extened abstract for the AIAA paper
+	|   |-- img						image resources for documentation
+	|   |-- mfg						step-by-step instructions for manufacturing
+	|   |-- paper					the conference paper we're submitting to AIAA Space
+	|   `-- updates					bi-monthlyish status updates on the project
+	|-- sim							simulations and calculations
 	|   |-- DATCOM
 	|   |   |-- case
-	|   |   |   |-- LV3		case for the LV3 airframe (not complete)
+	|   |   |   |-- LV3				case for the LV3 airframe (not complete)
 	|   |   |   `-- exMiG
-	|   |   |-- doc			DATCOM documentation
-	|   |   `-- exlinux		example DATCOM cases
-	|   |-- ORK			open rocket models
+	|   |   |-- doc					DATCOM documentation
+	|   |   `-- exlinux				example DATCOM cases
+	|   |-- ORK						open rocket models
 	|   |   `-- prev
-	|   |-- OpenFOAM		CFD models
-	|   |   `-- LV3\_LD-Haack	model of the 1:5 nose cone
-	|   |       `-- rcf_100		100-node-long mesh
-	|   |           |-- 0		initial conditions
+	|   |-- OpenFOAM				CFD models
+	|   |   `-- LV3\_LD-Haack		model of the 1:5 nose cone
+	|   |       `-- rcf_100			100-node-long mesh
+	|   |           |-- 0			initial conditions
 	|   |           |-- constant	fluid properites
-	|   |           `-- system	simulation parameters
-	|   |-- plots			plots of the open rocket data
-	|   |-- reductions		reductions of the openrocket simulations
-	|   `-- simData			output of the openrocket simulations
-	`-- test			data from physical tests on modules
-	    `-- profilometer		surface roughness data
+	|   |           `-- system		simulation parameters
+	|   |-- plots					plots of the open rocket data
+	|   |-- reductions				reductions of the openrocket simulations
+	|   `-- simData					output of the openrocket simulations
+	`-- test						data from physical tests on modules
+	    `-- profilometer			surface roughness data

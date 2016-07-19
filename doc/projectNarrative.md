@@ -120,3 +120,16 @@ As of now, we are layering together the block of machinable foam that the mold w
 All of the design for the fins was done in OpenRocket. The main thing we needed to determine was the the planform (the shape of the flat part of the fin). 
 There's a lot of nice theory and experiment to back up designs of different airfoils, but practicality drove the design stronger than anything else.
 
+For example, the preferred supersoic airfoil is a diamond. (In fact, such an airfoil is reasonable to construct using molding or a machine foam core.)
+However, because we placed so much weight on reusing the work of the 2014 capstone, we decided to persue a fin design that mirrored it as closely as possible. 
+To get smooth, durable leading edges, we used an aluminum frame surrounding the fin. 
+To fill the gaps of the frame, we used honeycomb.
+This was then covered in CF to form the aeroshell. 
+In order to ensure strength against flutter, we added a flange at the root of the frame.
+With this, stresses from flutter would be transmitted through a thick section of aluminum with a large moment arm, compared to a simple CF tip-to-tip (TTT) layup. 
+To make the frame even stronger, we decided to mahine the frame out of a solid block.
+(You can check out the pictures in the updates and the cad files for more description of the old fins.)
+
+A lot of these design decisions were only feasible because we already knew we would be receiving machine time donations from Machine Sciences. 
+In other words, we knew that if we overbuilt something in a way that required very tricky machining, we wouldn't really have to make it ourselves. 
+Frankly, this encouraged a lot of bad design decisions. We wound up making parts that coulnd't ever be made at PSU or any other university, most likely. 
