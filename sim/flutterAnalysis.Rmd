@@ -2,10 +2,31 @@
 title: "Flutter Analysis for LV3"
 author: "Joe Shields, Ian Zabel"
 date: "July 26, 2016"
-output: html_document
+header-includes:
+   - \usepackage{lmodern}
+output: pdf_document
+mainfont: lmodern
 ---
-```{r, echo=F}
+
+```{r, echo=F, label= "commentedChunk"}
 #setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/sim")
+# :
+# 	mainfont: palatino
+# 	latex_engine: xelatex
+# 	mainfont: palatino
+# output:
+#   html_fragment:
+#     self_contained: false
+#   pdf_document
+#     latex_engine: xelatex
+#     mainfont: palatino
+#     keep_tex: true
+# output:
+#   html_fragment:
+#     self_contained: false
+#   md_document:
+#     variant: markdown_github
+#     pandoc_args: "--no-wrap"
 ```
 
 The following is a shot at estimating the factor of safety against flutter for the LV3 fins, using different materials and fin thicknesses. The data for air pressure, speed of sound, and airspeed come from OpenRocket (OR) simulations of the corresponding fin thicknesses. We could use a better model (see assumptions section), so I wrote this to be pretty much agnostic of the formula used to calculate the critical flutter velocity defined at the top of the script. 
@@ -219,7 +240,8 @@ for (j in 1:length(materials))
 					), 
 				thick= thicknesses.inch[i]*25.4/1e3, 
 				mod.shear=mod.shears[j],
-				material= materials[j]
+				material= materials[j],
+				show.plot = F
 				)
 			)
 	}
