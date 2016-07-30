@@ -2,43 +2,41 @@
 title: "Flutter Analysis for LV3"
 author: "Joe Shields, Ian Zabel"
 date: "July 26, 2016"
-header-includes:
-   - \usepackage{lmodern}
-output: pdf_document
-mainfont: lmodern
 ---
 
-```{r, echo=F, label= "commentedChunk"}
+```{r, joe_wd, echo=F}
 #setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/sim")
-# :
-# 	mainfont: palatino
-# 	latex_engine: xelatex
-# 	mainfont: palatino
-# output:
-#   html_fragment:
-#     self_contained: false
-#   pdf_document
-#     latex_engine: xelatex
-#     mainfont: palatino
-#     keep_tex: true
-# output:
-#   html_fragment:
-#     self_contained: false
-#   md_document:
-#     variant: markdown_github
-#     pandoc_args: "--no-wrap"
 ```
 
 The following is a shot at estimating the factor of safety against flutter for the LV3 fins, using different materials and fin thicknesses. The data for air pressure, speed of sound, and airspeed come from OpenRocket (OR) simulations of the corresponding fin thicknesses. We could use a better model (see assumptions section), so I wrote this to be pretty much agnostic of the formula used to calculate the critical flutter velocity defined at the top of the script. 
 
 [Here is the source](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19930085030.pdf) for this equation. (page 14, equation 18)
 
-$$
-V_{f}=a \sqrt{\frac{G_{E}}{K_{1}*K_{2}*K_{3}}}\\
-K_{1}=\frac{39.3(AR^3)}{(\frac{t}{c})^3 (AR+2)}\\
-K_{2}=\frac{\lambda+1}{2}\\
-K_{3}=\frac{p}{p_{o}}\\
-$$
+```{r, show_the_equations, echo=F, message=F}
+# install.packages("latex2exp")
+require("latex2exp")
+par.old <- layout(matrix(c(1,1,1,2,3,4), 3, 2, byrow = F))
+par(mar=c(0,0,0,0), mai=c(0,0,0,0))
+latexStr <- c(
+	"$V_{f}=a \\sqrt{\\frac{G_{E}}{K_{1} \\cdot K_{2} \\cdot K_{3}}}$",
+	"$K_{1}=\\frac{39.3(AR^3)}{(\\frac{t}{c})^3 (AR+2)}$",
+	"$K_{2}=\\frac{\\lambda+1}{2}$",
+	"$K_{3}=\\frac{p}{p_{o}}$"
+	)
+for (i in 1:length(latexStr))
+{
+	plot.new()
+	text(
+		x = 0.5, y= 0.5, cex = 2, 
+		labels = TeX(latexStr[i])
+	)
+}
+par(par.old)
+# $V_{f}=a \sqrt{\frac{G_{E}}{K_{1}*K_{2}*K_{3}}}$  
+# $K_{1}=\frac{39.3(AR^3)}{(\frac{t}{c})^3 (AR+2)}$  
+# $K_{2}=\frac{\lambda+1}{2}$  
+# $K_{3}=\frac{p}{p_{o}}$  
+```
 
 Symbol|Meaning|Variable
 -----|-----|-----
@@ -72,7 +70,7 @@ I recommend we switch either to equation 1, since we can estimate $\omega_\alpha
 ## Code-y stuff
 #### define the function for critical flutter velocity
 Fortunately, if we decide we want to use some other estimate of the critical flutter velocity, we can just change this function, and not muck around with the rest of the script.
-```{r}
+```{r, define_empirical_equation}
 vel.flutter <- function(vel.sonic, mod.shear, asp, thick, chord, taper, press, press0)
 {
 	K1 <- 39.3*asp^3/((thick/chord)^3*(asp+2))
@@ -84,7 +82,7 @@ vel.flutter <- function(vel.sonic, mod.shear, asp, thick, chord, taper, press, p
 
 #### define the parameters
 The information on the planform is just copied from OR. The sealevel pressure is from basically any reference. The thicknesses are plausible thicknesses we could buy. The modulus of rigidity for aluminum comes from [here](http://www.engineeringtoolbox.com/modulus-rigidity-d_946.html). The modulus for fiberglass is based off of [a PCB listed on MatWeb](http://www.matweb.com/search/DataSheet.aspx?MatGUID=952559b637a940658f6ab71767504fdc) and is low for many of the glass-based composites listed. 
-```{r}
+```{r, define_primary_parameters}
 chord.root <- 18*25.4/1e3 # m, converted from inches
 chord.tip <- 5*25.4/1e3 # m, converted from inches
 semispan <- 6.4*25.4/1e3 # m, converted from inches
@@ -97,7 +95,7 @@ mod.shears <- c(24e9, 2e9) # Pa, moduli of rigidity for the materials
 ```
 
 #### secondary parameters
-```{r}
+```{r, calculate_secondary_parameters}
 chord.mean <- (chord.root+chord.tip)/2 # m, mean chord length
 asp <- semispan/chord.mean # m, planform aspect ratio
 taper <- chord.tip/chord.root # dimensionless taper ratio
@@ -107,7 +105,7 @@ taper <- chord.tip/chord.root # dimensionless taper ratio
 To simplify the problem, I assumed there were no struts in the frame. I also assumed that the stationwise profile of the frame was two squares (one for the leading edge, and another for the trailing edge) with the given thickness. These are both conservative approximations, since the actual fin will have beefier geometry and therefore be more rigid. 
 
 I also approximate the polar moment of inertia as being determined by the two "point areas" of the squares (you'll hopefully see what I mean in the calculation), rather than integrating out those two dinky little squares. Essentially, I'm assuming that the squares are small compared to the chord, which they are. (1:20 at the tip)
-```{r}
+```{r, flutter_calculation_function}
 analyze.flutter <- function(csv, thick, mod.shear)
 {
 	#read in the data
@@ -151,7 +149,7 @@ analyze.flutter <- function(csv, thick, mod.shear)
 }
 ```
 I also wrote a function to plot the data and find the factor of safety, but that's just a bunch of book-keeping. You can check the `.Rmd` source if you want to see it.
-```{r, echo=F}
+```{r, plot_and_FS_func, echo=F}
 plot.flutter <- function(csv, thick, show.plot=T, mod.shear, material)
 {
 	# get the spiced-up data frame
@@ -209,7 +207,7 @@ plot.flutter <- function(csv, thick, show.plot=T, mod.shear, material)
 
 ## The current design (aluminum, 1/4" thick)
 So, let's check out the flutter factor of safety for the current fins (with no struts and a simplified frame).
-```{r, echo=F, message=F}
+```{r, quarter_inch_aluminum, echo=F, message=F}
 # plot dat shit, but don't echo or show the output; just the plot
 plot.flutter(
 		csv= "simData/L-13a_ideal_0.25fins.csv", 
@@ -222,7 +220,7 @@ Okay, it's clear that this design is _way_ overbuilt for flutter. The FS is on t
 
 ## Different thicknesses of aluminum and fiberglass
 The following factors of safety are for 1/4", 1/8", 3/32", and 1/16" frames of aluminum and fiberglass.
-```{r, echo=F, fig.show="hide", message="hold"}
+```{r, many_thicknesses_and_materials, echo=F, fig.show="hide", message="hold"}
 # Do the same for all the materials and thicknesses. Don't show the code or plots, just the output.
 for (j in 1:length(materials))
 {
@@ -242,7 +240,8 @@ for (j in 1:length(materials))
 				mod.shear=mod.shears[j],
 				material= materials[j],
 				show.plot = F
-				)
+				),
+			"\n"
 			)
 	}
 }

@@ -1,15 +1,10 @@
-
-
 The following is a shot at estimating the factor of safety against flutter for the LV3 fins, using different materials and fin thicknesses. The data for air pressure, speed of sound, and airspeed come from OpenRocket (OR) simulations of the corresponding fin thicknesses. We could use a better model (see assumptions section), so I wrote this to be pretty much agnostic of the formula used to calculate the critical flutter velocity defined at the top of the script.
 
 [Here is the source](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19930085030.pdf) for this equation. (page 14, equation 18)
 
-$$
-V\_{f}=a \\sqrt{\\frac{G\_{E}}{K\_{1}\*K\_{2}\*K\_{3}}}\\\\
-K\_{1}=\\frac{39.3(AR^3)}{(\\frac{t}{c})^3 (AR+2)}\\\\
-K\_{2}=\\frac{\\lambda+1}{2}\\\\
-K\_{3}=\\frac{p}{p\_{o}}\\\\
-$$
+![](flutterAnalysis_files/figure-markdown_github/show_the_equations-1.png)
+
+    ## NULL
 
 | Symbol            | Meaning                               | Variable      |
 |-------------------|---------------------------------------|---------------|
@@ -138,7 +133,7 @@ I also wrote a function to plot the data and find the factor of safety, but that
 The current design (aluminum, 1/4" thick)
 -----------------------------------------
 
-So, let's check out the flutter factor of safety for the current fins (with no struts and a simplified frame). ![](flutterAnalysis_files/figure-markdown_github/unnamed-chunk-6-1.png)
+So, let's check out the flutter factor of safety for the current fins (with no struts and a simplified frame). ![](flutterAnalysis_files/figure-markdown_github/quarter_inch_aluminum-1.png)
 
     ## [1] 83.51251
 
@@ -151,9 +146,16 @@ The following factors of safety are for 1/4", 1/8", 3/32", and 1/16" frames of a
 
     ## 
     ## ----- aluminum -----
-    ## factor of safety for 0.25 inch thick aluminum = 83.51251factor of safety for 0.125 inch thick aluminum = 20.88183factor of safety for 0.09375 inch thick aluminum = 11.45416factor of safety for 0.0625 inch thick aluminum = 5.09083
+    ## factor of safety for 0.25 inch thick aluminum = 83.51251 
+    ## factor of safety for 0.125 inch thick aluminum = 20.88183 
+    ## factor of safety for 0.09375 inch thick aluminum = 11.45416 
+    ## factor of safety for 0.0625 inch thick aluminum = 5.09083 
+    ## 
     ## ----- fiberglass -----
-    ## factor of safety for 0.25 inch thick fiberglass = 24.10799factor of safety for 0.125 inch thick fiberglass = 6.028064factor of safety for 0.09375 inch thick fiberglass = 3.30653factor of safety for 0.0625 inch thick fiberglass = 1.469596
+    ## factor of safety for 0.25 inch thick fiberglass = 24.10799 
+    ## factor of safety for 0.125 inch thick fiberglass = 6.028064 
+    ## factor of safety for 0.09375 inch thick fiberglass = 3.30653 
+    ## factor of safety for 0.0625 inch thick fiberglass = 1.469596
 
 Thoughts/conclusions
 --------------------
