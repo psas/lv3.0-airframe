@@ -5,6 +5,7 @@
 \usepackage{calc}%allows for scaling figures with integer division/multiplication of existing lengths
 \usepackage{wrapfig}
 \usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
 
 \title{Design and Manufacture of an Open-Hardware 
  	University Rocket Airframe using Carbon Fiber}
@@ -35,9 +36,13 @@ Joseph Shields, Leslie Elwood, Erik Nelson, and Jacob East%, Brandon Bonner
 The amateur and university rocketry communities are rapidly reaching higher altitudes with more sophisticated rockets. However, most groups are still using heavy airframes made of metal or fiberglass. Commercial off-the-shelf airframes are either too expensive for low-budget university groups or too small to use as a platform for high altitude experiments. 
 A capstone team of mechanical engineering seniors at Portland State University has developed a low-weight, modular carbon fiber airframe as an open-hardware technology for university rocketry. This team is continuing the work of a 2014 capstone team, who developed a carbon fiber layup process with promising results. 
 This will enable low-budget groups like the Portland State Aerospace Society to explore high altitude science and compete in the university space race.  \end{abstract}
-%\section*{Nomenclature}
-
-
+\section*{Nomenclature}
+\begin{itemize}
+	\item CFD, Computational Fluid Dynamics
+	\item PSAS, Portland State Aerospace Society
+	\item LV2, Launch Vehicle 2
+	\item LV3, Launch Vehicle 3
+\end{itemize}
 
 
 \section{Introduction}
@@ -50,7 +55,25 @@ The new airframe being designed, named Launch Vehicle 3 (LV3), aims to address t
 The cylindrical LV3 airframe modules outperform the old design with an \weightReduction{} reduction in weight.
 % Do we know what the increase in strength is? Also, can we confirm the weight reduction?
 
+\section{Software}
+\subsection{OpenRocket}
+For the early design of amateur- and university-scale rockets, \href{http://openrocket.sourceforge.net/}{OpenRocket} is very useful. 
+It is an open-source Java application which simulates a rocket's flight. It provides a convenient interface for configuring the rocket, selecting commercial or custom parts, viewing the predictions, and performing some basic optimization. 
+
+Using OpenRocket to guide the initial design allowed for rapid iteration of the fin geometry and the placement of non-airframe components. 
+
+\subsection{OpenFOAM}
+OpenFOAM is another open-source application. It provides a common interface for a wide range of CFD solvers.
+Although it requires more up-front effort, it allows a more detailed perspective on what features of an airframe's geometry are the most critical. 
+CFD analysis is probably not necessary for most amateur and university level airframe design, but this provides a good option for groups that can't afford a licence for a commercial CFD suite. 
+
+OpenFoam was used to asses the heating at the tip of the nose, to determine if the epoxy matrix of the carbon fiber would degrade over repeated flights.
+
 \subsection{Significance}
+Many amateur and university rocetry groups use composite airframes. However, these designs use many layers of fabric, with low fiber volume fractions.
+While easy and durable, this does not fully take advantage of their materials.
+
+
 
 \section{Materials}
 

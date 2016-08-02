@@ -1,0 +1,20 @@
+#!/bin/bash
+#pdflatex LV3_AIAA.tex
+pdflatex LV3_AIAA.tex | tee 'out.log'
+printf '\n\n'
+grep -i warning out.log
+while getopts ph FLAG
+do
+	case $FLAG in
+		p)
+			printf '\nabout to open the pdf...\n'
+			sleep 3
+			evince LV3_AIAA.pdf &
+			;;
+		[h\?])
+			echo -e \\n'-p'
+			echo -e \\t'display the pdf after compiling'
+			echo -e \\n'-h'
+			echo -e \\t'show this help'
+	esac
+done
