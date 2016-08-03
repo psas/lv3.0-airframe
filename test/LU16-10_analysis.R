@@ -3,73 +3,99 @@
 #Joe Shields
 #2016-5-1
 
-#setwd("~/PSAS/sw-cad-airframe-lv3.0/testing")
+#setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/test")
 # op <- options(digits.secs=3)
-# dat <- read.csv(commandArgs(T))
+# dat.10 <- read.csv(commandArgs(T))
 
-pdf("LU16-10_crushAnalysis.pdf")
+pdf("crushAnalysis.pdf")
 
-# read and format the data
-dat <- read.csv("LV3_LU16-10_ultimateFailure.txt", skip= 5)
-# dat$Time <- paste("2016-04-29", dat$Time)
-# dat$Time <- strptime(dat$Time, format = "%Y-%m-%d %I:%M:%OS")
-dat$Time <- as.POSIXct(dat$Time, format = "%I:%M:%OS")
+# read and format the data from LU16.10
+dat.10 <- read.csv("LV3_LU16-10_ultimateFailure.txt", skip= 5)
+# dat.10$Time <- paste("2016-04-29", dat.10$Time)
+# dat.10$Time <- strptime(dat.10$Time, format = "%Y-%m-%d %I:%M:%OS")
+dat.10$Time <- as.POSIXct(dat.10$Time, format = "%I:%M:%OS")
 op <- options(digits.secs=3)
-cal <- -308/0.027 #conversion from volts to micro strain
-dat$Voltage_0.Voltage. <- cal*dat$Voltage_0.Voltage.
-dat$Voltage_1.Voltage. <- cal*dat$Voltage_1.Voltage.
-colnames(dat) <- c("Row", "Time", "BottomGauge", "MiddleGauge", "empty", "LoadKips")
-ind.ult <- which.max(dat$BottomGauge)
-dat <- dat[1:ind.ult, ]
+cal.10 <- -308/0.027 #conversion from volts to micro strain
+dat.10$Voltage_0.Voltage. <- cal.10*dat.10$Voltage_0.Voltage.
+dat.10$Voltage_1.Voltage. <- cal.10*dat.10$Voltage_1.Voltage.
+colnames(dat.10) <- c("Row", "Time", "BottomGauge", "MiddleGauge", "empty", "LoadKips")
+ind.ult.10 <- which.max(dat.10$BottomGauge)
+dat.10 <- dat.10[1:ind.ult.10, ]
 
+# read data for LU16.20
+dat.20 <- read.csv("LU16-20_crushTest.csv", skip=5)
+dat.20.cal <- data.frame(v=c(0, 0.219, 0.442, 0.665, 0.893), L=c(0.91, 5.81, 10.74, 15.50, 20.76)-0.91)
+cal.20.lm <- lm(L~v, data=dat.20.cal)
+# summary(cal.20.lm)
+# confint(cal.20.lm)
+cal.20 <- cal.20.lm$coefficients[["v"]]
+dat.20$Time <- as.POSIXct(dat.20$Time, format = "%I:%M:%OS")
+dat.20$Load <- -cal.20*dat.20$Voltage_0.Voltage.
+ind.ult.20 <- which.max(dat.20$Load)
+
+# plot data for LU16.20
 plot(
-     dat$Time, dat$BottomGauge, 
+	dat.20$Time, dat.20$Load,
+	type="l",
+	main= "loading for LU16.20\n(18\" radome)",
+	xlab= "time (mm:ss)",
+	ylab= "load (kip)"
+	)
+points(dat.20$Time[ind.ult.20], dat.20$Load[ind.ult.20], pch=4)
+grid()
+
+# plot data for LU16.10
+plot(
+     dat.10$Time, dat.10$BottomGauge, 
      type="l",
-     main="strain for LU16.10",
+     main="strain for LU16.10\n(18\" CF)",
      xlab="time (mm:ss)",
      ylab= 'micro-strain'
      )
-lines(dat$Time, dat$MiddleGauge)
-points(dat$Time[ind.ult], dat$BottomGauge[ind.ult], pch=4)
-points(dat$Time[ind.ult], dat$MiddleGauge[ind.ult], pch=4)
-# lines(dat$Time, dat$LoadKips*1e3)
+lines(dat.10$Time, dat.10$MiddleGauge)
+points(dat.10$Time[ind.ult.10], dat.10$BottomGauge[ind.ult.10], pch=4)
+points(dat.10$Time[ind.ult.10], dat.10$MiddleGauge[ind.ult.10], pch=4)
+# lines(dat.10$Time, dat.10$LoadKips*1e3)
+grid()
 
 plot(
-     dat$Time, dat$Load,
+     dat.10$Time, dat.10$Load,
      type="l",
      xlab= "time (mm:ss)",
      ylab="load (kip)",
      main= "loading for LU16.10"
      )
-points(dat$Time[ind.ult],dat$Load[ind.ult], pch=4)
+points(dat.10$Time[ind.ult.10],dat.10$Load[ind.ult.10], pch=4)
+grid()
 
 # plot(
-# 	dat$Time, dat$LoadKips*1e3, 
-# 	xlim=c(dat$Time[1], dat$Time[1]+5*60),
+# 	dat.10$Time, dat.10$LoadKips*1e3, 
+# 	xlim=c(dat.10$Time[1], dat.10$Time[1]+5*60),
 # 	ylim=c(-500,1.2e3),
 # 	type="l"
 # 	)
-# lines(dat$Time, dat$BottomGauge)
+# lines(dat.10$Time, dat.10$BottomGauge)
 
-mm <- lm(LoadKips~MiddleGauge, data = dat)
+mm <- lm(LoadKips~MiddleGauge, data = dat.10)
 plot(
-     dat$MiddleGauge, dat$LoadKips, 
+     dat.10$MiddleGauge, dat.10$LoadKips, 
      type="l", bty="n", col=NA, 
-     xlim=range(dat$BottomGauge), 
+     xlim=range(dat.10$BottomGauge), 
      main= "load-strain for LU16.10",
      xlab= "micro-strain",
      ylab= "load (kip)"
      )
 abline(mm, col="red")
-points(dat$MiddleGauge[ind.ult], dat$LoadKips[ind.ult], pch=4)
-lines(dat$MiddleGauge, dat$LoadKips, col="blue")
+points(dat.10$MiddleGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
+lines(dat.10$MiddleGauge, dat.10$LoadKips, col="blue")
 # summary(mm)
 
-# plot(dat$BottomGauge, dat$LoadKips, type="l", bty="n")
-mb <- lm(LoadKips~BottomGauge, data = dat)
+# plot(dat.10$BottomGauge, dat.10$LoadKips, type="l", bty="n")
+mb <- lm(LoadKips~BottomGauge, data = dat.10)
 abline(mb, col="red")
-points(dat$BottomGauge[ind.ult], dat$LoadKips[ind.ult], pch=4)
-lines(dat$BottomGauge, dat$LoadKips, col="green")
+points(dat.10$BottomGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
+lines(dat.10$BottomGauge, dat.10$LoadKips, col="green")
+grid()
 
 legend(
        "bottomright",
@@ -77,17 +103,23 @@ legend(
        legend=c("middle gauge", "edge gauge", "best fit"),
        lty=c(1)
        )
-
+cat("\n----------", "LU16.10 (18\" CF, blue)", "----------\n")
 cat("\nLikely load cell offset is between \n", mm$coeff["(Intercept)"], "\nand\n", mb$coeff["(Intercept)"], "\n")
 cat(
-    "\nultimate load: ", dat$Load[ind.ult]-mb$coeff["(Intercept)"],
-    "\nultimate micro-strain (edge): ", dat$BottomGauge[ind.ult],
-    "\nultimate micro-strain (middle): ", dat$MiddleGauge[ind.ult],
+    "\nultimate load: ", dat.10$Load[ind.ult.10]-mb$coeff["(Intercept)"], "kip",
+    "\npinging load: ~7 kip",
+    "\nultimate micro-strain (edge): ", dat.10$BottomGauge[ind.ult.10],
+    "\nultimate micro-strain (middle): ", dat.10$MiddleGauge[ind.ult.10],
     "\nload per micro-strain (edge): ", mb$coeff["BottomGauge"],
     "\nload per micro-strain (middle): ", mm$coeff["MiddleGauge"],
     "\n"
     )
-
+cat("\n----------", "LU16.20 (18\" radome)", "----------\n")
+cat(
+    "\nultimate load: ", dat.20$Load[ind.ult.20], "kip",
+    "\npinging load: ~2 kip",
+    "\n"
+    )
 
 
 dev.off()
