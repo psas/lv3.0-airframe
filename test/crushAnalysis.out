@@ -1,13 +1,21 @@
 
+---------- LU16.10 (18" CF, blue) ----------
+
 Likely load cell offset is between 
  -0.1265368 
 and
  -0.2166293 
 
-ultimate load:  10.49883 
+ultimate load:  10.49883 kip 
+pinging load: ~7 kip 
 ultimate micro-strain (edge):  4734.063 
 ultimate micro-strain (middle):  2441.208 
 load per micro-strain (edge):  0.002286565 
 load per micro-strain (middle):  0.004215678 
+
+---------- LU16.20 (18" radome) ----------
+
+ultimate load:  5.08544 kip 
+pinging load: ~2 kip 
 null device 
           1 
