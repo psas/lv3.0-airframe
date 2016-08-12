@@ -1,7 +1,14 @@
 #!/bin/bash
-#pdflatex LV3_AIAA.tex
-pdflatex LV3_AIAA.tex | tee 'out.log'
-printf '\n\n'
+echo ---------- RUNNING FIRST PDFLATEX PASS ----------
+pdflatex LV3_AIAA.tex | grep -i warning 
+echo ---------- RUNNING BIBTEX PASS ----------
+bibtex LV3_AIAA
+echo ---------- RUNNING SECOND PDFLATEX PASS ----------
+pdflatex LV3_AIAA.tex | grep -i warning 
+echo ---------- RUNNING FINAL PDFLATEX PASS ----------
+# pdflatex LV3_AIAA.tex | tee 'out.log'
+pdflatex LV3_AIAA.tex > 'out.log'
+echo ---------- WARNINGS ----------
 grep -i warning out.log
 while getopts ph FLAG
 do
