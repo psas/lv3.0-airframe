@@ -1,0 +1,5 @@
+#!/bin/bash
+SVGNAME=${1%.svg}
+#echo $SVGNAME
+inkscape -D -z --file=$1 --export-pdf=$SVGNAME.pdf --export-latex
+

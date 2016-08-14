@@ -15,7 +15,7 @@ do
 	case $FLAG in
 		p)
 			printf '\nabout to open the pdf...\n'
-			sleep 3
+			sleep 1.5
 			evince LV3_AIAA.pdf &
 			;;
 		[h\?])
