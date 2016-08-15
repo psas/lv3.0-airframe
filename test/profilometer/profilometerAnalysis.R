@@ -5,7 +5,7 @@
 
 #### BOOK KEEPING ####
 pdf("profilometerPlot.pdf")
-# setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/testing/profilometer")
+# setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/test/profilometer")
 files.txt <- system("ls *.txt", intern=T) #find all the files
 datName.list <- as.list(files.txt)
 # initialize a list of data frames
@@ -104,3 +104,23 @@ cat(
 	case.worst/case.best,"\n"
 )
 dev.off()
+
+# install.packages("tikzDevice")
+require("tikzDevice")
+tikz("../../doc/paper/roughness.tex", width = 2.5, height= 2.5, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
+par.old <- par(mar=c(4,4,1,0))
+plot(
+	dat.list[[8]]$x, dat.list[[8]]$y*1e-4, 
+	type="l", bty="n",
+	xlab= "length ($\\si{\\micro\\meter}$)",
+	ylab= "height ($\\si{\\micro\\meter}$)"
+	)
+lines(dat.list[[2]]$x, dat.list[[2]]$y*1e-4, col="blue", lty=2)
+# legend(
+# 	"topleft",
+# 	legend= c("uncoated", "adhesive coated"),
+# 	col= c("black", "blue"),
+# 	lty= 1
+# 	)
+dev.off()
+par(par.old)

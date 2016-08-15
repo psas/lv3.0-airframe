@@ -12,15 +12,15 @@ This is the repo for the LV3 airframe. This holds everything you need to know ab
 		- [ ] Finalize new fin frames.
 		- [ ] Find out if we can water-jet the frames, and if it can be done sooner than the laser cutter is repaired.
 - Nose
-		- [ ] Make templates for CF sections
-				- [ ] Someone needs to figure out how to unfold the molding surface to make the template. (use math or Solidworks)
-		- Machining
-				- [ ] Get threaded rods to Alex
-				- [ ] Get ball endmill to Alex
-				- [ ] Set up go-pro(s) to document machining
-		- [X] Attempt a layup
-				- [ ] redo the tip CAD for the redesigned mold (Alex F.)
-				- [ ] machine the new tip
+	- [ ] Make templates for CF sections
+		- [ ] Someone needs to figure out how to unfold the molding surface to make the template. (use math or Solidworks)
+	- Machining
+		- [ ] Get threaded rods to Alex
+		- [ ] Get ball endmill to Alex
+		- [ ] Set up go-pro(s) to document machining
+	- [X] Attempt a layup
+		- [ ] redo the tip CAD for the redesigned mold (Alex F.)
+		- [ ] machine the new tip
 - MFG procedures
 	- [ ] Add pictures to the MFG procedures.
 	- [ ] Review procedures (not Joe)
@@ -37,23 +37,26 @@ This is the repo for the LV3 airframe. This holds everything you need to know ab
 - [ ] AIAA paper
 	- [ ] Write first draft of AIAA paper. (in progress)
 		- Figures
-				- [X] add diagram/picture of the sandwich design
-				- [ ] add pictures of crushed FG module
-				- [ ] add pictures of the puncture failure
-				- [ ] add plot of the surface features
-				- [ ] add picture of layers, put alongside diagram
-				- [ ] add picture/CAD render of the cylindrical modules and/or whole rocket
+			- [X] add diagram/picture of the sandwich design
+			- [ ] add pictures of crushed FG module
+			- [ ] add pictures of the puncture failure
+			- [X] add plot of the surface features
+			- [ ] add picture of layers, put alongside diagram
+			- [ ] add picture/CAD render of the cylindrical modules and/or whole rocket
 		- Sections
-				- [X] write more detailed description of the modules
-				- [X] write section on the materials
-				- [ ] write section on destructive testing
-				- [ ] write section on the fins
-				- [ ] write section on the nose cone
+			- [X] write more detailed description of the modules
+			- [X] write section on the materials
+			- [ ] write section on destructive testing
+				- [ ] find what the actual compressive FS is
+			- [ ] write section on the fins
+			- [ ] write section on the nose cone
+			- [ ] figure out how to cite the Beta Project funding
+	- [ ] Get draft reviewed by other people
 - Miscellaneous
-		- [X] Write up suggestions for future ME PSAS groups to consider during thier project. 
-		- [ ] Move all deliverable-related things from the Google Drive into this repo. 
-		- [X] Order more heat-shrink tape (non-perforated) (Dunstone hi-shrink tape)
-		- [ ] Schedule tensile test with Chinh
+	- [X] Write up suggestions for future ME PSAS groups to consider during thier project. 
+	- [ ] Move all deliverable-related things from the Google Drive into this repo. 
+	- [X] Order more heat-shrink tape (non-perforated) (Dunstone hi-shrink tape)
+	- [ ] Schedule tensile test with Chinh
 
 ## Relavant Deadlines
 
