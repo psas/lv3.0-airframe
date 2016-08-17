@@ -1,13 +1,13 @@
 #!/bin/bash
 echo ---------- RUNNING FIRST PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex | grep -i warning 
+pdflatex LV3_AIAA.tex -draftmode | grep -i ! 
 echo ---------- RUNNING BIBTEX PASS ----------
 bibtex LV3_AIAA
 echo ---------- RUNNING SECOND PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex | grep -i warning 
+pdflatex LV3_AIAA.tex -draftmode | grep -i ! 
 echo ---------- RUNNING FINAL PDFLATEX PASS ----------
-# pdflatex LV3_AIAA.tex | tee 'out.log'
-pdflatex LV3_AIAA.tex > 'out.log'
+pdflatex LV3_AIAA.tex | tee 'out.log'
+# pdflatex LV3_AIAA.tex > 'out.log'
 echo ---------- WARNINGS ----------
 grep -i warning out.log
 while getopts ph FLAG
