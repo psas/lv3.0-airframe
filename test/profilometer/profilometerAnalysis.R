@@ -105,9 +105,19 @@ cat(
 )
 dev.off()
 
+#----------make the plot for the paper----------
+
+downsample <- function(dat, n) 
+{
+	sparse <- floor(seq(from=1, to= length(dat[,1]), length.out=n))
+	return(dat[sparse,])
+}
+dat.list[[8]] <- downsample(dat.list[[8]], 1e3)
+dat.list[[2]] <- downsample(dat.list[[2]], 1e3)
+
 # install.packages("tikzDevice")
 require("tikzDevice")
-tikz("../../doc/paper/roughness.tex", width = 2.5, height= 2.5, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
+tikz("../../doc/paper/roughness.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
 par.old <- par(mar=c(4,4,1,0))
 plot(
 	dat.list[[8]]$x, dat.list[[8]]$y*1e-4, 

@@ -9,6 +9,8 @@ echo ---------- RUNNING FINAL PDFLATEX PASS ----------
 pdflatex LV3_AIAA.tex | tee 'out.log'
 # pdflatex LV3_AIAA.tex > 'out.log'
 echo ---------- WARNINGS ----------
+grep -i overfull out.log
+grep -i underfull out.log
 grep -i warning out.log
 grep ! out.log
 grep -i warning *.blg

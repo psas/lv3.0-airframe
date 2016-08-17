@@ -3,11 +3,11 @@
 #Joe Shields
 #2016-5-1
 
-#setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/test")
+#setwd("~/Github/PSAS/lv3.0-airframe/test")
 # op <- options(digits.secs=3)
 # dat.10 <- read.csv(commandArgs(T))
 
-pdf("crushAnalysis.pdf")
+# pdf("crushAnalysis.pdf")
 
 # read and format the data from LU16.10
 dat.10 <- read.csv("LV3_LU16-10_ultimateFailure.txt", skip= 5)
@@ -76,14 +76,18 @@ grid()
 # 	)
 # lines(dat.10$Time, dat.10$BottomGauge)
 
+require("tikzDevice")
+tikz("../doc/paper/strain.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
+par.old <- par(mar=c(4,4,1,0))
+
 mm <- lm(LoadKips~MiddleGauge, data = dat.10)
 plot(
      dat.10$MiddleGauge, dat.10$LoadKips, 
      type="l", bty="n", col=NA, 
      xlim=range(dat.10$BottomGauge), 
-     main= "load-strain for LU16.10",
+     # main= "load-strain for LU16.10",
      xlab= "micro-strain",
-     ylab= "load (kip)"
+     ylab= "load (\\si{kip})"
      )
 abline(mm, col="red")
 points(dat.10$MiddleGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
@@ -95,14 +99,19 @@ mb <- lm(LoadKips~BottomGauge, data = dat.10)
 abline(mb, col="red")
 points(dat.10$BottomGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
 lines(dat.10$BottomGauge, dat.10$LoadKips, col="green")
-grid()
+# grid()
 
 legend(
        "bottomright",
-       col=c("blue","green", "red"),
-       legend=c("middle gauge", "edge gauge", "best fit"),
-       lty=c(1)
+       col=c("blue","green", "red", "black"),
+       legend=c("middle gauge", "edge gauge", "best fit", "failure"),
+       lty=c(1, 1, 1, NA),
+       pch= c(NA, NA, NA, 4)
        )
+
+par(par.old)
+dev.off()
+
 cat("\n----------", "LU16.10 (18\" CF, blue)", "----------\n")
 cat("\nLikely load cell offset is between \n", mm$coeff["(Intercept)"], "\nand\n", mb$coeff["(Intercept)"], "\n")
 cat(
@@ -122,4 +131,4 @@ cat(
     )
 
 
-dev.off()
+# dev.off()
