@@ -1,15 +1,18 @@
 #!/bin/bash
 echo ---------- RUNNING FIRST PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex -draftmode | grep -i ! 
+pdflatex LV3_AIAA.tex --draftmode | grep -i ! 
 echo ---------- RUNNING BIBTEX PASS ----------
 bibtex LV3_AIAA
 echo ---------- RUNNING SECOND PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex -draftmode | grep -i ! 
+pdflatex LV3_AIAA.tex --draftmode | grep -i ! 
 echo ---------- RUNNING FINAL PDFLATEX PASS ----------
 pdflatex LV3_AIAA.tex | tee 'out.log'
 # pdflatex LV3_AIAA.tex > 'out.log'
 echo ---------- WARNINGS ----------
 grep -i warning out.log
+grep ! out.log
+grep -i warning *.blg
+grep ! *.blg
 while getopts ph FLAG
 do
 	case $FLAG in
