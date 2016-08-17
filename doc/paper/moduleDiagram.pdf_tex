@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{226.440625bp}%
+    \setlength{\unitlength}{457.01564941bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +48,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.31965471)%
+  \begin{picture}(1,0.42011688)%
     \put(0,0){\includegraphics[width=\unitlength]{moduleDiagram.pdf}}%
-    \put(0.03981452,0.03632989){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
-    \put(0.03981452,0.12465348){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{2}}}%
-    \put(0.03981452,0.21297664){\color[rgb]{0.66666667,0.26666667,0}\makebox(0,0)[rb]{\smash{3}}}%
-    \put(0.42843737,0.26597066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{outside}}}%
-    \put(0.42843737,0.00100054){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inside}}}%
-    \put(0.78173086,0.05399456){\color[rgb]{0.50196078,0.50196078,0.50196078}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.01972717,0.16629614){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.01972717,0.21005843){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{2}}}%
+    \put(0.01972717,0.2538205){\color[rgb]{0.66666667,0.26666667,0}\makebox(0,0)[rb]{\smash{3}}}%
+    \put(0.21228075,0.2800778){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{outside}}}%
+    \put(0.21228075,0.14879127){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inside}}}%
+    \put(0.38732946,0.17504858){\color[rgb]{0.50196078,0.50196078,0.50196078}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.52736843,0.31508754){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.58863548,0.31508754){\color[rgb]{0,0,1}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.64990253,0.31508754){\color[rgb]{0.66666667,0.26666667,0}\makebox(0,0)[b]{\smash{3}}}%
   \end{picture}%
 \endgroup%
