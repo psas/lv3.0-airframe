@@ -4,3 +4,5 @@
 *.bbl
 *.blg
 *.nlo
+*.ilg
+*.nls
