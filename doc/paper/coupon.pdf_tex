@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'moduleDiagram.pdf' (pdf, eps, ps)
+%% Accompanies image file 'coupon.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{226.440625bp}%
+    \setlength{\unitlength}{232bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.31965471)%
-    \put(0,0){\includegraphics[width=\unitlength]{moduleDiagram.pdf}}%
-    \put(0.03981452,0.03632989){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
-    \put(0.03981452,0.12465348){\color[rgb]{0,0,1}\makebox(0,0)[rb]{\smash{2}}}%
-    \put(0.03981452,0.21297664){\color[rgb]{0.66666667,0.26666667,0}\makebox(0,0)[rb]{\smash{3}}}%
-    \put(0.42843737,0.26597066){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{outside}}}%
-    \put(0.42843737,0.00100054){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{inside}}}%
-    \put(0.78173086,0.05399456){\color[rgb]{0.50196078,0.50196078,0.50196078}\makebox(0,0)[lb]{\smash{4}}}%
+  \begin{picture}(1,0.48283513)%
+    \put(0,0){\includegraphics[width=\unitlength]{coupon.pdf}}%
+    \put(0.1034482,0.43164978){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{1}}}%
+    \put(0.22413783,0.43164978){\color[rgb]{0,0,1}\makebox(0,0)[b]{\smash{2}}}%
+    \put(0.34482748,0.43164978){\color[rgb]{0.66666667,0.26666667,0}\makebox(0,0)[b]{\smash{3}}}%
   \end{picture}%
 \endgroup%

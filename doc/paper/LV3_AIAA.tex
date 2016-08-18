@@ -100,9 +100,25 @@ The tip of the nose cone is machined out of aluminum and is removed when assembl
 \begin{figure}
 \centering
 \def\svgwidth{\linewidth}
-\input{moduleDiagram.pdf_tex}
-\caption{Diagram of the male end of a module. The CF (1) is bonded to the honeycomb core (3) and the aluminum coupling ring (4) using structural adhesive (2). The adhesive also serves as a protective coating for the CF and provides a smooth outer surface.}
-\label{fig:moduleDiagram}
+\parbox{0.45\linewidth}{
+	\input{moduleDiagram.pdf_tex}
+	\caption{
+		Diagram of the male end of a module. 
+		The CF (1) is bonded to the honeycomb core (3) and the aluminum coupling ring (4) using structural adhesive (2). 
+		The adhesive also serves as a protective coating for the CF and provides a smooth outer surface. 
+		See figure \ref{fig:coupon} for a picture of this design.
+		}
+	\label{fig:moduleDiagram}
+}
+\hfill
+\parbox{0.45\linewidth}{
+	\input{coupon.pdf_tex}
+	\caption{
+		A cut-away sample displaying the layers used in the LV3 sandwich shells. 
+		See figure \ref{fig:moduleDiagram} for a diagramatic depiction.
+		}
+	\label{fig:coupon}
+}
 \end{figure}
 
 \subsection{Significance}
@@ -235,7 +251,12 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 	{
 		\centering
 		\includegraphics[width=\linewidth]{../img/LU16-10crush_close.jpg}
-		\caption{Positioning of the strain gauges referred to in figure \ref{fig:strain}. Both are alligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.}
+		\caption{
+			Positioning of the strain gauges referred to in figure \ref{fig:strain}. 
+			The gauges have been circled with colors corresponding to figure \ref{fig:strain}.
+			Both are alligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.
+			The bottom gauge is positioned directly above the point of failure.
+			}
 		\label{fig:gaugePosition}
 	}
 	\hfill
@@ -250,10 +271,12 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 \end{figure}
 
 \subsection{Destructive Testing}
+\label{sec:testing}
 
 \begin{wraptable}{R}{4.5 in}
 	\centering
-	\caption{Failure strengths for different modules.}\label{tab:compression}
+	\caption{Failure strengths for different modules.}
+	\label{tab:compression}
 	% this should probably be given in Newtons with pounds being parenthetical
 	\begin{tabular}{llll}
 		Material & Loading & Pinging Strength & Ultimate Strength\\
@@ -265,26 +288,35 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 	\end{tabular}
 \end{wraptable}
 
-Complete modules were subjected to compressive loads along their axis. This was done by attaching dummy rings, which emulate a connection to another module, and loading the dummy rings through a flat plate. 
+Rather than yielding like traditional engineering materials, this design ``pings'' as the most heavily loaded fibers begin to break and sections of core material experience small delaminations from the faces. 
+% any more to say about pinging?
+
+A complete 18 inch CF module was subjected to compressive loading along its axis. This was done by attaching dummy rings, which emulate a connection to another module, and loading the dummy rings through a flat plate. 
+A load cell was used to record the load, while strain gauges recored strain in two locations (see figure \ref{fig:gaugePosition}). 
+The time and corresponding load at which audible pinging occured was also recorded.
 The load was slowly increased using a hydraulic press. 
+<<<<<<< HEAD
 A load cell was used to record the load. The time and corresponding load at which audible pinging occurred was also recorded.
+=======
+Similar tests were performed with a fiberglass module, a CF module where the CF layers were delaminated from the core, and a CF module with the load applied laterally via a 2 inch wide beam, to puncture the module.
+>>>>>>> 5f1f8d8a8a6fee20e338a530af8a28b6fef8299c
 These results can be seen in table \ref{tab:compression}.
 
-%----------talk about pinging/lack of yield----------
 This represents a factor of safety of ???
 %----------what is the actual factor of safety?----------
 during launch.
 
-In ultimate failure, both the CF and fiberglass modules failed through buckling of the composite layers at the interface between the inner layer and one of the coupling rings.
-This resulted in the composite layers subducting under themselves.
+In compressive loading, both the CF and fiberglass modules failed through buckling of the composite layers at the interface between the inner layer and one of the coupling rings.
+This resulted in the composite layers subducting under themselves (see figure \ref{fig:crush}).
 Failure occured uniformly around the inner and outer layers, both at the same distance along the axis of the modules. 
+In the delaminated module, one of the coupling rings was simply pushed into the space occupied by the core material.
 
-The modules are more suceptible to concentrated surface loading. 
-When lateral loading was applied with a $2''$ beam, modules failed below $\SI{100}{\poundF}$. 
+The modules are much more suceptible to concentrated surface loading than to axial loading (see table \ref{tab:compression}). 
 The deformation from the beam delaminated the CF layers from the core and eventually tore the outer layer of CF. 
 This mode of failure poses a significant threat to the modules when the rocket lands. 
 During this phase of the flight, the airframe could impact rocks or bushes, potentially delaminating or puncturing the outer CF layer. 
 
+<<<<<<< HEAD
 \section{Nose Cone}\label{sec:noseCone}
 
 To make the nose cone would take significant ingenuity and research into usable materials. The pre-impregnated carbon fiber material donated to us is a material with a 350°F cure cycle. Thus every element used henceforth must survive the same temperature. The initial manufacturing process involved a mandrel and the same procedure as the cylindrical modules. Machine Sciences agreed to donate the material and machine time to create this for PSAS however, lead time prevented them from delivering this to us in the time frame necessary for launch. 
@@ -292,14 +324,65 @@ To make the nose cone would take significant ingenuity and research into usable 
 After consideration, it was decided that a work-around method for creating the nose cone would be to use a negative mold. Four high-temperature, 1 inch thick, 18 pound per cubic foot density machinable foam (FR 4718) was purchased and stacked to create a 4 inch thickness. A high-temperature resin coated the blocks to prevent absorption and possible deformation during the cure cycle.
 
 During the first trial layup of the nose cone, it was found that during the cure cycle the foam block fractured at the tip end. This is due to the difference in the coefficients of thermal expansion (α) between the machinable foam and the carbon fiber. The α for the machinable foam is $\SI{48e-6}{\per\kelvin}$ and is larger than the carbon fiber with an α of $\SI{10e-6}{\per\kelvin}$ indicating that the foam contracted faster than the carbon fiber. This created a thermal stress concentration in the tip of the foam block which ultimately fractured the mold. In later iterations of the mold CAM drawing, space was included into the cylindrical base of the cone to allow for the thermal contraction.
+=======
+The poor performance of the delaminated module and the module subjected to concentrated surface loading suggest that all flight modules should be thoroughly checked for delaminations after landing. 
+Currently, delaminations are located by squeezing modules by hand, looking for sections which are not rigid. 
+
+\section{Nose Cone}\label{sec:noseCone}
+
+The nose cone consists of a removable aluminum tip, a curved von K\'arm\'an body, a 6 inch cylindrical section, and a female coupling ring. 
+The aluminum tip provides a smooth leading surface, avoids the problems with forming CF to small radii, and can be removed to assist with assembling the recovery system. 
+Unlike the modules, most of the nose cone does not use a sandwich design.
+The von K\'arm\'an section does not contain any core material, instead using multiple layers of pre-impregnated CF. 
+This is intended to mitigate puncturing of the nose cone during landing (see section \ref{sec:testing}). 
+Rather than remaining rigid, this section should bend under impacts with rocks, bushes, or the airframe. 
+Additionally, the buckling strength added by the core is unnecessary in the nose cone, since it experiences very little load.
+The cylindrical section uses core material to ensure a good connection to the coupling ring. 
+The extra length added by this section helps accomodate the recovery system. 
+
+Several manufacturing processes were considered for the nose cone, including a curved mandrel similar to the one used for the modules, a two-part aluminum mold, and various half molds. 
+The limiting factor in the manufacturing was the fact that any material used must be compatible with the $\SI{350}{\Far}$ cure cycle required by the pre-impregnated CF. 
+The final design uses a half mold made of laminated high-temerature machinable foam sheets, with a von K\'arm\'an shaped cavity machined out and sealed with epoxy. 
+Although this material is not typically used for final molds, it is a solution with relatively low cost and high ease of manufacturing, which is important for low-budget university teams.
+
+Thermal expansion presented several challenges during manufacturing. 
+The sheets of machinable foam had to be vacuum bagged during lamination, to prevent warping.
+Pre-impregnated CF has a CTE close to 0, unlike the machinable foam which has a CTE greater than 0. 
+If the CF of the nose cone spans the inside of the mold, it can fracture the mold. 
+This is because the CF cures while then mold is expanded, but does not shrink with the mold when it cools. Thus, it pushes out on the mold. 
+
+The nose cone is molded as two separate halves. These are then co-bonded together with the aluminum coupling ring and a small mounting ring which attches to the aluminum tip.
+After curing, the outside of the nose cone is sprayed with a high temperature paint, which is then lightly sanded and polished.
+
+% To make the nose cone would take significant ingenuity and research into usable materials. The pre-impregnated carbon fiber material donated to us is a material with a 350°F cure cycle. Thus every element used henceforth must survive the same temperature. The initial manufacturing process involved a mandrel and the same procedure as the cylindrical modules. Machine Sciences agreed to donate the material and machine time to create this for PSAS however, lead time prevented them from delivering this to us in the time frame necessary for launch. 
+% 
+% After consideration, it was decided that a work-around method for creating the nose cone would be to use a negative mold. Four high-temperature, 1 inch thick, 18 pound per cubic foot density machinable foam (FR 4718) was purchased from General Plastics and stacked to create a 4 inch thickness. ACP high-temperature resin epoxy is mixed with a 3.2:10 ratio which was used to mix this resin before application and then ran through a heat cycle to cure. Next, the foam block was transported to Esco to be run through a CNC Mill and returned. 
+% 
+% The mold experienced mild delamination during milling and needed additional resin to hold together. Understanding that the machinable foam is porous and would likely absorb any fluid adhesive created by the high temperature environment, and thus deform the foam blocks, it was decided that the surface of the mold would be coated in the ACP resin and run through another heat cycle. As a secondary measure to ensure the carbon fiber and adhesives would release from the mold, three layers of Fibre Glast non-silicone high temperature paste wax is applied to the surface of the mold. Once the wax set, a generous layer of Fibre Glast PVA release film was then painted to the surface. 
+% 
+% Using a template, carbon fiber material is cut to fit into the mold. Because of the geometry of the nose cone, and thus the mold, the carbon fiber material has a tenancy to wrinkle and fold. To prevent this, the material is cut into thirds and laid down starting with the center most surface of the nose cone. Carefully, it is laid into the mold. With the finger tips, pressing into the deepest part of the mold and working out all wrinkles from the bottom of the mold to the tip and then outward. Lay the other two-thirds of the remaining carbon fiber material into the mold using the same method; being sure to work out all wrinkles from bottom to top, and then from the center out to the sides. This will create a seam in the carbon fiber between the center piece and the two sides and so extra pressure from the finger tips needs applied to the seam to ensure the joining of the two materials.
+% 
+% When the carbon fiber is completely set into the mold, the Meltbond 1515-3M structural adhesive film is laid in. It was not necessary to cut this film into parts because of it's fluid characteristic at high temperatures. Once it cools it will bond the layers of material together. Lay the secondary layer of carbon fiber down in to the mold, once again paying attention to any wrinkles or air pockets created in the process. Flatten the excess material to the flat surface of the mold and make sure the edge has a severe crease as when the two halves are joined. Any wrinkle in the crease will open the nose cone up to gaps in the seam.
+% 
+% Vacuum bag the filled mold and place into oven to set for cure cycle: 2 hour ramp up at 3°F per minute to 350°F where the temperature is held for an additional 2 hours then allowed to cool by simply turning off the oven and cracking a door. This could take several hours so it is advised to return to it the following day. Once it has cooled, remove the mold from the vacuum bagging by cutting it free from the bag materials. 
+% 
+% With two halves completed, cut off and sand down the edges so that they are nearly flush with the shape of the nose cone. Two strips of carbon fiber the length of the nose cone from tip to base need to be cut out. These strips will be used to join the two halves of the nose cone and seal any flaws in the edges. Again, the nose cone will need another heat cycle in the oven. 
+% 
+% An aluminum nose cone tip has been designed to be placed on the blunt tip end of the nose cone and similarly, the aluminum coupling ring would be co-bonded to the cylindrical shaped end of the cone. 
 
 \section{Fin Section}
+
+\section{Future Research}
+>>>>>>> 5f1f8d8a8a6fee20e338a530af8a28b6fef8299c
+
+\section{Conclusions}
 
 \section{Acknowledgements}
 
 This project was made possible by donations from Boeing, Machine Sciences Corporation, Pacific Coast Composites, Esco, and the many donors who support PSAS.
-The authors gratefully acknowledge Dr. Andrew Greenberg, Erin Schmidt, and Dr. Mark Weislogel for their guidance throughout the project.
-Special thanks also goes to Dr. Don Mueller, The Beta Project, Jack Slocum, Sam Arnold, Erik Nelson, Robert Melchione, Marett Strecker, and Tung Nguyen for their work prototyping the cylindrical modules, as well as Ian Zabel and Alex Farias for designing parts to interface with the avionics and recovery systems.
+The authors gratefully acknowledge Andrew Greenberg, Erin Schmidt, and Dr. Mark Weislogel for their guidance throughout the project.
+Special thanks also goes to Jack Slocum, Sam Arnold, Erik Nelson, Robert Melchione, Marett Strecker, and Tung Nguyen for their work prototyping the cylindrical modules, as well as Ian Zabel and Alex Farias for designing parts to interface with the avionics and recovery systems.
+% Dr. Don Mueller, The Beta Project, 
 %----------how do we cite the Beta Project funding? (potentially very important)----------
 \bibliography{LV3.bib}
 \end{document}
