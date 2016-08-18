@@ -68,7 +68,7 @@ This will enable low-budget groups like the Portland State Aerospace Society to 
 \begin{wrapfigure}{R}{2.5 in}
 \centering
 \includegraphics[width=\linewidth]{../img/L12-cropped.png}
-\caption{PSAS' LV2 rocket lifting off for the group's $13^\text{th}$launch. The custom cylindrical patch antenna can be seen as a brown band around the middle of the rocket.}
+\caption{PSAS' LV2 rocket lifting off for the group's $13^\text{th}$ launch. The custom cylindrical patch antenna can be seen as a brown band around the middle of the rocket.}
 \label{fig:L-12}
 \end{wrapfigure}
 
@@ -80,6 +80,8 @@ The new airframe being designed, named LV3\nomenclature{LV3}{Launch Vehicle 3}, 
 The cylindrical LV3 airframe modules outperform the old design with an \weightReduction{} reduction in weight.
 % Do we know what the increase in strength is? Also, can we confirm the weight reduction?
 
+\pagebreak
+
 \subsection{Basic Design}
 
 The majority of the LV3 airframe uses a sandwich shell composed of CF\nomenclature{CF}{Carbon Fiber} faces surrounding an aramid honeycomb core (see figure \ref{fig:moduleDiagram}). This provides a rigid structure while minimizing weight. 
@@ -89,7 +91,7 @@ There is much more to the theory of sandwich plates and beams, but that is outsi
 
 The body of the airframe is composed of modular cylindrical sections using this sandwich design with aluminum coupling rings co-molded to each end.
 Each module can hold avionics, experiments, or other equipment with six tapped holes around the inside of the female coupling ring. 
-For the radio module, FG takes the place of the CF to allow radio transparency.
+For the radio module, fiberglass takes the place of the CF to allow radio transparency.
 
 The fins use the same sandwich design, with an aluminum frame defining their planform. The center of the frame is filled with core material, and the whole surface is covered in carbon fiber. 
 The leading and trailing edges of the fins are machined out of the aluminum frame. 
@@ -117,7 +119,7 @@ The tip of the nose cone is machined out of aluminum and is removed when assembl
 	\input{coupon.pdf_tex}
 	\caption{
 		A cut-away sample displaying the layers used in the LV3 sandwich shells. 
-		See figure \ref{fig:moduleDiagram} for a diagramatic depiction.
+		See figure \ref{fig:moduleDiagram} for a diagrammatic depiction.
 		}
 	\label{fig:coupon}
 }
@@ -204,7 +206,7 @@ A layer of release film is used to prevent the inner layer of CF from adhering t
 The adhesive layers naturally adhere to the CF layers with body heat from gloved hands, but a heat gun is required for adhering to the core. 
 The core is compressed significantly in the circumferential direction and slightly in the axial direction to compensate for thermal expansion. This helps prevent grooves from forming at the edges of the core.
 
-The entire layup is wrapped in shrink tape. Non-perforated, release-coated tape is preferred, but perforated tape is necessary if the adhesive or epoxy used outgasses.
+The entire layup is wrapped in shrink tape. Non-perforated, release-coated tape is preferred, but perforated tape is necessary if the adhesive or epoxy used out-gasses.
 The shrink tape compacts the module, strengthening the bond between the CF and core while also flattening any irregularities in the surface of the module. 
 After curing, the outer layer of adhesive is sanded and polished to obtain a smooth surface, completing the module. 
 
@@ -220,7 +222,7 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 		\caption{
 			Positioning of the strain gauges referred to in figure \ref{fig:strain}. 
 			The gauges have been circled with colors corresponding to figure \ref{fig:strain}.
-			Both are alligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.
+			Both are aligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.
 			The bottom gauge is positioned directly above the point of failure.
 			}
 		\label{fig:gaugePosition}
@@ -299,14 +301,14 @@ Currently, delaminations are located by squeezing modules by hand, looking for s
 	{
 		\centering
 		\includegraphics[width=\linewidth]{../img/FG_fracture.jpg}
-		\caption{A fiberglass module after failing in compression. Note that the failure on the inner and outer layers occured at the same height. The male end is shown.}
+		\caption{A fiberglass module after failing in compression. Note that the failure on the inner and outer layers occurred at the same height. The male end is shown.}
 		\label{fig:crush}
 	}
 \end{figure}
 
 \section{Nose Cone}\label{sec:noseCone}
 
-% \nomenclature{CTE}{Coefficients of Thermal Expansion} between the machinable foam and the carbon fiber. 
+% \nomenclature{CTE}{Coefficient of Thermal Expansion} between the machinable foam and the carbon fiber. 
 % The CTE for the machinable foam is $\SI{48e-6}{\per\kelvin}$ and is larger than the carbon fiber with CTE of $\SI{10e-6}{\per\kelvin}$ %
 
 The nose cone consists of a removable aluminum tip, a curved von K\'arm\'an body, a 6 inch cylindrical section, and a female coupling ring. 
@@ -317,20 +319,20 @@ This is intended to mitigate puncturing of the nose cone during landing (see sec
 Rather than remaining rigid, this section should bend under impacts with rocks, bushes, or the airframe. 
 Additionally, the buckling strength added by the core is unnecessary in the nose cone, since it experiences very little load.
 The cylindrical section uses core material to ensure a good connection to the coupling ring. 
-The extra length added by this section helps accomodate the recovery system. 
+The extra length added by this section helps accommodate the recovery system. 
 
 Several manufacturing processes were considered for the nose cone, including a curved aluminum mandrel similar to the one used for the modules, a two-part aluminum mold, and various half molds. 
 The limiting factor in the manufacturing was the fact that any material used must be compatible with the $\SI{350}{\Far}$ cure cycle required by the pre-impregnated CF. 
-The final design uses a half mold made of laminated high-temerature machinable foam sheets, with a von K\'arm\'an shaped cavity machined out and sealed with epoxy. 
+The final design uses a half mold made of laminated high-temperature machinable foam sheets, with a von K\'arm\'an shaped cavity machined out and sealed with epoxy. 
 Although this material is not typically used for final molds, it is a solution with relatively low cost and high ease of manufacturing, which is important for low-budget university teams.
 
 Thermal expansion presented several challenges during manufacturing. 
 The sheets of machinable foam had to be vacuum bagged during lamination, to prevent warping.
-Pre-impregnated CF has a CTE of only $\SI{10e-6}{\per\kelvin}$, unlike the machinable foam which has a larger CTE of $\SI{48e-6}{\per\kelvin}$ .
+Pre-impregnated CF has a CTE\nomenclature{CTE}{Coefficient of Thermal Expansion} of only $\SI{10e-6}{\per\kelvin}$, unlike the machinable foam which has a larger CTE of $\SI{48e-6}{\per\kelvin}$ .
 If the CF of the nose cone spans the inside of the mold, it can fracture the mold. 
 This is because the CF cures while the mold is expanded, but does not shrink with the mold when it cools. Thus, it pushes out on the mold. 
 
-The nose cone is molded as two separate halves. These are then co-bonded together with the aluminum coupling ring and a small mounting ring which attches to the aluminum tip.
+The nose cone is molded as two separate halves. These are then co-bonded together with the aluminum coupling ring and a small mounting ring which attaches to the aluminum tip.
 After curing, the outside of the nose cone is sprayed with a high temperature paint, which is then lightly sanded and polished.
 
 \subsection{OpenFOAM}
@@ -345,7 +347,7 @@ It was determined that heating at the tip of the nose cone was not a significant
 
 The fins are constructed around a $\nicefrac{1}{8}$ inch aluminum frame filled with core material and co-molded with CF sheets on either side. 
 These fins are then aligned to a 24 inch module using a jig, and attached with epoxy fillets, using chopped CF as a filler. 
-After curing the fillets, the fins have CF sheets layed ``tip-to-tip,'' running from the tip of one fin accross the module to another fin. 
+After curing the fillets, the fins have CF sheets laid ``tip-to-tip,'' running from the tip of one fin across the module to another fin. 
 Structural adhesive is used to surface the fins, similar to the modules. 
 
 Like the nose cone, many manufacturing options were available for the fins. 
@@ -356,7 +358,7 @@ Cutting with a water jet was chosen, since it does not cause warping and is stil
 Machining the frames would also be a good option for such groups. 
 
 \subsection{OpenRocket}
-For the early design of amateur and university scale rockets, OpenRocket\cite{OR} is highly reccommended. 
+For the early design of amateur and university scale rockets, OpenRocket\cite{OR} is highly recommended. 
 It is an open-source Java application which simulates a rocket's flight. It provides a convenient interface for configuring the rocket, selecting commercial or custom parts, viewing the predictions, and performing some basic optimization. 
 
 Using OpenRocket to guide the initial design allowed for rapid iteration of the fin geometry and the placement of non-airframe components. 
