@@ -1,20 +1,28 @@
 #!/bin/bash
-echo ---------- RUNNING FIRST PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex --draftmode | grep -i ! 
-echo ---------- RUNNING BIBTEX PASS ----------
+echo ---------- RUNNING pdflatex ----------
+pdflatex LV3_AIAA.tex --draftmode | grep -i -A 2 -B 2 ! 
+echo ---------- RUNNING makeindex ----------
+makeindex -s nomencl.ist -o LV3_AIAA.nls LV3_AIAA.nlo 
+echo ---------- RUNNING bibtex ----------
 bibtex LV3_AIAA
-echo ---------- RUNNING SECOND PDFLATEX PASS ----------
-pdflatex LV3_AIAA.tex --draftmode | grep -i ! 
-echo ---------- RUNNING FINAL PDFLATEX PASS ----------
+echo ---------- RUNNING pdflatex ----------
+pdflatex LV3_AIAA.tex --draftmode | grep -i -A 2 -B 2 ! 
+echo ---------- RUNNING FINAL pdflatex ----------
 pdflatex LV3_AIAA.tex | tee 'out.log'
 # pdflatex LV3_AIAA.tex > 'out.log'
 echo ---------- WARNINGS ----------
-grep -i overfull out.log
-grep -i underfull out.log
-grep -i warning out.log
-grep ! out.log
-grep -i warning *.blg
-grep ! *.blg
+echo ----- overfulls -----
+grep -i -A 2 -B 2 overfull out.log
+echo ----- underfulls -----
+grep -i -A 2 -B 2 underfull out.log
+echo ----- warnings -----
+grep -i -A 2 -B 2 warning out.log
+echo ----- bangs -----
+grep ! -A 2 -B 2 out.log
+echo ----- bibtex warnings -----
+grep -i -A 2 -B 2 warning *.blg
+echo ----- bibtex bangs -----
+grep ! -A 2 -B 2 *.blg
 while getopts ph FLAG
 do
 	case $FLAG in

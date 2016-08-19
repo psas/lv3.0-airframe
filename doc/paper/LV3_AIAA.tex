@@ -1,7 +1,7 @@
 \documentclass{aiaa-tc}% insert '[draft]' option to show overfull boxes
 
 \usepackage{graphicx}
-\usepackage{amsmath}
+\usepackage{amsmath, amssymb, amsfonts}
 \usepackage{calc}%allows for scaling figures with integer division/multiplication of existing lengths
 \usepackage{wrapfig}
 \usepackage{lipsum}
@@ -10,6 +10,9 @@
 \usepackage{siunitx}
 \usepackage{nicefrac}
 \usepackage{tikz}
+\usepackage{nomencl}
+	\makenomenclature
+	% \makeglossary
 %\usepackage{hyperref}
 %\usepackage{biblatex}
 
@@ -17,8 +20,8 @@
  	University Rocket Airframe using Carbon Fiber}
 
 \author{
-Joseph Shields, Leslie Elwood, and Jacob East%, Brandon Bonner, Erik Nelson
-	\thanks{Portland State University, Portland, OR 97201}
+	Joe Shields \thanks{Portland State University, 1930 SW 4th Ave, Portland, OR 97201} 
+	\and Leslie Elwood\thanksibid{1}%, and Jacob East%, Brandon Bonner, Erik Nelson
  }
 % Data used by 'handcarry' option if invoked
 \AIAApapernumber{2016}
@@ -49,15 +52,14 @@ A capstone team of mechanical engineering seniors at Portland State University h
 This project continues the work of a 2014 capstone team, who developed a carbon fiber layup process with promising results. 
 This will enable low-budget groups like the Portland State Aerospace Society to explore high altitude science and compete in the university space race.  \end{abstract}
 
-\section*{Nomenclature}
-\begin{itemize}
-	\item CFD, Computational Fluid Dynamics
-	\item PSAS, Portland State Aerospace Society
-	\item LV2, Launch Vehicle 2
-	\item LV3, Launch Vehicle 3
-	\item HPR, High Power Rocketry
-	\item CF, Carbon Fiber
-\end{itemize}
+\printnomenclature
+% \section*{Nomenclature}
+% \begin{itemize}
+% 	\item PSAS, Portland State Aerospace Society
+% 	\item LV2, Launch Vehicle 2
+% 	\item LV3, Launch Vehicle 3
+% 	\item CF, Carbon Fiber
+% \end{itemize}
 
 
 \section{Introduction}
@@ -66,31 +68,33 @@ This will enable low-budget groups like the Portland State Aerospace Society to 
 \begin{wrapfigure}{R}{2.5 in}
 \centering
 \includegraphics[width=\linewidth]{../img/L12-cropped.png}
-\caption{PSAS' LV2 rocket lifting off for the group's $13^\text{th}$launch. The custom cylindrical patch antenna can be seen as a brown band around the middle of the rocket.}
+\caption{PSAS' LV2 rocket lifting off for the group's $13^\text{th}$ launch. The custom cylindrical patch antenna can be seen as a brown band around the middle of the rocket.}
 \label{fig:L-12}
 \end{wrapfigure}
 
-The Portland State Aerospace Society (PSAS) is an interdisciplinary group of engineering students and alumni of Portland State University (PSU) with the long term goal of putting a cubesat into orbit with their own rocket. 
+PSAS \nomenclature{PSAS}{Portland State Aerospace Society} is an interdisciplinary group of engineering students, alumni of PSU\nomenclature{PSU}{Portland State University}, and aerospace enthusiasts with the long term goal of putting a cubesat into orbit with their own rocket. 
 % info about cubesat market growth: http://www.spaceref.com/news/viewpr.html?pid=44940 
-Their current airframe, named Launch Vehicle 2 (LV2), has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS navigation and a cold gas reaction control system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts having been fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
+Their current airframe, named LV2\nomenclature{LV2}{Launch Vehicle 2}, has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS\nomenclature{GPS}{Global Positioning System} navigation and a cold gas reaction control system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts having been fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
 
-The new airframe being designed, named Launch Vehicle 3 (LV3), aims to address these issues. The LV3 platform uses a 6 inch inner diameter, modules composed of carbon fiber and thin aluminum coupling rings, a carbon fiber nose cone, and a carbon fiber fin section. All of the airframe components connect via standardized rings, to accommodate future experimental modules and flight configurations.
+The new airframe being designed, named LV3\nomenclature{LV3}{Launch Vehicle 3}, aims to address these issues and create a test platform for the technologies PSAS will use for their eventual shot at a $\SI{100}{km}$ launch. The LV3 platform uses a 6 inch inner diameter, modules composed of carbon fiber and thin aluminum coupling rings, a carbon fiber nose cone, and a carbon fiber fin section. All of the airframe components connect via standardized rings, to accommodate future experimental modules and flight configurations.
 The cylindrical LV3 airframe modules outperform the old design with an \weightReduction{} reduction in weight.
 % Do we know what the increase in strength is? Also, can we confirm the weight reduction?
 
+\pagebreak
+
 \subsection{Basic Design}
 
-The majority of the LV3 airframe uses a sandwich shell composed of CF faces surrounding an aramid honeycomb core (see figure \ref{fig:moduleDiagram}). This provides a rigid structure while minimizing weight. 
+The majority of the LV3 airframe uses a sandwich shell composed of CF\nomenclature{CF}{Carbon Fiber} faces surrounding an aramid honeycomb core (see figure \ref{fig:moduleDiagram}). This provides a rigid structure while minimizing weight. 
 Single sheets of carbon fiber are rigid when subjected to in-plane loading, and very flexible in bending. Meanwhile, the core is flexible in bending, and rigid under out-of-plane loading. 
 When laminated together, these form a plate which is rigid in all loading conditions. The core material separates the rigid CF faces, greatly increasing the second moment of inertia of the plate. 
 There is much more to the theory of sandwich plates and beams, but that is outside the scope of this paper. 
 
 The body of the airframe is composed of modular cylindrical sections using this sandwich design with aluminum coupling rings co-molded to each end.
 Each module can hold avionics, experiments, or other equipment with six tapped holes around the inside of the female coupling ring. 
-For the radio module, FG takes the place of the CF to allow radio transparency.
+For the radio module, fiberglass takes the place of the CF to allow radio transparency.
 
 The fins use the same sandwich design, with an aluminum frame defining their planform. The center of the frame is filled with core material, and the whole surface is covered in carbon fiber. 
-The leading and trailing edges of the fins are made of machined phenolic resin, co-bonded with the frame and CF faces. 
+The leading and trailing edges of the fins are machined out of the aluminum frame. 
 The fins are fins are attached to a module with epoxy fillets, using chopped CF as a filler, and ``tip-to-tip'' CF sheets running from the tip of one fin across the module to the tip of the other fin.
 
 The nose cone uses the same coupling ring system as the modules. It is a von K\'arm\'an ogive formed from two molded CF shells. 
@@ -115,7 +119,7 @@ The tip of the nose cone is machined out of aluminum and is removed when assembl
 	\input{coupon.pdf_tex}
 	\caption{
 		A cut-away sample displaying the layers used in the LV3 sandwich shells. 
-		See figure \ref{fig:moduleDiagram} for a diagramatic depiction.
+		See figure \ref{fig:moduleDiagram} for a diagrammatic depiction.
 		}
 	\label{fig:coupon}
 }
@@ -127,29 +131,14 @@ While easy and durable, this does not fully take advantage of their materials. T
 
 This design also occupies an uncommon regime for sandwich shell designs. Most such designs use sandwich shells in large, low curvature parts, whereas the LV3 modules have a relatively small size and high curvature.
 
-This is also the only fully open-hardware rocket airframe in the HPR level 3 range. All of the documentation, design, and testing information if freely available on PSAS's Github page \cite{LV3repo}.
+This is also the only fully open-hardware rocket airframe in the high power rocketry Level 3 range. All of the documentation, design, and testing information if freely available on PSAS's Github page \cite{LV3repo}.
 %----------need to make extra-sure there aren't any other open-hardware airframes out there----------
-
-\subsection{Software}
-\subsubsection{OpenRocket}
-For the early design of amateur and university-scale rockets, \href{http://openrocket.sourceforge.net/}{OpenRocket} is very useful. 
-It is an open-source Java application which simulates a rocket's flight. It provides a convenient interface for configuring the rocket, selecting commercial or custom parts, viewing the predictions, and performing some basic optimization. 
-
-Using OpenRocket to guide the initial design allowed for rapid iteration of the fin geometry and the placement of non-airframe components. 
-
-\subsubsection{OpenFOAM}
-OpenFOAM is another open-source application. It provides a common interface for a wide range of CFD solvers.
-Although it requires more up-front effort, it allows a more detailed perspective on what features of an airframe's geometry are the most critical. 
-CFD analysis is probably not necessary for most amateur and university level airframe design, but this provides a good option for groups that can't afford a licence for a commercial CFD suite. 
-
-OpenFoam was used to asses the heating at the tip of the nose, to determine if the epoxy matrix of the carbon fiber would degrade over repeated flights.
-
 
 \section{Materials}
 % Joe: I thought this section should talk about the materials that were donated i.e.: Meltbond 1515, Cytec Carbon Fiber, Non-silicone paste wax, etc and save the how we got it for the aquisition section. What do you think?
 Nearly all of the materials used in the LV3 airframe were donated. The pre-impregnated CF and the structural adhesive were made available after they expired for use in commercial aircraft. 
 Acquiring expired materials from large manufacturers and distributors is the strongly preferred over purchasing them outright or simply using cheaper materials. 
-Distributors are unlikely to offer these materials in quantities appropriate to this type of project. 
+Distributors are unlikely to offer these materials in quantities appropriate to this type of project, and purchasing them would be outside the budget of many university and amateur groups. 
 Using carbon fiber cloth with painted-on epoxy could change the manufacturing significantly, and would increase the weight of the airframe. 
 Acquiring donations is also a good way for university groups to form industry contacts. It can even become an opportunity to collaborate with other university groups, through the re-donation of excess material. 
 
@@ -159,54 +148,16 @@ This allows for co-curing of both materials together. The core material is an ov
 Finally, the coupling rings are machined out of 6061-T6 aluminum. 
 
 Any groups obtaining materials through donations will likely not have much control over what materials they get, let alone be able to obtain the exact same materials listed here.
-As such, any potential donations should be researched before they are accepted and tested afterwards. 
+As such, any potential donations should be researched before they are accepted and should be tested afterwards. 
+The vast majority of person-hours for this project were spent characterizing the materials, and adapting the manufacturing to them.
 Any weave of CF will work, though satin is preferred. Pre-impregnated CF should be tacky at room temperature.
 Adhesive should either be tacky at room temperature or become tacky when heated. Ideally, it should flow at higher temperatures. 
 The core material for the modules should be over-expanded or under-expanded. 
 Optimally expanded honeycomb cannot be used for the modules, since it ``potato chips'', bending away from the module along the axis when it is bent around the circumference. 
-The fin core material may use any cell shape and should be $\nicefrac{1}{8}''$ or smaller. 
+The fin core material may use any cell shape and should be $\nicefrac{1}{8}$ inch or smaller. 
 %---------check what the preferred notation is for length (fractional inches, decimal inches, centimeters...)---------
 
-\subsection{Acquisition}
-% Add the appropriate TM/C/R labels to industry names, as per the AIAA style guide. https://www.aiaa-space.org/uploadedFiles/AIAA-Aviation_Site/Footer/AIAA_Paper_Style_Guide.pdf
-% ^^^^^^ I went to the Boeing site to figure out whether they required a TM/C/R label and saw nothing. They only require these trademarking symbols for their text and icon. 
-% Joe: I cannot think of anything else to add to this section after editing it. 
-The open source nature of PSAS and the LV3 project meant that operations rely heavily on the donations of individuals in the community and local industry. Composite materials in the quantity needed to build a complete rocket required funding which was far outside of the means of the PSAS budget. Large composite manufacturers would be contacted about the possibility of donating expired materials.   
-
-Establishing industry relationships benefited PSAS both for the time being and into the future. The largest and most helpful of the material donations made throughout the composite airframe project was made by Boeing. They supplied PSAS with pre-impregnated carbon fiber, Meltbond$^\mathregistered$ 1515-3M structural adhesive, vacuum bagging kits made up of high temperature bagging material, release film, tape, and breather material. Additionally, Boeing also provided professional consulting. Teleconferencing with composite experts from across the nation where made available to us on a weekly basis.  
-
-Throughout the many material donations received by PSAS, an abundance of 250°F and 350°F pre-impregnated fiber glass was collected. With limited storage space at Portland State, the decision to reach out to other local Universities and their rocketry teams was made and the remaining fiber glass was donated. 
-
 \section{Cylindrical Modules}\label{sec:modules}
-
-\begin{figure}[t]
-	\centering
-	\parbox{0.45\linewidth}
-	{
-		\centering
-		\includegraphics[width=\linewidth]{../img/moduleWithSpider.png}
-		\caption{A CF module with the ``spider'' attachment, which retains the motor in the rocket. The female end is shown.}
-		\label{fig:module}
-	}
-	\hfill
-	\parbox{0.45\linewidth}
-	{
-		\centering
-		\includegraphics[width=\linewidth]{../img/FG_fracture.jpg}
-		\caption{A fiberglass module after failing in compression. Note that the failure on the inner and outer layers occured at the same height. The male end is shown.}
-		\label{fig:crush}
-	}
-\end{figure}
-
-Each module has a male coupling ring on the end facing the direction of travel and a female coupling ring on the other end. 
-Modules were made in both $18''$ and $24''$ lengths, to accommodate different lengths of motors and equipment. 
-By exchanging modules of different lengths, this also allows the overall length of the rocket to be adjusted in increments of $6''$.
-The body of the module consists of two concentric CF tubes separated by a honeycomb core, with adhesive bonding the CF to the core and rings (see figure \ref{fig:moduleDiagram}). 
-A layer of adhesive also covers the outer layer of CF, serving three roles. First, it ensures the outer layer of CF is completely wetted. 
-The pre-impregnated CF used here did not completely wet when cured alone, however this will not be true for every product.
-Second, it serves as a protective coating for the CF. 
-Third, it can be sanded to improve the surface roughness.
-Using a profilometer, the surface features of the uncoated modules was found to be $\SI{179}{\micro\meter}$ ($\SI{7.1e-3}{in}$), while the surface features of the adhesive-coated modules could be sanded to $\SI{3.3}{\micro\meter}$ ($\SI{1.3e-4}{in}$).
 
 \begin{figure}[t]
 	\centering
@@ -235,6 +186,18 @@ Using a profilometer, the surface features of the uncoated modules was found to 
 	}
 \end{figure}
 
+Each module has a male coupling ring on the end facing the direction of travel and a female coupling ring on the other end. 
+Each ring has six pillars (see figure \ref{fig:module}) which along the inside, which transfer the axial load to the adjacent rings.
+The motor is retained by a ``spider'' ring which screws into the six pillars, and a plate attaches to the last female ring to bear the thrust.
+Modules were made in both 18 inch and 24 inch lengths, to accommodate different lengths of motors and equipment. 
+By exchanging modules of different lengths, this also allows the overall length of the rocket to be adjusted in increments of 6 inches.
+The body of the module consists of two concentric CF tubes separated by a honeycomb core, with adhesive bonding the CF to the core and rings (see figure \ref{fig:moduleDiagram}). 
+A layer of adhesive also covers the outer layer of CF, serving three roles. First, it ensures the outer layer of CF is completely wetted. 
+The pre-impregnated CF used here did not completely wet when cured alone, however this will not be true for every product.
+Second, it serves as a protective coating for the CF. 
+Third, it can be sanded to improve the surface roughness.
+Using a profilometer, the surface features of the uncoated modules was found to be $\SI{179}{\micro\meter}$ ($\SI{7.1e-3}{in}$), while the surface features of the adhesive-coated modules could be sanded to $\SI{3.3}{\micro\meter}$ ($\SI{1.3e-4}{in}$).
+
 The modules are formed by wrapping the layers around a male mandrel with the coupling rings secured to the mandrel.
 The coupling rings are each screwed to a dummy ring which emulates a connection to another module. The dummy rings are then screwed to the mandrel.
 This prevents any shifting during the cure due to thermal expansion or compaction from the vacuum bag and shrink tape (discussed later).
@@ -243,9 +206,12 @@ A layer of release film is used to prevent the inner layer of CF from adhering t
 The adhesive layers naturally adhere to the CF layers with body heat from gloved hands, but a heat gun is required for adhering to the core. 
 The core is compressed significantly in the circumferential direction and slightly in the axial direction to compensate for thermal expansion. This helps prevent grooves from forming at the edges of the core.
 
-The entire layup is wrapped in shrink tape. Non-perforated, release-coated tape is preferred, but perforated tape is necessary if the adhesive or epoxy used outgasses.
+The entire layup is wrapped in shrink tape. Non-perforated, release-coated tape is preferred, but perforated tape is necessary if the adhesive or epoxy used out-gasses.
 The shrink tape compacts the module, strengthening the bond between the CF and core while also flattening any irregularities in the surface of the module. 
 After curing, the outer layer of adhesive is sanded and polished to obtain a smooth surface, completing the module. 
+
+\subsection{Destructive Testing}\label{sec:test}
+\label{sec:testing}
 
 \begin{figure}[t]
 	\centering
@@ -256,7 +222,7 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 		\caption{
 			Positioning of the strain gauges referred to in figure \ref{fig:strain}. 
 			The gauges have been circled with colors corresponding to figure \ref{fig:strain}.
-			Both are alligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.
+			Both are aligned with one of the pillars shown in figures \ref{fig:module} and \ref{fig:crush}.
 			The bottom gauge is positioned directly above the point of failure.
 			}
 		\label{fig:gaugePosition}
@@ -267,15 +233,16 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 		\centering
 		\include{strain}
 		% generated by ../../test/crushAnalysis.R
-		\caption{Strain gauge data from an axial compression test of an 18 inch CF module. Data was recorded at locations directly above the point of failure (green) and near the middle of the module (blue), both on the outside surface (see figure \ref{fig:gaugePosition}).}
+		\caption{
+			Axial strain data from an axial compression test of an 18 inch CF module. 
+			Data was recorded at locations directly above the point of failure (green) 
+			and near the middle of the module (blue), both on the outside surface (see figure \ref{fig:gaugePosition}).
+			}
 		\label{fig:strain}
 	}
 \end{figure}
 
-\subsection{Destructive Testing}
-\label{sec:testing}
-
-\begin{wraptable}{R}{4.5 in}
+\begin{table}
 	\centering
 	\caption{Failure strengths for different modules.}
 	\label{tab:compression}
@@ -288,28 +255,31 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 		delaminated CF 	& axial 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
 		fiberglass 	& axial 	& $\SI{2e3}{\poundF}$ 	& $\SI{5e3}{\poundF}$ \\
 	\end{tabular}
-\end{wraptable}
+\end{table}
 
 Rather than yielding like traditional engineering materials, this design ``pings'' as the most heavily loaded fibers begin to break and sections of core material experience small delaminations from the faces. 
 % any more to say about pinging?
 
 A complete 18 inch CF module was subjected to compressive loading along its axis. This was done by attaching dummy rings, which emulate a connection to another module, and loading the dummy rings through a flat plate. 
-A load cell was used to record the load, while strain gauges recored strain in two locations (see figure \ref{fig:gaugePosition}). 
-The time and corresponding load at which audible pinging occured was also recorded.
+A load cell was used to record the load, while strain gauges recorded axial strain in two locations (see figure \ref{fig:gaugePosition}). 
+The time and corresponding load at which audible pinging occurred was also recorded.
 The load was slowly increased using a hydraulic press. 
 Similar tests were performed with a fiberglass module, a CF module where the CF layers were delaminated from the core, and a CF module with the load applied laterally via a 2 inch wide beam, to puncture the module.
 These results can be seen in table \ref{tab:compression}.
 
-This represents a factor of safety of ???
+% This represents a factor of safety of ???
 %----------what is the actual factor of safety?----------
-during launch.
+% during launch.
 
 In compressive loading, both the CF and fiberglass modules failed through buckling of the composite layers at the interface between the inner layer and one of the coupling rings.
 This resulted in the composite layers subducting under themselves (see figure \ref{fig:crush}).
-Failure occured uniformly around the inner and outer layers, both at the same distance along the axis of the modules. 
+Failure occurred uniformly around the inner and outer layers, both at the same distance along the axis of the modules. 
 In the delaminated module, one of the coupling rings was simply pushed into the space occupied by the core material.
 
-The modules are much more suceptible to concentrated surface loading than to axial loading (see table \ref{tab:compression}). 
+The CF modules exhibited linear-elastic behavior, as shown in figure \ref{fig:strain}, with the stress being concentrated near the pillars shown in figure \ref{fig:module}.
+This suggests that if more pillars were added, the stress concentration would be reduced, increasing the strength of the module.
+
+The modules are much more susceptible to concentrated surface loading than to axial loading (see table \ref{tab:compression}). 
 The deformation from the beam delaminated the CF layers from the core and eventually tore the outer layer of CF. 
 This mode of failure poses a significant threat to the modules when the rocket lands. 
 During this phase of the flight, the airframe could impact rocks or bushes, potentially delaminating or puncturing the outer CF layer. 
@@ -317,7 +287,29 @@ During this phase of the flight, the airframe could impact rocks or bushes, pote
 The poor performance of the delaminated module and the module subjected to concentrated surface loading suggest that all flight modules should be thoroughly checked for delaminations after landing. 
 Currently, delaminations are located by squeezing modules by hand, looking for sections which are not rigid. 
 
+\begin{figure}[t]
+	\centering
+	\parbox{0.45\linewidth}
+	{
+		\centering
+		\includegraphics[width=\linewidth]{../img/moduleWithSpider.png}
+		\caption{A CF module with the ``spider'' attachment, which retains the motor in the rocket. The female end is shown.}
+		\label{fig:module}
+	}
+	\hfill
+	\parbox{0.45\linewidth}
+	{
+		\centering
+		\includegraphics[width=\linewidth]{../img/FG_fracture.jpg}
+		\caption{A fiberglass module after failing in compression. Note that the failure on the inner and outer layers occurred at the same height. The male end is shown.}
+		\label{fig:crush}
+	}
+\end{figure}
+
 \section{Nose Cone}\label{sec:noseCone}
+
+% \nomenclature{CTE}{Coefficient of Thermal Expansion} between the machinable foam and the carbon fiber. 
+% The CTE for the machinable foam is $\SI{48e-6}{\per\kelvin}$ and is larger than the carbon fiber with CTE of $\SI{10e-6}{\per\kelvin}$ %
 
 The nose cone consists of a removable aluminum tip, a curved von K\'arm\'an body, a 6 inch cylindrical section, and a female coupling ring. 
 The aluminum tip provides a smooth leading surface, avoids the problems with forming CF to small radii, and can be removed to assist with assembling the recovery system. 
@@ -327,49 +319,83 @@ This is intended to mitigate puncturing of the nose cone during landing (see sec
 Rather than remaining rigid, this section should bend under impacts with rocks, bushes, or the airframe. 
 Additionally, the buckling strength added by the core is unnecessary in the nose cone, since it experiences very little load.
 The cylindrical section uses core material to ensure a good connection to the coupling ring. 
-The extra length added by this section helps accomodate the recovery system. 
+The extra length added by this section helps accommodate the recovery system. 
 
-Several manufacturing processes were considered for the nose cone, including a curved mandrel similar to the one used for the modules, a two-part aluminum mold, and various half molds. 
+Several manufacturing processes were considered for the nose cone, including a curved aluminum mandrel similar to the one used for the modules, a two-part aluminum mold, and various half molds. 
 The limiting factor in the manufacturing was the fact that any material used must be compatible with the $\SI{350}{\Far}$ cure cycle required by the pre-impregnated CF. 
-The final design uses a half mold made of laminated high-temerature machinable foam sheets, with a von K\'arm\'an shaped cavity machined out and sealed with epoxy. 
+The final design uses a half mold made of laminated high-temperature machinable foam sheets, with a von K\'arm\'an shaped cavity machined out and sealed with epoxy. 
 Although this material is not typically used for final molds, it is a solution with relatively low cost and high ease of manufacturing, which is important for low-budget university teams.
 
 Thermal expansion presented several challenges during manufacturing. 
 The sheets of machinable foam had to be vacuum bagged during lamination, to prevent warping.
-Pre-impregnated CF has a CTE close to 0, unlike the machinable foam which has a CTE greater than 0. 
+Pre-impregnated CF has a CTE\nomenclature{CTE}{Coefficient of Thermal Expansion} of only $\SI{10e-6}{\per\kelvin}$, unlike the machinable foam which has a larger CTE of $\SI{48e-6}{\per\kelvin}$ .
 If the CF of the nose cone spans the inside of the mold, it can fracture the mold. 
-This is because the CF cures while then mold is expanded, but does not shrink with the mold when it cools. Thus, it pushes out on the mold. 
+This is because the CF cures while the mold is expanded, but does not shrink with the mold when it cools. Thus, it pushes out on the mold. 
 
-The nose cone is molded as two separate halves. These are then co-bonded together with the aluminum coupling ring and a small mounting ring which attches to the aluminum tip.
+The nose cone is molded as two separate halves. These are then co-bonded together with the aluminum coupling ring and a small mounting ring which attaches to the aluminum tip.
 After curing, the outside of the nose cone is sprayed with a high temperature paint, which is then lightly sanded and polished.
 
-% To make the nose cone would take significant ingenuity and research into usable materials. The pre-impregnated carbon fiber material donated to us is a material with a 350°F cure cycle. Thus every element used henceforth must survive the same temperature. The initial manufacturing process involved a mandrel and the same procedure as the cylindrical modules. Machine Sciences agreed to donate the material and machine time to create this for PSAS however, lead time prevented them from delivering this to us in the time frame necessary for launch. 
-% 
-% After consideration, it was decided that a work-around method for creating the nose cone would be to use a negative mold. Four high-temperature, 1 inch thick, 18 pound per cubic foot density machinable foam (FR 4718) was purchased from General Plastics and stacked to create a 4 inch thickness. ACP high-temperature resin epoxy is mixed with a 3.2:10 ratio which was used to mix this resin before application and then ran through a heat cycle to cure. Next, the foam block was transported to Esco to be run through a CNC Mill and returned. 
-% 
-% The mold experienced mild delamination during milling and needed additional resin to hold together. Understanding that the machinable foam is porous and would likely absorb any fluid adhesive created by the high temperature environment, and thus deform the foam blocks, it was decided that the surface of the mold would be coated in the ACP resin and run through another heat cycle. As a secondary measure to ensure the carbon fiber and adhesives would release from the mold, three layers of Fibre Glast non-silicone high temperature paste wax is applied to the surface of the mold. Once the wax set, a generous layer of Fibre Glast PVA release film was then painted to the surface. 
-% 
-% Using a template, carbon fiber material is cut to fit into the mold. Because of the geometry of the nose cone, and thus the mold, the carbon fiber material has a tenancy to wrinkle and fold. To prevent this, the material is cut into thirds and laid down starting with the center most surface of the nose cone. Carefully, it is laid into the mold. With the finger tips, pressing into the deepest part of the mold and working out all wrinkles from the bottom of the mold to the tip and then outward. Lay the other two-thirds of the remaining carbon fiber material into the mold using the same method; being sure to work out all wrinkles from bottom to top, and then from the center out to the sides. This will create a seam in the carbon fiber between the center piece and the two sides and so extra pressure from the finger tips needs applied to the seam to ensure the joining of the two materials.
-% 
-% When the carbon fiber is completely set into the mold, the Meltbond 1515-3M structural adhesive film is laid in. It was not necessary to cut this film into parts because of it's fluid characteristic at high temperatures. Once it cools it will bond the layers of material together. Lay the secondary layer of carbon fiber down in to the mold, once again paying attention to any wrinkles or air pockets created in the process. Flatten the excess material to the flat surface of the mold and make sure the edge has a severe crease as when the two halves are joined. Any wrinkle in the crease will open the nose cone up to gaps in the seam.
-% 
-% Vacuum bag the filled mold and place into oven to set for cure cycle: 2 hour ramp up at 3°F per minute to 350°F where the temperature is held for an additional 2 hours then allowed to cool by simply turning off the oven and cracking a door. This could take several hours so it is advised to return to it the following day. Once it has cooled, remove the mold from the vacuum bagging by cutting it free from the bag materials. 
-% 
-% With two halves completed, cut off and sand down the edges so that they are nearly flush with the shape of the nose cone. Two strips of carbon fiber the length of the nose cone from tip to base need to be cut out. These strips will be used to join the two halves of the nose cone and seal any flaws in the edges. Again, the nose cone will need another heat cycle in the oven. 
-% 
-% An aluminum nose cone tip has been designed to be placed on the blunt tip end of the nose cone and similarly, the aluminum coupling ring would be co-bonded to the cylindrical shaped end of the cone. 
+\subsection{OpenFOAM}
+OpenFOAM is another open-source application. It provides a common interface for a wide range of CFD\nomenclature{CFD}{Computational Fluid Dynamics} solvers.
+Although it requires more up-front effort, it allows a more detailed perspective on what features of an airframe's geometry are the most critical. 
+CFD analysis is probably not necessary for most amateur and university level airframe design, but this provides a good option for groups that can't afford a licence for a commercial CFD suite. 
+
+OpenFoam was used to asses the heating at the tip of the nose, to determine if the epoxy matrix of the carbon fiber would degrade over repeated flights.
+It was determined that heating at the tip of the nose cone was not a significant issue, at least for this size of rocket.
 
 \section{Fin Section}
 
+The fins are constructed around a $\nicefrac{1}{8}$ inch aluminum frame filled with core material and co-molded with CF sheets on either side. 
+These fins are then aligned to a 24 inch module using a jig, and attached with epoxy fillets, using chopped CF as a filler. 
+After curing the fillets, the fins have CF sheets laid ``tip-to-tip,'' running from the tip of one fin across the module to another fin. 
+Structural adhesive is used to surface the fins, similar to the modules. 
+
+Like the nose cone, many manufacturing options were available for the fins. 
+Initially, the frames were to include a flange at their root and be machined out of a single block of aluminum. 
+However, the machining for this part would be prohibitively difficult or expensive for most university groups. 
+Laser cutting the frames would be more viable, but could result in a warped frame.
+Cutting with a water jet was chosen, since it does not cause warping and is still viable for university and amateur groups. 
+Machining the frames would also be a good option for such groups. 
+
+\subsection{OpenRocket}
+For the early design of amateur and university scale rockets, OpenRocket\cite{OR} is highly recommended. 
+It is an open-source Java application which simulates a rocket's flight. It provides a convenient interface for configuring the rocket, selecting commercial or custom parts, viewing the predictions, and performing some basic optimization. 
+
+Using OpenRocket to guide the initial design allowed for rapid iteration of the fin geometry and the placement of non-airframe components. 
+It is also useful for keeping track of payloads and estimating mass budgets.
+
 \section{Future Research}
+
+The nonuniform stress in the compressed CF modules (section \ref{sec:test}) presents an opportunity to compare these results to a finite element model. 
+Due to the required time and lack of immediate benefits, this has not been pursued.
+
+The surface finish of this design could be improved by filling the small voids in the adhesive coating. 
+This would not provide much benefit to the LV3 platform, but may be useful in other applications.
+
+It may be possible to adapt this design into an inline fuel tank, further reducing the rocket's total weight.
+This would provide another significant advantage over other university and amateur groups, which continue to use much heavier tanks.
+PSAS plans to develop inline fuel tanks based on this design in the near future. 
+
+Any groups hoping to copy or build on this design, will likely need to adapt their design and manufacturing to their particular materials. 
+Such groups should refer to this project's Github repository\cite{LV3repo} for details on the particular materials, CAD models, experimental data, simulations, and design logs.
+
+% not sure this is actually true:
+% Nose cone could be better manufactured with a von karman shaped mandrel for layup. Developing a similar build process to the modules. 
+% irrelevant to our readers:
+% Keep in touch with Machine Sciences about this because it would be a very generous donation to PSAS. 
 
 \section{Conclusions}
 
+This design provides a strong, lightweight, low-cost testing platform which will be a significant advantage in PSAS' race towards $\SI{100}{km}$.
+Any university or amateur groups able to acquire the necessary materials should be able to build similar rockets, reaching much higher altitudes without upgrading to larger motors. 
+It is strongly advised, however, that such groups thoroughly inspect their modules for delaminations, since these will compromise their strength. 
+
 \section{Acknowledgements}
 
-This project was made possible by donations from Boeing, Machine Sciences Corporation, Pacific Coast Composites, Esco, and the many donors who support PSAS.
+This project was made possible by donations from Boeing, Machine Sciences Corporation, Pacific Coast Composites, Esco, the Maseeh College Innovation Council's Beta Project grant, and the many individual donors who support PSAS.
+
 The authors gratefully acknowledge Andrew Greenberg, Erin Schmidt, and Dr. Mark Weislogel for their guidance throughout the project.
-Special thanks also goes to Jack Slocum, Sam Arnold, Erik Nelson, Robert Melchione, Marett Strecker, and Tung Nguyen for their work prototyping the cylindrical modules, as well as Ian Zabel and Alex Farias for designing parts to interface with the avionics and recovery systems.
+Special thanks also goes to Jack Slocum, Sam Arnold, Erik Nelson, Jacob East, Robert Melchione, Marett Strecker, and Tung Nguyen for their work prototyping the cylindrical modules, to Ian Zabel and Alex Farias for designing parts to interface with the avionics and recovery systems, and to Alexander Chally for his work creating tooling for the nose cone.
 % Dr. Don Mueller, The Beta Project, 
 %----------how do we cite the Beta Project funding? (potentially very important)----------
 \bibliography{LV3.bib}

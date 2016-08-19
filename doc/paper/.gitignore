@@ -3,3 +3,6 @@
 *.out
 *.bbl
 *.blg
+*.nlo
+*.ilg
+*.nls
