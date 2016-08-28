@@ -1,1 +1,2 @@
 The fin can is waiting to have the new fins added in and the whole thing reassembled. 
+The CAD files for the fin jig are fin_jig_mid and fin_jig_top_bottom2. The jig keeps the fins aligned as you adhere them to the surface of the rocket module. 
