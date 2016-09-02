@@ -18,3 +18,4 @@
 *.dat
 # Just ignore PDFs alltogether... That way it's NBD to keep generating them. Just deliberately add them when you need to.
 *.pdf
+*.ipynb_checkpoints
