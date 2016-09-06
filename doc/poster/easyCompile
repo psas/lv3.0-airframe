@@ -1,0 +1,42 @@
+#!/bin/bash
+RAWNAME= ${1%.tex}
+echo ---------- RUNNING pdflatex ----------
+pdflatex $1 --draftmode | grep -i -A 2 -B 2 ! 
+# echo ---------- RUNNING makeindex ----------
+# makeindex -s nomencl.ist -o $RAWNAME.nls $RAWNAME.nlo 
+# echo ---------- RUNNING bibtex ----------
+# bibtex $RAWNAME
+# echo ---------- RUNNING pdflatex ----------
+# pdflatex $1 --draftmode | grep -i -A 2 -B 2 ! 
+# echo ---------- RUNNING FINAL pdflatex ----------
+# pdflatex $1 | tee 'out.log'
+# # pdflatex $1 > 'out.log'
+
+echo ---------- WARNINGS ----------
+echo ----- overfulls -----
+grep -i -A 2 -B 2 overfull out.log
+echo ----- underfulls -----
+grep -i -A 2 -B 2 underfull out.log
+echo ----- warnings -----
+grep -i -A 2 -B 2 warning out.log
+echo ----- bangs -----
+grep ! -A 2 -B 2 out.log
+# echo ----- bibtex warnings -----
+# grep -i -A 2 -B 2 warning *.blg
+# echo ----- bibtex bangs -----
+# grep ! -A 2 -B 2 *.blg
+while getopts ph FLAG
+do
+	case $FLAG in
+		p)
+			printf '\nabout to open the pdf...\n'
+			sleep 1.5
+			evince $RAWNAME.pdf &
+			;;
+		[h\?])
+			echo -e \\n'-p'
+			echo -e \\t'display the pdf after compiling'
+			echo -e \\n'-h'
+			echo -e \\t'show this help'
+	esac
+done
