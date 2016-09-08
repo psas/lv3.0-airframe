@@ -1,0 +1,30 @@
+\documentclass[fontsize=32pt]{scrbook}
+% The point size winds up to be 40, after it's imported into Inkscape.
+\usepackage[active,tightpage]{preview}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{fontspec}
+	\setmainfont[Ligatures={NoRequired,NoCommon,NoContextual}]{DejaVuSerif}
+\usepackage{siunitx}
+	\DeclareSIUnit\poundF{lb}
+
+\begin{document}
+\begin{preview}
+\begin{tikzpicture}[inner sep=0pt, outer sep=0pt]
+\node at (0, 0) {
+
+\begin{tabular}{llll}
+	Material & Loading & Pinging Strength & Ultimate Strength\\
+	\hline
+	CF 		& axial 	& $\SI{7e3}{\poundF}$ 	& $\SI{1e4}{\poundF}$ \\
+	CF 		& puncture 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
+	delaminated CF 	& axial 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
+	fiberglass	& axial 	& $\SI{2e3}{\poundF}$ 	& $\SI{5e3}{\poundF}$ \\
+\end{tabular}
+
+}; 
+\end{tikzpicture}
+\end{preview}
+\end{document}
