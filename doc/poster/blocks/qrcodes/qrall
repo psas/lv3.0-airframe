@@ -1,0 +1,14 @@
+#!/bin/bash
+for FILENAME in *.txt
+do
+#	BASENAME= ${FILENAME%.txt}
+	echo
+	echo FILENAME is:
+	echo $FILENAME
+	echo BASENAME is:
+	echo ${FILENAME%.txt}
+	echo converting to EPS
+	cat $FILENAME | qrencode -t EPS -o ${FILENAME%.txt}.eps
+	echo done
+	echo
+done
