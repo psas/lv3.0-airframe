@@ -15,7 +15,7 @@
    id="svg3251"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 8">
+   sodipodi:docname="coupon.svg">
   <defs
      id="defs3253">
     <marker
@@ -75,10 +75,10 @@
      inkscape:current-layer="layer1"
      showgrid="true"
      units="cm"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1239"
+     inkscape:window-height="776"
+     inkscape:window-x="41"
+     inkscape:window-y="601"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -96,7 +96,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,12 +106,13 @@
      id="layer1"
      transform="translate(0,-903.54195)">
     <image
-       y="922.18231"
-       x="5"
-       id="image3360"
-       xlink:href="file:///home/joedang/PSAS/lv3.0-airframe/doc/img/sampleCoupon.jpg"
+       sodipodi:absref="/home/joedang/Github/PSAS/lv3.0-airframe/doc/paper/../img/sampleCoupon.jpg"
+       xlink:href="../img/sampleCoupon.jpg"
+       width="290"
        height="125.1785"
-       width="290" />
+       id="image3360"
+       x="5"
+       y="922.18231" />
     <text
        sodipodi:linespacing="125%"
        id="text5301-6"

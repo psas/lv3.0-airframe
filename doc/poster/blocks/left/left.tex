@@ -1,0 +1,47 @@
+% \documentclass[slidestop,compress]{beamer}
+% \setlength{\TPHorizModule}{10in}
+% \usepackage[orientation=landscape,size=custom, width=21, height=18]{beamerposter}
+% 	\usetheme{simple}
+\documentclass[24pt]{minimal}
+\usepackage[paperwidth=21in, paperheight=18in, margin=0.25in]{geometry}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{color}
+\setlength{\parindent}{0pt}
+% \usepackage[scale=2]{ccicons}
+
+\begin{document}
+%\begin{textblock}{10in}{0,0}
+%\begin{block}{\centering Introduction}
+%\end{block}
+%\end{textblock}
+\parbox{10in}{
+The amateur and university rocketry communities are rapidly reaching higher altitudes with more sophisticated rockets. However, most groups are still using heavy airframes made of metal or fiberglass. Commercial off-the-shelf airframes are either too expensive for low-budget university groups or too small to use as a platform for high altitude experiments. 
+A capstone team of mechanical engineering seniors at Portland State University has developed a low-weight, modular carbon fiber airframe as an open-hardware technology for university rocketry. 
+This project continues the work of a 2014 capstone team, who developed a carbon fiber layup process with promising results. 
+This will enable low-budget groups like the Portland State Aerospace Society to explore high altitude science and compete in the university space race.  
+
+
+% \begin{figure}[h]
+\def\svgwidth{\linewidth}
+\input{moduleDiagram.pdf_tex}
+% \caption{
+% 	Diagram of the male end of a module. 
+% 	The CF (1) is bonded to the honeycomb core (3) and the aluminum coupling ring (4) using structural adhesive (2). 
+% 	The adhesive also serves as a protective coating for the CF and provides a smooth outer surface. 
+% 	See figure \ref{fig:coupon} for a picture of this design.
+% 	}
+\label{fig:moduleDiagram}
+\hfill
+\input{coupon.pdf_tex}
+% \caption{
+% 	A cut-away sample displaying the layers used in the LV3 sandwich shells. 
+% 	See figure \ref{fig:moduleDiagram} for a diagrammatic depiction.
+% 	}
+\label{fig:coupon}
+% \end{figure}
+}
+
+\end{document}
