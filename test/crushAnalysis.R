@@ -145,8 +145,8 @@ downsample <- function(dat, n)
 }
 dat.10.short <- downsample(dat.10, n=300)
 quartzFonts(FreeSerif= c("FreeSerif", "FreeSerifBold", "FreeSerifItalic", "FreeSerifBoldItalic"))
-svg("../doc/poster/strain.svg", width = 14.5, height= 6.75)
-# png("../doc/poster/strain.png", width = 14.5, height= 6.75, units= "in", res= 300)
+svg("../doc/poster/strain.svg", width = 12, height= 6.25)
+# png("../doc/poster/strain.png", width = 12, height= 6.25, units= "in", res= 300)
 par.old <- par(
 	mar=c(7,8,1,1),
 	lwd=posterLWD, 
@@ -180,7 +180,7 @@ points(dat.10$MiddleGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
 points(dat.10$BottomGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
 
 legend(
-	x=3.3e3, y=6,
+	x=3.0e3, y=6.75,
 	col=c(lineBlue, NA, lineGreen, NA, traceRed, NA, "black"),
 	legend=c("middle gauge", NA, "edge gauge", NA, "best fit", NA, "failure"),
 	lty=c(1, NA, 3, NA, 1, NA, NA),

@@ -5,21 +5,24 @@
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{tikz}
+\usepackage[paperwidth=15in, paperheight=5in]{geometry}
 \usepackage{fontspec}
-	\setmainfont[Ligatures={NoRequired,NoCommon,NoContextual}]{DejaVuSerif}
+	\setmainfont[Ligatures={NoRequired,NoCommon,NoContextual}]{FreeSerif}
 \usepackage{siunitx}
 	\DeclareSIUnit\poundF{lb}
+
+\setlength{\tabcolsep}{1ex}
 
 \begin{document}
 \begin{preview}
 \begin{tikzpicture}[inner sep=0pt, outer sep=0pt]
 \node at (0, 0) {
 
-\begin{tabular}{llll}
+\begin{tabular}{llrr}
 	Material & Loading & Pinging Strength & Ultimate Strength\\
 	\hline
-	CF 		& axial 	& $\SI{7e3}{\poundF}$ 	& $\SI{1e4}{\poundF}$ \\
-	CF 		& puncture 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
+	carbon fiber	& axial 	& $\SI{7e3}{\poundF}$ 	& $\SI{10e3}{\poundF}$ \\
+	carbon fiber	& puncture 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
 	delaminated CF 	& axial 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
 	fiberglass	& axial 	& $\SI{2e3}{\poundF}$ 	& $\SI{5e3}{\poundF}$ \\
 \end{tabular}
