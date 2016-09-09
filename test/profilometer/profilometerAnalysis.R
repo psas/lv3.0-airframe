@@ -5,7 +5,7 @@
 
 #### BOOK KEEPING ####
 pdf("profilometerPlot.pdf")
-# setwd("~/Github/PSAS/sw-cad-airframe-lv3.0/test/profilometer")
+# setwd("~/Github/PSAS/lv3.0-airframe/test/profilometer")
 files.txt <- system("ls *.txt", intern=T) #find all the files
 datName.list <- as.list(files.txt)
 # initialize a list of data frames
@@ -117,7 +117,7 @@ dat.list[[2]] <- downsample(dat.list[[2]], 1e3)
 
 # install.packages("tikzDevice")
 require("tikzDevice")
-tikz("../../doc/paper/roughness.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
+#tikz("../../doc/paper/roughness.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
 par.old <- par(mar=c(4,4,1,0))
 plot(
 	dat.list[[8]]$x, dat.list[[8]]$y*1e-4, 
@@ -132,5 +132,44 @@ lines(dat.list[[2]]$x, dat.list[[2]]$y*1e-4, col="blue", lty=2)
 # 	col= c("black", "blue"),
 # 	lty= 1
 # 	)
+dev.off()
+#par(par.old)
+
+# ---------- Make the plot for the poster ----------
+# install.packages("tikzDevice")
+dat.list[[8]] <- downsample(dat.list[[8]], 300)
+dat.list[[2]] <- downsample(dat.list[[2]], 300)
+svg("../../doc/poster/roughness.svg", width = 8.25, height= 8.25)
+# png("../../doc/poster/roughness.png", width = 8.25, height= 8.25, units= "in", res= 300)
+posterLWD <- 5
+par.old <- par(
+	mar=c(7,10,1,1),
+	lwd=posterLWD, 
+	family= "FreeSerif",
+	ps=40,
+	las=1,
+	mgp=c(5,2.5,0),
+	lend= 2,
+	lheight=0.5
+)
+
+plot(
+	dat.list[[8]]$x, dat.list[[8]]$y*1e-4, 
+	type="l", bty="n",
+	xlab= "\nlength (µm)",
+	ylab= "height (µm)\n",
+	axes= F
+)
+axis(1, lwd= posterLWD)
+axis(2, lwd = posterLWD)
+lines(dat.list[[2]]$x, dat.list[[2]]$y*1e-4, col="blue", lty=3)
+legend(
+	x=150 , y= 90,
+	legend= c("uncoated", NA, "coated"),
+	col= c("black", NA, "blue"),
+	lty= c(1,NA, 3),
+	bty="n",
+	seg.len = 4.1
+	)
 dev.off()
 par(par.old)

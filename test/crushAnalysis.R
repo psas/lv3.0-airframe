@@ -76,8 +76,10 @@ grid()
 # 	)
 # lines(dat.10$Time, dat.10$BottomGauge)
 
+
+# ---------- Make the plot for the paper ----------
 require("tikzDevice")
-tikz("../doc/paper/strain.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
+#tikz("../doc/paper/strain.tex", width = 4, height= 3, packages = c("\\usepackage{tikz}", "\\usepackage{siunitx}"))
 par.old <- par(mar=c(4,4,1,0))
 
 mm <- lm(LoadKips~MiddleGauge, data = dat.10)
@@ -110,8 +112,9 @@ legend(
        )
 
 par(par.old)
-dev.off()
+#dev.off()
 
+# ---------- Report the results ---------- 
 cat("\n----------", "LU16.10 (18\" CF, blue)", "----------\n")
 cat("\nLikely load cell offset is between \n", mm$coeff["(Intercept)"], "\nand\n", mb$coeff["(Intercept)"], "\n")
 cat(
@@ -132,3 +135,59 @@ cat(
 
 
 # dev.off()
+
+# ---------- Make the plot for the poster ----------
+posterLWD <- 5
+downsample <- function(dat, n) 
+{
+	sparse <- floor(seq(from=1, to= length(dat[,1]), length.out=n))
+	return(dat[sparse,])
+}
+dat.10.short <- downsample(dat.10, n=300)
+quartzFonts(FreeSerif= c("FreeSerif", "FreeSerifBold", "FreeSerifItalic", "FreeSerifBoldItalic"))
+svg("../doc/poster/strain.svg", width = 14.5, height= 6.75)
+# png("../doc/poster/strain.png", width = 14.5, height= 6.75, units= "in", res= 300)
+par.old <- par(
+	mar=c(7,8,1,1),
+	lwd=posterLWD, 
+	family= "FreeSerif",
+	ps=40,
+	las=1,
+	mgp=c(5,2,0),
+	lend= 2
+	)
+
+plot(
+	dat.10.short$MiddleGauge, dat.10.short$LoadKips, 
+	type="l", bty="n", col=NA, 
+	xlim=range(dat.10.short$BottomGauge), 
+	# main= "load-strain for LU16.10",
+	xlab= "micro-strain",
+	ylab= "load (kip)",
+	axes=F
+)
+axis(side=1, lwd= posterLWD)
+axis(side=2, lwd = posterLWD)
+traceRed <- hsv(1, 0.3, 1)
+lineBlue <- hsv(0.7, 1, 1)
+lineGreen <- hsv(0.3, 1, 0.8)
+abline(mm, col=traceRed)
+lines(dat.10.short$MiddleGauge, dat.10.short$LoadKips, col=lineBlue, lty=1)
+
+abline(mb, col=traceRed)
+lines(dat.10.short$BottomGauge, dat.10.short$LoadKips, col=lineGreen, lty=3)
+points(dat.10$MiddleGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
+points(dat.10$BottomGauge[ind.ult.10], dat.10$LoadKips[ind.ult.10], pch=4)
+
+legend(
+	x=3.3e3, y=6,
+	col=c(lineBlue, NA, lineGreen, NA, traceRed, NA, "black"),
+	legend=c("middle gauge", NA, "edge gauge", NA, "best fit", NA, "failure"),
+	lty=c(1, NA, 3, NA, 1, NA, NA),
+	pch= c(NA, NA, NA, NA, NA, NA, 4),
+	bty="n",
+	seg.len = 4.1
+)
+
+par(par.old)
+dev.off()
