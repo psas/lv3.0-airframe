@@ -139,8 +139,8 @@ dev.off()
 # install.packages("tikzDevice")
 dat.list[[8]] <- downsample(dat.list[[8]], 300)
 dat.list[[2]] <- downsample(dat.list[[2]], 300)
-svg("../../doc/poster/roughness.svg", width = 8.25, height= 8.25)
-# png("../../doc/poster/roughness.png", width = 8.25, height= 8.25, units= "in", res= 300)
+svg("../../doc/poster/roughness.svg", width = 9, height= 9)
+# png("../../doc/poster/roughness.png", width = 9, height= 9, units= "in", res= 300)
 posterLWD <- 5
 par.old <- par(
 	mar=c(7,10,1,1),
