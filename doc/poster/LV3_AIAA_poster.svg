@@ -16,6 +16,8 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="LV3_AIAA_poster.svg">
+  <title
+     id="title13504">Design and Manufacture of an Open-Hardware University Rocket Airframe using Carbon Fiber</title>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,12 +25,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.22627417"
-     inkscape:cx="2692.7144"
-     inkscape:cy="1183.1539"
+     inkscape:zoom="0.16"
+     inkscape:cx="2564.1996"
+     inkscape:cy="1751.67"
      inkscape:document-units="in"
-     inkscape:current-layer="layer5"
-     showgrid="true"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      units="in"
      fit-margin-top="0.75"
      fit-margin-left="0.75"
@@ -44,11 +46,11 @@
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="false"
-     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-to-guides="true"
      inkscape:snap-global="true"
      inkscape:bbox-nodes="true"
-     inkscape:snap-nodes="false"
+     inkscape:snap-nodes="true"
      inkscape:object-nodes="true"
      inkscape:bbox-paths="false">
     <inkscape:grid
@@ -120,6 +122,14 @@
        orientation="1,0"
        position="3446.7985,1395"
        id="guide8653" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1451.2469,1395"
+       id="guide13429" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="2463.7562,990"
+       id="guide13439" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -4230,7 +4240,44 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title>Design and Manufacture of an Open-Hardware University Rocket Airframe using Carbon Fiber</dc:title>
+        <dc:date>2016-9-9</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Joe Shields, Leslie Elwood</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Portland State Aerospace Society</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:identifier>github.com/psas/lv3.0-airframe/tree/master/doc/poster</dc:identifier>
+        <dc:relation>github.com/psas/lv3.0-airframe/blob/master/doc/paper/LV3_AIAA.pdf</dc:relation>
+        <dc:language>en</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>carbon fiber</rdf:li>
+            <rdf:li>rocket</rdf:li>
+            <rdf:li>PSAS</rdf:li>
+            <rdf:li>open hardware</rdf:li>
+            <rdf:li>open source</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>Development of the LV3 airframe</dc:coverage>
+        <dc:description>very quick summaries of:
+the mission of LV3,
+the sandwich plate design used,
+the materials used,
+the overal airframe design,
+the destructive testing of the modules,
+the adhesive surfacing of the modules,
+possible future projects</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Joe Shields, Leslie Elwood</dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -10437,7 +10484,20 @@
            height="1" />
       </g>
     </g>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13441"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(-50.3063,3.125)"><flowRegion
+         id="flowRegion13443"><rect
+           id="rect13445"
+           width="398.4375"
+           height="67.96875"
+           x="2314.8438"
+           y="2537.5"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara13447"
+         style="font-size:50px">Conclusions</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -11037,7 +11097,7 @@
        transform="translate(1.675,25.445)"><flowRegion
          id="flowRegion7531"><rect
            id="rect7533"
-           width="1057.7"
+           width="1035.2"
            height="910.17999"
            x="2090.625"
            y="459.375"
@@ -11068,11 +11128,11 @@
        xml:space="preserve"
        id="flowRoot7584"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
-       transform="translate(-8.5375,61.12375)"><flowRegion
+       transform="translate(13.9625,61.12375)"><flowRegion
          id="flowRegion7586"><rect
            id="rect7588"
-           width="1755.3473"
-           height="301.41312"
+           width="1080.3473"
+           height="481.41312"
            x="908.19025"
            y="2134.9631"
            style="text-align:justify;text-anchor:start" /></flowRegion><flowPara
@@ -11082,38 +11142,87 @@
          style="font-size:35px;text-align:justify;text-anchor:start" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot7614"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"><flowRegion
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(20.9375,166.2175)"><flowRegion
          id="flowRegion7616"><rect
            id="rect7618"
-           width="1753.4388"
-           height="355.1272"
+           width="1080.0013"
+           height="458.9097"
            x="901.56116"
-           y="2592.3728" /></flowRegion><flowPara
+           y="2592.3728"
+           style="text-align:justify;text-anchor:start" /></flowRegion><flowPara
          id="flowPara7628"
-         style="font-size:35px">Rather than yielding like traditional engineering materials, this design ``pings'' as the most heavily loaded fibers begin to break and sections of core material experience small delaminations from the faces. A carbon fiber module was subjected to compressive loading along its axis. This was done by attaching dummy rings, which emulate a connection to another module, and loading the dummy rings through a flat plate. </flowPara><flowPara
-         style="font-size:35px"
+         style="font-size:35px;text-align:justify;text-anchor:start">Rather than yielding like traditional engineering materials, this design &quot;pings&quot; as the most heavily loaded fibers begin to break and sections of core material experience small delaminations from the faces. A carbon fiber module was subjected to compressive loading along its axis. This was done by attaching dummy rings, which emulate a connection to another module, and loading the dummy rings through a flat plate. </flowPara><flowPara
+         style="font-size:35px;text-align:justify;text-anchor:start"
          id="flowPara7692"> </flowPara><flowPara
-         style="font-size:35px"
+         style="font-size:35px;text-align:justify;text-anchor:start"
          id="flowPara7690">The load was slowly increased using a hydraulic press. Similar tests were performed with a fiberglass module, a CF module where the CF layers were delaminated from the core, and a CF module with the load applied laterally via a 2 inch wide beam, to puncture the module. These results can be seen in table \ref{tab:compression}.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot7777"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"><flowRegion
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(1145.7625,-437.62625)"><flowRegion
          id="flowRegion7779"><rect
            id="rect7781"
-           width="1756.7184"
-           height="178.9864"
+           width="810.17633"
+           height="616.39233"
            x="901.56116"
-           y="3038.7339" /></flowRegion><flowPara
+           y="3038.7339"
+           style="text-align:justify;text-anchor:start" /></flowRegion><flowPara
          id="flowPara7789"
-         style="font-size:35px">The nonuniform stress in the compressed CF modules  presents an opportunity to compare these results to a finite element model. Due to the required time and lack of immediate benefits, this has not been pursued. The surface finish of this design could be improved by filling the small voids in the adhesive coating. This would not provide much benefit to the LV3 platform, but may be useful in other applications.This design provides a strong, lightweight, low-cost testing platform which will be a significant advantage in PSAS' race towards $\SI{100}{km}$.Any university or amateur groups able to acquire the necessary materials should be able to build similar rockets, reaching much higher altitudes without upgrading to larger motors. It is strongly advised, however, that such groups thoroughly inspect their modules for delaminations, since these will compromise their strength. </flowPara><flowPara
+         style="font-size:35px;text-align:justify;text-anchor:start">The nonuniform stress in the compressed CF modules  presents an opportunity to compare these results to a finite element model. Due to the required time and lack of immediate benefits, this has not been pursued. The surface finish of this design could be improved by filling the small voids in the adhesive coating. This would not provide much benefit to the LV3 platform, but may be useful in other applications.This design provides a strong, lightweight, low-cost testing platform which will be a significant advantage in PSAS' race towards $\SI{100}{km}$.Any university or amateur groups able to acquire the necessary materials should be able to build similar rockets, reaching much higher altitudes without upgrading to larger motors. It is strongly advised, however, that such groups thoroughly inspect their modules for delaminations, since these will compromise their strength. </flowPara><flowPara
          id="flowPara7791"
-         style="font-size:35px" /><flowPara
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
          id="flowPara7793"
-         style="font-size:35px" /><flowPara
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
          id="flowPara7795"
-         style="font-size:35px" /><flowPara
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
          id="flowPara7797"
-         style="font-size:35px" /></flowRoot>  </g>
+         style="font-size:35px;text-align:justify;text-anchor:start" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13431"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(-14.3781,2.8125)"><flowRegion
+         id="flowRegion13433"><rect
+           id="rect13435"
+           width="437.5"
+           height="53.125"
+           x="1246.875"
+           y="2695.3125" /></flowRegion><flowPara
+         id="flowPara13437"
+         style="font-size:50px;text-align:center;text-anchor:middle">Destructive Testing</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13449"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(-2.175,-8.595)"><flowRegion
+         id="flowRegion13451"><rect
+           id="rect13453"
+           width="810.1701"
+           height="413.92215"
+           x="2049.5049"
+           y="2137.1729"
+           style="text-align:justify;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara13459"
+         style="font-size:35px;text-align:justify;text-anchor:start">The time and corresponding load at which audible pinging occurred was also recorded. The load was slowly increased using a hydraulic press. Similar tests were performed with a fiberglass module, a CF module where the CF layers were delaminated from the core, and a CF module with the load applied laterally via a 2 inch wide beam, to puncture the module.These results can be seen in table \ref{tab:compression}.In compressive loading, both the CF and fiberglass modules failed through buckling of the composite layers at the interface between the inner layer and one of the coupling rings.This resulted in the composite layers subducting under themselves (see figure \ref{fig:crush}).Failure occurred uniformly around the inner and outer layers, both at the same distance along the axis of the modules. In the delaminated module, one of the coupling rings was simply pushed into the space occupied by the core material.The CF modules exhibited linear-elastic behavior, as shown in figure \ref{fig:strain}, with the stress being concentrated near the pillars shown in figure \ref{fig:module}.This suggests that if more pillars were added, the stress concentration would be reduced, increasing the strength of the module.</flowPara><flowPara
+         id="flowPara13461"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13463"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13465"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13467"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13469"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13471"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13473"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13475"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13477"
+         style="font-size:35px;text-align:justify;text-anchor:start" /><flowPara
+         id="flowPara13479"
+         style="font-size:35px;text-align:justify;text-anchor:start" /></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
@@ -11444,7 +11553,30 @@
            y="405.29156"
            style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
            ry="0" /></flowRegion><flowPara
-         id="flowPara7206">Sandwich Design</flowPara></flowRoot>  </g>
+         id="flowPara7206">Sandwich Design</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13413"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:FreeSerif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:FreeSerif;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion13415"><rect
+           id="rect13417"
+           width="1076.5625"
+           height="64.0625"
+           x="901.5625"
+           y="2135.9375" /></flowRegion><flowPara
+         id="flowPara13419"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13421"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(9.84065,-0.3125)"><flowRegion
+         id="flowRegion13423"><rect
+           id="rect13425"
+           width="1076.5625"
+           height="56.25"
+           x="903.125"
+           y="2135.9375"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara13427"
+         style="font-size:50px">Modular Design</flowPara></flowRoot>  </g>
   <g
      inkscape:label="title"
      inkscape:groupmode="layer"
@@ -11509,15 +11641,15 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
-       x="2025"
-       y="-2187.6404"
+       x="1980"
+       y="-2210.1404"
        id="text7419"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7421"
-         x="2025"
-         y="-2187.6404"
-         style="font-size:50px">Joe Shields                Leslie Elwood</tspan></text>
+         x="1980"
+         y="-2210.1404"
+         style="font-size:50px;text-align:end;text-anchor:end">Joe Shields</tspan></text>
     <g
        id="layer1-3"
        transform="matrix(3.8324866,0,0,3.8324866,3504.1199,-6350.353)">
@@ -11595,12 +11727,12 @@
          id="tspan5331"
          x="450"
          y="-2277.6404"
-         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Serif;-inkscape-font-specification:Serif">Portland State</tspan><tspan
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:FreeSerif;-inkscape-font-specification:FreeSerif">Portland State</tspan><tspan
          sodipodi:role="line"
          x="450"
          y="-2215.1404"
          id="tspan5333"
-         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Serif;-inkscape-font-specification:Serif">University</tspan></text>
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:FreeSerif;-inkscape-font-specification:FreeSerif">University</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -11624,11 +11756,23 @@
          id="tspan5341"
          x="3600"
          y="-2277.6404"
-         style="font-size:50px">Portland State</tspan><tspan
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif">Portland State</tspan><tspan
          sodipodi:role="line"
          x="3600"
          y="-2215.1404"
          id="tspan5343"
-         style="font-size:50px">Aerospace Society</tspan></text>
-  </g>
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif">Aerospace Society</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot13401"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+       transform="translate(-373.9375,-2580.0153)"><flowRegion
+         id="flowRegion13403"><rect
+           id="rect13405"
+           width="301.06226"
+           height="59.497986"
+           x="2443.9377"
+           y="323.00201" /></flowRegion><flowPara
+         id="flowPara13407"
+         style="font-size:50px;text-align:start;text-anchor:start">Leslie Elwood</flowPara></flowRoot>  </g>
 </svg>
