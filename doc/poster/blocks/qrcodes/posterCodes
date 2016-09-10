@@ -1,0 +1,7 @@
+#!/bin/bash
+# qrencode -t EPS -o ${FILENAME%.txt}.eps
+qrencode -t EPS -o joeEmail.eps "shields6@pdx.edu"
+qrencode -t EPS -o leslieEmail.eps "lelwood@pdx.edu"
+qrencode -t EPS -o PSASEmail.eps "info@psas.pdx.edu"
+qrencode -t EPS -o repolink.eps "https://github.com/psas/lv3.0-airframe"
+qrencode -t EPS -o PSASlink.eps "http://psas.pdx.edu/"
