@@ -72,11 +72,11 @@ This will enable low-budget groups like the Portland State Aerospace Society to 
 \label{fig:L-12}
 \end{wrapfigure}
 
-PSAS \nomenclature{PSAS}{Portland State Aerospace Society} is an interdisciplinary group of engineering students, alumni of PSU\nomenclature{PSU}{Portland State University}, and aerospace enthusiasts with the long term goal of putting a cubesat into orbit with their own rocket. 
+PSAS \nomenclature{PSAS}{Portland State Aerospace Society} is an interdisciplinary group of engineering students, alumni of PSU\nomenclature{PSU}{Portland State University}, and aerospace enthusiasts with the vision statement of putting a cubesat into orbit with their own rocket. 
 % info about cubesat market growth: http://www.spaceref.com/news/viewpr.html?pid=44940 
-Their current airframe, named LV2\nomenclature{LV2}{Launch Vehicle 2}, has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS\nomenclature{GPS}{Global Positioning System} navigation and a cold gas reaction control system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts having been fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
+Their current airframe, named LV2\nomenclature{LV2}{Launch Vehicle 2}, has served for over 12 years, representing 10 of the group's 13 launches, and hosted experiments ranging from custom patch antennas and long range WiFi technology to GPS\nomenclature{GPS}{Global Positioning System} navigation and a cold gas reaction control system (figure \ref{fig:L-12}). The LV2 platform is mostly constructed of aluminum with a fiberglass shell, with many of the parts fabricated in home garages. This makes for a robust but heavy design. Additionally, this airframe is built with a 4.5 inch inner diameter which PSAS's experiments have outgrown. 
 
-The new airframe being designed, named LV3\nomenclature{LV3}{Launch Vehicle 3}, aims to address these issues and create a test platform for the technologies PSAS will use for their eventual shot at a $\SI{100}{km}$ launch. The LV3 platform uses a 6 inch inner diameter, modules composed of carbon fiber and thin aluminum coupling rings, a carbon fiber nose cone, and a carbon fiber fin section. All of the airframe components connect via standardized rings, to accommodate future experimental modules and flight configurations.
+The new airframe, named LV3\nomenclature{LV3}{Launch Vehicle 3}, aims to address these issues and create a test platform for the technologies PSAS will use for their eventual shot at a $\SI{100}{km}$ launch. The LV3 platform uses a 6 inch inner diameter, modules composed of CF\nomenclature{CF}{Carbon Fiber} and thin aluminum coupling rings, a CF nose cone, and a CF fin section. All of the airframe components connect via standardized rings, to accommodate future experimental modules and flight configurations.
 The cylindrical LV3 airframe modules outperform the old design with an \weightReduction{} reduction in weight.
 % Do we know what the increase in strength is? Also, can we confirm the weight reduction?
 
@@ -84,8 +84,8 @@ The cylindrical LV3 airframe modules outperform the old design with an \weightRe
 
 \subsection{Basic Design}
 
-The majority of the LV3 airframe uses a sandwich shell composed of CF\nomenclature{CF}{Carbon Fiber} faces surrounding an aramid honeycomb core (see figure \ref{fig:moduleDiagram}). This provides a rigid structure while minimizing weight. 
-Single sheets of carbon fiber are rigid when subjected to in-plane loading, and very flexible in bending. Meanwhile, the core is flexible in bending, and rigid under out-of-plane loading. 
+The majority of the LV3 airframe uses a sandwich shell composed of CF faces surrounding an aramid honeycomb core (see figure \ref{fig:moduleDiagram}). This provides a rigid structure while minimizing weight. 
+Single sheets of CF are rigid when subjected to in-plane loading, and very flexible in bending. Meanwhile, the core is flexible in bending, and rigid under out-of-plane loading. 
 When laminated together, these form a plate which is rigid in all loading conditions. The core material separates the rigid CF faces, greatly increasing the second moment of inertia of the plate. 
 There is much more to the theory of sandwich plates and beams, but that is outside the scope of this paper. 
 
@@ -93,9 +93,9 @@ The body of the airframe is composed of modular cylindrical sections using this 
 Each module can hold avionics, experiments, or other equipment with six tapped holes around the inside of the female coupling ring. 
 For the radio module, fiberglass takes the place of the CF to allow radio transparency.
 
-The fins use the same sandwich design, with an aluminum frame defining their planform. The center of the frame is filled with core material, and the whole surface is covered in carbon fiber. 
+The fins use the same sandwich design, with an aluminum frame defining their planform. The center of the frame is filled with core material, and the whole surface is covered in CF. 
 The leading and trailing edges of the fins are machined out of the aluminum frame. 
-The fins are fins are attached to a module with epoxy fillets, using chopped CF as a filler, and ``tip-to-tip'' CF sheets running from the tip of one fin across the module to the tip of the other fin.
+The fins are attached to a module with epoxy fillets, using chopped CF as a filler, and ``tip-to-tip'' CF sheets running from the tip of one fin across the module to the tip of the other fin.
 
 The nose cone uses the same coupling ring system as the modules. It is a von K\'arm\'an ogive formed from two molded CF shells. 
 Unlike the rest of the airframe, the nose cone uses a thin shell of two CF sheets, rather than a sandwich design (see section \ref{sec:noseCone} for details). 
@@ -131,15 +131,15 @@ While easy and durable, this does not fully take advantage of their materials. T
 
 This design also occupies an uncommon regime for sandwich shell designs. Most such designs use sandwich shells in large, low curvature parts, whereas the LV3 modules have a relatively small size and high curvature.
 
-This is also the only fully open-hardware rocket airframe in the high power rocketry Level 3 range. All of the documentation, design, and testing information if freely available on PSAS's Github page \cite{LV3repo}.
+This is currently also the only fully open-hardware rocket airframe in the high power rocketry Level 3 range. All of the documentation, design, and testing information if freely available on PSAS's Github page \cite{LV3repo}.
 %----------need to make extra-sure there aren't any other open-hardware airframes out there----------
 
 \section{Materials}
-% Joe: I thought this section should talk about the materials that were donated i.e.: Meltbond 1515, Cytec Carbon Fiber, Non-silicone paste wax, etc and save the how we got it for the aquisition section. What do you think?
+% Joe: I thought this section should talk about the materials that were donated i.e.: Meltbond 1515, Cytec Carbon Fiber, Non-silicone paste wax, etc and save the how we got it for the acquisition section. What do you think?
 Nearly all of the materials used in the LV3 airframe were donated. The pre-impregnated CF and the structural adhesive were made available after they expired for use in commercial aircraft. 
 Acquiring expired materials from large manufacturers and distributors is the strongly preferred over purchasing them outright or simply using cheaper materials. 
 Distributors are unlikely to offer these materials in quantities appropriate to this type of project, and purchasing them would be outside the budget of many university and amateur groups. 
-Using carbon fiber cloth with painted-on epoxy could change the manufacturing significantly, and would increase the weight of the airframe. 
+Using CF cloth with painted-on epoxy could change the manufacturing significantly, and would increase the weight of the airframe. 
 Acquiring donations is also a good way for university groups to form industry contacts. It can even become an opportunity to collaborate with other university groups, through the re-donation of excess material. 
 
 The CF is a plain weave design that is pre-impregnated with epoxy resin which cures at $\SI{350}{\Far}$.
@@ -195,8 +195,8 @@ The body of the module consists of two concentric CF tubes separated by a honeyc
 A layer of adhesive also covers the outer layer of CF, serving three roles. First, it ensures the outer layer of CF is completely wetted. 
 The pre-impregnated CF used here did not completely wet when cured alone, however this will not be true for every product.
 Second, it serves as a protective coating for the CF. 
-Third, it can be sanded to improve the surface roughness.
-Using a profilometer, the surface features of the uncoated modules was found to be $\SI{179}{\micro\meter}$ ($\SI{7.1e-3}{in}$), while the surface features of the adhesive-coated modules could be sanded to $\SI{3.3}{\micro\meter}$ ($\SI{1.3e-4}{in}$).
+Third, it can be sanded to improve the surface roughness (see figures \ref{fig:coated} and \ref{fig:uncoated} ).
+Using a profilometer, the surface feature height of the uncoated modules was found to be $\SI{179}{\micro\meter}$ ($\SI{7.1e-3}{in}$), while the surface features of the adhesive-coated modules could be sanded to $\SI{3.3}{\micro\meter}$ ($\SI{1.3e-4}{in}$) (see figure \ref{fig:roughness}).
 
 The modules are formed by wrapping the layers around a male mandrel with the coupling rings secured to the mandrel.
 The coupling rings are each screwed to a dummy ring which emulates a connection to another module. The dummy rings are then screwed to the mandrel.
@@ -247,10 +247,10 @@ After curing, the outer layer of adhesive is sanded and polished to obtain a smo
 	\caption{Failure strengths for different modules.}
 	\label{tab:compression}
 	% this should probably be given in Newtons with pounds being parenthetical
-	\begin{tabular}{llll}
+	\begin{tabular}{llrr}
 		Material & Loading & Pinging Strength & Ultimate Strength\\
 		\hline
-		CF 		& axial 	& $\SI{7e3}{\poundF}$ 	& $\SI{1e4}{\poundF}$ \\
+		CF 		& axial 	& $\SI{7e3}{\poundF}$ 	& $\SI{10e3}{\poundF}$ \\
 		CF 		& puncture 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
 		delaminated CF 	& axial 	& $\SI{<100}{\poundF}$	& $\SI{<100}{\poundF}$\\
 		fiberglass 	& axial 	& $\SI{2e3}{\poundF}$ 	& $\SI{5e3}{\poundF}$ \\
@@ -308,14 +308,14 @@ Currently, delaminations are located by squeezing modules by hand, looking for s
 
 \section{Nose Cone}\label{sec:noseCone}
 
-% \nomenclature{CTE}{Coefficient of Thermal Expansion} between the machinable foam and the carbon fiber. 
-% The CTE for the machinable foam is $\SI{48e-6}{\per\kelvin}$ and is larger than the carbon fiber with CTE of $\SI{10e-6}{\per\kelvin}$ %
+% \nomenclature{CTE}{Coefficient of Thermal Expansion} between the machinable foam and the CF. 
+% The CTE for the machinable foam is $\SI{48e-6}{\per\kelvin}$ and is larger than the CF with CTE of $\SI{10e-6}{\per\kelvin}$ %
 
 The nose cone consists of a removable aluminum tip, a curved von K\'arm\'an body, a 6 inch cylindrical section, and a female coupling ring. 
 The aluminum tip provides a smooth leading surface, avoids the problems with forming CF to small radii, and can be removed to assist with assembling the recovery system. 
 Unlike the modules, most of the nose cone does not use a sandwich design.
 The von K\'arm\'an section does not contain any core material, instead using multiple layers of pre-impregnated CF. 
-This is intended to mitigate puncturing of the nose cone during landing (see section \ref{sec:testing}). 
+This is intended to mitigate puncturing of the nose cone during landing (see section \ref{sec:modules} \ref{sec:testing}). 
 Rather than remaining rigid, this section should bend under impacts with rocks, bushes, or the airframe. 
 Additionally, the buckling strength added by the core is unnecessary in the nose cone, since it experiences very little load.
 The cylindrical section uses core material to ensure a good connection to the coupling ring. 
@@ -336,12 +336,12 @@ The nose cone is molded as two separate halves. These are then co-bonded togethe
 After curing, the outside of the nose cone is sprayed with a high temperature paint, which is then lightly sanded and polished.
 
 \subsection{OpenFOAM}
-OpenFOAM is another open-source application. It provides a common interface for a wide range of CFD\nomenclature{CFD}{Computational Fluid Dynamics} solvers.
+OpenFOAM is an open-source application which provides a common interface for a wide range of CFD\nomenclature{CFD}{Computational Fluid Dynamics} solvers.
 Although it requires more up-front effort, it allows a more detailed perspective on what features of an airframe's geometry are the most critical. 
 CFD analysis is probably not necessary for most amateur and university level airframe design, but this provides a good option for groups that can't afford a licence for a commercial CFD suite. 
 
-OpenFoam was used to asses the heating at the tip of the nose, to determine if the epoxy matrix of the carbon fiber would degrade over repeated flights.
-It was determined that heating at the tip of the nose cone was not a significant issue, at least for this size of rocket.
+OpenFoam was used to asses the heating at the tip of the nose, to determine if the epoxy matrix of the CF would degrade over repeated flights.
+It was determined that heating at the tip of the nose cone was not a significant issue for this size of rocket.
 
 \section{Fin Section}
 
@@ -366,7 +366,7 @@ It is also useful for keeping track of payloads and estimating mass budgets.
 
 \section{Future Research}
 
-The nonuniform stress in the compressed CF modules (section \ref{sec:test}) presents an opportunity to compare these results to a finite element model. 
+The nonuniform stress in the compressed CF modules (section \ref{sec:modules} \ref{sec:test}) presents an opportunity to compare these results to a finite element model. 
 Due to the required time and lack of immediate benefits, this has not been pursued.
 
 The surface finish of this design could be improved by filling the small voids in the adhesive coating. 
