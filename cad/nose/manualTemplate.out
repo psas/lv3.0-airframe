@@ -1,0 +1,23 @@
+[1] 1000
+[1] 1000
+
+Use these coordinates to draw out one side of the cutout of
+the nose cone. So, you will draw some cartesian axes on the 
+peel ply of the the CF. Then, plot these points. Then, 
+connect the points together. Draw lines between the points
+with a straight edge. At the tip, construct the necessary 
+unfolding for the doodlybob that connects to the nose tip 
+and the nose plug. The units are in inches. 
+       x      y
+1   0.00  0.000
+2   5.57  1.205
+3  13.59  2.702
+4  22.94  3.942
+5  33.22  4.684
+6  39.22  4.684
+7  39.22 -4.684
+8  33.22 -4.684
+9  22.94 -3.942
+10 13.59 -2.702
+11  5.57 -1.205
+12  0.00  0.000
