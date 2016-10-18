@@ -2,84 +2,53 @@
 
 # PSAS Launch Vehicle 3 "LV3" CAD Files
 
-This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber.
+This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber.  
+If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
 
 ## Todo:
-[This to-do list is probably more informative.](https://drive.google.com/open?id=1f-Etqf3f5pUfQ_Xc_3bBB01bxaG66x3LiqV5aW0Z5N8)
+[Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date. 
 
 - Fin can
-		- [ ] Practice the tip-to-tip on the existing fin can.
-		- [ ] Finalize new fin frames.
-		- [ ] Find out if we can water-jet the frames, and if it can be done sooner than the laser cutter is repaired.
+    - [ ] Practice the tip-to-tip on the existing fin can.
+	- [ ] Cut out the frames (Peter)
+	- [ ] MFG first fin can
+	    - [ ] layup test fins (one at a time, until it's good)
+		- [ ] layup fins onto fin can
 - Nose
-	- [ ] Make templates for CF sections
-		- [ ] Someone needs to figure out how to unfold the molding surface to make the template. (use math or Solidworks)
-	- Machining
-		- [ ] Get threaded rods to Alex
-		- [ ] Get ball endmill to Alex
-		- [ ] Set up go-pro(s) to document machining
-	- [X] Attempt a layup
-		- [ ] redo the tip CAD for the redesigned mold (Alex F.)
-		- [ ] machine the new tip
+	- [ ] Design templates for CF sections
+	- [ ] do a small-scale test of MFG a composite mold
+		- [ ] test porosity of a many-layered section
+		- [ ] test feasability of laying up on sharp corners
 - MFG procedures
 	- [ ] Add pictures to the MFG procedures.
 	- [ ] Review procedures (not Joe)
+	- [ ] document problems/decisions relating to the nose mold
 - Radome
 	- [X] Make a FG layup. 
 	- [ ] Perform EM testing
-	- [X] Crush the FG layup
-	    - [ ] Order strain gauges (not strictly necessary)
-- Surface roughness
-    - [ ] Read AIAA paper (not gonna post it. You can email Joe if you want it.)
-    - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
-    - [ ] Make decision
-	- Convert black modules? Abandon blue modules?
-- [ ] AIAA paper
-	- [ ] Write first draft of AIAA paper. (in progress)
-		- Figures
-			- [X] add diagram/picture of the sandwich design
-			- [ ] add pictures of crushed FG module
-			- [ ] add pictures of the puncture failure
-			- [X] add plot of the surface features
-			- [ ] add picture of layers, put alongside diagram
-			- [ ] add picture/CAD render of the cylindrical modules and/or whole rocket
-		- Sections
-			- [X] write more detailed description of the modules
-			- [X] write section on the materials
-			- [ ] write section on destructive testing
-				- [ ] find what the actual compressive FS is
-			- [ ] write section on the fins
-			- [ ] write section on the nose cone
-			- [ ] figure out how to cite the Beta Project funding
-	- [ ] Get draft reviewed by other people
+	- [ ] Integration test with cradle
+- Modules
+    - [ ] sand modules
+    - Surface roughness
+        - [ ] Read AIAA paper (not gonna post it. You can email Joe if you want it.)
+        - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
+    - [ ] Make decision (convert black modules? Abandon blue modules?)
+- [X] AIAA paper
 - Miscellaneous
-	- [X] Write up suggestions for future ME PSAS groups to consider during thier project. 
 	- [ ] Move all deliverable-related things from the Google Drive into this repo. 
-	- [X] Order more heat-shrink tape (non-perforated) (Dunstone hi-shrink tape)
 	- [ ] Schedule tensile test with Chinh
-
-## Relavant Deadlines
-
-* AIAA paper: August. 18 8pm EST (hard deadline; submit before this)
-* Rocket launch: October ~15
-
-## Team Members
-LV3 team members, please add your name to this list, so we know who is able to push to this repository:
 
 Person		|	Role
 ----------------|-----------
-Joe Shields		|	project coordination; MFG; paper
-Leslie Elwood	|	nose; materials; paper
+Joe Shields		|	project coordination; MFG
+Leslie Elwood	|	nose; materials
 Alex Farias		|	MFG; design
-Ian Zabel		|	design; modelling
-Calvin Young	|	Oven controller
-David Edwards	|	MFG
-Alex Kollen		|	???
+Ian Zabel		|	cradle design; modelling
+Kyle Blakeman   |   module sanding 
+Peter McCloud   |   fin frames
 Jorden Rolland	|	???
 Katia 			|	machining
 Marie House		|	
-
-If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
 
 ## What and where
 
