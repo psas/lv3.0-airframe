@@ -5,6 +5,8 @@
 This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber.  
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
 
+![](https://github.com/psas/lv3.0-airframe/blob/master/cad/LV3.JPG)
+
 ## Todo:
 [Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date. 
 
