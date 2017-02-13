@@ -1,29 +1,38 @@
 [//]: # " vim: set nonumber tabstop=4: "
 
-# PSAS Launch Vehicle 3 "LV3" CAD Files
+# PSAS Launch Vehicle 3 (LV3)
 
-This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber.  
+This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber. This includes CAD files, design and prototyping logs, simulation and testing data, most of all the manufacturing procedures for the carbon fiber airframe modules.  
+
 If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
+
+If you're looking to copy or build on this work check out the [doc directory](/doc/), especially the [layup procedure](/doc/mfg/moduleProcedure.md) and please message the people who have committed frequently/recently with any questions (or better yet, [make an issue with your question](https://github.com/psas/lv3.0-airframe/issues)).
 
 ![](https://github.com/psas/lv3.0-airframe/blob/master/cad/LV3.JPG)
 
 ## Todo:
-[Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date. 
+[Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date and is meant to give an idea of what needs to happen for the project to progress. If you see something that needs to be added, modified, or checked off, please do so. 
 
 - Fin can
     - [ ] Practice the tip-to-tip on the existing fin can.
-	- [ ] Cut out the frames (Peter)
+	- [X] Cut out the frames (Peter)
+	   - [ ] Cut the leading/trailing edges on the frames
+	- [ ] Cut out the fin jigs
+		- [ ] figure out how/where we can manufacture such a large plate (would probably work on @petermccloud's machine!)
 	- [ ] MFG first fin can
+		- [ ] re-test the fin brackets from the 2014 capstone for feasibility 
 	    - [ ] layup test fins (one at a time, until it's good)
 		- [ ] layup fins onto fin can
 - Nose
 	- [ ] Design templates for CF sections
-	- [ ] do a small-scale test of MFG a composite mold
-		- [ ] test porosity of a many-layered section
-		- [ ] test feasability of laying up on sharp corners
+	- [X] do a small-scale test of MFG a composite mold
+		- [X] test porosity of a many-layered section
+		- [X] test feasability of laying up on sharp corners
+		- [ ] try making a mold with a layer of gel coat
+		- [ ] try another layup in the tiny mold with more release agent
 - MFG procedures
-	- [ ] Add pictures to the MFG procedures.
-	- [ ] Review procedures (not Joe)
+	- [X] Add pictures to the MFG procedures.
+	- [X] Review procedures (not Joe)
 	- [ ] document problems/decisions relating to the nose mold
 - Radome
 	- [X] Make a FG layup. 
@@ -32,35 +41,45 @@ If you aren't allowed to push, send Andrew your Github username and ask him to g
 - Modules
     - [ ] sand modules
     - Surface roughness
-        - [ ] Read AIAA paper (not gonna post it. You can email Joe if you want it.)
+        - [ ] Read AIAA paper (not gonna post it. You can email @Joedang if you want it.)
         - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
-    - [ ] Make decision (convert black modules? Abandon blue modules?)
+    - [ ] Make decision (convert black modules? ~~Abandon blue modules?~~)
 - [X] AIAA paper
 - Miscellaneous
-	- [ ] Move all deliverable-related things from the Google Drive into this repo. 
+	- [X] Move all deliverable-related things from the Google Drive into this repo. 
 	- [ ] Schedule tensile test with Chinh
 
-Person		|	Role
-----------------|-----------
-Joe Shields		|	project coordination; MFG
-Leslie Elwood	|	nose; materials
-Alex Farias		|	MFG; design
-Ian Zabel		|	cradle design; modelling
-Kyle Blakeman   |   module sanding 
-Peter McCloud   |   fin frames
-Jorden Rolland	|	???
-Katia 			|	machining
-Marie House		|	
+## Project Members
+
+If you're working on the project in any way, please add yourself to this list.
+
+IRL Name			|	Github username	|	Current Role
+----------------|--------------------|-----------
+Joe Shields		|	@Joedang			|	project coordination; MFG; design
+Leslie Elwood	|	@lelwood			|	
+Alex Farias		|	@alexkazam		|	MFG
+Ian Zabel		|	@IanZabel		|	cradle design; modelling
+Kyle Blakeman	|					|   
+Peter McCloud	|	@petermccloud	|   CNC machining
+Jorden Rolland	|					|	
+Katia			|					|	
+Marie House		|					|	
+Adam Harris		|					|   MFG
+Josh Carlson		|	@paperman5		|   CNC machining; design
+Jacob Tiller		|	@JacobTiller		|   Machining; design
+Erin Schmidt		|	@7deeptide		|	System integration; design
+Nathan Bergey	|	@natronics		|	
 
 ## What and where
 
 	|-- cad							holds the Solidworks files for all the machined parts
 	|   |-- finCan
+	|	|	`- LongFinFiles			current fin design (flyable and manufacturable)
 	|   |-- module
 	|   |-- nose
 	|   |-- radome
 	|   `-- railSled
-	|       `-- CAM					G code for the rail sled
+	|       `-- CAM					G code for the rail sled (obsolete)
 	|           |-- Base
 	|           |-- Neck
 	|           `-- Trunk
