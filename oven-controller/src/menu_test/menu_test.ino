@@ -132,7 +132,7 @@ int curstatus = OFF;
 int curtemp = 32;
 int prevtemp = 32;
 int curtempflag = 0;
-int tempThreshold = 3; // determines whether one or two heaters on/off
+int tempThreshold = 5; // determines whether one or two heaters on/off
 int thermStatus[5] = {0}; 
 int numActiveThermocouples = 0;
 int ADCThreshold = 100;
@@ -233,6 +233,10 @@ void setup(void) {
 
   // get active thermocouples
   // disregard values from therm X if therm[X] = 1
+  // It's good to know when a TCP is unplugged, but this seems to be begging
+  // to make a bug... Think about what happens if someone wants to validate
+  // the controller readings and starts up the controller with the TCP in 
+  // an ice-water bath, lol.
   if ((int)thermocouple1.readFarenheit() == 32) thermStatus[1] = 1;
   if ((int)thermocouple2.readFarenheit() == 0) thermStatus[2] = 1;
   if ((int)thermocouple3.readFarenheit() == 0) thermStatus[3] = 1;
@@ -280,28 +284,30 @@ void loop() {
 
   // check thermocouples and get average value
   // TODO: turn on particular heaters based on particular thermocouples
-  curtemp = 0;
-  if (thermStatus[1] == 0)
-    curtemp += thermocouple1.readFarenheit();
-  Serial.print(curtemp);
-  Serial.print(" ");
-  if (thermStatus[2] == 0)
-    curtemp += thermocouple2.readFarenheit();
-  Serial.print(curtemp);
-  Serial.print(" ");
-  if (thermStatus[3] == 0)
-    curtemp += thermocouple3.readFarenheit();
-  Serial.print(curtemp);
-  Serial.print(" ");
-  if (thermStatus[4] == 0)
-    curtemp += thermocouple4.readFarenheit();
-  Serial.print(curtemp);
-  Serial.print(" ");
-  if (thermStatus[5] == 0)
-    curtemp += thermocouple5.readFarenheit();
-  Serial.print(curtemp);
-  Serial.print(" ");
-  curtemp = curtemp / numActiveThermocouples;
+  // TODO: Figure out proper temperature averaging when some TCPs are unplugged!
+  curtemp = thermocouple2.readFarenheit();
+  // curtemp = 0;
+  // if (thermStatus[1] == 0)
+  //   curtemp += thermocouple1.readFarenheit();
+  // Serial.print(curtemp);
+  // Serial.print(" ");
+  // if (thermStatus[2] == 0)
+  //   curtemp += thermocouple2.readFarenheit();
+  // Serial.print(curtemp);
+  // Serial.print(" ");
+  // if (thermStatus[3] == 0)
+  //   curtemp += thermocouple3.readFarenheit();
+  // Serial.print(curtemp);
+  // Serial.print(" ");
+  // if (thermStatus[4] == 0)
+  //   curtemp += thermocouple4.readFarenheit();
+  // Serial.print(curtemp);
+  // Serial.print(" ");
+  // if (thermStatus[5] == 0)
+  //   curtemp += thermocouple5.readFarenheit();
+  // Serial.print(curtemp);
+  // Serial.print(" ");
+  // curtemp = curtemp / numActiveThermocouples;
   Serial.println(curtemp);
   
   // if the temp has incremented, update temp
@@ -323,12 +329,16 @@ void setHeaters(int val1, int val2) {
 }
 
 void updateHeaters() {
+  // Previously, this activated only one relay if within +1 threshold of 
+  // the target temp. However, the oven is only set up for one relay, so it 
+  // would just keep heating until one threshold above the target temp. 
+  // What's worse, there's a delay between the input of heat and the rise 
+  // of the voltage on the thermocouple, so the oven consistently overshot 
+  // its temperature!
   if (curtemp < steplist[curRunStep].temp - tempThreshold) 
     setHeaters(ON,ON);
-  else if (curtemp > steplist[curRunStep].temp + tempThreshold)
-    setHeaters(OFF,OFF);
   else
-    setHeaters(ON,OFF);
+    setHeaters(OFF,OFF);
 }
 
 void hackySPIfix() {
