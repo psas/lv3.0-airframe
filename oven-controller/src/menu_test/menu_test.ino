@@ -129,8 +129,8 @@ int prevState;
 int curstatus = OFF;
 
 // current temperature in Fahrenheit
-int curtemp = 32;
-int prevtemp = 32;
+int curtemp = -1;
+int prevtemp = -1;
 int curtempflag = 0;
 int tempThreshold = 5; // determines whether one or two heaters on/off
 int thermStatus[5] = {0}; 
@@ -161,7 +161,10 @@ Adafruit_MAX31855 thermocouple5(spiCLK, thermoCS5, spiMISO);
 
 void setup(void) {
 
+
   Serial.begin(9600);
+  Serial.println("\nENTERING SETUP\n");
+  pinMode(LED_BUILTIN, OUTPUT);
   
   // Our supplier changed the 1.8" display slightly after Jan 10, 2012
   // so that the alignment of the TFT had to be shifted by a few pixels
@@ -254,6 +257,12 @@ void setup(void) {
 }
 
 void loop() {
+  Serial.println("\nENTERING LOOP\n");
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+
 
   // check start button
   curstatus = CheckStartButton();
@@ -308,6 +317,17 @@ void loop() {
   // Serial.print(curtemp);
   // Serial.print(" ");
   // curtemp = curtemp / numActiveThermocouples;
+  Serial.println("thermocouple1.readFarenheit()");
+  Serial.println(thermocouple1.readFarenheit());
+  Serial.println("thermocouple2.readFarenheit()");
+  Serial.println(thermocouple2.readFarenheit());
+  Serial.println("thermocouple3.readFarenheit()");
+  Serial.println(thermocouple3.readFarenheit());
+  Serial.println("thermocouple4.readFarenheit()");
+  Serial.println(thermocouple4.readFarenheit());
+  Serial.println("thermocouple5.readFarenheit()");
+  Serial.println(thermocouple5.readFarenheit());
+  Serial.println("curtemp");
   Serial.println(curtemp);
   
   // if the temp has incremented, update temp
