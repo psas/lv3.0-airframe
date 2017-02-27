@@ -138,9 +138,6 @@ Shown below are two stages in the layup process. figure 2 shows the mandrel has 
 
 ### Shrink Tape
 
-1. If you're using perforated shrink tape:
-    1. Cover the layup in a layer of release film, enough to overlap itself and the coupling rings by at least 1/2". If you don't do this, the module will end up with "goosebumps," which make the shrink tape much harder to remove and the module much harder to sand.  
-    ![goosebumps poking through the perforated tape](../img/gooseBumps.jpg) 
 1. If you're using shrink tape with no built-in release compound:
     1. Cover the layup in a layer of release film, enough to overlap itself and the coupling rings by at least 1/2". If you don't do this, the shrink tape will bond to the outer layer, making removal and sanding basically impossible.   
     1. Tape-down that layer with some kapton at the ends and in the middle.   
@@ -157,7 +154,8 @@ Shown below are two stages in the layup process. figure 2 shows the mandrel has 
 ![A piece of kapton tape preventing the shrink tape from unraveling.](../img/tapeCheckpoint.jpg)  
 1. When you reach the end of the opposite dummy ring, cut the shrink tape and securely fix it to the dummy ring using kapton or flash tape.
 1. Add 3 strips of kapton or flash tape spanning the entire length of the module to fix the shrink tape against nudges during the vacuum bagging process.
-1. If you are using perforated shrink tape, add a layer of non-perforated release film to the outside of the layup, using kapton or flash tape to hold it in place.
+1. If you are using perforated shrink tape, add a layer of non-perforated release film to the outside of the layup, using kapton or flash tape to hold it in place.1. If you don't do this, the module will end up with "goosebumps," which make the shrink tape much harder to remove and the module much harder to sand.  
+    ![goosebumps poking through the perforated tape: not what you want](../img/gooseBumps.jpg) 
 
 ### Vacuum bagging
 

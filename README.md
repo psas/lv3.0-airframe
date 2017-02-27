@@ -110,3 +110,8 @@ Nathan Bergey	|	@natronics		|
 	|   `-- simData					output of the openrocket simulations
 	`-- test						data from physical tests on modules
 	    `-- profilometer			surface roughness data
+	    
+## Relevant Repositories
+* [psas/mme-capstone](https://github.com/psas/mme-capstone) -- One of the repositories created durring the 2014 capstone. This contains code for some of the tools they used. 
+* [psas/sw-cad-carbon-fiber-process](https://github.com/psas/sw-cad-carbon-fiber-process) -- Yet another repo from the 2014 team. This contains CAD for some of the tools they made.
+* [psas/LV3-design](https://github.com/psas/LV3-design) -- Early conceptual design of LV3
