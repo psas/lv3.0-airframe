@@ -1,6 +1,6 @@
 [//]: # " vim: set nonumber tabstop=4: "
 
-# PSAS Launch Vehicle 3 (LV3)
+# PSAS Launch Vehicle 3 (LV3) 🚀
 
 This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber. This includes CAD files, design and prototyping logs, simulation and testing data, most of all the manufacturing procedures for the carbon fiber airframe modules.  
 
@@ -18,7 +18,15 @@ If you're looking to copy or build on this work check out the [doc directory](/d
 	- [X] Cut out the frames (Peter)
 	   - [ ] Cut the leading/trailing edges on the frames
 	- [ ] Cut out the fin jigs
-		- [ ] figure out how/where we can manufacture such a large plate (would probably work on @petermccloud's machine!)
+		- [X] figure out how/where we can manufacture such a large plate (would probably work on @petermccloud's machine!)
+	- [ ] Cut out the baseplate.
+	- [ ] Try cutting the leading/trailing edges on the weeny fin using the mill in the LID.
+	- [ ] Test the fin layup process.
+		- [ ] Make a couple CF brackets.
+		- [ ] 3D print two tiny ABS fillets.
+		- [ ] Do bracket layup with high-temp epoxy.
+		- [ ] Do T2T layup with high-temp epoxy.
+		- [ ] Do high-temp cure.
 	- [ ] MFG first fin can
 		- [ ] re-test the fin brackets from the 2014 capstone for feasibility 
 	    - [ ] layup test fins (one at a time, until it's good)
@@ -28,8 +36,11 @@ If you're looking to copy or build on this work check out the [doc directory](/d
 	- [X] do a small-scale test of MFG a composite mold
 		- [X] test porosity of a many-layered section
 		- [X] test feasability of laying up on sharp corners
-		- [ ] try making a mold with a layer of gel coat
+		- [X] try making a mold with a layer of gel coat
 		- [ ] try another layup in the tiny mold with more release agent
+	- [ ] Try a tiny layup with the room-temp materials.
+	- [ ] Machine the tip.
+	- [ ] Revise the design for the plug.
 - MFG procedures
 	- [X] Add pictures to the MFG procedures.
 	- [X] Review procedures (not Joe)
@@ -40,6 +51,7 @@ If you're looking to copy or build on this work check out the [doc directory](/d
 	- [ ] Integration test with cradle
 - Modules
     - [ ] sand modules
+    	- [ ] Figure out what the best method for sanding is (hand, dremel, orbital, etc.).
     - Surface roughness
         - [ ] Read AIAA paper (not gonna post it. You can email @Joedang if you want it.)
         - [ ] [Read NASA paper](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19660028009.pdf)
