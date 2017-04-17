@@ -1,5 +1,3 @@
-[//]: # " vim: set nonumber tabstop=4: "
-
 # PSAS Launch Vehicle 3 (LV3) 🚀
 
 This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber. This includes CAD files, design and prototyping logs, simulation and testing data, most of all the manufacturing procedures for the carbon fiber airframe modules.  
