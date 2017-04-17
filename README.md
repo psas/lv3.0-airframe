@@ -73,55 +73,70 @@ Kyle Blakeman	|					|
 Peter McCloud	|	@petermccloud	|   CNC machining
 Jorden Rolland	|					|	
 Katia			|					|	
-Marie House		|					|	
-Adam Harris		|					|   MFG
+Marie "Marie House" House	|					|	
+Adam Harris		|					|   MFG; manual machining
 Josh Carlson		|	@paperman5		|   CNC machining; design
 Jacob Tiller		|	@JacobTiller		|   Machining; design
 Erin Schmidt		|	@7deeptide		|	System integration; design
 Nathan Bergey	|	@natronics		|	
 
 ## What and where
-
-	|-- cad							holds the Solidworks files for all the machined parts
-	|   |-- finCan
-	|	|	`- LongFinFiles			current fin design (flyable and manufacturable)
-	|   |-- module
-	|   |-- nose
-	|   |-- radome
-	|   `-- railSled
-	|       `-- CAM					G code for the rail sled (obsolete)
-	|           |-- Base
-	|           |-- Neck
-	|           `-- Trunk
-	|-- doc							all pure documentation
-	|   |-- aiaa-3.6.1				LaTeX template for AIAA
-	|   |-- extAbstract				extened abstract for the AIAA paper
-	|   |-- img						image resources for documentation
-	|   |-- mfg						step-by-step instructions for manufacturing
-	|   |-- paper					the conference paper we're submitting to AIAA Space
-	|   `-- updates					bi-monthlyish status updates on the project
-	|-- sim							simulations and calculations
-	|   |-- DATCOM
-	|   |   |-- case
-	|   |   |   |-- LV3				case for the LV3 airframe (not complete)
-	|   |   |   `-- exMiG
-	|   |   |-- doc					DATCOM documentation
-	|   |   `-- exlinux				example DATCOM cases
-	|   |-- ORK						open rocket models
-	|   |   `-- prev
-	|   |-- OpenFOAM				CFD models
-	|   |   `-- LV3\_LD-Haack		model of the 1:5 nose cone
-	|   |       `-- rcf_100			100-node-long mesh
-	|   |           |-- 0			initial conditions
-	|   |           |-- constant	fluid properites
-	|   |           `-- system		simulation parameters
-	|   |-- plots					plots of the open rocket data
-	|   |-- reductions				reductions of the openrocket simulations
-	|   `-- simData					output of the openrocket simulations
-	`-- test						data from physical tests on modules
-	    `-- profilometer			surface roughness data
-	    
+```
+|-- cad							holds the Solidworks files for all the machined parts
+│   ├── CubeSatAirframeMount			"Cradle" that holds the flight computer (OreSat) inside LV3
+|   |-- finCan
+|	|	`- LongFinFiles			current fin design (flyable and manufacturable)
+|   |-- module
+|   |-- nose
+|   |-- radome
+|   `-- railSled
+|       `-- CAM					G code for the rail sled (obsolete)
+|           |-- Base
+|           |-- Neck
+|           `-- Trunk
+|-- doc							all pure documentation
+|   |-- aiaa-3.6.1				LaTeX template for AIAA
+|   |-- extAbstract				extened abstract for the AIAA paper
+|   |-- img						image resources for documentation
+|   |-- mfg						step-by-step instructions for manufacturing
+|   |-- paper					the conference paper we're submitting to AIAA Space
+│   ├── FlightComputerMount			stuff about the Cradle
+│   ├── textbook				summary of composite techniques in general
+|   `-- updates					bi-monthlyish status updates on the project
+|-- sim							simulations and calculations
+|   |-- DATCOM
+|   |   |-- case
+|   |   |   |-- LV3				case for the LV3 airframe (not complete)
+|   |   |   `-- exMiG
+|   |   |-- doc					DATCOM documentation
+|   |   `-- exlinux				example DATCOM cases
+|   |-- ORK						open rocket models
+|   |   `-- prev
+|   |-- OpenFOAM				CFD models
+|   |   `-- LV3\_LD-Haack		model of the 1:5 nose cone
+|   |       `-- rcf_100			100-node-long mesh
+|   |           |-- 0			initial conditions
+|   |           |-- constant	fluid properites
+|   |           `-- system		simulation parameters
+|   |-- plots					plots of the open rocket data
+|   |-- reductions				reductions of the openrocket simulations
+|   `-- simData					output of the openrocket simulations
+|-- test						data from physical tests on modules
+|   `-- profilometer			surface roughness data
+└── tools				sources/CAD/docs for physical tools used to make LV3
+    ├── Composite_Table			the table we do all the layups on
+    ├── crusher-control			controller software for one of the crush testers at PSU	
+    ├── oven-controller			the temperature controller for the oven
+    │   ├── Oven_Controller		the temperature controller for... wait
+    │   │   ├── Box			enclosure for the oven controller
+    │   │   ├── OvenControl		the temperature contr-- again?!
+    │   │   └── oven-controller-master	"A Deja Vu is usually a glitch in the Matrix."
+    │   └── src				source code for the controller
+    ├── Sheet_Cutting_Templates		templates used to cut sheets of CF, adhesive, et cetera
+    └── strain-gauge-amplifier		instrument used to take strain measurements in a crush/tensile test
+```
+    
 ## Relevant Repositories
-* [psas/mme-capstone](https://github.com/psas/mme-capstone) -- One of the repositories created durring the 2014 capstone. This contains code for some of the tools they used. 
-* [psas/sw-cad-carbon-fiber-process](https://github.com/psas/sw-cad-carbon-fiber-process) -- Yet another repo from the 2014 team. This contains CAD for some of the tools they made.
+* [~~psas/mme-capstone~~](https://github.com/psas/mme-capstone) (**DEPRECATED**) -- One of the repositories created durring the 2014 capstone. This contains code for some of the tools they used. 
+* [~~psas/sw-cad-carbon-fiber-process~~](https://github.com/psas/sw-cad-carbon-fiber-process) (**DEPRECATED**) -- Yet another repo from the 2014 team. This contains CAD for some of the tools they made.
 * [psas/LV3-design](https://github.com/psas/LV3-design) -- Early conceptual design of LV3
