@@ -1,0 +1,293 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 06/06/14 by ntung
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+Set Part = swApp.OpenDoc6("\\stash\psas_airframe\Models\Tooling\Templates\Standard Module Templates\Aluminum step adhesive film template.SLDDRW", 3, 0, "", longstatus, longwarnings)
+swApp.ActivateDoc2 "Aluminum step adhesive film template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Sheet1", "SHEET", 0.28494427203223621, 0.31175166557592021, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Sheet1", "SHEET", 0.098270038539986615, 0.21402104645634246, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Drawing View1")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.43121084661184556, 0.40525823376692055, 0.0015874999999709871, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.029926256845386578, 0.42469545608373338, 0.0015874999999709871, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.029926256845386578, 0.42469545608373338, 0.0015874999999709871)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.10454011025508753, 0.41905239154014262, 0.0015874999999709871, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.10454011025508753, 0.41905239154014262, 0.0015874999999709871)
+boolstatus = Part.ActivateSheet("Sheet1")
+boolstatus = Part.ActivateView("Drawing View1")
+boolstatus = Part.ActivateSheet("Sheet1")
+Part.SetPickMode
+Set Part = swApp.OpenDoc6("\\stash\psas_airframe\Models\Tooling\Templates\Standard Module Templates\Inside ply and adhesive film template.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Inside ply and adhesive film template", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0089516208582613027
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0045687981804283804, 0.13427431287391955
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.20588727974000998
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0045687981804283804, 0.14322593373218084
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.044758104291306521
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.026854862574783908
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.035806483433045211
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.035806483433045211
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.071612966866090422
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.062661346007829119
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.10741945029913563
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.080564587724351724
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.062661346007829119
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.071612966866090422
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.035806483433045211
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.017903241716522605
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.11637107115739694
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.13427431287391955
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.11637107115739694
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.12532269201565824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.14322593373218084
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.14322593373218084
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.080564587724351724
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0045687981804283804, 0.062661346007829119
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0045687981804283804, 0.10741945029913563
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.035806483433045211
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.026854862574783908
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.0045687981804283804, 0.017903241716522605
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0089516208582613027
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0089516208582613027
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.071612966866090422
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.080564587724351724
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.035806483433045211
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.044758104291306521
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.071612966866090422
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0045687981804283804, -0.080564587724351724
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0045687981804283804, -0.10741945029913563
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.13427431287391955
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.10741945029913563
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.17008079630696477
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.19693565888174866
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.29540348832262298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.25959700488957782
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.23274214231479387
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.17008079630696477
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.15217755459044216
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.13427431287391955
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.12532269201565824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.089516208582613041
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.09846782944087433
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.080564587724351724
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.062661346007829119
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.053709725149567816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0045687981804283804, -0.017903241716522605
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0089516208582613027
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.10665093655881819, 0.50780966073842038, 0.0031632607839355842, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+Dim swConfig As Object
+Dim swDimXPertMgr As Object
+Dim swDimXPertPart As Object
+Dim swDimXPertDimOpt As Object
+Dim dblDimXPertTextPos() As Double
+ReDim dblDimXPertTextPos(0 To 2) As Double
+Dim varDimXPertTextPos As Variant
+Set swConfig = Part.ConfigurationManager.ActiveConfiguration
+Set swDimXPertMgr = Part.Extension.DimXpertManager(swConfig.Name, True)
+Set swDimXPertPart = swDimXPertMgr.DimXpertPart
+Set swDimXPertDimOpt = swDimXPertPart.GetDimOption
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.16250617738561957, 0.50433676361923929, 0.0031749999999988177, False, 0, Nothing, 0)
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.1564654588588521, 0.51026218681384705, 0.003314520871640525, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.OpenDoc6("\\stash\psas_airframe\Models\Tooling\Templates\Standard Module Templates\Inside ply and adhesive film template.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Inside ply and adhesive film template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ActivateView("Drawing View1")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.17674113198700636, 0.33125256774494288, 0.0015874999999709871, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Sheet1")
+Set Part = swApp.OpenDoc6("\\stash\psas_airframe\Models\Tooling\Templates\Standard Module Templates\Outside ply and adhesive film template.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Outside ply and adhesive film template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc6("\\stash\psas_airframe\Models\Tooling\Templates\Standard Module Templates\Carbon Core template.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Carbon Core template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Sheet1", "SHEET", 0.5963943506445728, 0.25619548578118967, 0, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Inside ply and adhesive film template", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 21
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Outside ply and adhesive film template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Aluminum step adhesive film template - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
