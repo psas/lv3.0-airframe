@@ -22,7 +22,7 @@ SolidWorks still doesn't support building assemblies with relative file paths fo
 * Figure out how to keep SW from always modifying the parts in an assembly! (makes it hard to tell what's really changed)
 
 ## Technical Drawings
-To rebuild this list, take the output of `find -name '*.pdf'` and format it to `[LINE](LINE)  ` where `LINE` is a line of the output. (It may need two spaces on the end to display the links on separate lines.)
+To rebuild this list, take the output of `find -iname '*.pdf'` and format it to `[LINE](LINE)  ` where `LINE` is a line of the output. (It may need two spaces on the end to display the links on separate lines.)
 
 [./railSled/sledJig.pdf](./railSled/sledJig.pdf)  
 [./finCan/motorMount.pdf](./finCan/motorMount.pdf)  
@@ -36,3 +36,4 @@ To rebuild this list, take the output of `find -name '*.pdf'` and format it to `
 [./module/maleRing.pdf](./module/maleRing.pdf)  
 [./module/femaleRing.pdf](./module/femaleRing.pdf)  
 [./CubeSatAirframeMount/CradleInterface_TechDrawing.pdf](./CubeSatAirframeMount/CradleInterface_TechDrawing.pdf)  
+[./finCan/LongFinFiles/LongFins_ALedge.PDF](./finCan/LongFinFiles/LongFins_ALedge.PDF)
