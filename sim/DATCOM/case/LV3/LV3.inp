@@ -1,8 +1,10 @@
 CASEID LV3-L13a
  $FLTCON
    NMACH=1.0,MACH(1)=2.,
-   NALPHA=1.0,ALSCHD(1)=0.0,
-   NALT=1.0,ALT(1)=0.0,
+   NALPHA=3.0,
+   ALSCHD(1)=0.0,2.0,4.0,
+   NALT=1.0,
+   ALT(1)=0.0,
    WT=56.25,
    LOOP=1.0$
  $SYNTHS
@@ -10,6 +12,7 @@ CASEID LV3-L13a
    ZCG=0.0,
    XW=91.0,
    ZW=0.0,
+   ALIW=0.0,
    XV=91.0,
    ZV=0.0$
  $BODY
