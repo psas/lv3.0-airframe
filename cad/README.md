@@ -22,18 +22,23 @@ SolidWorks still doesn't support building assemblies with relative file paths fo
 * Figure out how to keep SW from always modifying the parts in an assembly! (makes it hard to tell what's really changed)
 
 ## Technical Drawings
-To rebuild this list, take the output of `find -iname '*.pdf'` and format it to `[LINE](LINE)  ` where `LINE` is a line of the output. (It may need two spaces on the end to display the links on separate lines.)
+All of these `PDF`s should correspond to a `SLDDRW` in the same directory.  
+_To rebuild this list, run the `listpdf.sh` script in this directory._
 
-[./railSled/sledJig.pdf](./railSled/sledJig.pdf)  
-[./finCan/motorMount.pdf](./finCan/motorMount.pdf)  
-[./finCan/fin_jig_mid_TechDrawing.pdf](./finCan/fin_jig_mid_TechDrawing.pdf)  
-[./finCan/fin_jig_top_bottom2_TechDrawing.pdf](./finCan/fin_jig_top_bottom2_TechDrawing.pdf)  
-[./finCan/spider.pdf](./finCan/spider.pdf)  
-[./finCan/finLayup_jig_baseplate.pdf](./finCan/finLayup_jig_baseplate.pdf)  
 [./couplingExample.pdf](./couplingExample.pdf)  
+[./railSled/sledJig.pdf](./railSled/sledJig.pdf)  
+[./nose/jenkyNoseTip.pdf](./nose/jenkyNoseTip.pdf)  
 [./nose/noseplug.pdf](./nose/noseplug.pdf)  
+[./nose/dummyNoseTip.pdf](./nose/dummyNoseTip.pdf)  
+[./nose/nosePlug2.pdf](./nose/nosePlug2.pdf)  
 [./nose/von_karmon_nose_tip2.pdf](./nose/von_karmon_nose_tip2.pdf)  
 [./module/maleRing.pdf](./module/maleRing.pdf)  
+[./module/layup/mandrel24.pdf](./module/layup/mandrel24.pdf)  
+[./module/layup/dummies.pdf](./module/layup/dummies.pdf)  
 [./module/femaleRing.pdf](./module/femaleRing.pdf)  
-[./CubeSatAirframeMount/CradleInterface_TechDrawing.pdf](./CubeSatAirframeMount/CradleInterface_TechDrawing.pdf)  
-[./finCan/LongFinFiles/LongFins_ALedge.PDF](./finCan/LongFinFiles/LongFins_ALedge.PDF)
+[./finCan/fin_jig_top_bottom2_TechDrawing.pdf](./finCan/fin_jig_top_bottom2_TechDrawing.pdf)  
+[./finCan/fin_jig_mid_TechDrawing.pdf](./finCan/fin_jig_mid_TechDrawing.pdf)  
+[./finCan/LongFinFiles/LongFins_ALedge.PDF](./finCan/LongFinFiles/LongFins_ALedge.PDF)  
+[./finCan/motorMount.pdf](./finCan/motorMount.pdf)  
+[./finCan/finLayup_jig_baseplate.pdf](./finCan/finLayup_jig_baseplate.pdf)  
+[./finCan/spider.pdf](./finCan/spider.pdf)  
