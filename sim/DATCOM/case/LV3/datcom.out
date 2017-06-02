@@ -30,47 +30,47 @@
 
 0******************************  INPUT DATA CARDS  ******************************
 
- CASEID MIKOYAN-GUREVICH MiG-17 MINIMAL                                          
+ CASEID LV3 MINIMAL                                                              
   $FLTCON                                                                        
-     NMACH=1.0,MACH(1)=0.6,                                                      
-     NALPHA=10.0,                                                                
-     ALSCHD(1)=-4.0,-2.0,0.0,2.0,4.0,6.0,8.0,12.0,14.0,                          
-     NALT=1.0,                                                                   
-     ALT(1)=5000.0,                                                              
-     WT=133395.0,                                                                
+     NMACH=5.0,MACH(1)=0.6,0.8,1.2,1.5,2.0,                                      
+     NALPHA=3.0,                                                                 
+     ALSCHD(1)=-2.0,0.0,2.0,                                                     
+     NALT=5.0,                                                                   
+     ALT(1)=0.0,7.50E+04,1.50E+05,2.25E+05,3.00E+05,                             
+     WT=56.25,                                                                   
      LOOP=1.$ ! flight parameters                                                
   $SYNTHS                                                                        
-     XCG=11.17,                                                                  
+     XCG=74.37,                                                                  
      ZCG=0.0,                                                                    
-     XW=3.63,                                                                    
-     ZW=0.42,                                                                    
-     ALIW=1.0,                                                                   
-     XV=18.3,                                                                    
+     XW=91.0,                                                                    
+     ZW=0.0,                                                                     
+     ALIW=0.0,                                                                   
+     XV=91.0,                                                                    
      ZV=0.0$ ! positions of the major features                                   
   $BODY                                                                          
-     NX=8.0,                                                                     
-     X(1)=0.0,0.74,8.35,13.14,19.35,24.41,28.41,30.77,                           
-     S(1)=5.19,9.32,16.89,16.89,15.94,11.12,5.85,2.5$                            
- NACA-W-6-66-012                                                                 
+     NX=12.0,                                                                    
+     X(1)=0.0,1.094,4.654,8.214,11.77,15.33,18.89,22.45,26.01,29.57,33.13,108.0, 
+     S(1)=0.0,0.34,2.92,6.61,10.89,15.48,20.15,24.68,28.83,32.23,34.21,34.21$    
+ NACA-W-S-3-6.2-3.1-87.4                                                         
   $WGPLNF                                                                        
-     CHRDTP=7.02,                                                                
-     SSPNE=13.41,                                                                
-     SSPN=15.71,                                                                 
-     CHRDR=14.0,                                                                 
-     SAVSI=45.0,                                                                 
-     SAVSO=45.0,                                                                 
+     CHRDTP=5.0,                                                                 
+     SSPNE=6.4,                                                                  
+     SSPN=9.55,                                                                  
+     CHRDR=24.64,                                                                
+     SAVSI=54.6,                                                                 
+     SAVSO=54.6,                                                                 
      TWISTA=0.0,                                                                 
-     CHSTAT=0.25,                                                                
-     DHDADI=-3.0,                                                                
+     CHSTAT=0.0,                                                                 
+     DHDADI=-30.0,                                                               
      TYPE=1.0$                                                                   
- NACA-V-6-66-009 ! vertical tail airfoil shape                                   
+ NACA-W-S-3-6.2-3.1-87.4                                                         
   $VTPLNF                                                                        
-     CHRDTP=3.76,                                                                
-     SSPNE=6.05,                                                                 
-     SSPN=8.18,                                                                  
-     CHRDR=12.47,                                                                
-     SAVSI=55.0,                                                                 
-     CHSTAT=0.25,                                                                
+     CHRDTP=3.25,                                                                
+     SSPNE=6.25,                                                                 
+     SSPN=9.95,                                                                  
+     CHRDR=24.64,                                                                
+     SAVSI=28.0,                                                                 
+     CHSTAT=0.0,                                                                 
      TYPE=1.0$                                                                   
  DIM IN ! given and desired dimensions are in feet                               
  BUILD ! give data for all individual components                                 
@@ -78,47 +78,47 @@
  NEXT CASE                                                                       
 1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
 0
- CASEID MIKOYAN-GUREVICH MiG-17 MINIMAL                                          
+ CASEID LV3 MINIMAL                                                              
   $FLTCON                                                                        
-     NMACH=1.0,MACH(1)=0.6,                                                      
-     NALPHA=10.0,                                                                
-     ALSCHD(1)=-4.0,-2.0,0.0,2.0,4.0,6.0,8.0,12.0,14.0,                          
-     NALT=1.0,                                                                   
-     ALT(1)=5000.0,                                                              
-     WT=133395.0,                                                                
+     NMACH=5.0,MACH(1)=0.6,0.8,1.2,1.5,2.0,                                      
+     NALPHA=3.0,                                                                 
+     ALSCHD(1)=-2.0,0.0,2.0,                                                     
+     NALT=5.0,                                                                   
+     ALT(1)=0.0,7.50E+04,1.50E+05,2.25E+05,3.00E+05,                             
+     WT=56.25,                                                                   
      LOOP=1.$ ! flight parameters                                                
   $SYNTHS                                                                        
-     XCG=11.17,                                                                  
+     XCG=74.37,                                                                  
      ZCG=0.0,                                                                    
-     XW=3.63,                                                                    
-     ZW=0.42,                                                                    
-     ALIW=1.0,                                                                   
-     XV=18.3,                                                                    
+     XW=91.0,                                                                    
+     ZW=0.0,                                                                     
+     ALIW=0.0,                                                                   
+     XV=91.0,                                                                    
      ZV=0.0$ ! positions of the major features                                   
   $BODY                                                                          
-     NX=8.0,                                                                     
-     X(1)=0.0,0.74,8.35,13.14,19.35,24.41,28.41,30.77,                           
-     S(1)=5.19,9.32,16.89,16.89,15.94,11.12,5.85,2.5$                            
- NACA-W-6-66-012                                                                 
+     NX=12.0,                                                                    
+     X(1)=0.0,1.094,4.654,8.214,11.77,15.33,18.89,22.45,26.01,29.57,33.13,108.0, 
+     S(1)=0.0,0.34,2.92,6.61,10.89,15.48,20.15,24.68,28.83,32.23,34.21,34.21$    
+ NACA-W-S-3-6.2-3.1-87.4                                                         
   $WGPLNF                                                                        
-     CHRDTP=7.02,                                                                
-     SSPNE=13.41,                                                                
-     SSPN=15.71,                                                                 
-     CHRDR=14.0,                                                                 
-     SAVSI=45.0,                                                                 
-     SAVSO=45.0,                                                                 
+     CHRDTP=5.0,                                                                 
+     SSPNE=6.4,                                                                  
+     SSPN=9.55,                                                                  
+     CHRDR=24.64,                                                                
+     SAVSI=54.6,                                                                 
+     SAVSO=54.6,                                                                 
      TWISTA=0.0,                                                                 
-     CHSTAT=0.25,                                                                
-     DHDADI=-3.0,                                                                
+     CHSTAT=0.0,                                                                 
+     DHDADI=-30.0,                                                               
      TYPE=1.0$                                                                   
- NACA-V-6-66-009 ! vertical tail airfoil shape                                   
+ NACA-W-S-3-6.2-3.1-87.4                                                         
   $VTPLNF                                                                        
-     CHRDTP=3.76,                                                                
-     SSPNE=6.05,                                                                 
-     SSPN=8.18,                                                                  
-     CHRDR=12.47,                                                                
-     SAVSI=55.0,                                                                 
-     CHSTAT=0.25,                                                                
+     CHRDTP=3.25,                                                                
+     SSPNE=6.25,                                                                 
+     SSPN=9.95,                                                                  
+     CHRDR=24.64,                                                                
+     SAVSI=28.0,                                                                 
+     CHSTAT=0.0,                                                                 
      TYPE=1.0$                                                                   
  DIM IN ! given and desired dimensions are in feet                               
  BUILD ! give data for all individual components                                 
@@ -131,191 +131,686 @@
                                                         WING SECTION DEFINITION
 0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
 
-                              ZERO LIFT ANGLE OF ATTACK =  -0.00000 DEG.
+                              ZERO LIFT ANGLE OF ATTACK =   0.00000 DEG.
 
                                  IDEAL LIFT COEFFICIENT =   0.00000
 
                   ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
 
-                             MACH ZERO LIFT-CURVE-SLOPE =   0.09699 /DEG.
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.08757 /DEG.
 
-                                    LEADING EDGE RADIUS =   0.00993 FRACTION CHORD
+                                    LEADING EDGE RADIUS =   0.00000 FRACTION CHORD
 
-                              MAXIMUM AIRFOIL THICKNESS =   0.12000 FRACTION CHORD
+                              MAXIMUM AIRFOIL THICKNESS =   0.03100 FRACTION CHORD
 
-                                                DELTA-Y =   2.01961 PERCENT CHORD
-
-
-0                         MACH= 0.6000 LIFT-CURVE-SLOPE =   0.11881 /DEG.      XAC =   0.26851
-1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
-                                                    VERTICAL TAIL SECTION DEFINITION
-0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
-
-                              ZERO LIFT ANGLE OF ATTACK =  -0.00000 DEG.
-
-                                 IDEAL LIFT COEFFICIENT =   0.00000
-
-                  ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
-
-                             MACH ZERO LIFT-CURVE-SLOPE =   0.09870 /DEG.
-
-                                    LEADING EDGE RADIUS =   0.00559 FRACTION CHORD
-
-                              MAXIMUM AIRFOIL THICKNESS =   0.09000 FRACTION CHORD
-
-                                                DELTA-Y =   1.52747 PERCENT CHORD
+                                                DELTA-Y =   1.46250 PERCENT CHORD
 
 
-0                         MACH= 0.6000 LIFT-CURVE-SLOPE =   0.12143 /DEG.      XAC =   0.26444
+0                         MACH= 0.6000 LIFT-CURVE-SLOPE =   0.10930 /DEG.      XAC =   0.26720
+0                                    *** CREST CRITICAL MACH NUMBER EXCEEDED ***
+
+                                    CREST CRITICAL MACH =   0.72418
+
+                                               LOCATION =   0.07860 FRACTION CHORD
+
+                                       LIFT-CURVE-SLOPE =   0.09654 /DEG.
  Return to main program from M50O62
  Return to main program from M02O02
  Return to main program from M51O63
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                    DATCOM BODY ALONE CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.005   -0.003   -0.0093  -0.003    0.005    3.222    6.127E-04    2.348E-03   -6.127E-04   -8.141E-04    0.000E+00
-   -2.0    0.005   -0.001   -0.0047  -0.001    0.005    3.291    6.313E-04    2.317E-03   -6.313E-04   -8.034E-04    0.000E+00
-    0.0    0.005    0.000    0.0000   0.000    0.005   ******    6.220E-04    2.332E-03   -6.220E-04   -8.088E-04    0.000E+00
-    2.0    0.005    0.001    0.0047   0.001    0.005    3.291    6.325E-04    2.315E-03   -6.325E-04   -8.028E-04    0.000E+00
-    4.0    0.005    0.003    0.0093   0.003    0.005    3.222    6.502E-04    2.286E-03   -6.502E-04   -7.926E-04    0.000E+00
-    6.0    0.005    0.004    0.0138   0.004    0.005    3.152    6.679E-04    2.256E-03   -6.679E-04   -7.824E-04    0.000E+00
-    8.0    0.006    0.005    0.0183   0.006    0.005    3.081    6.856E-04    2.227E-03   -6.856E-04   -7.722E-04    0.000E+00
-   12.0    0.007    0.008    0.0271   0.009    0.005    2.939    7.211E-04    2.168E-03   -7.211E-04   -7.519E-04    0.000E+00
-   14.0    0.007    0.009    0.0314   0.011    0.005    2.868    7.388E-04    2.139E-03   -7.388E-04   -7.417E-04    0.000E+00
-   NDM     0.005    0.000    0.0000   0.000    0.005    3.359    6.147E-04    2.344E-03   -6.147E-04   -8.130E-04    0.000E+00
-0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+   -2.0    0.027   -0.008   -0.0279  -0.009    0.027    3.053    4.094E-03    1.393E-02   -4.094E-03   -1.239E-02    0.000E+00
+    0.0    0.027    0.000    0.0000   0.000    0.027   ******    4.094E-03    1.393E-02   -4.094E-03   -1.239E-02    0.000E+00
+    2.0    0.027    0.008    0.0279   0.009    0.027    3.053    4.094E-03    1.393E-02   -4.094E-03   -1.239E-02    0.000E+00
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                       WING ALONE CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.010   -0.120    0.0509  -0.121    0.002   -0.422    3.849E-02   -1.593E-02   -2.800E-04    2.193E-05    1.097E-03
-   -2.0    0.007   -0.039    0.0163  -0.039    0.006   -0.415    3.979E-02   -1.672E-02   -2.970E-04    2.310E-06    6.141E-04
-    0.0    0.007    0.039   -0.0160   0.039    0.007   -0.410    3.979E-02   -1.618E-02   -2.970E-04    2.306E-06    1.493E-04
-    2.0    0.010    0.120   -0.0484   0.120    0.006   -0.402    4.767E-02   -1.738E-02   -2.800E-04    2.178E-05   -3.337E-04
-    4.0    0.016    0.205   -0.0816   0.205    0.002   -0.398    4.500E-02   -1.768E-02   -2.416E-04    6.312E-05   -8.372E-04
-    6.0    0.025    0.292   -0.1166   0.293   -0.005   -0.398    4.234E-02   -1.797E-02   -1.804E-04    1.284E-04   -1.357E-03
-    8.0    0.038    0.381   -0.1557   0.383   -0.015   -0.407    3.967E-02   -1.827E-02   -9.553E-05    2.195E-04   -1.888E-03
-   12.0    0.071    0.547   -0.2317   0.550   -0.044   -0.421    3.434E-02   -1.886E-02    1.318E-04    4.547E-04   -2.876E-03
-   14.0    0.087    0.613   -0.2697   0.616   -0.064   -0.438    3.167E-02   -1.915E-02    2.486E-04    5.743E-04   -3.269E-03
-   NDM     0.007    0.039   -0.0160   0.039    0.007   -0.410    5.034E-02   -1.708E-02   -2.970E-04    2.306E-06    1.493E-04
-0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+   -2.0    0.005   -0.031    0.0505  -0.032    0.004   -1.598    1.460E-02   -2.368E-02   -3.184E-03    2.565E-06    2.092E-03
+    0.0    0.004    0.000    0.0000   0.000    0.004   ******    1.572E-02   -2.550E-02    0.000E+00    0.000E+00    1.883E-03
+    2.0    0.005    0.031   -0.0515   0.032    0.004   -1.631    1.572E-02   -2.603E-02   -3.184E-03    2.603E-06    1.674E-03
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                      VERTICAL TAIL CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.001    0.000    0.0000   0.000    NDM     ******    0.000E+00    0.000E+00   -5.558E-03    2.661E-03   -7.782E-04
-   -2.0                                                                                                             -6.865E-04
-    0.0                                                                                                             -5.940E-04
-    2.0                                                                                                             -5.008E-04
-    4.0                                                                                                             -4.070E-04
-    6.0                                                                                                             -3.126E-04
-    8.0                                                                                                             -2.179E-04
-   12.0                                                                                                             -2.781E-05
-   14.0                                                                                                              6.736E-05
-   NDM                                                                                                              -5.940E-04
+   -2.0    0.002    0.000    0.0000   0.000    NDM     ******    0.000E+00    0.000E+00   -0.000E+00    0.000E+00   -0.000E+00
+    0.0                                                                                                             -0.000E+00
+    2.0                                                                                                             -0.000E+00
 0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                        WING-BODY CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.015   -0.170    0.0522  -0.170    0.003   -0.307    5.516E-02   -1.823E-02   -9.576E-04   -6.604E-04    1.326E-03
-   -2.0    0.012   -0.061    0.0170  -0.061    0.010   -0.277    5.329E-02   -1.696E-02                              6.800E-04
-    0.0    0.012    0.044   -0.0156   0.044    0.012   -0.358    5.348E-02   -1.641E-02                              5.650E-05
-    2.0    0.015    0.153   -0.0486   0.153    0.010   -0.317    5.476E-02   -1.794E-02                             -5.938E-04
-    4.0    0.021    0.262   -0.0826   0.263    0.003   -0.314    5.479E-02   -1.830E-02                             -1.247E-03
-    6.0    0.030    0.372   -0.1188   0.373   -0.009   -0.318    5.481E-02   -1.866E-02                             -1.900E-03
-    8.0    0.044    0.482   -0.1597   0.483   -0.024   -0.331    5.484E-02   -1.902E-02                             -2.553E-03
-   12.0    0.078    0.701   -0.2396   0.702   -0.070   -0.341    5.490E-02   -1.975E-02                             -3.860E-03
-   14.0    0.094    0.811   -0.2794   0.810   -0.105   -0.345    5.492E-02   -2.011E-02                             -4.514E-03
-   NDM     0.012    0.044   -0.0156   0.044    0.012   -0.358    5.473E-02   -1.758E-02                              5.650E-05
-0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+   -2.0    0.033   -0.064    0.0620  -0.066    0.030   -0.945    3.224E-02   -3.067E-02   -8.253E-03   -2.482E-02    4.127E-03
+    0.0    0.031    0.000    0.0000   0.000    0.031   ******    3.224E-02   -3.134E-02                              3.735E-03
+    2.0    0.033    0.064   -0.0634   0.066    0.030   -0.966    3.224E-02   -3.201E-02                              3.344E-03
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                   BODY-VERTICAL TAIL CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.006   -0.003   -0.0093  -0.003    0.006    3.144    6.127E-04    2.348E-03   -6.170E-03    1.847E-03   -7.782E-04
-   -2.0    0.006   -0.001   -0.0047  -0.001    0.006    3.210    6.313E-04    2.317E-03                             -6.865E-04
-    0.0    0.006    0.000    0.0000   0.000    0.006   ******    6.220E-04    2.332E-03                             -5.940E-04
-    2.0    0.006    0.001    0.0047   0.001    0.006    3.210    6.325E-04    2.315E-03                             -5.008E-04
-    4.0    0.006    0.003    0.0093   0.003    0.006    3.144    6.502E-04    2.286E-03                             -4.070E-04
-    6.0    0.006    0.004    0.0138   0.004    0.006    3.077    6.679E-04    2.256E-03                             -3.126E-04
-    8.0    0.007    0.005    0.0183   0.006    0.006    3.009    6.856E-04    2.227E-03                             -2.179E-04
-   12.0    0.008    0.008    0.0271   0.009    0.006    2.872    7.211E-04    2.168E-03                             -2.781E-05
-   14.0    0.008    0.009    0.0314   0.011    0.006    2.804    7.388E-04    2.139E-03                              6.736E-05
-   NDM     0.006    0.000    0.0000   0.000    0.006    3.275    6.147E-04    2.344E-03                             -5.940E-04
+   -2.0    0.029   -0.008   -0.0279  -0.009    0.028    3.034    4.094E-03    1.393E-02   -4.094E-03   -1.239E-02      NDM 
+    0.0    0.028    0.000    0.0000   0.000    0.028   ******    4.094E-03    1.393E-02                                NDM 
+    2.0    0.029    0.008    0.0279   0.009    0.028    3.034    4.094E-03    1.393E-02                                NDM 
 0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
 1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
                                          CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
                                                 WING-BODY-VERTICAL TAIL CONFIGURATION
-                                                  MIKOYAN-GUREVICH MiG-17 MINIMAL
+                                                            LV3 MINIMAL
  
  -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
   MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
  NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
              IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
-0 0.600    5000.00    8026.02   1.4476E+01     517.184     4.1928E+06           330.224     10.896    31.420    11.170     0.000
+0 0.600       0.00    8037.55   1.4696E+01     518.670     4.2409E+06           283.062     16.989    19.100    74.370     0.000
 0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
 0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
 0
-   -4.0    0.016   -0.170    0.0522  -0.170    0.004   -0.307    5.516E-02   -1.823E-02   -6.515E-03    2.001E-03    5.476E-04
-   -2.0    0.013   -0.061    0.0170  -0.062    0.011   -0.277    5.329E-02   -1.696E-02                             -6.508E-06
-    0.0    0.013    0.044   -0.0156   0.044    0.013   -0.358    5.348E-02   -1.641E-02                             -5.375E-04
-    2.0    0.016    0.153   -0.0486   0.153    0.011   -0.317    5.476E-02   -1.794E-02                             -1.095E-03
-    4.0    0.022    0.262   -0.0826   0.263    0.004   -0.314    5.479E-02   -1.830E-02                             -1.654E-03
-    6.0    0.032    0.372   -0.1188   0.373   -0.008   -0.318    5.481E-02   -1.866E-02                             -2.212E-03
-    8.0    0.045    0.482   -0.1597   0.483   -0.023   -0.330    5.484E-02   -1.902E-02                             -2.771E-03
-   12.0    0.079    0.701   -0.2396   0.702   -0.069   -0.341    5.490E-02   -1.975E-02                             -3.888E-03
-   14.0    0.096    0.811   -0.2794   0.810   -0.104   -0.345    5.492E-02   -2.011E-02                             -4.447E-03
-   NDM     0.013    0.044   -0.0156   0.044    0.013   -0.358    5.473E-02   -1.758E-02                             -5.375E-04
+   -2.0    0.034   -0.064    0.0620  -0.066    0.032   -0.945    3.224E-02   -3.067E-02   -8.253E-03   -2.482E-02    4.127E-03
+    0.0    0.033    0.000    0.0000   0.000    0.033   ******    3.224E-02   -3.134E-02                              3.735E-03
+    2.0    0.034    0.064   -0.0634   0.066    0.032   -0.965    3.224E-02   -3.201E-02                              3.344E-03
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.05366
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                   DATCOM BODY ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.029    NDM       NDM     NDM      NDM      3.402    3.071E-03    1.045E-02   -3.071E-03   -9.294E-03    0.000E+00
+    0.0    0.028                                                                                                     0.000E+00
+    2.0    0.029                                                                                                     0.000E+00
 0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
-0*** VEHICLE WEIGHT = 133395.00 LB.
-0*** LEVEL FLIGHT LIFT COEFFICIENT =********
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                      WING ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.004    NDM       NDM     NDM      NDM     -1.613    1.500E-02   -2.420E-02      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                     VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM      0.000    0.0000   0.000    NDM     ******    0.000E+00    0.000E+00      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                       WING-BODY CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.032   -0.060     NDM    -0.061    0.030   -1.108    2.993E-02   -3.317E-02   -6.940E-03   -2.515E-02    1.756E-02
+    0.0             0.000                                        2.993E-02                                          -0.000E+00
+    2.0             0.060                                        2.993E-02                                          -1.756E-02
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                  BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM      NDM       NDM     NDM      NDM      3.402    3.071E-03    1.045E-02      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM     -0.060     NDM     NDM      NDM     -1.108    2.993E-02   -3.317E-02   -6.940E-03   -2.515E-02      NDM 
+    0.0             0.000     NDM                                2.993E-02                                             NDM 
+    2.0             0.060     NDM                                2.993E-02                                             NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.03802
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+
+
+                                                       BASIC BODY PROPERTIES
+
+            WETTED AREA      XCG     ZCG     BASE AREA     ZERO LIFT DRAG   BASE DRAG   FRICTION DRAG   PRESSURE DRAG
+             0.1993E+04    74.37    0.00      34.2100        0.2836E-01    0.1118E-01    0.1630E-01      0.8898E-03
+
+
+                                         XCG RELATIVE TO THEORETICAL LEADING EDGE MAC= -21.87
+
+
+                                                       BASIC PLANFORM PROPERTIES
+
+                                    TAPER     ASPECT   QUARTER CHORD             QUARTER CHORD              ZERO LIFT    FRICTION
+                         AREA       RATIO      RATIO       SWEEP        MAC        X(MAC)       Y(MAC)        DRAG     COEFFICIENT
+0      WING
+   TOTAL THEORITICAL
++                     0.2831E+03    0.203    0.1289E+01    41.765    0.170E+02    0.100E+03    0.372E+01                       
+       TOTAL EXPOSED
++                     0.1482E+03    0.275    0.1105E+01    41.765    0.128E+02    0.102E+03    0.574E+01    0.360E-02    0.324E-02
+0   VERTICAL TAIL
+   TOTAL THEORITICAL
++                     0.1388E+03    0.132    0.7135E+00    -0.328    0.167E+02    0.971E+02    0.370E+01                       
+       TOTAL EXPOSED
++                     0.6230E+02    0.195    0.6270E+00    -0.328    0.115E+02    0.971E+02    0.612E+01      NA           NA  
+0*** NA PRINTED WHEN METHOD NOT APPLICABLE
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+0          CLA-B(W)= 7.512E-03     CLA-W(B)= 1.935E-02     K-B(W)= 5.007E-01     K-W(B)= 1.290E+00     XAC/C-B(W)= 4.114E-01
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 0.800   75000.00   10484.01   1.1667E+01     496.388     4.7490E+06           283.062     16.989    19.100    74.370     0.000
+
+
+                                                      *** WING DATA FAIRING ***
+                                       CDL/CL**2 = 0.3808E+00     CLB/CL =-0.7034E-01
+            FORCE BREAK MACH NUMBER (ZERO SWEEP) = 0.1000E+01     FORCE BREAK MACH NUMBER (WITH SWEEP) = 0.1000E+01
+                      MACH(A) = 1.070     CLA(A) = 0.1896E-01     MACH(B) = 1.140     CLA(B) = 0.1598E-01
+                                                (CLB/CL)M=0.6 =-0.6651E-01     (CLB/CL)M=1.4 =-0.6624E-01
+
+                                                  LIFT-CURVE-SLOPE INTERPOLATION TABLE
+                                                      MACH               CL-ALPHA
+                                                     0.750               0.1490E-01
+                                                     1.000               0.1674E-01
+                                                     1.070               0.1896E-01
+                                                     1.140               0.1598E-01
+                                                     1.400               0.1451E-01
+
+
+                                                   *** WING-BODY DATA FAIRING ***
+            CLB/CL =-0.2934E+00     (CLB/CL)MFB =-0.6119E-01     (CLB/CL)M=1.4 = 0.1000E-29     (CNA)M=1.4 = 0.2597E-01
+1
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                   DATCOM BODY ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.041    NDM       NDM     NDM      NDM      3.402    1.024E-03    3.483E-03   -1.024E-03   -3.098E-03    0.000E+00
+    0.0    0.041                                                                                                     0.000E+00
+    2.0    0.041                                                                                                     0.000E+00
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                      WING ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.004    NDM       NDM     NDM      NDM     -1.689    1.505E-02   -2.542E-02      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                     VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM      0.000    0.0000   0.000    NDM     ******    0.000E+00    0.000E+00      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                       WING-BODY CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.044   -0.056     NDM    -0.057    0.042   -1.539    2.796E-02   -4.305E-02   -4.313E-03   -2.581E-02    4.773E-03
+    0.0             0.000                                        2.796E-02                                          -0.000E+00
+    2.0             0.056                                        2.796E-02                                          -4.773E-03
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                  BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM      NDM       NDM     NDM      NDM      3.402    1.024E-03    3.483E-03      NDM          NDM          NDM 
+    0.0                                                                                                                NDM 
+    2.0                                                                                                                NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    NDM     -0.056     NDM     NDM      NDM     -1.539    2.796E-02   -4.305E-02   -4.313E-03   -2.581E-02      NDM 
+    0.0             0.000     NDM                                2.796E-02                                             NDM 
+    2.0             0.056     NDM                                2.796E-02                                             NDM 
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.02151
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+
+
+                                                       BASIC BODY PROPERTIES
+
+            WETTED AREA      XCG     ZCG     BASE AREA     ZERO LIFT DRAG   BASE DRAG   FRICTION DRAG   PRESSURE DRAG
+             0.1993E+04    74.37    0.00      34.2100        0.4068E-01    0.2075E-01    0.1575E-01     -0.2051E-09
+
+
+                                         XCG RELATIVE TO THEORETICAL LEADING EDGE MAC= -21.87
+
+
+                                                       BASIC PLANFORM PROPERTIES
+
+                                    TAPER     ASPECT   QUARTER CHORD             QUARTER CHORD              ZERO LIFT    FRICTION
+                         AREA       RATIO      RATIO       SWEEP        MAC        X(MAC)       Y(MAC)        DRAG     COEFFICIENT
+0      WING
+   TOTAL THEORITICAL
++                     0.2831E+03    0.203    0.1289E+01    41.765    0.170E+02    0.100E+03    0.372E+01                       
+       TOTAL EXPOSED
++                     0.1482E+03    0.275    0.1105E+01    41.765    0.128E+02    0.102E+03    0.574E+01    0.359E-02    0.315E-02
+0   VERTICAL TAIL
+   TOTAL THEORITICAL
++                     0.1388E+03    0.132    0.7135E+00    -0.328    0.167E+02    0.971E+02    0.370E+01                       
+       TOTAL EXPOSED
++                     0.6230E+02    0.195    0.6270E+00    -0.328    0.115E+02    0.971E+02    0.612E+01      NA           NA  
+0*** NA PRINTED WHEN METHOD NOT APPLICABLE
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+0          CLA-B(W)= 7.534E-03     CLA-W(B)= 1.941E-02     K-B(W)= 5.007E-01     K-W(B)= 1.290E+00     XAC/C-B(W)= 5.847E-01
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                             CONFIGURATION AUXILIARY AND PARTIAL OUTPUT
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.200   ********   15369.22   9.1664E+00     474.119     5.9381E+06           283.062     16.989    19.100    74.370     0.000
+
+
+                                                      *** WING DATA FAIRING ***
+                                       CDL/CL**2 = 0.1993E+00     CLB/CL =-0.7108E-01
+            FORCE BREAK MACH NUMBER (ZERO SWEEP) = 0.1000E+01     FORCE BREAK MACH NUMBER (WITH SWEEP) = 0.1000E+01
+                      MACH(A) = 1.070     CLA(A) = 0.1896E-01     MACH(B) = 1.140     CLA(B) = 0.1598E-01
+                                                (CLB/CL)M=0.6 =-0.6651E-01     (CLB/CL)M=1.4 =-0.6624E-01
+
+                                                  LIFT-CURVE-SLOPE INTERPOLATION TABLE
+                                                      MACH               CL-ALPHA
+                                                     0.750               0.1490E-01
+                                                     1.000               0.1674E-01
+                                                     1.070               0.1896E-01
+                                                     1.140               0.1598E-01
+                                                     1.400               0.1451E-01
+
+
+                                                   *** WING-BODY DATA FAIRING ***
+            CLB/CL =-0.8534E-01     (CLB/CL)MFB =-0.6119E-01     (CLB/CL)M=1.4 = 0.1000E-29     (CNA)M=1.4 = 0.2597E-01
+1
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                   DATCOM BODY ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN   -0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+    2.0      NaN      NaN    0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                      WING ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.015   -0.029    0.0471  -0.029    0.014   -1.618    1.354E-02   -2.353E-02      NDM          NDM        1.939E-03
+    0.0    0.014    0.000   -0.0000   0.000    0.014   ******    1.430E-02                                           1.887E-03
+    2.0    0.015    0.029   -0.0471   0.029    0.014   -1.618    1.430E-02                                           1.835E-03
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                     VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.001    0.000    0.0000   0.000    0.001   ******    0.000E+00    0.000E+00   -1.397E-02    1.874E-02   -5.128E-03
+    0.0                                                                                                             -4.477E-03
+    2.0                                                                                                             -3.821E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                       WING-BODY CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN    0.0903     NaN      NaN      NaN    2.425E-02   -4.339E-02   -3.000E-03   -2.590E-02    5.285E-03
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN                                           5.233E-03
+    2.0      NaN      NaN   -0.0903     NaN      NaN      NaN          NaN                                           5.181E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                  BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN   -0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN    1.745E-02   -5.128E-03
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN    1.444E-03                             -4.477E-03
+    2.0      NaN      NaN    0.0029     NaN      NaN      NaN          NaN    1.444E-03                             -3.821E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 1.500   ********   18755.21   7.1196E+00     451.864     6.1371E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN    0.0903     NaN      NaN      NaN    2.425E-02   -4.339E-02   -1.697E-02   -7.166E-03    1.564E-04
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN                                           7.555E-04
+    2.0      NaN      NaN   -0.0903     NaN      NaN      NaN          NaN                                           1.360E-03
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.01772
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                   DATCOM BODY ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN   -0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+    2.0      NaN      NaN    0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN   -1.284E-03    0.000E+00
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                      WING ALONE CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.012   -0.025    0.0431  -0.026    0.012   -1.685    1.211E-02   -2.153E-02      NDM          NDM        2.018E-03
+    0.0    0.012    0.000   -0.0000   0.000    0.012   ******    1.257E-02                                           1.977E-03
+    2.0    0.012    0.025   -0.0431   0.026    0.012   -1.685    1.257E-02                                           1.936E-03
+0*** NDM PRINTED WHEN NO DATCOM METHODS EXIST
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                     VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0    0.001    0.000    0.0000   0.000    0.001   ******    0.000E+00    0.000E+00   -1.148E-02    1.541E-02   -4.217E-03
+    0.0                                                                                                             -3.682E-03
+    2.0                                                                                                             -3.142E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                       WING-BODY CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN    0.0662     NaN      NaN      NaN    1.817E-02   -3.273E-02   -3.000E-03   -2.616E-02    5.364E-03
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN                                           5.323E-03
+    2.0      NaN      NaN   -0.0662     NaN      NaN      NaN          NaN                                           5.282E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                  BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN   -0.0029     NaN      NaN      NaN          NaN    1.444E-03          NaN    1.412E-02   -4.217E-03
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN    1.444E-03                             -3.682E-03
+    2.0      NaN      NaN    0.0029     NaN      NaN      NaN          NaN    1.444E-03                             -3.142E-03
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                                WING-BODY-VERTICAL TAIL CONFIGURATION
+                                                            LV3 MINIMAL
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             IN       IN/SEC     LB/IN**2       DEG R         1/FT               IN**2        IN        IN        IN        IN
+0 2.000   ********   24383.71   5.4606E+00     429.622     6.7054E+06           283.062     16.989    19.100    74.370     0.000
+0                                                               -------------------DERIVATIVE (PER DEGREE)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -2.0      NaN      NaN    0.0662     NaN      NaN      NaN    1.817E-02   -3.273E-02   -1.448E-02   -1.075E-02    1.147E-03
+    0.0      NaN      NaN    0.0000     NaN      NaN      NaN          NaN                                           1.641E-03
+    2.0      NaN      NaN   -0.0662     NaN      NaN      NaN          NaN                                           2.141E-03
+0*** VEHICLE WEIGHT =     56.25 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.01300
  Return to main program from M57O71
 1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
 0
