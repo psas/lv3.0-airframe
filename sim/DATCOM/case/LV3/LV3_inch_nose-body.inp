@@ -1,4 +1,4 @@
-CASEID LV3 MINIMAL
+CASEID LV3_inch_nose-body
  $FLTCON
     NMACH=5.0,MACH(1)=0.6,0.8,1.2,1.5,2.0,
     NALPHA=3.0,
@@ -8,12 +8,12 @@ CASEID LV3 MINIMAL
     WT=56.25,
     LOOP=1.$ ! flight parameters
  $SYNTHS 
-    XCG=74.37,
+    XCG=84.59,
     ZCG=0.0,
-    XW=91.0,
+    XW=105.3,
     ZW=0.0,
     ALIW=0.0,
-    XV=91.0,
+    XV=105.3,
     ZV=0.0$ ! positions of the major features
  $BODY
     DS=0.0625,
@@ -22,26 +22,26 @@ CASEID LV3 MINIMAL
     BLA=98.0,
     NX=12.0,
     X(1)=0.0,1.094,4.654,8.214,11.77,15.33,18.89,22.45,26.01,29.57,33.0,131.0,
-    S(1)=0.0,0.34,2.92,6.61,10.89,15.48,20.15,24.68,28.83,32.23,34.21,34.21$
-NACA-W-S-3-6.2-3.1-87.4
+    S(1)=0.0,0.35,2.94,6.65,10.95,15.56,20.25,24.79,28.92,32.33,34.21,34.21$
+NACA-W-S-3-6.2-1.6-87.4
  $WGPLNF
     CHRDTP=5.0,
     SSPNE=6.4,
-    SSPN=9.55,
-    CHRDR=24.64,
+    SSPN=9.7,
+    CHRDR=24.703,
     SAVSI=54.6,
     SAVSO=54.6,
     TWISTA=0.0,
     CHSTAT=0.0,
     DHDADI=-30.0,
     TYPE=1.0$
-NACA-W-S-3-6.2-3.1-87.4
+NACA-W-S-3-6.2-1.6-87.4
  $VTPLNF
-    CHRDTP=3.25,
-    SSPNE=6.25,
-    SSPN=9.95,
-    CHRDR=24.64,
-    SAVSI=28.0,
+    CHRDTP=5.0,
+    SSPNE=6.4,
+    SSPN=9.7,
+    CHRDR=24.703,
+    SAVSI=54.6,
     CHSTAT=0.0,
     TYPE=1.0$
 DIM IN ! given and desired dimensions are in feet
