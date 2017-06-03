@@ -1,0 +1,50 @@
+CASEID LV3 MINIMAL
+ $FLTCON
+    NMACH=5.0,MACH(1)=0.6,0.8,1.2,1.5,2.0,
+    NALPHA=3.0,
+    ALSCHD(1)=-2.0,0.0,2.0,
+    NALT=5.0,
+    ALT(1)=0.0,8.25E+03,16.5E+03,24.75E+03,33.0E+03,
+    WT=56.25,
+    LOOP=1.$ ! flight parameters
+ $SYNTHS 
+    XCG=6.12,
+    ZCG=0.0,
+    XW=7.58,
+    ZW=0.0,
+    ALIW=0.0,
+    XV=7.58,
+    ZV=0.0$ ! positions of the major features
+ $BODY
+    DS=5.208E-03,
+    BLN=2.75,
+    BNOSE=2.0,
+    BLA=8.167,
+    NX=12.0,
+    X(1)=0.0,91.16E-03,387.8E-03,684.5E-03,980.8E-03,1.28,1.57,1.87,2.17,2.46,2.75,10.917,
+    S(1)=0.0,2.36E-03,0.0203,0.046,0.076,0.11,0.14,0.17,0.2,0.22,0.24,0.24$
+NACA-W-S-3-6.2-3.1-87.4
+ $WGPLNF
+    CHRDTP=5.0,
+    SSPNE=6.4,
+    SSPN=9.55,
+    CHRDR=24.64,
+    SAVSI=54.6,
+    SAVSO=54.6,
+    TWISTA=0.0,
+    CHSTAT=0.0,
+    DHDADI=-30.0,
+    TYPE=1.0$
+NACA-W-S-3-6.2-3.1-87.4
+ $VTPLNF
+    CHRDTP=3.25,
+    SSPNE=6.25,
+    SSPN=9.95,
+    CHRDR=24.64,
+    SAVSI=28.0,
+    CHSTAT=0.0,
+    TYPE=1.0$
+DIM FT ! given and desired dimensions are in feet
+BUILD ! give data for all individual components
+PLOT ! create plot data
+NEXT CASE
