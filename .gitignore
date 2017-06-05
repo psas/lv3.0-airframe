@@ -8,6 +8,8 @@
 *.Rhistory
 # some other RStudio history file:
 *.Rapp.history
+# R plots created by Jupyter:
+Rplot*
 # sync info for TexMaker:
 *synctex.gz
 # GIMP files (large):
