@@ -1,10 +1,10 @@
 CASEID LV3_inch_nose-body
  $FLTCON
     NMACH=5.0,MACH(1)=0.6,0.8,1.2,1.5,2.0,
-    NALPHA=3.0,
-    ALSCHD(1)=-2.0,0.0,2.0,
+    NALPHA=9.0,
+    ALSCHD(1)=-2.0,-1.5,-1.0,-0.5,0.0,0.5,1.0,1.5,2.0,
     NALT=5.0,
-    ALT(1)=0.0,7.50E+04,1.50E+05,2.25E+05,3.00E+05,
+    ALT(1)=0.0,75000.0,150000.0,225000.0,300000.0,
     WT=56.25,
     LOOP=1.$ ! flight parameters
  $SYNTHS 
@@ -35,7 +35,7 @@ NACA-W-S-3-6.2-1.6-87.4
     CHSTAT=0.0,
     DHDADI=-30.0,
     TYPE=1.0$
-NACA-W-S-3-6.2-1.6-87.4
+NACA-V-S-3-6.2-1.6-87.4
  $VTPLNF
     CHRDTP=5.0,
     SSPNE=6.4,
