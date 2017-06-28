@@ -71,7 +71,38 @@ Immediately after the previous layer of epoxy, apply the next layer of twill wea
 Both should make sure the CF is centered on the plug before lowering it onto the previous layer of epoxy. Also make sure there is enough CF at the tail end to make it all the way to the flange.
 
 Starting from the center, smooth the CF over the whole plug. Take care to get the CF into the inside corners of the flange, the tip, and the edges.
-After the whole
+Go over the CF with rollers to eliminate bubbles. Be careful not to dislodge the CF or apply too much force.
+
+Apply two 60 g batches of epoxy to the CF. Use HDPE scrapers to spread the epoxy over the whole surface. You should notice a slight color difference between wet and dry CF.
+Leave a little extra epoxy near the tip, tail, and edges
+
+#### Second Layer
+Repeat the steps from the first layer. Apply an extra 60 g of epoxy to ensure it's epoxy-rich.
+
+Using 20 g (per square foot?) twill weave, this creates a mold that's somewhat flexible in torsion. If you're working on a design where this is unacceptable, a three layer mold is fairly rigid.
+
+#### Demolding
+After at least 48 hours, use plastic wedges to pry under the CF flange. Take care to get the wedge __under__ the CF. 
+It's easy to accidentally get some dry CF in front of the wedge.  If this happens, the dry CF will get embedded in the gel coat. (not a big deal)
+If you're lucky, once you've demolded the flange, air will get into the main pocket of the mold and it will pop off easily.
+If you're unlucky, it will take quite a bit of prying to remove it.
+
+Cover the edges of the mold with wide masking tape to contain the dry fibers.
+
+#### Clean the Mold
+The gel coat will have a layer of paste wax still on it. Unless the mold is perfect (it won't be), you'll need to remove that before patching the mold.
+Pumice soap works well for this. We used the Gojo brand.
+After completely removing the paste wax, thoroughly rinse and dry the mold.
+
+#### Patching the Mold
+The defects you're most likely to encounter are bubbles between the gel coat and the CF.
+These usually get revealed when demolding or when cleaning the mold. You can mostly fill them with gel coat with a wax additive. (Fiberlay sells this.)
+The wax is necessary to allow the gel coat to cure in the air. (It forms a thin layer on the surface to make the solvent evaporate slower.)
+
+Unfortunately, even the waxy gel coat leaves some uncured spots near the border of the patches. We haven't found a solution for this yet. 
+It's not a big problem though, since it works fine to ignore those tiny uncured spots. 
 
 ## Molding the Half-Shells
+
 ## Joining and Finishing the Half-Shells
+_This hasn't been tried yet._
