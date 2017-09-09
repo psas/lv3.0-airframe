@@ -12,13 +12,13 @@ If you're looking to copy or build on this work check out the [doc directory](/d
 [Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date and is meant to give an idea of what needs to happen for the project to progress. If you see something that needs to be added, modified, or checked off, please do so. 
 
 - Fin can
-        - [ ] finish making the brackets for the fin can
-	- [ ] sand a module
-	     - [ ] print out 2 [fat spiders](/cad/finCan/fatSpider.STL)
+        - [X] finish making the brackets for the fin can
+	- [X] sand a module
+	     - [X] print out 2 [fat spiders](/cad/finCan/fatSpider.STL)
 	- [ ] MFG first fin can
 - Nose
 	- [X] Machine the tip.
-	- [ ] revise/retry the nosecone layup
+	- [X] revise/retry the nosecone layup
 - MFG procedures
 	- [ ] document the problems/decisions/processes relating to the nose mold
 	- [ ] make a layup procedure for the nose cone
