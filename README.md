@@ -6,7 +6,7 @@ If you aren't allowed to push, send Andrew your Github username and ask him to g
 
 If you're looking to copy or build on this work check out the [doc directory](/doc/), especially the [layup procedure](/doc/mfg/moduleProcedure.md) and please message the people who have committed frequently/recently with any questions (or better yet, [make an issue with your question](https://github.com/psas/lv3.0-airframe/issues)).
 
-![](https://github.com/psas/lv3.0-airframe/blob/master/cad/LV3.PNG)
+![](https://github.com/psas/lv3.0-airframe/blob/master/cad/LV3.png)
 
 ## TODO:
 [Check out the issues list if you're looking for something to do.](https://github.com/psas/lv3.0-airframe/issues) This to-do is usually out of date and is meant to give an idea of what needs to happen for the project to progress. If you see something that needs to be added, modified, or checked off, please do so. 
