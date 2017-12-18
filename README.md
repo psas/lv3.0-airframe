@@ -15,7 +15,7 @@ If you're looking to copy or build on this work check out the [doc directory](/d
         - [X] finish making the brackets for the fin can
 	- [X] sand a module
 	     - [X] print out 2 [fat spiders](/cad/finCan/fatSpider.STL)
-	- [ ] MFG first fin can
+	- [X] MFG first fin can
 - Nose
 	- [X] Machine the tip.
 	- [X] revise/retry the nosecone layup
@@ -56,63 +56,78 @@ Nathan Bergey                  | @natronics             |
 
 ## What and where
 ```
-|-- cad							holds the Solidworks files for all the machined parts
+|-- cad						holds the Solidworks files for all the machined parts
+│   ├── COTS					models for Commercial Off-The-Shelf parts
 │   ├── CubeSatAirframeMount			"Cradle" that holds the flight computer (OreSat) inside LV3
 |   |-- finCan
-|	|	`- LongFinFiles			current fin design (flyable and manufacturable)
-|   |-- module
-|   |-- nose
-|   |-- radome
-|   `-- railSled
-|       `-- CAM					G code for the rail sled (obsolete)
-|           |-- Base
-|           |-- Neck
-|           `-- Trunk
-|-- doc							all pure documentation
+|	|-- LongFinFiles			current fin design (flyable and manufacturable)
+|   |-- module					files for 18 and 24 inch modules
+│   │   ├── jigs				jig for drilling side holes in module rings (and other radial parts)
+│   │   └── layup
+|   |-- nose					nosecone and mold subassemblies
+|   |-- radome					radio-transparent fiberglass module
+|   `-- railSled				part for interfacing with the launch rail
+│       ├── CAM					G code for the rail sled (obsolete)
+│       │   ├── Base
+│       │   ├── Neck
+│       │   └── Trunk
+│       └── Old rail sled designs
+|-- doc						all pure documentation
 |   |-- aiaa-3.6.1				LaTeX template for AIAA
 |   |-- extAbstract				extened abstract for the AIAA paper
-|   |-- img						image resources for documentation
-|   |-- mfg						step-by-step instructions for manufacturing
+|   |-- img					image resources for documentation
+|   |-- mfg					step-by-step instructions for manufacturing
 |   |-- paper					the conference paper we're submitting to AIAA Space
 │   ├── FlightComputerMount			stuff about the Cradle
 │   ├── textbook				summary of composite techniques in general
 |   `-- updates					bi-monthlyish status updates on the project
-|-- sim							simulations and calculations
-|   |-- DATCOM
+|-- sim						simulations and calculations
+|   |-- DATCOM					DATCOM cases for cross-validating the design (abandoned)
 |   |   |-- case
 |   |   |   |-- LV3				case for the LV3 airframe (not complete)
 |   |   |   `-- exMiG
 |   |   |-- doc					DATCOM documentation
 |   |   `-- exlinux				example DATCOM cases
-|   |-- ORK						open rocket models
+|   |-- ORK					open rocket models
 |   |   `-- prev
 |   |-- OpenFOAM				CFD models
-|   |   `-- LV3\_LD-Haack		model of the 1:5 nose cone
-|   |       `-- rcf_100			100-node-long mesh
-|   |           |-- 0			initial conditions
-|   |           |-- constant	fluid properites
-|   |           `-- system		simulation parameters
+|   |   `-- LV3\_LD-Haack			model of the 1:5 nose cone
+|   |       `-- rcf_100				100-node-long mesh
+|   |           |-- 0				initial conditions
+|   |           |-- constant			fluid properites
+|   |           `-- system			simulation parameters
 |   |-- plots					plots of the open rocket data
 |   |-- reductions				reductions of the openrocket simulations
 |   `-- simData					output of the openrocket simulations
-|-- test						data from physical tests on modules
-|   `-- profilometer			surface roughness data
-└── tools				sources/CAD/docs for physical tools used to make LV3
-    ├── Composite_Table			the table we do all the layups on
-    ├── crusher-control			controller software for one of the crush testers at PSU	
-    ├── oven-controller			the temperature controller for the oven
-    │   ├── Oven_Controller		the temperature controller for... wait
-    │   │   ├── Box			enclosure for the oven controller
-    │   │   ├── OvenControl		the temperature contr-- again?!
-    │   │   └── oven-controller-master	"A Deja Vu is usually a glitch in the Matrix."
-    │   └── src				source code for the controller
-    ├── Sheet_Cutting_Templates		templates used to cut sheets of CF, adhesive, et cetera
-    └── strain-gauge-amplifier		instrument used to take strain measurements in a crush/tensile test
+|-- test					data from physical tests on modules
+|   `-- profilometer				surface roughness data
+│   └── tinyMold				
+└── tools					sources/CAD/docs for physical tools used to make LV3
+    ├── Composite_Table				the table we do all the layups on
+    ├── crusher-control				controller software for one of the crush testers at PSU	
+    ├── oven-controller				the temperature controller for the oven
+    │   ├── Oven_Controller			the temperature controller for... wait
+    │   │   ├── Box				enclosure for the oven controller
+    │   │   ├── OvenControl			the temperature contr-- again?!
+    │   │   └── oven-controller-master		"A Deja Vu is usually a glitch in the Matrix."
+    │   └── src					source code for the controller
+    ├── Sheet_Cutting_Templates			templates used to cut sheets of CF, adhesive, et cetera
+    └── strain-gauge-amplifier			instrument used to take strain measurements in a crush/tensile test
 ```
     
 ## Relevant Repositories
+If you want to work on the CAD model, you'll need to have the dependencies cloned to the same directory as this repo. So, something like 
+
+```
+PSAS
+├── lv3.0-airframe
+├── lv3.0-recovery
+└── reaction-control
+```
+
 * [~~psas/mme-capstone~~](https://github.com/psas/mme-capstone) (**DEPRECATED**) -- One of the repositories created durring the 2014 capstone. This contains code for some of the tools they used. 
 * [~~psas/sw-cad-carbon-fiber-process~~](https://github.com/psas/sw-cad-carbon-fiber-process) (**DEPRECATED**) -- Yet another repo from the 2014 team. This contains CAD for some of the tools they made.
 * [psas/LV3-design](https://github.com/psas/LV3-design) -- Early conceptual design of LV3
-* [psas/reaction-control](https://github.com/psas/reaction-control) -- Cold gas reaction control system
+* [psas/reaction-control](https://github.com/psas/reaction-control) -- __(dependency for CAD)__ Cold gas reaction control system
 * [psas/sw-cad-airframe-nsr](https://github.com/psas/sw-cad-airframe-nsr) -- Mechanical separation system for the nosecone/parachute
+* [psas/lv3.0-recovery](https://github.com/psas/lv3.0-recovery) -- __(dependency for CAD)__ CAD and analysis for the eNSR recovery system
