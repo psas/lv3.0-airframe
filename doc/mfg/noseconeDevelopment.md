@@ -1,5 +1,11 @@
 # A Guide to / Journal of the Mold Making Processes Used on LV3
 
+### A Note On Safety
+The materials and procedures described below require more elaborate safety precautions than those used in the standard modules.
+**_Always_ read the directions and MSDS/SDS for each material. If you're not sure if a safety measure is necessary, it is.**
+Make sure you understand the hazards present, how to protect yourself, and what to do in case of an accident **before** starting. 
+Don't assume the precautions in this guide are complete. Your safety is your own responsibility. 
+
 ## The Nosecone Mold
 
 ### Design and Materials Choice
@@ -35,5 +41,50 @@ If you can do this part of the layup under a fume hood or snorkels, do so!
 
 
 ## The Nosecone
+We tried two different procedures for manufacturing the nosecone. 
+The first was to layup in each shell simultaneously, clamp the molds together, overlap the layers of the nosecone shell, and inflate a balloon inside the mold to apply compacting pressure to the lamina. 
+The second was to layup two shells individually with a vacuum bag for compaction, bond the shells together via the aluminum hardware, and patch the seams with strips of CF.
+The second method was successful, but labor-intensive.
 
-## The Fin Brackets
+### Single-Cure layup
+
+#### Mold prep
+Each mold was coated with two layers of paste wax. 
+The first layer was wiped on with a towel, pressing firmly to fill in any defects.
+After allowing the solvent in the first layer to flash off over night. 
+The second layer was applied with a lighter touch, filling in any cracks in the first layer. 
+It's important to apply the second layer quickly, without pressing firmly. 
+Otherwise, the first layer can slough off as the solvent in the second layer diffuses into it. 
+The second layer was allowed to dry overnight.
+
+The molds were placed together and aligned as they would be for the final layup.
+They flat portions of the molds were lightly clamped together. 
+Registration marks were made around the perimeter of the molds and uniquely labelled.
+(Each mold had marks labelled alphabetically, which corresponded to a labelled mark on the other mold.)
+
+#### Lamination
+Four sheets of 20 oz. twill weave CF were rough cut, two for each half-shell. 
+The stock fabric was draped over the back of the molds to check its size (roughly 48 by 12 inches).
+Two sections of 1/4 inch over-expanded Nomex, 12 by 8 inches, were cut.
+The 8 inch dimension must be in the over-expanded direction. 
+
+A 60 g batch of epoxy (F-2400) was spread on the inside of the molds (60 g total, averaging 30 g each).
+A CF sheet was placed in each mold and pressed down with rollers.
+The edges were trimmed so that the + theta side formed a 1 inch flange and the other was flush with the side of the mold. 
+The tip and tail edges were cut flush.
+The flange was tapered to be smaller near the tip.
+
+The mess created by the cut-off CF was a problem, but manageable. 
+
+Another 60 g batch of epoxy was mixed and spread over the 8 inch section in the tail end of the molds.
+The Nomex sheets were placed in the mold and cut to have a 1.5 inch flange on the + theta side.
+
+TODO: look up the actual flange lengths used. Finish this section on the laminations.
+
+#### Joining
+Both flanges were folded in before joining the molds.
+The molds were brought together and 
+
+### Joined Shells
+
+
