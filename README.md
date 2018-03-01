@@ -2,9 +2,12 @@
 
 This is the repo for the LV3 airframe. This holds everything you need to know about making a rocket out of carbon fiber. This includes CAD files, design and prototyping logs, simulation and testing data, most of all the manufacturing procedures for the carbon fiber airframe modules.  
 
-If you aren't allowed to push, send Andrew your Github username and ask him to give you access. (This is different from getting added to the PSAS "organization".)
+If you aren't allowed to push, send Joe or Andrew your Github username and ask for access. (This is different from getting added to the PSAS "organization".)
 
 If you're looking to copy or build on this work check out the [doc directory](/doc/), especially the [layup procedure](/doc/mfg/moduleProcedure.md) and please message the people who have committed frequently/recently with any questions (or better yet, [make an issue with your question](https://github.com/psas/lv3.0-airframe/issues)).
+
+If you want some quick physical specifications on the airframe, checkout the [quick facts.](doc/quickFacts.md)
+For more detailed info, we have a [model](sim/ORK/LV3_L13.ork) for [OpenRocket](http://openrocket.info/) and a [model](cad/LV3.SLDASM) for [SolidWorks](http://www.solidworks.com/).
 
 ![](https://github.com/psas/lv3.0-airframe/blob/master/cad/LV3.png)
 
