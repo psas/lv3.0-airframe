@@ -83,7 +83,12 @@ TODO: look up the actual flange lengths used. Finish this section on the laminat
 
 #### Joining
 Both flanges were folded in before joining the molds.
-The molds were brought together and 
+The molds were brought together and loosely clamped. The alignment of the molds was tweaked until all the registration marks lined up.
+Then, the mold was clamped more securely. 
+The flanges of the two shells were folded over according to the diagram.  
+TODO: make a diagram of the flange layers. It should already exist in my physical notes. -- Joe  
+A yard stick with a brush screwed to the end was used to fold over the layers near the tip of the nosecone, since that area could not be reached by hand.
+
 
 ### Joined Shells
 
