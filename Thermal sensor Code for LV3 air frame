@@ -1,0 +1,128 @@
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_LIS3DH.h>
+#include <Adafruit_Sensor.h>
+#include "Adafruit_MAX31855.h"
+#include <SD.h>
+#define LIS3DH_CLK 13
+#define LIS3DH_MISO 12
+#define LIS3DH_MOSI 11
+#define LIS3DH_CS 10
+#define MAXDO    9
+#define MAXCS    6
+#define MAXCLK   10
+#define MAXDO1   9
+#define MAXCS1   5
+#define MAXCLK1  10
+Adafruit_LIS3DH lis = Adafruit_LIS3DH();
+// initialize the Thermocouple
+Adafruit_MAX31855 thermocouple(MAXCLK, MAXCS, MAXDO);
+// initialize the Thermocouple2
+Adafruit_MAX31855 thermocouple2(MAXCLK1, MAXCS1, MAXDO1);
+// Example creating a thermocouple instance with hardware SPI
+// on a given CS pin.
+//#define MAXCS   10
+//Adafruit_MAX31855 thermocouple(MAXCS);
+//Adafruit_MAX31855 thermocouple2(MAXCS);
+const int chipSelect = 4;
+
+void setup(){ 
+  // Open serial communications and wait for port to open:
+  
+  Serial.begin(9600);
+  while (!Serial){ 
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  delay(1000);
+    #ifndef ESP8266
+      while (!Serial);     // will pause Zero, Leonardo, etc until serial console opens
+    #endif
+  if (! lis.begin(0x18)) {   // change this to 0x19 for alternative i2c address
+    Serial.println("Couldnt start");
+    while (1);
+  }
+  Serial.println("LIS3DH found!");
+  
+  lis.setRange(LIS3DH_RANGE_16_G);   // 2, 4, 8 or 16 G!
+  
+  Serial.print("Range = "); Serial.print(2 << lis.getRange());  
+  Serial.println("G");
+
+  Serial.print("Initializing SD card...\n");
+
+  // see if the card is present and can be initialized:
+  if (!SD.begin(chipSelect)) {
+    Serial.println("Card failed, or not present");
+    // don't do anything more:
+    return;
+  }
+ 
+ File dataFile = SD.open("datalog.csv", FILE_WRITE);
+
+  // if the file is available, write to it:
+  if (dataFile) {
+    dataFile.println("Time,Temp1,Temp2,InternalTemp,accX,accY,accZ");
+    dataFile.close();
+    // print to the serial port too:
+    Serial.println("Time,Temp1,Temp2,InternalTemp,accX,accY,accZ");
+  }
+  // if the file isn't open, pop up an error:
+  else {
+    Serial.println("error opening datalog.txt");
+  }
+} 
+
+void loop() {
+    
+    lis.read();      // get X Y and Z data at once 
+  sensors_event_t event; 
+  lis.getEvent(&event);
+  
+   // basic readout test, just print the current temp
+   double c = thermocouple.readCelsius();
+   if (isnan(c)) {
+     Serial.println("Something wrong with thermocouple!");
+   }
+   
+   double c2 = thermocouple2.readCelsius();
+   if (isnan(c2)) {
+     Serial.println("Something wrong with thermocouple!");
+   }
+   
+  // make a string for assembling the data to log:
+  String data ="";
+  data += (String)(((float)millis())/1000);
+  data += ", ";
+  data += (String)c;
+  data += ", "; 
+  data += (String)c2;
+  data += ", "; 
+  data += (String)thermocouple.readInternal();
+  data += ", ";
+  data += (String)event.acceleration.x;
+  data += ", ";
+  data += (String)event.acceleration.y;
+  data += ", ";
+  data += (String)event.acceleration.z;
+  
+  // open the file. note that only one file can be open at a time,
+  // so you have to close this one before opening another.
+  File dataFile = SD.open("datalog.csv", FILE_WRITE);
+
+  // if the file is available, write to it:
+  if (dataFile) {
+    dataFile.println(data);
+    dataFile.close();
+    // print to the serial port too:
+    Serial.println(data);
+  }
+  // if the file isn't open, pop up an error:
+  else {
+    Serial.println("error opening datalog.txt");
+  }
+ delay(250);
+}
+
+
+
+
