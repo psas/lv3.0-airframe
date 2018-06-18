@@ -1,12 +1,30 @@
-# Carbon Fiber Layup Procedure
-----------------------------
+---
+title: Carbon Fiber Layup Procedure
+date: \today
+author:
+  - Joe Shields
+  - Leslie Elwood
+  - Alex Farias
+fontsize: 12pt
+documentclass: article
+geometry: margin=0.75in
+numbersections: true
+toc: true
+pagestyle: plain
+output:
+  pdf_document:
+    latex_engine: xelatex
+
+---
+
+# Introduction
 This is the procedure to make a cylindrical module. If you find any steps which are unclear, erroneous, unnecessary, or need improvement, please [add an issue for it on this repo](https://github.com/psas/lv3.0-airframe/issues). 
 
 This procedure takes about 5 hours, if you have 3 people working on it, not counting the 5 hour cure cycle. If you're following this procedure for the first time, it's probably going to be closer to 7 or 8 hours. If you *really* know what you're doing, one person can do it, but it's not nice to make one person work for 10 hours straight. If you're trying modifications to this procedure, it's a good idea to do so on a smaller mandrel with no coupling rings, since that takes off a lot of the time. 
 
 ## Materials
 
-#### Consumables
+### Consumables
 1. [Orca skin](http://www.fiberlay.com/upload/techd-2522041-252204_OrcaSkin_Data.pdf)
 1. [Orca seal](https://www.google.com/url?q=http://www.fiberlay.com/upload/techd-252203-252203_OrcaSeal_Data.pdf&sa=D&ust=1465469878478000&usg=AFQjCNHsERyZyLExl99CyF9hUNt7pAivVQ)
 1. Shrink tape
@@ -23,7 +41,7 @@ This procedure takes about 5 hours, if you have 3 people working on it, not coun
 1. Paper towels
 1. kapton tape or flash tape
 
-#### Layup Pieces
+### Layup Pieces
 1. Prepreg carbon fiber (Satin weave is preferable. Anything but unidirectional will do. We use Cytec BMS 8-297 3K-70-PW TY4 CL2, which is the big yellow roll in the EB 480 freezer.)
 1. Structural adhesive (We use Cytec's **Meltbond 1515**-3M, which bonds to CF, nomex, and aluminum. We know that 3M's AF-126 **DOES NOT WORK.**)
 1. A male coupling ring (aluminum)
@@ -33,7 +51,7 @@ This procedure takes about 5 hours, if you have 3 people working on it, not coun
 1. A female dummy ring
 1. An aluminum mandrel
 
-#### Tools
+### Tools
 1. Vacuum pump (we use a venturi pump)
 1. Air hose
 1. Insulated gloves (gardening gloves will work)
@@ -42,11 +60,11 @@ This procedure takes about 5 hours, if you have 3 people working on it, not coun
 1. Mandrel-to-dummy ring screws (what size?)
 1. Dummy ring-to-coupling ring screws (what size?)
 
-## Preparation
+# Preparation
 
 All of these steps can be done in parallel. If you have the space and people, you should do them in parallel. 
 
-### Mandrel preparation
+## Mandrel preparation
 
 In the figure below is shown the waxed mandrel along with a container of Orca Skin, and Orca Wax.
 
@@ -62,14 +80,14 @@ In the figure below is shown the waxed mandrel along with a container of Orca Sk
 
  ![the waxed mandrel on the preparation table, along with a container of Orca Skin, and Orca Seal.](../img/skinnedMandrel.jpg)
 
-#### Dummy ring preparation
+### Dummy ring preparation
 
 1. Wet sand with 600 grit paper to remove any stray adhesive from the previous layup
 1. Clean with acetone or water
 1. Apply mold release to the female dummy ring
 1. Apply a strip of kapton or flash tape to the female dummy ring, so that it overhangs the outside edge of the coupling end by 1 or 2 mm. 
 
-### Coupling ring preparation
+## Coupling ring preparation
 
 1. Place the mandrel on the mandrel-holder
 1. Put on powderless nitrile gloves
@@ -82,7 +100,7 @@ In the figure below is shown the waxed mandrel along with a container of Orca Sk
 1. Apply 3 coats of orca skin to the innermost surface, waiting 10 minutes between coats
 1. Wait 1 hour
 
-### Cutting films and fabrics
+## Cutting films and fabrics
 These steps are best done while you're waiting for the anti-galvanic juice to chooch and the final layer of mold release to dry.
 
 1. Select the appropriate cutting template for the desired film or fabric
@@ -90,7 +108,7 @@ These steps are best done while you're waiting for the anti-galvanic juice to ch
 1. Place the template over the film or fabric
 1. While one person moderately presses down on the template, another person should cut along the edges with a utility knife. It also works well to place weights on the templates while cutting, especially when cutting the adhesive.  
 ![using weights to keep the adhesive template from slipping](../img/templateWeights.jpg)  
-1. Lift up the outside portion of the cut before removing the template, to check that the cut is complete. If it isn't, slice the remaining material. 
+1. Lift up the outside portion of the cut before removing the template, to check that the cut is complete. If it isn't, slice the remaining material.  
 ![carbon fiber being lifted away from the template, showing that the cut around the corner is complete](../img/templateCutCheck.jpg)  
 1. Cut 1/4" x 20" strips of adhesive for each coupling ring. Make sure they are no wider than 1/4".
     1. This can easily be done by placing the edge of a template on a **straight-cut** piece of adhesive and using the depth gauge of a pair of calipers to tweak and check the width of a strip. 
@@ -99,11 +117,11 @@ When cutting the overexpanded nomex honeycomb core material, make sure the templ
 
 To cut the carbon fiber, it works well the place the corner of the template on the corner of one of the cells (you'll have to remove one of the layers of peel ply). The template can then be rotated so that it perfectly lines up with the rows and columns of the fabric. This doesn't really work with fiberglass. 
 
-## Assembly
+# Assembly
 
 These steps basically all have to be done in series. The layup table really only accommodates 2 or 3 people, so just switch out people as appropriate.  
 
-### Layers
+## Layers
 
 Shown below are two stages in the layup process. figure 2 shows the mandrel has been sanded and chemically treated. The first wrap around layer of release film has been added. In figure 3 below the first layer of carbon fiber has been added over the release film.
 
@@ -136,7 +154,7 @@ Shown below are two stages in the layup process. figure 2 shows the mandrel has 
 1. Use the roll technique to apply the outer layer of carbon fiber to the outer layer of adhesive film. There should be about an inch of overlap between the carbon fiber and itself. Take care not to tug on the carbon fiber. The shrink tape will remove any wrinkles better than you can. Take care that the CF does not extend over the lip of the male ring.
 1. If you’re making an adhesive surfaced module, add another layer of adhesive to the outside of the module. Take care that it does not extend over the lip of the male ring.
 
-### Shrink Tape
+## Shrink Tape
 
 1. If you're using shrink tape with no built-in release compound:
     1. Cover the layup in a layer of release film, enough to overlap itself and the coupling rings by at least 1/2". If you don't do this, the shrink tape will bond to the outer layer, making removal and sanding basically impossible.   
@@ -157,7 +175,7 @@ Shown below are two stages in the layup process. figure 2 shows the mandrel has 
 1. If you are using perforated shrink tape, add a layer of non-perforated release film to the outside of the layup, using kapton or flash tape to hold it in place.1. If you don't do this, the module will end up with "goosebumps," which make the shrink tape much harder to remove and the module much harder to sand.  
     ![goosebumps poking through the perforated tape: not what you want](../img/gooseBumps.jpg) 
 
-### Vacuum bagging
+## Vacuum bagging
 
 After adding the final layer of release film, the layup is ready to be vacuum bagged. Figure A4 shows the layup wrapped in it’s final layer of release film.
 
@@ -184,9 +202,9 @@ After adding the final layer of release film, the layup is ready to be vacuum ba
 ![An example of an incomplete seal in the vacuum bag.](../img/badSeal.jpg)  
 ![layup wrapped in final layer of release tape and ready to be vacuum bagged.](../img/placeHolder.jpg)
 
-## Curing
+# Curing
 
-### Cooking
+## Cooking
 1. Set up the aluminum (not plastic) mandrel holders in the oven
 1. Thread the vacuum hose through the hole in the oven wall
 1. Gently place the mandrel on the aluminum mandrel holders in the oven, while someone holds them in place
@@ -203,7 +221,7 @@ After adding the final layer of release film, the layup is ready to be vacuum ba
 1. After it reaches 350°F, hold the oven at that temperature for two hours
 1. Ramp down the oven temperature by 5°F per hour. Use the oven door to control this cooldown, opening it slightly for faster cooling.
 
-### Removal from mandrel
+## Removal from mandrel
 
 1. Once the oven has reached 100°F, open the door and slide vacuum hose into the oven, through the hole in the oven wall, using insulated gloves
 1. Remove the mandrel from the oven using insulated gloves and place it on the mandrel holders on the workbench
@@ -224,10 +242,10 @@ After adding the final layer of release film, the layup is ready to be vacuum ba
 1. Place the mandrel back on the mandrel holders on the workbench
 1. Remove the blue perforated release film from the inside of the module
 
-## Results
+# Results
 
 If done properly, this should result in a module with maybe a few thin creases from flaws in the shrink tape. Adhesive-surfaced modules should be finished with 600 and 1500 grit wet sanding. (do not submerge!)  
 ![Final carbon fiber rocket module](../img/LU16.10wide.jpg)  
 
-### TODO:
+## TODO:
 Documentation of the sanding should be added when it's actually been done.
